@@ -99,7 +99,12 @@ ALTER TABLE bike_ind_chicago DROP COLUMN key;
 \copy bike_agg_boston FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_agg_boston_c.csv' DELIMITER ',' CSV;  
 
 \copy bike_agg_washingtondc FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_agg_washingtondc_c.csv' DELIMITER ',' CSV; 
+\copy bike_ind_washingtondc FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_ind_washingtondc_c.csv' DELIMITER ',' CSV; 
+
 
 \copy bike_agg_newyork FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_agg_newyork_c.csv' DELIMITER ',' CSV; 
 \copy bike_ind_newyork FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_ind_newyork_c.csv' DELIMITER ',' CSV; 
+
+\copy bike_agg_chicago FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_agg_chicago_c.csv' DELIMITER ',' CSV; 
+\copy bike_ind_chicago FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_ind_chicago_c.csv' DELIMITER ',' CSV; 
 
