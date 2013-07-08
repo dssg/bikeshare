@@ -3,11 +3,11 @@ bikeshare
 
 Bikeshare repo
 
-The data is based off of Divy Data, in minute by minute snapshots.
+The data is based off of BIXI Data, in minute by minute snapshots.
 
-**There are two Divy systems, DivyV1 (Boston, Washington DC & Minneapolis) and DivyV2 (Chicago and New York City)**
+**There are two BIXI systems, BIXIV1 (Boston, Washington DC & Minneapolis) and BIXIV2 (Chicago and New York City)**
 
-###Schema, DivyV1
+###Schema, BIXIV1
 
 * Indiv
 	* tfl_id 
@@ -20,7 +20,7 @@ The data is based off of Divy Data, in minute by minute snapshots.
 	* spaces
 	* unbalanced 
 
-###Schema, DivyV2
+###Schema, BIXIV2
 * Indiv
 	* tfl_id   
 	* bikes
