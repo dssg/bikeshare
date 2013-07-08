@@ -32,36 +32,40 @@ CREATE TABLE IF NOT EXISTS bike_ind_boston (
   KEY timestamp
 );
 
-CREATE TABLE IF NOT EXISTS bike_agg_newyork (                                         
-  timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,                                             
-  bikes integer NOT NULL,                                                                             
-  spaces integer NOT NULL,                                                                            
-  unbalanced integer NOT NULL                                                                         
-);
-
 CREATE TABLE IF NOT EXISTS bike_ind_newyork (
   tfl_id integer NOT NULL,
   bikes integer NOT NULL,
   spaces integer NOT NULL,
+  total_docks integer NOT NULL,
   timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (tfl_id,timestamp),
-  KEY timestamp
+  PRIMARY KEY (tfl_id,timestamp)
 );
 
-CREATE TABLE IF NOT EXISTS bike_agg_chicago (                                         
-  timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,                                             
-  bikes integer NOT NULL,                                                                             
-  spaces integer NOT NULL,                                                                            
-  unbalanced integer NOT NULL                                                                         
+CREATE TABLE IF NOT EXISTS bike_agg_newyork (
+  timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  bikes integer NOT NULL,
+  spaces integer NOT NULL,
+  unbalanced integer NOT NULL,
+  total_docks integer NOT NULL,
+  PRIMARY KEY (timestamp)
 );
 
 CREATE TABLE IF NOT EXISTS bike_ind_chicago (
   tfl_id integer NOT NULL,
   bikes integer NOT NULL,
   spaces integer NOT NULL,
+  total_docks integer NOT NULL,
   timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (tfl_id,timestamp),
-  KEY timestamp
+  PRIMARY KEY (tfl_id,timestamp)
+);
+
+CREATE TABLE IF NOT EXISTS bike_agg_chicago (
+  timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  bikes integer NOT NULL,
+  spaces integer NOT NULL,
+  unbalanced integer NOT NULL,
+  total_docks integer NOT NULL,
+  PRIMARY KEY (timestamp)
 );
 
 CREATE TABLE IF NOT EXISTS bike_agg_washingtondc (                                         
@@ -95,3 +99,7 @@ ALTER TABLE bike_ind_chicago DROP COLUMN key;
 \copy bike_agg_boston FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_agg_boston_c.csv' DELIMITER ',' CSV;  
 
 \copy bike_agg_washingtondc FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_agg_washingtondc_c.csv' DELIMITER ',' CSV; 
+
+\copy bike_agg_newyork FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_agg_newyork_c.csv' DELIMITER ',' CSV; 
+\copy bike_ind_newyork FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/test/bike_ind_newyork_c.csv' DELIMITER ',' CSV; 
+
