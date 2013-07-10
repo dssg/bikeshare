@@ -77,4 +77,6 @@ I also don't currently record dock statuses (e.g. temporary, active, locked, bon
 ## Contributing
 To get involved, please check the [issue tracker](/issues).
 
+To get in touch, email Hunter Owens at owens.hunter@gmail.com.
+
 
