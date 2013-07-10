@@ -1,6 +1,4 @@
-# Bikeshare Empty/Full Prediction
-=========
-
+# Bikeshare Prediction Project
 
 ## The Problem
 Bikeshare stations often become full or empty with bikes. This is bad because as a user I can't remove a bike or dock it. Bikeshare operators have trucks that drive around an move bikes from full stations to empty stations. This is called rebalancing.
@@ -31,7 +29,6 @@ The model lives in `model`. `parameter_estimate.py` crunches the historical data
 The app, which uses flask and bootstrap, lives in `web`.
 
 ## Data
-========
 
 The data is based off of BIXI Data, in minute by minute snapshots.
 
@@ -78,6 +75,6 @@ While we are on the topic, note that the timestamp I report is my own timestamp 
 I also don't currently record dock statuses (e.g. temporary, active, locked, bonus), locations, names, addresses, or other available metadata.
 
 ## Contributing
-To get involved, please check the [issues tracker](/issues).
+To get involved, please check the [issue tracker](/issues).
 
 
