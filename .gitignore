@@ -36,3 +36,6 @@ nosetests.xml
 
 #tmp models.py ignore
 models.py
+
+#emacs 
+*~
