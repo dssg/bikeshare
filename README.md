@@ -16,7 +16,7 @@ There are three components to the project:
 
 - A database storing historical data
 
-Thanks to [Oliver O'Brien](oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every station in DC's bikeshare system since late 2010. We're storing this data in postgres database, and updating it by hitting DC's real-time bikeshare API. The data is discussed in the Data section below.
+Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every station in DC's bikeshare system since late 2010. We're storing this data in postgres database, and updating it by hitting DC's real-time bikeshare API. The data is discussed in the Data section below.
 
 The scripts to build the database and add current data to it are in `scrapers` and `database` folders. The database updates every minute using a cron job.
 
@@ -75,7 +75,7 @@ While we are on the topic, note that the timestamp I report is my own timestamp 
 I also don't currently record dock statuses (e.g. temporary, active, locked, bonus), locations, names, addresses, or other available metadata.
 
 ## Contributing
-To get involved, please check the [issue tracker](/issues).
+To get involved, please check the [issue tracker](issues).
 
 To get in touch, email Hunter Owens at owens.hunter@gmail.com.
 
