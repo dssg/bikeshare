@@ -75,7 +75,7 @@ While we are on the topic, note that the timestamp I report is my own timestamp 
 I also don't currently record dock statuses (e.g. temporary, active, locked, bonus), locations, names, addresses, or other available metadata.
 
 ## Contributing
-To get involved, please check the [issue tracker](issues).
+To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
 To get in touch, email Hunter Owens at owens.hunter@gmail.com.
 
