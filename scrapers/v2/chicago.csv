@@ -1,0 +1,70 @@
+id, stationName, latitude, longitude, statusValue, testStation
+5,State St & Harrison St,41.8739580629,-87.6277394859,In Service,False
+13,Wilton Ave & Diversey Pkwy,41.93250008,-87.65268082,In Service,False
+14,Morgan St &18th St,41.85807921,-87.65140281,In Service,False
+15,Racine Ave & 18th St,41.8581806068,-87.6564866473,In Service,False
+16,Marshfield Ave & North Ave,41.91083,-87.66887,In Service,False
+17,Wood St & Division St,41.90332,-87.67273,In Service,False
+19,Loomis St & Taylor St,41.8691438562,-87.6617216772,In Service,False
+20,Sheffield Ave & Kingsbury St,41.90959193,-87.65349723,In Service,False
+21,Aberdeen St & Jackson Blvd,41.87772613,-87.65478743,In Service,False
+22,May St & Taylor St.,41.8694821,-87.6554864,In Service,False
+23,Orleans St & Elm St,41.90288,-87.63773,In Service,False
+24,Fairbanks Ct & Grand Ave,41.89186,-87.62062,In Service,False
+25,Michigan Ave & Pearson St,41.89766,-87.62351,In Service,False
+26,McClurg Ct & Illinois St,41.89102,-87.6173,In Service,False
+27,Larrabee St & North Ave,41.91021,-87.6435,In Service,False
+28,Larrabee st & Menomonee st,41.91468,-87.64332,In Service,False
+29,Noble St & Milwaukee Ave,41.90068,-87.6626,In Service,False
+30,Ashland Ave & Augusta Blvd,41.89964579,-87.66780948,In Service,False
+31,Franklin St & Chicago Ave,41.89680204,-87.63563839,In Service,False
+32,Racine Ave & Congress Pkwy,41.87464,-87.65703,In Service,False
+33,State st & Van Buren st,41.8773845947,-87.6280176648,In Service,False
+34,Cannon Dr & Fullerton Ave,41.9267559875,-87.6344287848,In Service,False
+36,Franklin st & Jackson Blvd,41.8777079559,-87.6353211408,In Service,False
+37,Dearborn St & Adams St,41.8793563587,-87.6297910363,In Service,False
+42,Wabash Ave & Cermak Rd,41.8532387578,-87.6253370902,In Service,False
+43,Michigan ave & Washington st,41.8838927658,-87.6246491409,In Service,False
+44,State St & Randolph St,41.8847302006,-87.6277335692,In Service,False
+45,Michigan ave & Congress pkwy,41.876065599,-87.6244333636,In Service,False
+46,Wells St & Walton St,41.89993001,-87.63443007,In Service,False
+47,State St & Kinzie St,41.88918,-87.6277,In Service,False
+48,Larrabee St & Kingsbury St,41.8977354419,-87.643119,In Service,False
+49,Dearborn St & Monroe St,41.881319815,-87.6295209193,In Service,False
+50,Clark St & Congress Pkwy,41.8759326655,-87.6305845355,In Service,False
+51,Clark St & Randolph st,41.884576228,-87.63188991,In Service,False
+52,Michigan Ave & Lake St,41.8860581151,-87.6242893413,In Service,False
+53,Wells St & Huron St,41.8947375479,-87.6338828668,In Service,False
+54,Ogden Ave & Chicago Ave,41.896362458,-87.6540612729,In Service,False
+55,Halsted St & James M Rochford St,41.8664547412,-87.646995218,In Service,False
+56,Desplaines St & Kinzie St,41.888716036,-87.6444478533,In Service,False
+57,Clinton St & Roosevelt Rd,41.8671177825,-87.6410879593,In Service,False
+58,Ashland Ave & Armitage Ave,41.9178588677,-87.668919,In Service,False
+59,Wabash Ave & Roosevelt Rd,41.8671729952,-87.6259550069,In Service,False
+60,Dayton St & North Ave,41.9105780349,-87.6494219288,In Service,False
+61,Wood St & Milwaukee Ave,41.907655,-87.672552,In Service,False
+62,McCormick Place,41.8513751729,-87.6188346489,In Service,False
+66,Clinton St & Lake St,41.8858327415,-87.6413823149,In Service,False
+67,Sheffield Ave & Fullerton Ave,41.9256018819,-87.6537080423,In Service,False
+68,Clinton St & Tilden St,41.8758626822,-87.6405507168,In Service,False
+69,Damen Ave & Pierce Ave,41.9093960065,-87.6776919292,In Service,False
+71,Morgan St & Lake St,41.8854833079,-87.6523048564,In Service,False
+72,State St & 16th St,41.8601213774,-87.6277291853,In Service,False
+73,Jefferson St & Monroe St,41.8789084513,-87.6425032317,In Service,False
+74,Kingsbury St & Erie St,41.89384315,-87.64185116,In Service,False
+75,Canal St & Jackson Blvd,41.87811421,-87.63997112,In Service,False
+76,Lake Shore Dr & Monroe St,41.88105,-87.61697,In Service,False
+77,Clinton St & Madison St,41.8815824,-87.64127743,In Service,False
+80,Aberdeen St & Madison St,41.88158061,-87.65473822,In Service,False
+81,Dearborn St & Washington St,41.8833135,-87.62971344,In Service,False
+84,Green St & Milwaukee Ave,41.89188795,-87.6487494,In Service,False
+85,Michigan Ave & Oak St,41.90096039,-87.62377664,In Service,False
+86,Eckhart Park,41.89637337,-87.66098386,In Service,False
+87,Racine Ave & Fullerton Ave,41.92556258,-87.65840426,In Service,False
+88,May St & Randolph St,41.88397,-87.655688,In Service,False
+90,Millennium Park,41.8810317,-87.62408432,In Service,False
+91,Clinton St & Washington Blvd,41.88338,-87.64117,In Service,False
+92,Carpenter St & Huron St,41.89445911,-87.65345571,In Service,False
+93,Sheffield Ave & Willow St,41.91316,-87.65325,In Service,False
+94,Lincoln Ave & Armitage Ave,41.91807062,-87.63837588,In Service,False
+97,Museum Campus,41.865212,-87.617759,In Service,False
