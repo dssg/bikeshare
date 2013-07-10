@@ -10,7 +10,7 @@ City governments and bikeshare operators want to be able to predict when station
 ## The Solution
 We're going to use time series statistical techniques to help them do that. Specifically, we're going to try to predict how many bikes will be at every station in Washington DC's bikeshare system 60 minutes from now.
 
-To make this prediction, we're using a Auto Regressive Moving Average (ARMA) regression model. This model will take in the current number of bikes at a station, the current time, day of week, month, and eventually weather conditions, and spit out the estimated number of bikes that will be at that station in 60 minutes.
+To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](http://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model) regression model. This model will take in the current number of bikes at a station, the current time, day of week, month, and eventually weather conditions, and spit out the estimated number of bikes that will be at that station in 60 minutes.
 
 There are three components to the project:
 
