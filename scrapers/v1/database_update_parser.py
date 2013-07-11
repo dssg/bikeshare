@@ -17,12 +17,12 @@ def main(url):
 
     fulltext = r.text
 
-    soup = BeautifulSoup(fulltext,"xml")
+    soup = BeautifulSoup(fulltext)
     print soup.find_all("station")[1]
     for station in soup.find_all("station"):
         ident = extract_str(station.find("id"))
-        bikes = extract_str(station.find("nbBikes"))
-        stations = extract_str(station.find("nbEmptyDocks"))
+        bikes = extract_str(station.find("nbbikes"))
+        stations = extract_str(station.find("nbemptydocks"))
         timestamp = datetime.datetime.utcnow()
         print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
 
