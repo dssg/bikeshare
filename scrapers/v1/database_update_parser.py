@@ -14,12 +14,11 @@ def extract_str(element):
         return element.string
 
 def main(url,city):
-    city_db
     if (city == "boston"):
         city_db = "bike_ind_boston"
-    if (city == "washingtondc"):
+    elif (city == "washingtondc"):
         city_db = "bike_ind_washingtondc"
-    if (city == "minneapolis"):
+    elif (city == "minneapolis"):
         city_db = "bike_ind_minneapolis"
     else:
         print "no city info supplied"
@@ -41,10 +40,7 @@ def main(url,city):
         timestamp = datetime.datetime.utcnow()
         #print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
         cur = conn.cursor()
-        cur.execute(
-...     """INSERT INTO %s (tfl_id, bikes, spaces, timestamp)
-...         VALUES (%s, %s, %s,%s);""",
-...     (city_db, ident, bikes,stations,timestamp))
+        cur.execute("""INSERT INTO %s (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s, %s,%s);""",(city_db, ident, bikes,stations,timestamp))
         
 
 
