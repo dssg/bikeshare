@@ -42,9 +42,9 @@ def main(url,city):
         #print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
         cur = conn.cursor()
         cur.execute(
-...     """INSERT INTO %s (tfl_id, bikes, spaces, timestamp)
-...         VALUES (%s, %s, %s,%s);""",
-...     (city_db, ident, bikes,stations,timestamp))
+...     """INSERT INTO "+city_db+" (tfl_id, bikes, spaces, timestamp)
+...         VALUES (%s, %s,%s);""",
+...     (ident, bikes,stations,timestamp))
         
 
 
