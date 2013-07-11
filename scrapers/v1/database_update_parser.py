@@ -14,15 +14,6 @@ def extract_str(element):
         return element.string
 
 def main(url,city):
-    if (city == "boston"):
-        city_db = "bike_ind_boston"
-    elif (city == "washingtondc"):
-        city_db = "bike_ind_washingtondc"
-    elif (city == "minneapolis"):
-        city_db = "bike_ind_minneapolis"
-    else:
-        print "no city info supplied"
-
     try:
         conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
     except:
@@ -50,10 +41,19 @@ def main(url,city):
         stations = extract_str(station.find("nbemptydocks"))
         timestamp = datetime.datetime.utcnow()
         #print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
-        cur.execute("""INSERT INTO """+city_db+""" (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s,%s);""", (ident, bikes,stations,timestamp))   
+        cur = conn.cursor()
+        if (city == "boston"):
+            cur.execute("""INSERT INTO bike_ind_boston (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s);""",(ident, bikes,stations,timestamp))
+        if (city == "washingtondc"):
+            cur.execute("""INSERT INTO bike_ind_washingtondc (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s);""",(ident, bikes,stations,timestamp))
+        if (city == "minneapolis"):
+            cur.execute("""INSERT INTO bike_ind_minneapolis (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s);""",(ident, bikes,stations,timestamp))
+        else:
+            print "no city info supplied"
+        
 
     print timestamp
-    print city_db
+
 # #urls = ("http://www.thehubway.com/data/stations/bikeStations.xml", "https://secure.niceridemn.org/data2/bikeStations.xml",
 #        "http://www.thehubway.com/data/stations/bikeStations.xml")
 
