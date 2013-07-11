@@ -1,10 +1,11 @@
+import requests
 from bs4 import BeautifulSoup
 from types import NoneType
 from sys import argv
 import os
 import datetime
 import calendar
-from psycopg2 import *
+import psycopg2 
 
 def extract_str(element):
     if type(element) is NoneType:
@@ -28,8 +29,9 @@ def main(url):
         bikes = extract_str(station.find("nbbikes"))
         stations = extract_str(station.find("nbemptydocks"))
         timestamp = datetime.datetime.utcnow()
-        print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
-
+        #print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
+        cur = conn.cursor()
+        
 
 
 
