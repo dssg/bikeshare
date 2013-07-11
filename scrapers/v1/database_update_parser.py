@@ -19,40 +19,33 @@ def main(url,city):
     except:
         print "I am unable to connect to the database"
     cur = conn.cursor()
-    try:
-        cur.execute("""SELECT * from bike_ind_boston LIMIT 5;""")
-    except:
-        print "I can't SELECT from bar"
-
-    rows = cur.fetchall()
-    print "\nShow me the databases:\n"
-    for row in rows:
-        print "   ", row[0]
-
+    
     r = requests.get(url)
 
     fulltext = r.text
 
     soup = BeautifulSoup(fulltext)
-    print soup.find_all("station")[1]
+
     for station in soup.find_all("station"):
-        ident = extract_str(station.find("id"))
-        bikes = extract_str(station.find("nbbikes"))
-        stations = extract_str(station.find("nbemptydocks"))
+        ident = long(extract_str(station.find("id")))
+        bikes = long(extract_str(station.find("nbbikes")))
+        stations = long(extract_str(station.find("nbemptydocks")))
         timestamp = datetime.datetime.utcnow()
-        #print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
-        cur = conn.cursor()
-        if (city == "boston"):
-            cur.execute("""INSERT INTO bike_ind_boston (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s);""",(ident, bikes,stations,timestamp))
-        if (city == "washingtondc"):
-            cur.execute("""INSERT INTO bike_ind_washingtondc (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s);""",(ident, bikes,stations,timestamp))
-        if (city == "minneapolis"):
-            cur.execute("""INSERT INTO bike_ind_minneapolis (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s);""",(ident, bikes,stations,timestamp))
+        #print ident+','+bikes+','+stations
+        if (city.lower() == 'boston'):
+            try:
+                cur.execute("INSERT INTO bike_ind_boston (tfl_id, bikes, spaces) VALUES (%s, %s,%s);",(ident,bikes,stations))
+            except:
+                print "insert failed"
+        elif (city == "washingtondc"):
+            cur.execute("""INSERT INTO bike_ind_washingtondc (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s,%s);""",(ident, bikes,stations,timestamp))
+        elif (city == "minneapolis"):
+            cur.execute("""INSERT INTO bike_ind_minneapolis (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s,%s);""",(ident, bikes,stations,timestamp))
         else:
             print "no city info supplied"
-        
+        #print timestamp
 
-    print timestamp
+    #print timestamp
 
 # #urls = ("http://www.thehubway.com/data/stations/bikeStations.xml", "https://secure.niceridemn.org/data2/bikeStations.xml",
 #        "http://www.thehubway.com/data/stations/bikeStations.xml")
