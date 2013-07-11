@@ -13,7 +13,7 @@ def extract_str(element):
     else:
         return element.string
 
-def main(url):
+def main(url,city):
     try:
         conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
     except:
@@ -31,6 +31,10 @@ def main(url):
         timestamp = datetime.datetime.utcnow()
         #print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
         cur = conn.cursor()
+        cur.execute(
+...     """INSERT INTO  (tfl_id, bikes, spaces, timestamp)
+...         VALUES (%s, %s, %s,%s);""",
+...     (ident, bikes,stations,timestamp))
         
 
 
@@ -38,5 +42,5 @@ def main(url):
 # #urls = ("http://www.thehubway.com/data/stations/bikeStations.xml", "https://secure.niceridemn.org/data2/bikeStations.xml",
 #        "http://www.thehubway.com/data/stations/bikeStations.xml")
 
-main(argv[1])
+main(argv[1],argv[2])
     
