@@ -27,6 +27,17 @@ def main(url,city):
         conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
     except:
         print "I am unable to connect to the database"
+    cur = conn.cursor()
+    try:
+        cur.execute("""SELECT * from bike_ind_boston LIMIT 5;""")
+    except:
+        print "I can't SELECT from bar"
+
+    rows = cur.fetchall()
+    print "\nShow me the databases:\n"
+    for row in rows:
+        print "   ", row[0]
+
     r = requests.get(url)
 
     fulltext = r.text
@@ -39,12 +50,10 @@ def main(url,city):
         stations = extract_str(station.find("nbemptydocks"))
         timestamp = datetime.datetime.utcnow()
         #print "{0},{1},{2},{3}".format(ident, bikes, stations, timestamp)
-        cur = conn.cursor()
-        cur.execute("""INSERT INTO %s (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s, %s,%s);""",(city_db, ident, bikes,stations,timestamp))
-        
+        cur.execute("""INSERT INTO """+city_db+""" (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s,%s);""", (ident, bikes,stations,timestamp))   
 
-
-
+    print timestamp
+    print city_db
 # #urls = ("http://www.thehubway.com/data/stations/bikeStations.xml", "https://secure.niceridemn.org/data2/bikeStations.xml",
 #        "http://www.thehubway.com/data/stations/bikeStations.xml")
 
