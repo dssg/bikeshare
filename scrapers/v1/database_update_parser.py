@@ -33,10 +33,7 @@ def main(url,city):
         timestamp = datetime.datetime.utcnow()
         #print ident+','+bikes+','+stations
         if (city.lower() == 'boston'):
-            try:
-                cur.execute("INSERT INTO bike_ind_boston (tfl_id, bikes, spaces) VALUES (%s, %s,%s);",(ident,bikes,stations))
-            except:
-                print "insert failed"
+            cur.execute("""INSERT INTO bike_ind_boston (tfl_id, bikes, spaces) VALUES (%s, %s,%s);""",(ident,bikes,stations))
         elif (city == "washingtondc"):
             cur.execute("""INSERT INTO bike_ind_washingtondc (tfl_id, bikes, spaces, timestamp) VALUES (%s, %s,%s,%s);""",(ident, bikes,stations,timestamp))
         elif (city == "minneapolis"):
@@ -44,7 +41,7 @@ def main(url,city):
         else:
             print "no city info supplied"
         #print timestamp
-
+    conn.commit()
     #print timestamp
 
 # #urls = ("http://www.thehubway.com/data/stations/bikeStations.xml", "https://secure.niceridemn.org/data2/bikeStations.xml",
