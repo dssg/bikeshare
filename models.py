@@ -5,7 +5,7 @@ from EnumSymbol import DeclEnum
 
 from hello import engine, session
 
-engine = create_engine("postgresql://"+print os.environ.get('dbuser')+'@'print os.environ.get('dbaddress')+'/'+print os.environ.get('dbname'))
+engine = create_engine("postgresql://"+print os.environ.get('dbuser')+'@'print os.environ.get('dburl')+'/'+print os.environ.get('dbname'))
 
 Session = sessionmaker()
 Session.configure(bind=engine)
