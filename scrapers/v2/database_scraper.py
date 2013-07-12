@@ -34,9 +34,9 @@ for j in J2:
     stations = long(j["availableBikes"])
     totalDocks = long(j["totalDocks"])
     if (city.lower() == 'chicago'):
-        cur.execute("""INSERT INTO bikes_ind_chicago (tfl_id,bikes,spaces,totat_docks) VALUES (%s,%s,%s,%s)""",(indent,bikes,stations,totalDocks))
+        cur.execute("""INSERT INTO bike_ind_chicago (tfl_id,bikes,spaces,total_docks) VALUES (%s,%s,%s,%s)""",(indent,bikes,stations,totalDocks))
     elif (city.lower() == 'newyork'):
-        cur.execute("""INSERT INTO bikes_ind_newyork (tfl_id,bikes,spaces,totat_docks) VALUES (%s,%s,%s,%s)""",(indent,bikes,stations,totalDocks))
+        cur.execute("""INSERT INTO bike_ind_newyork (tfl_id,bikes,spaces,total_docks) VALUES (%s,%s,%s,%s)""",(indent,bikes,stations,totalDocks))
     else:
         print "No city suppied"
 
