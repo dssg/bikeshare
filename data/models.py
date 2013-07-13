@@ -1,3 +1,4 @@
+# This script is a start to adding a nice python object interface to our bikeshare data in PostgreSQL.
 from sqlalchemy import *
 from sqlalchemy.orm import *
 from sqlalchemy.ext.declarative import *

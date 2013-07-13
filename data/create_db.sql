@@ -1,3 +1,5 @@
+# Run this PostgreSQL script to insert cleaned csv data into PostgreSQL database.
+
 SET timezone TO "+00:00";     
 
 CREATE TABLE IF NOT EXISTS bike_agg_minneapolis (                                         

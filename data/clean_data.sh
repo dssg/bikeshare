@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script cleans up the raw data from Oliver O'Brien's mysql database. Run this before inserting
+# csv's into the database.
+
 perl -lpe 's/"/""/g; s/^|$/"/g; s/\t/","/g' < bike_ind_minneapolis.csv > bike_ind_minneapolis_c.csv
 perl -lpe 's/"/""/g; s/^|$/"/g; s/\t/","/g' < bike_agg_minneapolis.csv > bike_agg_minneapolis_c.csv
 echo "done with minneapolis"
