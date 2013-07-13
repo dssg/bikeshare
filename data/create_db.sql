@@ -159,7 +159,7 @@ ALTER TABLE bike_ind_chicago DROP COLUMN key;
 # copy metadata
 \copy metadata_boston FROM '/home/ec2-user/bikeshare/scrapers/v1/metadata_boston.csv' DELIMITER ',' CSV HEADER;
 \copy metadata_minneapolis FROM '/home/ec2-user/bikeshare/scrapers/v1/metadata_minneapolis.csv' DELIMITER ',' CSV HEADER;
-\copy metadata_washingtondc FROM '/home/ec2-user/bikeshare/scrapers/v1/metadata_washingtondc.csv' DELIMITER ',' CSV HEADER;
+\copy metadata_washingtondc FROM '/home/ec2-user/bikeshare/scrapers/v1/metadata_dc.csv' DELIMITER ',' CSV HEADER;
 
 \copy metadata_newyork FROM '/home/ec2-user/bikeshare/scrapers/v2/newyork.csv' DELIMITER ',' CSV HEADER;
 \copy metadata_chicago FROM '/home/ec2-user/bikeshare/scrapers/v2/chicago.csv' DELIMITER ',' CSV HEADER;
