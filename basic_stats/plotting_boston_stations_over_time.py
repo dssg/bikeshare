@@ -61,6 +61,7 @@ for count, i in enumerate(stations):
     
     # Add these new time values into our dataframe
     station_annual_averages["timestamp"] = times
+    boston_5_annual_averages["bikes_available_std"] = boston_5_annual_std
     
     # Plot the time against the number of bikes available
 
