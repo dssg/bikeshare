@@ -10,9 +10,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
-# Initialize pdf document for later printing
-pdf_pages = Pdfpages('Boston_annual_average.pdf');
-
 conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
 
 cur = conn.cursor()
@@ -21,10 +18,20 @@ cur.execute("SELECT DISTINCT(id) FROM metadata_boston;")
 
 stations = list(cur.fetchall())
 
+
+# Initialize pdf document for later printing
+pdf_pages = Pdfpages('Boston_annual_average.pdf');
+nb_plots = length(stations)
+nb_plots_per_page = 2
+nb_pages = 2
+grid_size = (2,1)
+
+
 cur.execute(
             "prepare myplan as "
             "select * from bike_ind_boston where tfl_id = $1")
-for i in stations:
+stations = stations[0:4]
+for count, i in enumerate(stations):
     print "i is equal to %d" % i
     cur.execute("execute myplan (%s)", i)
     station = cur.fetchall()
@@ -60,9 +67,22 @@ for i in stations:
     station_annual_averages["timestamp"] = times
     
     # Plot the time against the number of bikes available
-    station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
-    plt.savefig('station_'+str(i[0])+'.pdf')
 
+    # Check whether we need to start a page
+    if count % nb_plots_per_page == 0:
+        fig = plt.figure(figsize=(8.27,11.69),dpi=100)
+
+    # Actually plot the things
+    plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
+    station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
+
+    # Clode the page if needed
+    if (count + 1) % nb_plots_per_page == 0 or (count + 1) == nb_plots:
+        plt.tight_layout()
+        pdf_pages.savefig(fig)
+
+
+pdf_pages.close()
 # <codecell>
 
 
