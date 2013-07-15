@@ -70,8 +70,18 @@ for count, i in enumerate(stations):
 
     # Actually plot the things
     plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
-    station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
-    station_name = str(stations[count][1])
+    fig = plt.figure()
+    fig, ax = plt.subplots(1)
+    t = pd.to_datetime(boston_5_annual_averages['timestamp'])
+    mu1 = boston_5_annual_averages['bikes_available']
+    sigma1 = boston_5_annual_averages['bikes_available_std']
+
+    ax.plot(t, mu1)
+    ax.fill_between(t, (mu1+sigma1).tolist(), (mu1-sigma1).tolist(), facecolor='blue', alpha=0.5)
+    ax.xaxis.set_major_formatter(dates.DateFormatter('%H:%M'))
+    plt.setp(plt.xticks()[1], rotation=30)
+    #station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
+    #station_name = str(stations[count][1])
     station_plot = station_plot.set_title("Station number " + str(i[0]) + " at " + station_name)
 
     # Close the page if needed
