@@ -72,9 +72,9 @@ for count, i in enumerate(stations):
     plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
     fig = plt.figure()
     fig, ax = plt.subplots(1)
-    t = pd.to_datetime(annual_averages['timestamp'])
-    mu1 = annual_averages['bikes_available']
-    sigma1 = annual_averages['bikes_available_std']
+    t = pd.to_datetime(station_annual_averages['timestamp'])
+    mu1 = station_annual_averages['bikes_available']
+    sigma1 = station_annual_averages['bikes_available_std']
 
     ax.plot(t, mu1)
     ax.fill_between(t, (mu1+sigma1).tolist(), (mu1-sigma1).tolist(), facecolor='blue', alpha=0.5)
