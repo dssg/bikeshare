@@ -86,7 +86,7 @@ for count, i in enumerate(stations):
     plt.setp(plt.xticks()[1], rotation=30)
     #station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
     #station_name = str(stations[count][1])
-    station_plot = station_plot.set_title("Station number " + str(i[0]) + " at " + station_name)
+    fig = fig.set_title("Station number " + str(i[0]) + " at " + station_name)
 
     # Close the page if needed
     if (count + 1) % nb_plots_per_page == 0 or (count + 1) == nb_plots:
