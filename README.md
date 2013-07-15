@@ -35,7 +35,7 @@ The data is based off of BIXI Data, in minute by minute snapshots. However, the 
 **There are two BIXI systems, BIXIV1 (Boston, Washington DC & Minneapolis) and BIXIV2 (Chicago and New York City)**
 
 Cityname naming conventions: (These are way city names are represented in the database) 
-newyork|washingtondc|boston|minneapolis|chicago
+`newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
 
 ###Schema, BIXIV1
 
@@ -67,6 +67,9 @@ timestamp | bikes | spaces | unbalanced |total_docks
 -----------------|:---------:|:--------:|:---------:|:----------
 2013-07-04 17:58:04 |  3670 |   6900 |       2007 |       11285 
 2013-07-04 17:56:04 |  3677 |   6893 |       2017 |       11285   
+
+### Metadata
+A series of metadata tables exist to corrolate `tfl_id` to lat/long and other info, the tablenames are `metadata_cityname`, ie `metadata_boston`.
 
 ### Scrapers
 Scrapers are built to get the metadata for the database. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
