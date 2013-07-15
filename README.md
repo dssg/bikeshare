@@ -30,36 +30,43 @@ The app, which uses flask and bootstrap, lives in `web`.
 
 ## Data
 
-The data is based off of BIXI Data, in minute by minute snapshots.
+The data is based off of BIXI Data, in minute by minute snapshots. However, the data before 7/4/2013 is in 2 minute intervals, while the data after is in one minute intervals. 
 
 **There are two BIXI systems, BIXIV1 (Boston, Washington DC & Minneapolis) and BIXIV2 (Chicago and New York City)**
 
+Cityname naming conventions: (These are way city names are represented in the database) 
+newyork|washingtondc|boston|minneapolis|chicago
+
 ###Schema, BIXIV1
 
-* Indiv
-	* tfl_id 
-	* bikes
-	* spaces      
-	* timestamp   
-* Agg 
-	* timestamp     
-	* bikes
-	* spaces
-	* unbalanced 
+* Indiv (The Tablenames are `bike_ind_cityname`, ie `bike_ind_boston`)
+
+|tfl_id | bikes | spaces |timestamp|
+|------|:-----:|:-------:|:-----------------------|
+| 5	| 7 | 10	| 2011-07-28 11:58:12 |
+| 8 	| 5 | 6 	| 2011-07-28 11:58:12 |
+
+* Agg (The Tablename are `bike_agg_cityname`, ie `bike_agg_boston`)
+
+timestamp | bikes | spaces | unbalanced 
+-------------------------------|:----:|:------:|:----------
+| 2013-07-04 17:54:03| 838 | 1058 | 364
+| 2013-07-04 17:52:03|826 |1070 |368
 
 ###Schema, BIXIV2
 * Indiv
-	* tfl_id   
-	* bikes
-	* spaces 
-	* total_docks 
-	* timestamp
+
+tfl_id | bikes | spaces | total_docks | timestamp
+---------|:---------:|:--------:|:---------:|:----------
+  72 | 0 | 39 | 39 | 2013-05-24 19:32:02  
+  79 | 15 | 15 | 32 | 2013-05-24 19:32:02  
+
 * Agg
- 	* timestamp    
-	* bikes
-	* spaces 
-	* unbalanced
-	* total_docks 
+
+timestamp | bikes | spaces | unbalanced |total_docks 
+-----------------|:---------:|:--------:|:---------:|:----------
+2013-07-04 17:58:04 |  3670 |   6900 |       2007 |       11285 
+2013-07-04 17:56:04 |  3677 |   6893 |       2017 |       11285   
 
 ### Scrapers
 Scrapers are built to get the metadata for the database. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
