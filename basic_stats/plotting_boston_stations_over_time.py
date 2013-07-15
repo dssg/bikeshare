@@ -98,7 +98,7 @@ for count, i in enumerate(stations):
     # Close the page if needed
     if (count + 1) % nb_plots_per_page == 0 or (count + 1) == nb_plots:
         plt.tight_layout()
-        pdf_pages.savefig(page_fig)
+        pdf_pages.savefig(fig)
 
 
 pdf_pages.close()
