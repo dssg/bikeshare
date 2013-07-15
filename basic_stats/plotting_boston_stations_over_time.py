@@ -74,7 +74,7 @@ for count, i in enumerate(stations):
 
     # Actually plot the things
     plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
-    fig, ax = plt.subplots(1)
+    ax = fig.add_subplot()
     t = pd.to_datetime(station_annual_averages['timestamp'])
     print "t is equal to "
     print t[0:20]
@@ -91,7 +91,7 @@ for count, i in enumerate(stations):
     plt.setp(plt.xticks()[1], rotation=30)
     #station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
     station_name = str(stations[count][1])
-    #fig = fig.suptitle(station_name)
+    fig = fig.suptitle(station_name)
     plt.xlabel('Time of Day')
     plt.ylabel('Average Available Bikes')
 
