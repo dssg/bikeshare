@@ -1,0 +1,5 @@
+{"empty_pecentage": 6.8691738990678237, "full_percentage": 2.3690131790421085, "location": {"coordinates": [40.686767930000002, -73.959281680000004], "type": "Point"}, "name": "Lexington Ave & Classon Ave"}
+{"empty_pecentage": 1.3854066216650596, "full_percentage": 1.9254259080681453, "location": {"coordinates": [40.709056230000002, -74.010433820000003], "type": "Point"}, "name": "Liberty St & Broadway"}
+{"empty_pecentage": 2.0507875281260044, "full_percentage": 0.0900032144005143, "location": {"coordinates": [40.732232719999999, -73.988899570000001], "type": "Point"}, "name": "E 12 St & 3 Ave"}
+{"empty_pecentage": 1.2632594021215044, "full_percentage": 0.67502410800385726, "location": {"coordinates": [40.734545670000003, -73.990741420000006], "type": "Point"}, "name": "Broadway & E 14 St"}
+{"empty_pecentage": 2.1343619414979109, "full_percentage": 1.0061073609771776, "location": {"coordinates": [40.72317958, -73.994800119999994], "type": "Point"}, "name": "Mott St & Prince St"}
