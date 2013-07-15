@@ -73,8 +73,7 @@ for count, i in enumerate(stations):
         fig = plt.figure(figsize=(11,17),dpi=100)
 
     # Actually plot the things
-    plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
-    ax = fig.add_subplot(111)
+    ax = plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
     t = pd.to_datetime(station_annual_averages['timestamp'])
     print "t is equal to "
     print t[0:20]
