@@ -19,8 +19,10 @@ stations = stations[0:5]
 # Initialize pdf document for later printing
 pdf_pages = PdfPages('Boston_annual_average.pdf');
 nb_plots = len(stations)
+print "nb_plots = %s" % str(nb_plots)
 nb_plots_per_page = 5
 nb_pages = nb_plots/nb_plots_per_page
+print "nb_pages = %s" % str(nb_pages)
 grid_size = (5,1)
 
 
@@ -74,15 +76,11 @@ for count, i in enumerate(stations):
     # Actually plot the things
     ax = plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
     t = pd.to_datetime(station_annual_averages['timestamp'])
-    print "t is equal to "
-    print t[0:20]
     mu1 = station_annual_averages['bikes_available']
-    print "mu1 is equal to "
-    print mu1[0:20]
     sigma1 = station_annual_averages['bikes_available_std']
-    print "sigma1 is equal to "
-    print sigma1[0:20]
 
+    print count
+    
     ax.plot(t, mu1)
     ax.fill_between(t, (mu1+sigma1).tolist(), (mu1-sigma1).tolist(), facecolor='blue', alpha=0.5)
     ax.xaxis.set_major_formatter(dates.DateFormatter('%H:%M'))
