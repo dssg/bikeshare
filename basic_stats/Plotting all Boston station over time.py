@@ -20,8 +20,8 @@ stations = list(cur.fetchall())
 
 
 # Initialize pdf document for later printing
-pdf_pages = Pdfpages('Boston_annual_average.pdf');
-nb_plots = length(stations)
+pdf_pages = PdfPages('Boston_annual_average.pdf');
+nb_plots = len(stations)
 nb_plots_per_page = 2
 nb_pages = 2
 grid_size = (2,1)
