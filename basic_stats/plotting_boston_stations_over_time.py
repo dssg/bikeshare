@@ -77,8 +77,14 @@ for count, i in enumerate(stations):
     fig = plt.figure()
     fig, ax = plt.subplots(1)
     t = pd.to_datetime(station_annual_averages['timestamp'])
+    print "t is equal to "
+    print t[0:20]
     mu1 = station_annual_averages['bikes_available']
+    print "mu1 is equal to "
+    print mu1[0:20]
     sigma1 = station_annual_averages['bikes_available_std']
+    print "sigma1 is equal to "
+    print sigma1[0:20]
 
     ax.plot(t, mu1)
     ax.fill_between(t, (mu1+sigma1).tolist(), (mu1-sigma1).tolist(), facecolor='blue', alpha=0.5)
