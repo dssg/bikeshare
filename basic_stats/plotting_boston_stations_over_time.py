@@ -49,6 +49,7 @@ for count, i in enumerate(stations):
     
     # Take the mean over each minute-since-midnight group
     station_annual_averages = station_annual_groups.mean()
+    station_annual_std = station_annual_groups["bikes_available"].std()
     
     # Takes the converted minute value and displays it as a readable time
     def minute_into_hour(x):
@@ -58,10 +59,11 @@ for count, i in enumerate(stations):
             return str(x // 60) + ":" + str(x % 60)
         
     times = station_annual_averages.index.map(minute_into_hour)
+    times_std = station_annual_std.index.map(minute_into_hour)
     
     # Add these new time values into our dataframe
     station_annual_averages["timestamp"] = times
-    boston_5_annual_averages["bikes_available_std"] = boston_5_annual_std
+    station_annual_averages["bikes_available_std"] = station_annual_std
     
     # Plot the time against the number of bikes available
 
