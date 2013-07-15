@@ -14,7 +14,7 @@ cur = conn.cursor()
 cur.execute("SELECT id, name FROM metadata_boston;")
 
 stations = list(cur.fetchall())
-
+stations = stations[0:5]
 
 # Initialize pdf document for later printing
 pdf_pages = PdfPages('Boston_annual_average.pdf');
@@ -27,7 +27,6 @@ grid_size = (5,1)
 cur.execute(
             "prepare myplan as "
             "select * from bike_ind_boston where tfl_id = $1")
-stations = stations[0:5]
 for count, i in enumerate(stations):
     print str(i)
     cur.execute("execute myplan (%s)", (i[0],))
