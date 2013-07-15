@@ -87,8 +87,8 @@ for count, i in enumerate(stations):
     #station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
     station_name = str(stations[count][1])
     fig = fig.suptitle(station_name)
-    plt.xtitle('Time of Day')
-    plt.ytitle('Average Available Bikes')
+    plt.xlabel('Time of Day')
+    plt.ylabel('Average Available Bikes')
 
     # Close the page if needed
     if (count + 1) % nb_plots_per_page == 0 or (count + 1) == nb_plots:
