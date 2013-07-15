@@ -91,12 +91,12 @@ name_dict = {}
 point_dict = {}
 
 for x in station_records_no_bikes:
-    empty_time = (float(x[0][0]) / station_records_total[0][0]) * 100  #get percentage of time each station is empty
+    empty_time = (float(x[0][0]) / station_record_dict[x[1][0]]) * 100  #get percentage of time each station is empty
     id = x[1][0]
     empty_dict[id] = empty_time
     
 for x in station_records_no_spaces:
-    full_time = (float(x[0][0]) / station_records_total[0][0]) * 100 # get pecentage of time each station is full
+    full_time = (float(x[0][0]) / station_record_dict[x[1][0]]) * 100 # get pecentage of time each station is full
     id = x[1][0]
     full_dict[id] = full_time
 
