@@ -40,9 +40,9 @@ newyork|washingtondc|boston|minneapolis|chicago
 ###Schema, BIXIV1
 
 * Indiv (tablenames are bike_ind_cityname)
-	* tfl_id | bikes | spaces |timestamp
-	* |------|:-----:|:-------:|:--------|
-	* 5	| 7 | 10	| 2011-07-28 11:58:12 
+|tfl_id | bikes | spaces |timestamp|
+|------|:-----:|:-------:|:--------|
+| 5	| 7 | 10	| 2011-07-28 11:58:12 |
 * Agg 
 	* timestamp | bikes
 	* spaces
