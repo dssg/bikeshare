@@ -7,6 +7,11 @@ import os
 import psycopg2
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
+# Initialize pdf document for later printing
+pdf_pages = Pdfpages('Boston_annual_average.pdf');
 
 conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
 
@@ -14,14 +19,13 @@ cur = conn.cursor()
 
 cur.execute("SELECT DISTINCT(id) FROM metadata_boston;")
 
-parameters_temp = list(cur.fetchall())
-# parameters_temp looks like [(43,),...], so extract the first element
-parameters = [x[0] for x in parameters_temp]
+stations = list(cur.fetchall())
 
 cur.execute(
             "prepare myplan as "
-            "select * from tables where tfl_id = $1")
-for i in parameters:
+            "select * from bike_ind_boston where tfl_id = $1")
+for i in stations:
+    print "i is equal to %d" % i
     cur.execute("execute myplan (%s)", i)
     station = cur.fetchall()
     
@@ -30,7 +34,7 @@ for i in parameters:
     station_df = pd.DataFrame.from_records(station, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = ["timestamp"])
     
     # Change time from UTC to timezone of bikeshare city
-    boston_station_df.index.tz_localize('UTC').tz_convert(timezone)
+    station_df.index.tz_localize('UTC').tz_convert(timezone)
     
     # Bucket our observations into two minute intervals
     # We need to do this because historical data is sampled every other minute while new data is every minute.
@@ -56,7 +60,8 @@ for i in parameters:
     station_annual_averages["timestamp"] = times
     
     # Plot the time against the number of bikes available
-    print station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
+    station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
+    plt.savefig('station_'+str(i[0])+'.pdf')
 
 # <codecell>
 
