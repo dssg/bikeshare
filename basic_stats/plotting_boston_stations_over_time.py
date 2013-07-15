@@ -14,7 +14,7 @@ cur = conn.cursor()
 cur.execute("SELECT id, name FROM metadata_boston;")
 
 stations = list(cur.fetchall())
-stations = stations[0:5]
+stations = stations[0:1]
 
 # Initialize pdf document for later printing
 pdf_pages = PdfPages('Boston_annual_average.pdf');
@@ -80,7 +80,7 @@ for count, i in enumerate(stations):
     sigma1 = station_annual_averages['bikes_available_std']
 
     print count
-    
+
     ax.plot(t, mu1)
     ax.fill_between(t, (mu1+sigma1).tolist(), (mu1-sigma1).tolist(), facecolor='blue', alpha=0.5)
     ax.xaxis.set_major_formatter(dates.DateFormatter('%H:%M'))
