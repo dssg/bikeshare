@@ -14,7 +14,7 @@ conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.g
 
 cur = conn.cursor()
 
-cur.execute("SELECT DISTINCT(id) FROM metadata_boston;")
+cur.execute("SELECT id, name FROM metadata_boston;")
 
 stations = list(cur.fetchall())
 
@@ -22,15 +22,15 @@ stations = list(cur.fetchall())
 # Initialize pdf document for later printing
 pdf_pages = PdfPages('Boston_annual_average.pdf');
 nb_plots = len(stations)
-nb_plots_per_page = 2
-nb_pages = 2
-grid_size = (2,1)
+nb_plots_per_page = 10
+nb_pages = nb_plots/nb_plots_per_page
+grid_size = (nb_plot_per_page/2,2)
 
 
 cur.execute(
             "prepare myplan as "
             "select * from bike_ind_boston where tfl_id = $1")
-stations = stations[0:4]
+stations = stations
 for count, i in enumerate(stations):
     print "i is equal to %d" % i
     cur.execute("execute myplan (%s)", i)
@@ -75,6 +75,8 @@ for count, i in enumerate(stations):
     # Actually plot the things
     plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
     station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
+    station_name = str(stations[count])
+    station_plot = station_plot.set_title("Station number " + i[0] + " at " station_name)
 
     # Clode the page if needed
     if (count + 1) % nb_plots_per_page == 0 or (count + 1) == nb_plots:
