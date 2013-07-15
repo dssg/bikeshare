@@ -39,15 +39,18 @@ newyork|washingtondc|boston|minneapolis|chicago
 
 ###Schema, BIXIV1
 
-* Indiv (tablenames are bike_ind_cityname)
+* Indiv (The Tablenames are bike_ind_cityname, ie bike_ind_boston)
 
 |tfl_id | bikes | spaces |timestamp|
 |------|:-----:|:-------:|:-----------------------|
 | 5	| 7 | 10	| 2011-07-28 11:58:12 |
+| 8 	| 5 | 6 	| 2011-07-28 11:58:12 |
 * Agg 
-	* timestamp | bikes
-	* spaces
-	* unbalanced 
+
+timestamp | bikes | spaces | unbalanced 
+-------------------------------|:----:|:------:|:----------
+| 2013-07-04 17:54:03| 838 | 1058 | 364
+| 2013-07-04 17:52:03|826 |1070 |368
 
 ###Schema, BIXIV2
 * Indiv
