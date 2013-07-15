@@ -14,7 +14,7 @@ cur = conn.cursor()
 cur.execute("SELECT id, name FROM metadata_boston;")
 
 stations = list(cur.fetchall())
-stations = stations[0:1]
+stations = stations
 
 # Initialize pdf document for later printing
 pdf_pages = PdfPages('Boston_annual_average.pdf');
@@ -87,7 +87,7 @@ for count, i in enumerate(stations):
     plt.setp(plt.xticks()[1], rotation=30)
     #station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
     station_name = str(stations[count][1])
-    #fig = fig.suptitle(station_name)
+    ax.set_title(station_name)
     plt.xlabel('Time of Day')
     plt.ylabel('Average Available Bikes')
 
