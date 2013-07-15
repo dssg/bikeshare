@@ -30,20 +30,21 @@ The app, which uses flask and bootstrap, lives in `web`.
 
 ## Data
 
-The data is based off of BIXI Data, in minute by minute snapshots.
+The data is based off of BIXI Data, in minute by minute snapshots. However, the data before 7/4/2013 is in 2 minute intervals, while the data after is in one minute intervals. 
 
 **There are two BIXI systems, BIXIV1 (Boston, Washington DC & Minneapolis) and BIXIV2 (Chicago and New York City)**
 
+Cityname naming conventions: (These are way city names are represented in the database) 
+newyork|washingtondc|boston|minneapolis|chicago
+
 ###Schema, BIXIV1
 
-* Indiv
-	* tfl_id 
-	* bikes
-	* spaces      
-	* timestamp   
+* Indiv (tablenames are bike_ind_cityname)
+	* tfl_id | bikes | spaces |timestamp
+	* |------|:-----:|:-------:|:--------|
+	* 5	| 7 | 10	| 2011-07-28 11:58:12 
 * Agg 
-	* timestamp     
-	* bikes
+	* timestamp | bikes
 	* spaces
 	* unbalanced 
 
