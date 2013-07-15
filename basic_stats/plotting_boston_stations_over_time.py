@@ -85,7 +85,7 @@ for count, i in enumerate(stations):
     ax.xaxis.set_major_formatter(dates.DateFormatter('%H:%M'))
     plt.setp(plt.xticks()[1], rotation=30)
     #station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
-    #station_name = str(stations[count][1])
+    station_name = str(stations[count][1])
     fig = fig.suptitle(station_name)
     plt.xtitle('Time of Day')
     plt.ytitle('Average Available Bikes')
