@@ -27,7 +27,7 @@ grid_size = (5,1)
 cur.execute(
             "prepare myplan as "
             "select * from bike_ind_boston where tfl_id = $1")
-stations = stations
+stations = stations[0:5]
 for count, i in enumerate(stations):
     print str(i)
     cur.execute("execute myplan (%s)", (i[0],))
@@ -86,7 +86,7 @@ for count, i in enumerate(stations):
     plt.setp(plt.xticks()[1], rotation=30)
     #station_plot =  station_annual_averages.plot(x = 'timestamp', y = 'bikes_available')
     station_name = str(stations[count][1])
-    ax = ax.suptitle(station_name)
+    #fig = fig.suptitle(station_name)
     plt.xlabel('Time of Day')
     plt.ylabel('Average Available Bikes')
 
