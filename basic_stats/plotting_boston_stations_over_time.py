@@ -70,11 +70,10 @@ for count, i in enumerate(stations):
 
     # Check whether we need to start a page
     if count % nb_plots_per_page == 0:
-        page_fig = plt.figure(figsize=(11,17),dpi=100)
+        fig = plt.figure(figsize=(11,17),dpi=100)
 
     # Actually plot the things
     plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
-    fig = plt.figure()
     fig, ax = plt.subplots(1)
     t = pd.to_datetime(station_annual_averages['timestamp'])
     print "t is equal to "
