@@ -70,7 +70,7 @@ for count, i in enumerate(stations):
 
     # Check whether we need to start a page
     if count % nb_plots_per_page == 0:
-        fig = plt.figure(figsize=(8.27,11.69),dpi=100)
+        page_fig = plt.figure(figsize=(11,17),dpi=100)
 
     # Actually plot the things
     plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
@@ -93,7 +93,7 @@ for count, i in enumerate(stations):
     # Close the page if needed
     if (count + 1) % nb_plots_per_page == 0 or (count + 1) == nb_plots:
         plt.tight_layout()
-        pdf_pages.savefig(fig)
+        pdf_pages.savefig(page_fig)
 
 
 pdf_pages.close()
