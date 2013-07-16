@@ -39,8 +39,8 @@ for count, i in enumerate(stations):
     station_df = pd.DataFrame.from_records(station, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = ["timestamp"])
     
     # Change time from original timezone to timezone of bikeshare city
-    station_df['7/5/2013':].index.tz_localize('UTC').tz_convert(timezone)
     station_df[:'7/5/2013'].index.tz_localize(timezone)
+    station_df['7/5/2013':].index.tz_localize('UTC').tz_convert(timezone)
     
     # Bucket our observations into two minute intervals
     # We need to do this because historical data is sampled every other minute while new data is every minute.
