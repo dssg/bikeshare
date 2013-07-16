@@ -65,7 +65,7 @@ slots_available[slots_available == 0] = 0.01
 #slots_available = slots_available+0.01
 
 # Creating list of [success , failure] outcomes
-bikes_slots_available=numpy.asarray(zip(bikes_available,slots_available))
+bikes_slots_available=np.asarray(zip(bikes_available,slots_available))
 
 # Creating Lags of Bike and Slot Variables
 bikes_available_lag0 = bikes_available[1:]
@@ -76,7 +76,7 @@ bikes_slots_available = bikes_slots_available[1:]
 # Calculated the lag-log-odds ratio 
 phat_lag1 = (bikes_available_lag1) / (bikes_available_lag1+slots_available_lag1)
 
-logodds_lag1 = log( phat_lag1 / (1-phat_lag1) )
+logodds_lag1 = np.log( phat_lag1 / (1-phat_lag1) )
 
 
 # Add Constant to Exogenous Variables
@@ -157,33 +157,33 @@ levels = list(range(0,24))
 contrast = Treatment(reference=0).code_without_intercept(levels)
 #print contrast.matrix
 time_dummy = contrast.matrix[time_of_day, :]
-month_dummy = month_dummy[1:, :]
+time_dummy = time_dummy[1:, :]
 
 # Midnight is reference variable
 
-data['1AM'] = month_dummy[:,0]
-data['2AM'] = month_dummy[:,1]
-data['3AM'] = month_dummy[:,2]
-data['4AM'] = month_dummy[:,3]
-data['5AM'] = month_dummy[:,4]
-data['6AM'] = month_dummy[:,5]
-data['7AM'] = month_dummy[:,6]
-data['8AM'] = month_dummy[:,7]
-data['9AM'] = month_dummy[:,8]
-data['10AM'] = month_dummy[:,9]
-data['11AM'] = month_dummy[:,10]
-data['12PM'] = month_dummy[:,11]
-data['1PM'] = month_dummy[:,12]
-data['2PM'] = month_dummy[:,13]
-data['3PM'] = month_dummy[:,14]
-data['4PM'] = month_dummy[:,15]
-data['5PM'] = month_dummy[:,16]
-data['6PM'] = month_dummy[:,17]
-data['7PM'] = month_dummy[:,18]
-data['8PM'] = month_dummy[:,19]
-data['9PM'] = month_dummy[:,20]
-data['10PM'] = month_dummy[:,21]
-data['11PM'] = month_dummy[:,22]
+data['1AM'] = time_dummy[:,0]
+data['2AM'] = time_dummy[:,1]
+data['3AM'] = time_dummy[:,2]
+data['4AM'] = time_dummy[:,3]
+data['5AM'] = time_dummy[:,4]
+data['6AM'] = time_dummy[:,5]
+data['7AM'] = time_dummy[:,6]
+data['8AM'] = time_dummy[:,7]
+data['9AM'] = time_dummy[:,8]
+data['10AM'] = time_dummy[:,9]
+data['11AM'] = time_dummy[:,10]
+data['12PM'] = time_dummy[:,11]
+data['1PM'] = time_dummy[:,12]
+data['2PM'] = time_dummy[:,13]
+data['3PM'] = time_dummy[:,14]
+data['4PM'] = time_dummy[:,15]
+data['5PM'] = time_dummy[:,16]
+data['6PM'] = time_dummy[:,17]
+data['7PM'] = time_dummy[:,18]
+data['8PM'] = time_dummy[:,19]
+data['9PM'] = time_dummy[:,20]
+data['10PM'] = time_dummy[:,21]
+data['11PM'] = time_dummy[:,22]
 
 
 glm_binom_3 = sm.GLM(bikes_slots_available, data, family=sm.families.Binomial())
@@ -249,4 +249,8 @@ month_series.value_counts()
 # <codecell>
 
 print data.shape
+print type(phat_lag1)
+
+# <codecell>
+
 
