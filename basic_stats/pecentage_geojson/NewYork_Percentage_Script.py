@@ -17,11 +17,10 @@ except:
     print "I am unable to connect to the database"
 cur = conn.cursor()
 
-cur.execute("SELECT DISTINCT tfl_id FROM bike_ind_newyork LIMIT 5;");
+cur.execute("SELECT DISTINCT tfl_id FROM bike_ind_newyork;");
 
 stations = cur.fetchall()
 
-#stations = map(operator.itemgetter(0), stations)
 
 station_records_total = []
 # Modify this for other cities to reflect new staions opening. 
@@ -47,7 +46,7 @@ for i in stations:
     cur.execute("execute bikeszero (%s)", i)
     for record in cur:
         station_records_no_bikes.append((record,i))
-print "query 2 done"
+
 
 #number of times there are spaces
 cur.execute(
@@ -67,13 +66,6 @@ for i in stations:
     for record in cur:
         stations_metadata.append((record,i))
         
-print "queries done"
-
-print station_records_total
-print station_records_no_bikes
-print station_records_no_spaces
-print stations_metadata
-
 # <codecell>
 
 station_record_dict = {}
@@ -81,8 +73,6 @@ for station in station_records_total:
     record = station[0][0]
     id = int(station[1][0])
     station_record_dict[id] = record
-
-print station_record_dict
 
 #initilization 
 empty_dict = {}
@@ -107,13 +97,10 @@ for x in stations_metadata:
     name_dict[id] = name
     point_dict[id] = point
     
-print empty_dict
-print name_dict
-print point_dict
 
 #get keys
-key_list = empty_dict.keys()
-print key_list
+key_list = list(set(empty_dict.keys()) & set(full_dict.keys()) & set(name_dict.keys()) & set(point_dict.keys()))
+
 
 #empty feature collection (a geojson feature)
 feature_collection = {"type": "FeatureCollection",
