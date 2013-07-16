@@ -38,7 +38,7 @@ for count, i in enumerate(stations):
     
     # Change time from original timezone to timezone of bikeshare city
     #station_df[:'7/5/2013'].index.tz_localize(timezone)
-    station_df['7/5/2013':].index.tz_localize('UTC').tz_convert(timezone)
+    station_df.index = station_df.index.tz_localize('UTC').tz_convert(timezone)
     
     # Bucket our observations into two minute intervals
     # We need to do this because historical data is sampled every other minute while new data is every minute.
@@ -71,7 +71,6 @@ for count, i in enumerate(stations):
     # Check whether we need to start a page
     if count % nb_plots_per_page == 0:
         fig = plt.figure(figsize=(11,17),dpi=100)
-    fig.suptitle('Average Bikes Available By Time of Day')
     # Actually plot the things
     ax = plt.subplot2grid(grid_size, (count % nb_plots_per_page,0))
     t = pd.to_datetime(station_annual_averages['timestamp'])
