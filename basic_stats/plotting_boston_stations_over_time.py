@@ -19,10 +19,8 @@ stations = stations
 # Initialize pdf document for later printing
 pdf_pages = PdfPages('Boston_annual_average.pdf');
 nb_plots = len(stations)
-print "nb_plots = %s" % str(nb_plots)
 nb_plots_per_page = 5
 nb_pages = nb_plots/nb_plots_per_page
-print "nb_pages = %s" % str(nb_pages)
 grid_size = (5,1)
 
 
@@ -39,7 +37,7 @@ for count, i in enumerate(stations):
     station_df = pd.DataFrame.from_records(station, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = ["timestamp"])
     
     # Change time from original timezone to timezone of bikeshare city
-    station_df[:'7/5/2013'].index.tz_localize(timezone)
+    #station_df[:'7/5/2013'].index.tz_localize(timezone)
     station_df['7/5/2013':].index.tz_localize('UTC').tz_convert(timezone)
     
     # Bucket our observations into two minute intervals
