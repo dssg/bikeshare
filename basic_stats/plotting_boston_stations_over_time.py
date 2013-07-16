@@ -39,7 +39,7 @@ for count, i in enumerate(stations):
     station_df = pd.DataFrame.from_records(station, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = ["timestamp"])
     
     # Change time from original timezone to timezone of bikeshare city
-    station_df.index['7/5/2013':].tz_localize('UTC').tz_convert(timezone)
+    station_df['7/5/2013':].index.tz_localize('UTC').tz_convert(timezone)
     station_df.index.tz_localize(timezone)
     
     # Bucket our observations into two minute intervals
@@ -83,7 +83,6 @@ for count, i in enumerate(stations):
     ax.plot(t, mu1)
     
     # Uncomment this line to add error-bars
-
     #ax.fill_between(t, (mu1+sigma1).tolist(), (mu1-sigma1).tolist(), facecolor='blue', alpha=0.5)
     ax.xaxis.set_major_formatter(dates.DateFormatter('%H:%M'))
     plt.setp(plt.xticks()[1], rotation=30)
