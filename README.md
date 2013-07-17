@@ -74,6 +74,8 @@ A series of metadata tables exist to corrolate `tfl_id` to lat/long and other in
 ### Scrapers
 Scrapers are built to get the metadata for the database. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
 
+The Weather Scrapers use [Forecast.io](http://forecast.io). They also use the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. 
+
 ### Notes	
 The difference in ordering is a known, legacy issue. 
 

@@ -1,0 +1,8 @@
+bikeshare
+unicodecsv==0.9.4
+BeautifulSoup==3.2.1
+Flask==0.9
+beautifulsoup4==4.2.1
+psycopg2==2.5.1
+SQLAlchemy==0.8.1
+
