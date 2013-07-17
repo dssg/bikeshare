@@ -20,7 +20,7 @@ cur = conn.cursor()
 
 # Executes a SQL command
 # This SQL command selects all rows from the boston database where the station ID is 5
-cur.execute("SELECT * FROM bike_ind_boston WHERE tfl_id = 5;")
+cur.execute("SELECT * FROM bike_ind_boston WHERE tfl_id = 50;")
 
 # Fetches all rows in the table output of the SQL query. 
 # Remember to assign to a variable because we can only use fetchall() once for each SQL query.
@@ -41,7 +41,7 @@ boston_5_df = pd.DataFrame.from_records(boston_5, columns = ["station_id", "bike
 boston_5_df.index = boston_5_df.index.tz_localize('UTC').tz_convert(timezone)
 
 #put all data into 15 minute buckets, since some data was collected every 2 minutes and some every minute
-boston_5_bucketed = boston_5_df.resample('2MIN')
+boston_5_bucketed = boston_5_df.resample('15MIN')
 
 # Drop rows that have missing observations for bikes_available or slots_available
 boston_5_bucketed = boston_5_bucketed[np.isfinite(boston_5_bucketed['bikes_available'])]
