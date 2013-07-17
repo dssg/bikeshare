@@ -74,7 +74,6 @@ phat_lag1 = (bikes_available_lag1) / (bikes_available_lag1+slots_available_lag1)
 
 logodds_lag1 = log( phat_lag1 / (1-phat_lag1) )
 
-
 # Add Constant to Exogenous Variables
 logodds_lag1 = sm.add_constant(logodds_lag1, prepend=False)
 
@@ -118,27 +117,67 @@ print bikes_available[100:105]
 #test by starting with 1000 rows of data
 
 #will build a model contianing min_points first, then min_points + train_shift, min_points + 2* train_shift, etc.
+
+# min_points is the minimum number of data points with which to fit a model.  The first model will be fit with the first min_points data points
 min_points = 500
+
+# train_shift is the number of data points to add to the training data set with each subsequent time the model is fit
 train_shift = 100
+
+# n_slots is the number of slots available for bikes at the station we are modeling
 n_slots = 15
-n_forecast = 5
+
+# n_forecast is the number of predictions to make past the last time point that is included in training data
+n_forecast = 10
+
+# n_iter is the number of validation models to fit
 #fix n_iter for now, later use min_points, train_shift and size of data frame to calculate
 n_iter = 5
 
+# y_train is the outcome variable for the model
+# because the model being fit is Binomail, y_train is an nX2 array of [number of bikes available, number of slots available]
+y_train = bikes_slots_available
+# x_train is the array of predictor variables for the model
+x_train = logodds_lag1
+print logodds_lag1[0:10,]
+print type(logodds_lag1)
+
 for i in range(n_iter):
-    glm_binom = sm.GLM(bikes_slots_available[0: (min_points + i*train_shift)], logodds_lag1[0: (min_points + i*train_shift)], family=sm.families.Binomial())
+    glm_binom = sm.GLM(y_train[0: (min_points + i*train_shift)], x_train[0: (min_points + i*train_shift)], family=sm.families.Binomial())
     
-    res = glm_binom.fit()
+    results = glm_binom.fit()
     
-    x_new = logodds_lag1[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
+    pred_log_odds = []
     
-    y_pred = res.predict(x_new)
+    predictor = x_train[(min_points + i*train_shift)]
+    Y_hat = results.predict(predictor)
+    print "First Predicted value " + str(Y_hat)
+    pred_log_odds.append(Y_hat)
     
+    for n in range(1, n_forecast):
+        # the input for .predict requires a constant, so use sm.add_constant
+        # the caveat is that add_constant does not work with a one-dimensional array, so first make an array of Y_hat and .5 so that add_constant will work
+        # since we only really care about Y_hat, not .5, only predict on the first row of the array
+        predicted = results.predict(sm.add_constant(np.asarray([Y_hat, .5]), prepend=True)[0])
+        
+        # add predicted value to the array of previous predicted values
+        pred_log_odds.append(predicted)
+        
+        # update Y_hat to be predicted value from previous step
+        Y_hat = predicted
+    
+    
+    print pred_log_odds
     #convert y_pred scale to number of bikes
-    pred_bikes_available = n_slots*(e**y_pred/(1+ e**y_pred))
+    pred_bikes_available = [n_slots*(e**x/(1+ e**x)) for x in pred_log_odds]
+    print "Predicted number of bikes, " + str(i)
     print pred_bikes_available
     
-    print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
+    #print "Error between prediction and actual, " + i
+    
+    
+    
+    #print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
 
 
 # <codecell>
