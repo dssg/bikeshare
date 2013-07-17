@@ -13,14 +13,14 @@ import psycopg2
 import pandas as pd
 
 
-# Fetch all records for a single station (tfl_id == 5)
+# Fetch all records for a single station (tfl_id == 50)
 conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
 
 cur = conn.cursor()
 
 # Executes a SQL command
 # This SQL command selects all rows from the boston database where the station ID is 5
-cur.execute("SELECT * FROM bike_ind_boston WHERE tfl_id = 5;")
+cur.execute("SELECT * FROM bike_ind_boston WHERE tfl_id = 50;")
 
 # Fetches all rows in the table output of the SQL query. 
 # Remember to assign to a variable because we can only use fetchall() once for each SQL query.
@@ -55,7 +55,7 @@ bikes_available=np.asarray(boston_5_bucketed["bikes_available"], dtype=np.float3
 slots_available=np.asarray(boston_5_bucketed["slots_available"], dtype=np.float32)
 
 # De-mean the process
-mean_bikes_available = mean(bikes_available)
+mean_bikes_available = sum(bikes_available) / len(bikes_available)
 bikes_available = bikes_available - mean_bikes_available
 
 
@@ -130,7 +130,7 @@ mu1 = pred(res.params[0], step, y_lag0, mean_bikes_available)
 sigma1 = [0]
 
 for i in range(1,step+1):
-    sigma1.append(sqrt(sigmasq)*i)
+    sigma1.append(sqrt(sigmasq*i))
 
 
 # Plot the time against the number of bikes available, including the standard deviation
@@ -162,11 +162,11 @@ from scipy.stats import norm
 
 def probzero(alpha, y_lag0, avg, sigmasq, step):
     mean = avg + (alpha **step) * (y_lag0 - avg)
-    return norm.cdf(-mean / (sqrt(sigmasq)*step))
+    return norm.cdf(-mean / (sqrt(sigmasq*step)))
 
 def probfull(alpha, y_lag0, avg, sigmasq, step, totalspots):
     mean = avg + (alpha **step) * (y_lag0 - avg)
-    return 1 - norm.cdf((totalspots-mean) / (sqrt(sigmasq)*step))
+    return 1 - norm.cdf((totalspots-mean) / (sqrt(sigmasq*step)))
 
 x = probzero(res.params[0], 10, mean_bikes_available, sigmasq, 60)
 
