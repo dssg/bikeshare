@@ -1,0 +1,5 @@
+"time","summary","icon","sunriseTime","sunsetTime","precipIntensity","precipProbability","precipType","precipAccumulation","temperature","temperatureMin","temperatureMinTime","temperatureMax","temperatureMaxTime","humidity"
+"2013-07-13 23:00:00","Partly cloudy throughout the day.","partly-cloudy-day","2013-07-14 04:21:14","2013-07-14 19:21:10","0.003","0.98","rain","","","70.43","1373781600","86.34","1373824800","0.79"
+"2013-07-14 23:00:00","Partly cloudy throughout the day.","partly-cloudy-day","2013-07-15 04:22:03","2013-07-15 19:20:32","0.001","1","rain","","","75.37","1373871600","89.68","1373914800","0.68"
+"2013-07-15 23:00:00","Partly cloudy in the evening.","partly-cloudy-day","2013-07-16 04:22:54","2013-07-16 19:19:53","0.001","0.75","rain","","","75.06","1373968800","90.51","1373994000","0.63"
+"2013-07-16 23:00:00","Light rain starting in the afternoon, continuing until evening.","rain","2013-07-17 04:23:45","2013-07-17 19:19:12","0.002","0.62","rain","","","73.52","1374051600","90.15","1374084000","0.68"

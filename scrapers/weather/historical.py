@@ -3,21 +3,47 @@ import json
 import urllib2
 import time
 import csv
+import datetime
+from forecastio import forecastio 
 
-citylatlong="/42.3587,-71.0567,"
+city_lat  = 42.3587
+city_long = -71.0567
 
-def my_range(start, end, step):
-    while start <= end:
-        yield start
-        start += step
-days = {}
-#realstart 1262304000
-for x in my_range(1372636800,time.time(),86400):
-	url = 'https://api.forecast.io/forecast/'+os.environ.get('FORECASTIOKEY')+citylatlong+str(int(time.time()))
-	response = urllib2.urlopen(url)
-	json_dict = json.load(response)
-	days[x] = json_dict['daily']['data']
 
-print "time,summary,icon,sunriseTime,sunsetTime,precipType,temperatureMin,temperatureMin,temperatureMax,temperatureMaxTime,dewPoint,windSpeed,windBearing,humidity,pressure"
-for time in days.keys():
-	print str(days[time][0]['time'])+','+days[time][0]['summary']+','+days[time][0]['icon']+','+str(days[time][0]['sunriseTime'])+','+str(days[time][0]['sunsetTime'])+','+days[time][0]['precipType']+','+str(days[time][0]['temperatureMin'])+','+str(days[time][0]['temperatureMin'])+','+str(days[time][0]['temperatureMax'])+','+str(days[time][0]['temperatureMaxTime'])+','+str(days[time][0]['dewPoint'])+','+str(days[time][0]['windSpeed'])+','+str(days[time][0]['windBearing'])+','+str(days[time][0]['humidity'])+','+str(days[time][0]['pressure'])
+forecast = forecastio.Forecastio(str(os.environ.get('FORECASTIOKEY')))
+result = forecast.load_forecast(city_lat,city_long)
+
+start_date = datetime.datetime(2011,1,1)
+end_date = datetime.datetime(2013,7,17)
+d = start_date
+delta = datetime.timedelta(days=1)
+
+myfile = open('weather_data_boston.csv', 'wb')
+wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+header_list = ["time","summary","icon","sunriseTime","sunsetTime","precipIntensity","precipProbability","precipType","precipAccumulation","temperature","temperatureMin","temperatureMinTime","temperatureMax","temperatureMaxTime","humidity"]
+wr.writerow(header_list)
+
+while d <= end_date:
+    result = forecast.load_forecast(city_lat,city_long,d,lazy=True)
+    daily = forecast.get_daily()
+    days_list = []
+    for item in daily.data:
+   		days_list.append(item.time)
+   		days_list.append(item.summary)
+   		days_list.append(item.icon)
+   		days_list.append(item.sunriseTime)
+   		days_list.append(item.sunsetTime)
+   		days_list.append(item.precipIntensity)
+   		days_list.append(item.precipProbability)
+   		days_list.append(item.precipType)
+   		days_list.append(item.precipAccumulation)
+   		days_list.append(item.temperature)
+   		days_list.append(item.temperatureMin)
+   		days_list.append(item.temperatureMinTime)
+   		days_list.append(item.temperatureMax)
+   		days_list.append(item.temperatureMaxTime)
+   		days_list.append(item.humidity)
+    d += delta
+    wr.writerow(days_list)
+
+
