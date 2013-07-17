@@ -2,7 +2,7 @@ import os
 import json
 import urllib2
 import time
-import csv
+import unicodecsv as csv
 import datetime
 from forecastio import forecastio 
 
@@ -13,12 +13,12 @@ city_long = -71.0567
 forecast = forecastio.Forecastio(str(os.environ.get('FORECASTIOKEY')))
 result = forecast.load_forecast(city_lat,city_long)
 
-start_date = datetime.datetime(2011,1,1)
+start_date = datetime.datetime(2013,1,2)
 end_date = datetime.datetime(2013,7,17)
 d = start_date
 delta = datetime.timedelta(days=1)
 
-myfile = open('weather_data_boston.csv', 'wb')
+myfile = open('weather_data_boston_2.csv', 'wb')
 wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
 header_list = ["time","summary","icon","sunriseTime","sunsetTime","precipIntensity","precipProbability","precipType","precipAccumulation","temperature","temperatureMin","temperatureMinTime","temperatureMax","temperatureMaxTime","humidity"]
 wr.writerow(header_list)
