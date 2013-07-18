@@ -39,3 +39,8 @@ nosetests.xml
 
 #emacs 
 *~
+
+Flask Folder
+
+web/backend/include/
+*.Python
