@@ -28,6 +28,10 @@ The model lives in `model`. `parameter_estimate.py` crunches the historical data
 
 The app, which uses flask and bootstrap, lives in `web`.
 
+The frontend of the webapp uses [require.js](requirejs.org) to manage dependencies. 
+
+To install either needed python depenecies, simpily clone the project and `pip install -r requirements.txt`
+
 ## Data
 
 The data is based off of BIXI Data, in minute by minute snapshots. However, the data before 7/4/2013 is in 2 minute intervals, while the data after is in one minute intervals. 
@@ -74,7 +78,7 @@ A series of metadata tables exist to corrolate `tfl_id` to lat/long and other in
 ### Scrapers
 Scrapers are built to get the metadata for the database. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
 
-The Weather Scrapers use [Forecast.io](http://forecast.io). They also use the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. 
+The Weather Scrapers use [Forecast.io](http://forecast.io). They also use the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. To prevent a unicode error when writing to csv, we use Unicode.csv. See the `requirements.txt` file.
 
 ### Notes	
 The difference in ordering is a known, legacy issue. 
