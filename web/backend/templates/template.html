@@ -9,17 +9,35 @@
       <script type='text/javascript'>
       var map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw');
 
+      $.getJSON("../static/data/newyork.geojson", function(json) {
 
-      map.markerLayer.loadURL('../static/data/newyork.geojson');
+        map.markerLayer.setGeoJSON(json);
+
+        map.markerLayer.on('mouseover', function(e){
+          var marker = e.layer, feature = marker.feature;
+
+          var popupContent = "";
+          for (key_name in feature.properties){
+            popupContent += String(key_name) + ' : ' + String(feature.properties[key_name]) + '<br>';
+
+          }
+
+          // http://leafletjs.com/reference.html#popup
+          marker.bindPopup(popupContent, {
+            closeButton: false,
+          });
+
+          e.layer.openPopup();
+        });
+
+        map.markerLayer.on('mouseout', function(e){
+          e.layer.closePopup();
+        });
+
+      });
+
       
-      // Explore why below isn't showing 
-      // map.markerLayer.on('mouseover', function(e){
-      //   e.layer.openPopup();
-      // });
-
-      // map.markerLayer.on('mouseout', function(e){
-      //   e.layer.closePopup();
-      // });
+      
 
       </script>
     </div>
