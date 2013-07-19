@@ -4,7 +4,7 @@
 
 The City of Chicago just launched Divvy, a new bike share system designed to connect people to transit, and to make short one-way trips across town easy. Bike share is citywide bike rental - you can take a bike out at a station on one street corner and drop it off at another.
 
-![Divvy bike share](/http://dssg.io/img/partners/divvy.jpg)
+![Divvy bike share](http://dssg.io/img/partners/divvy.jpg)
 
 Popular in Europe and Asia, bike share has landed in the United States: Boston, DC, and New York launched systems in the past few years, San Francisco and Seattle are next.
 
@@ -14,7 +14,7 @@ To prevent this problem, bikeshare operators drive trucks around to reallocate b
 
 Right now, operators do rebalancing by [looking at how long](http://www.cabitracker.com/status.php) stations have been empty or full and dispatching the nearest available rebalancing truck. So they can only see the **current number of bikes** at each station - not how many will be there in an hour or two.
 
-![Chicago Department of Transportation](/http://dssg.io/img/partners/cdot.jpg)
+![Chicago Department of Transportation](http://dssg.io/img/partners/cdot.jpg)
 
 We’re working with the City of Chicago’s [Department of Transportation](http://www.cityofchicago.org/city/en/depts/cdot.html) to change this: by analyzing weather and bikeshare station trends, we’ll predict how many bikes are likely to be at each Divvy station in the future.
 
