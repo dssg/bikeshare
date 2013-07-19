@@ -128,7 +128,7 @@ train_shift = 100
 n_slots = 15
 
 # n_forecast is the number of predictions to make past the last time point that is included in training data
-n_forecast = 10
+n_forecast = 5
 
 # n_iter is the number of validation models to fit
 # fix n_iter for now, later use min_points, train_shift and size of data frame to calculate
@@ -181,18 +181,23 @@ for i in range(n_iter):
     MSE.append(this_test_MSE)
     
     #figure(i)
-    p, = plt.plot(np.asarray(range(1,11)),MSE[i],label = "Test " + str(i))
+    p, = plt.plot(np.asarray(range(1,len(MSE[i])+1)),MSE[i],label = "Test " + str(i))
     #legend([p], ["line " + str(i)])
     plots.append(p,)
     
     
     #print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
 
-print "MSE " +str(MSE)
+print "MSE " + str(MSE)
 
 for j in range(len(plots)):
     plots[j]
 legend(plots)
+plt.axis([1, n_forecast, 0, 20])
+plt.title(r'Comparison of MSE of Different Test Runs')
+plt.xlabel('Time Steps from Original Prediction')
+plt.ylabel('Difference Between Predicted and Actual Number of Bikes at a Station')
+
 
 #for t in range(n_forecast):
 #    print "p%d = %s" % (t + 1, repr(MSE[t])), #= plot(x, MSE[t])
@@ -268,7 +273,6 @@ print "Predicted number of bikes, "
 print pred_bikes_available
     
 #print "Error between prediction and actual, " + i
-
     
 #print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
 
