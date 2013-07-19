@@ -31,38 +31,35 @@ To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](h
 ## The project
 There are three components to the project:
 
-**A database storing historical data**
+**A database storing historical bikeshare and weather data**
 
-Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every station in DC's bikeshare system since late 2010. We're storing this data in postgres database, and updating it by hitting DC's real-time bikeshare API. The data is discussed in the Data section below.
+Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every bikeshare station in DC and Boston since their systems launched. We're storing this data in postgreSQL database, and updating it constantly by hitting Atla's real-time bikeshare APIs. The data is discussed in further detail below.
 
-The schema for the database and the scripts to add current data to it are in `scrapers` and `database` folders. The database updates every minute using a cron job that you need schedule on your own machine.
+Scripts to build the database, load historical data into it, and add real-time data to it are in the `data` and `scrapers` folders. The database updates every minute using a cron job that you need schedule on your own machine.
 
 **A model that uses this data to predict future number of bikes**
 
-The model lives in `model`. `parameter_estimate.py` crunches the historical data in the database to estimate the model's parameters. `prediction_model.py` actually implements the model consuming these parameters and fetching near real-time station availability from the database.
+The model lives in `model`. There are scripts in there that crunch the historical data in the database to estimate the model's parameters, and other that actually implement the model by consuming these parameters, fetching model inputs from the database, and spitting out predictions.
 
+*This directory is undergoing heavy development*
 
 **A simple webapp that displays the model's predictions**
 
-The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) to render the map. Simply run `python app.py` to deploy the application on localhost. 
+The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
 
-To install either needed python depenecies, simpily clone the project and `pip install -r requirements.txt`
+To install either needed python dependencies, clone the project and run `pip install -r requirements.txt`
 
-## The data: real-time bikeshare station availability
+## The data: real-time bikeshare station availability and weather
 
-Alta bikeshare runs the bikeshare systems in [Boston](thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [Minneapolis](https://www.niceridemn.org/), [New York](http://citibikenyc.com/) and [Chicago](http://divvybikes.com/). Each system exposes either an XML or JSON API. 
+Alta bikeshare runs the bikeshare systems in [Boston](thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [Minneapolis](https://www.niceridemn.org/), [New York](http://citibikenyc.com/) and [Chicago](http://divvybikes.com/). Each system exposes either an XML ("Version 1") or JSON ("Version 2") API. 
 
 Every few minutes, these APIs provide the location of each station, and the number of avaliable bikes and free spaces at the station.  
 
-An example of Alta's XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml). [Chicago](http://divvybikes.com/stations/json) uses the JSON API. They have different data schemas, explained below.
+An example of Alta's XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml). [Chicago](http://divvybikes.com/stations/json) uses the JSON API. Each version of the API has a different data schema, explained below.
 
-Researcher Oliver O'Brien has been crawling these APIs since their respective systems launched, getting data from them every 2 minutes. He gave us this historical data, which we imported into a PostgreSQL database. To add to this historical data, we've written scrapers (`scrapers`) that update our database every minute.  
+Researcher Oliver O'Brien has been crawling these APIs since each system launched, getting data from them every 2 minutes. He gave us this historical data, which we imported into a PostgreSQL database. To add to this historical data, we've written scrapers (`scrapers`) that update our database every minute. Unfortunately, we can't open O'Brien's historical data at this time, but you're welcome to use our scrapers to gather your own data.
 
-We also use weather data to aid our predictive model. 
-
-We maintain cityname naming conventions: (These are way city names are represented in the database) of 
-`newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
-
+We also use historical weather data to aid our predictive model. We've written scripts to get it from Forecast.io (details below).
 
 ### Schema of XML API (Version 1)
 * XML API cities are Boston, Washington DC and Minneapolis. They use the following schema:
@@ -98,27 +95,20 @@ timestamp | bikes | spaces | unbalanced |total_docks
 2013-07-04 17:58:04 |  3670 |   6900 |       2007 |       11285 
 2013-07-04 17:56:04 |  3677 |   6893 |       2017 |       11285   
 
-### Metadata
+### Notes on our PostgreSQL configuration
+We maintain cityname naming conventions: (These are way city names are represented in the database) of 
+`newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
+
 A series of metadata tables also exist in our PostgreSQL to tie a station's id (the `tfl_id` field) to its lat/long and other info. The tablenames follow the `metadata_cityname` convention, i.e. `metadata_boston`.
 
 ### Scrapers
-We've built  scrapers to get and updated the various pieces of data that we need:
+We've built scrapers to fetch real-time bike station and weather data.
 
-Metadata scrapers are for the metadata tables. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
+- Database update scrapers are used within a cronjob to keep updated the `ind` tables each minute. You need to set up this cronjob yourself if duplicating the database. 
 
-Database update scrapers are used within a cronjob to keep updated the `ind` tables each minute. You need to set up this cronjob yourself if duplicating the database. 
+- Metadata scrapers are for the metadata tables. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
 
-The Weather Scrapers use [Forecast.io](http://forecast.io). They also use the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. To prevent a unicode error when writing to csv, we use Unicode.csv. See the `requirements.txt` file.
-
-### Notes	
-The difference in ordering is a known, legacy issue. 
-
-Total docks _(V2 Only)_ = unavailable docks (presumed bike marked as broken or dock itself broken) + bikes + spaces.
-
-
-While we are on the topic, note that the timestamp I report is my own timestamp rather than an operator-supplied timestamp. The two should normally agree to within a couple of minutes, except if the operator is having system issue which causes the feed to still be available but not update.
-
-I also don't currently record dock statuses (e.g. temporary, active, locked, bonus), locations, names, addresses, or other available metadata.
+- Weather scraper get data from [Forecast.io](http://forecast.io), using the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. To prevent a unicode error when writing to csv, we use Unicode.csv. See the `requirements.txt` file.
 
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
