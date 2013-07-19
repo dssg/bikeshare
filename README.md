@@ -1,6 +1,6 @@
-# Bikeshare Prediction Project
+This is a [Data Science for Social Good](http://www.dssg.io) data science project to predict when bikeshare stations will be empty or full in major American cities.
 
-## The Problem
+## The problem: bikeshare rebalancing
 
 The City of Chicago just launched Divvy, a new bike share system designed to connect people to transit, and to make short one-way trips across town easy. Bike share is citywide bike rental - you can take a bike out at a station on one street corner and drop it off at another.
 
@@ -22,11 +22,13 @@ There's a catch, however: to predict things in the future, you need lots of data
 
 But it turns out that [Alta Bike Share](http://www.altabicycleshare.com/), the company operating Divvy, also runs the older bikeshare systems of Boston and DC, for which we have several years of station data. So we're creative predictive statistical models for those cities first, and we'll apply them to Chicago once there's enough data. 
 
-## The Solution
+## The solution: time series regression
 To predict the number of bikes at bike share stations in DC and Boston, we're going to use time series statistical techniques. Specifically, we're going to try to predict how many bikes will be at every station in each city's bikeshare system 60 minutes from now.
 
 To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](http://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model) regression model. This model will take in the current number of bikes at a station, the current time, day of week, month, and eventually weather conditions, and spit out the estimated number of bikes that will be at that station in 60 minutes.
 
+
+## The project
 There are three components to the project:
 
 - A database storing historical data
@@ -47,7 +49,7 @@ The frontend of the webapp uses [require.js](requirejs.org) to manage dependenci
 
 To install either needed python depenecies, simpily clone the project and `pip install -r requirements.txt`
 
-## Data
+## The data: real-time bikeshare station availability
 
 The data is based off of BIXI Data, in minute by minute snapshots. However, the data before 7/4/2013 is in 2 minute intervals, while the data after is in one minute intervals. 
 
@@ -105,9 +107,8 @@ While we are on the topic, note that the timestamp I report is my own timestamp 
 
 I also don't currently record dock statuses (e.g. temporary, active, locked, bonus), locations, names, addresses, or other available metadata.
 
-## Contributing
+## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
 To get in touch, email Hunter Owens at owens.hunter@gmail.com.
-
 
