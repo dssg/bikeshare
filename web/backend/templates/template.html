@@ -1,23 +1,34 @@
 {% extends "layout.html" %}
+{% block head %}
+
+{% endblock %}
+
 {% block body %}
 
   <div class="container-fluid container-no-padding">
     <div class="row-fluid">
       <div id='map' class='dark' style="width: 100%; height: 600px"></div>
       <script type='text/javascript'>
+
+      // Made TileMap with JSON with Vidhur's account
       var map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw');
 
       $.getJSON("../static/data/newyork.geojson", function(json) {
 
+        // Setting the color, maybe this can be handled server side?
+        for (var index in json.features){
+          json.features[index].properties['marker-color'] = '#abc';
+        }
+
         map.markerLayer.setGeoJSON(json);
 
+        // Below are mouseover/mouseout event listeners
         map.markerLayer.on('mouseover', function(e){
           var marker = e.layer, feature = marker.feature;
 
           var popupContent = "";
           for (key_name in feature.properties){
-            popupContent += String(key_name) + ' : ' + String(feature.properties[key_name]) + '<br>';
-
+            popupContent += String(key_name) + ' : ' + String(feature.properties[key_name]) + '<br> ';
           }
 
           // http://leafletjs.com/reference.html#popup

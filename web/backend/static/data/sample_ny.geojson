@@ -1,0 +1,39 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.99839279,
+                    40.7500727
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "title": "test",
+                "percentage_empty": 6.048192771084338,
+                "percentage_full": 1.8253012048192772,
+                "name": "W 29 St & 9 Ave"
+
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.97839279,
+                    40.7500727
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "title": "test",
+                "percentage_empty": 6.048192771084338,
+                "percentage_full": 1.8253012048192772,
+                "name": "W 29 St & 9 Ave"
+
+            }
+        }
+    ]
+}
