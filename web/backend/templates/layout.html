@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="../static/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../static/css/custom.css" rel="stylesheet" media="screen">
+
     <!-- <link href="../static/css/bootstrap-responsive.css" rel="stylesheet" media="screen"> -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
@@ -24,6 +26,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    {% block head %}{% endblock %}
+
   </head>
   <body>
   	<div class="navbar navbar-inverse navbar-static-top">

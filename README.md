@@ -1,36 +1,55 @@
-# Bikeshare Prediction Project
+This is a [Data Science for Social Good](http://www.dssg.io) data science project to predict when bikeshare stations will be empty or full in major American cities.
 
-## The Problem
-Bikeshare stations often become full or empty with bikes. This is bad because as a user I can't remove a bike or dock it. Bikeshare operators have trucks that drive around an move bikes from full stations to empty stations. This is called rebalancing.
+## The problem: bikeshare rebalancing
 
-Right now, they do this by [looking at how long](http://www.cabitracker.com/status.php) stations have been empty or full and dispatching the nearest rebalancing truck.
+The City of Chicago just launched Divvy, a new bike share system designed to connect people to transit, and to make short one-way trips across town easy. Bike share is citywide bike rental - you can take a bike out at a station on one street corner and drop it off at another.
 
-City governments and bikeshare operators want to be able to predict when stations are likely to become empty or full so they can respond proactively. 
+![Divvy bike share](http://dssg.io/img/partners/divvy.jpg)
 
-## The Solution
-We're going to use time series statistical techniques to help them do that. Specifically, we're going to try to predict how many bikes will be at every station in Washington DC's bikeshare system 60 minutes from now.
+Popular in Europe and Asia, bike share has landed in the United States: Boston, DC, and New York launched systems in the past few years, San Francisco and Seattle are next.
+
+These systems share a central flaw, however: because of commuting patterns, bikes tend to pile up downtown in morning and on the outskirts in the afternoon. This imbalance can make using bikeshare difficult, because people can’t take out bikes from empty stations, or finish their rides at full stations.
+
+To prevent this problem, bikeshare operators drive trucks around to reallocate bikes from full stations to empty ones. In bikeshare parlance, this is called **rebalancing**.
+
+Right now, operators do rebalancing by [looking at how long](http://www.cabitracker.com/status.php) stations have been empty or full and dispatching the nearest available rebalancing truck. So they can only see the **current number of bikes** at each station - not how many will be there in an hour or two.
+
+![Chicago Department of Transportation](http://dssg.io/img/partners/cdot.jpg)
+
+We’re working with the City of Chicago’s [Department of Transportation](http://www.cityofchicago.org/city/en/depts/cdot.html) to change this: by analyzing weather and bikeshare station trends, we’ll predict how many bikes are likely to be at each Divvy station in the future.
+
+There's a catch, however: to predict things in the future, you need lots of data about the past. And since Divvy just launched, there's not much data about Chicago bikeshare yet. 
+
+But it turns out that [Alta Bike Share](http://www.altabicycleshare.com/), the company operating Divvy, also runs the older bikeshare systems of Boston and DC, for which we have several years of station data. So we're creating predictive statistical models for those cities first, and we'll apply them to Chicago once there's enough data. 
+
+## The solution: time series regression
+To predict the number of bikes at bike share stations in DC and Boston, we're going to use time series statistical techniques. Specifically, we're going to try to predict how many bikes will be at every station in each city's bikeshare system 60 minutes from now.
 
 To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](http://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model) regression model. This model will take in the current number of bikes at a station, the current time, day of week, month, and eventually weather conditions, and spit out the estimated number of bikes that will be at that station in 60 minutes.
 
+
+## The project
 There are three components to the project:
 
-- A database storing historical data
+**A database storing historical data**
 
 Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every station in DC's bikeshare system since late 2010. We're storing this data in postgres database, and updating it by hitting DC's real-time bikeshare API. The data is discussed in the Data section below.
 
 The scripts to build the database and add current data to it are in `scrapers` and `database` folders. The database updates every minute using a cron job.
 
-- A model that uses this data to predict future number of bikes 
+**A model that uses this data to predict future number of bikes**
 
 The model lives in `model`. `parameter_estimate.py` crunches the historical data in the database to estimate the model's parameters. `prediction_model.py` actually implements the model consuming these parameters and fetching near real-time station availability from the database.
 
-- A simple webapp that displays the model's predictions.
+
+**A simple webapp that displays the model's predictions**
 
 The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) to render the map. Simply run `python app.py` to deploy the application on localhost. 
 
 To install either needed python depenecies, simpily clone the project and `pip install -r requirements.txt`
 
-## Data
+## The data: real-time bikeshare station availability
+
 Alta bikeshare runs the bikeshare systems in Boston, Washington DC, Minneapolis, New York and Chicago. Each of the sites exposes either an XML or JSON API.
 
 An example of the XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml) and an example of the JSON API is [Chicago](http://divvybikes.com/stations/json). Both API's provided a list of every station at that moment, along with the number of bikes avalible and empty stations at each station. The BIXI (Alta's internal APIs) systems are split among these two versions, V1 and V2. 
@@ -91,9 +110,7 @@ While we are on the topic, note that the timestamp I report is my own timestamp 
 
 I also don't currently record dock statuses (e.g. temporary, active, locked, bonus), locations, names, addresses, or other available metadata.
 
-## Contributing
+## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
 To get in touch, email Hunter Owens at owens.hunter@gmail.com.
-
-
