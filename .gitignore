@@ -44,3 +44,5 @@ Flask Folder
 
 web/backend/include/
 *.Python
+
+.DS_Store
