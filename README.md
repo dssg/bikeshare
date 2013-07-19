@@ -77,7 +77,7 @@ We maintain cityname naming conventions: (These are way city names are represent
 * Agg (The Tablename are `bike_agg_cityname`, ie `bike_agg_boston`)
 
 timestamp | bikes | spaces | unbalanced 
----------------------|:----:|:------:|:-
+---------------------|:----:|:------:|:----
 2013-07-04 17:54:03| 838 | 1058 | 364
 2013-07-04 17:52:03| 826 | 1070 | 368
 
