@@ -31,17 +31,17 @@ To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](h
 ## The project
 There are three components to the project:
 
-- A database storing historical data
+**A database storing historical data**
 
 Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every station in DC's bikeshare system since late 2010. We're storing this data in postgres database, and updating it by hitting DC's real-time bikeshare API. The data is discussed in the Data section below.
 
 The scripts to build the database and add current data to it are in `scrapers` and `database` folders. The database updates every minute using a cron job.
 
-- A model that uses this data to predict future number of bikes 
+**A model that uses this data to predict future number of bikes**
 
 The model lives in `model`. `parameter_estimate.py` crunches the historical data in the database to estimate the model's parameters. `prediction_model.py` actually implements the model consuming these parameters and fetching near real-time station availability from the database.
 
-- A simple webapp that displays the model's predictions 
+**A simple webapp that displays the model's predictions**
 
 The app, which uses flask and bootstrap, lives in `web`.
 
@@ -111,4 +111,3 @@ I also don't currently record dock statuses (e.g. temporary, active, locked, bon
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
 To get in touch, email Hunter Owens at owens.hunter@gmail.com.
-
