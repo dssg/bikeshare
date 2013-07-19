@@ -35,7 +35,7 @@ There are three components to the project:
 
 Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every station in DC's bikeshare system since late 2010. We're storing this data in postgres database, and updating it by hitting DC's real-time bikeshare API. The data is discussed in the Data section below.
 
-The scripts to build the database and add current data to it are in `scrapers` and `database` folders. The database updates every minute using a cron job.
+The schema for the database and the scripts to add current data to it are in `scrapers` and `database` folders. The database updates every minute using a cron job that you need schedule on your own machine.
 
 **A model that uses this data to predict future number of bikes**
 
