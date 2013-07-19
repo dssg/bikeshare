@@ -50,17 +50,22 @@ To install either needed python depenecies, simpily clone the project and `pip i
 
 ## The data: real-time bikeshare station availability
 
-Alta bikeshare runs the bikeshare systems in Boston, Washington DC, Minneapolis, New York and Chicago. Each of the sites exposes either an XML or JSON API.
+Alta bikeshare runs the bikeshare systems in [Boston](thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [Minneapolis](https://www.niceridemn.org/), [New York](http://citibikenyc.com/) and [Chicago](http://divvybikes.com/). Each system exposes either an XML or JSON API. 
 
-An example of the XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml) and an example of the JSON API is [Chicago](http://divvybikes.com/stations/json). Both API's provided a list of every station at that moment, along with the number of bikes avalible and empty stations at each station. The BIXI (Alta's internal APIs) systems are split among these two versions, V1 and V2. 
+Every few minutes, these APIs provide the location of each station, and the number of avaliable bikes and free spaces at the station.  
 
-Oliver O'Brian has been crawling these API's from system launch every 2 minutes, and has provided historical data that we have imported into Postgres. Furthermore, we have built scrapers (`scrapers`) that update our database every minute.  
+An example of Alta's XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml). [Chicago](http://divvybikes.com/stations/json) uses the JSON API. They have different data schemas, explained below.
+
+Researcher Oliver O'Brien has been crawling these APIs since their respective systems launched, getting data from them every 2 minutes. He gave us this historical data, which we imported into a PostgreSQL database. To add to this historical data, we've written scrapers (`scrapers`) that update our database every minute.  
+
+We also use weather data to aid our predictive model. 
 
 We maintain cityname naming conventions: (These are way city names are represented in the database) of 
 `newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
 
-###Schema, BIXIV1 (XML)
-* Cities are Boston, Washington DC and Minneapolis. 
+
+### Schema of XML API (Version 1)
+* XML API cities are Boston, Washington DC and Minneapolis. They use the following schema:
 
 * Indiv (The Tablenames are `bike_ind_cityname`, ie `bike_ind_boston`)
 
@@ -72,12 +77,13 @@ We maintain cityname naming conventions: (These are way city names are represent
 * Agg (The Tablename are `bike_agg_cityname`, ie `bike_agg_boston`)
 
 timestamp | bikes | spaces | unbalanced 
--------------------------------|:----:|:------:|:----------
-| 2013-07-04 17:54:03| 838 | 1058 | 364
-| 2013-07-04 17:52:03|826 |1070 |368
+---------------------|:----:|:------:|:-
+2013-07-04 17:54:03| 838 | 1058 | 364
+2013-07-04 17:52:03| 826 | 1070 | 368
 
 ###Schema, BIXIV2
-* Cities are Chicago and New York.
+* JSON API cities are Chicago and New York. They use a slightly different schema:
+
 * Indiv
 
 tfl_id | bikes | spaces | total_docks | timestamp
@@ -93,10 +99,14 @@ timestamp | bikes | spaces | unbalanced |total_docks
 2013-07-04 17:56:04 |  3677 |   6893 |       2017 |       11285   
 
 ### Metadata
-A series of metadata tables exist to corrolate `tfl_id` to lat/long and other info, the tablenames are `metadata_cityname`, ie `metadata_boston`.
+A series of metadata tables also exist in our PostgreSQL to tie a station's id (the `tfl_id` field) to its lat/long and other info. The tablenames follow the `metadata_cityname` convention, i.e. `metadata_boston`.
 
 ### Scrapers
-Scrapers are built to get the metadata for the database. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
+We've built  scrapers to get and updated the various pieces of data that we need:
+
+Metadata scrapers are for the metadata tables. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
+
+Database update scrapers are used within a cronjob to keep updated the `ind` tables each minute. You need to set up this cronjob yourself if duplicating the database. 
 
 The Weather Scrapers use [Forecast.io](http://forecast.io). They also use the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. To prevent a unicode error when writing to csv, we use Unicode.csv. See the `requirements.txt` file.
 
