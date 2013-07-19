@@ -24,24 +24,24 @@ The scripts to build the database and add current data to it are in `scrapers` a
 
 The model lives in `model`. `parameter_estimate.py` crunches the historical data in the database to estimate the model's parameters. `prediction_model.py` actually implements the model consuming these parameters and fetching near real-time station availability from the database.
 
-- A simple webapp that displays the model's predictions 
+- A simple webapp that displays the model's predictions.
 
-The app, which uses flask and bootstrap, lives in `web`.
-
-The frontend of the webapp uses [require.js](requirejs.org) to manage dependencies. 
+The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) to render the map. Simply run `python app.py` to deploy the application on localhost. 
 
 To install either needed python depenecies, simpily clone the project and `pip install -r requirements.txt`
 
 ## Data
+Alta bikeshare runs the bikeshare systems in Boston, Washington DC, Minneapolis, New York and Chicago. Each of the sites exposes either an XML or JSON API.
 
-The data is based off of BIXI Data, in minute by minute snapshots. However, the data before 7/4/2013 is in 2 minute intervals, while the data after is in one minute intervals. 
+An example of the XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml) and an example of the JSON API is [Chicago](http://divvybikes.com/stations/json). Both API's provided a list of every station at that moment, along with the number of bikes avalible and empty stations at each station. The BIXI (Alta's internal APIs) systems are split among these two versions, V1 and V2. 
 
-**There are two BIXI systems, BIXIV1 (Boston, Washington DC & Minneapolis) and BIXIV2 (Chicago and New York City)**
+Oliver O'Brian has been crawling these API's from system launch every 2 minutes, and has provided historical data that we have imported into Postgres. Furthermore, we have built scrapers (`scrapers`) that update our database every minute.  
 
-Cityname naming conventions: (These are way city names are represented in the database) 
+We maintain cityname naming conventions: (These are way city names are represented in the database) of 
 `newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
 
-###Schema, BIXIV1
+###Schema, BIXIV1 (XML)
+* Cities are Boston, Washington DC and Minneapolis. 
 
 * Indiv (The Tablenames are `bike_ind_cityname`, ie `bike_ind_boston`)
 
@@ -58,6 +58,7 @@ timestamp | bikes | spaces | unbalanced
 | 2013-07-04 17:52:03|826 |1070 |368
 
 ###Schema, BIXIV2
+* Cities are Chicago and New York.
 * Indiv
 
 tfl_id | bikes | spaces | total_docks | timestamp
