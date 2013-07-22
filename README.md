@@ -1,47 +1,68 @@
-# Bikeshare Prediction Project
+This is a [Data Science for Social Good](http://www.dssg.io) data science project to predict when bikeshare stations will be empty or full in major American cities.
 
-## The Problem
-Bikeshare stations often become full or empty with bikes. This is bad because as a user I can't remove a bike or dock it. Bikeshare operators have trucks that drive around an move bikes from full stations to empty stations. This is called rebalancing.
+## The problem: bikeshare rebalancing
 
-Right now, they do this by [looking at how long](http://www.cabitracker.com/status.php) stations have been empty or full and dispatching the nearest rebalancing truck.
+The City of Chicago just launched Divvy, a new bike share system designed to connect people to transit, and to make short one-way trips across town easy. Bike share is citywide bike rental - you can take a bike out at a station on one street corner and drop it off at another.
 
-City governments and bikeshare operators want to be able to predict when stations are likely to become empty or full so they can respond proactively. 
+![Divvy bike share](http://dssg.io/img/partners/divvy.jpg)
 
-## The Solution
-We're going to use time series statistical techniques to help them do that. Specifically, we're going to try to predict how many bikes will be at every station in Washington DC's bikeshare system 60 minutes from now.
+Popular in Europe and Asia, bike share has landed in the United States: Boston, DC, and New York launched systems in the past few years, San Francisco and Seattle are next.
+
+These systems share a central flaw, however: because of commuting patterns, bikes tend to pile up downtown in morning and on the outskirts in the afternoon. This imbalance can make using bikeshare difficult, because people can’t take out bikes from empty stations, or finish their rides at full stations.
+
+To prevent this problem, bikeshare operators drive trucks around to reallocate bikes from full stations to empty ones. In bikeshare parlance, this is called **rebalancing**.
+
+Right now, operators do rebalancing by [looking at how long](http://www.cabitracker.com/status.php) stations have been empty or full and dispatching the nearest available rebalancing truck. So they can only see the **current number of bikes** at each station - not how many will be there in an hour or two.
+
+![Chicago Department of Transportation](http://dssg.io/img/partners/cdot.jpg)
+
+We’re working with the City of Chicago’s [Department of Transportation](http://www.cityofchicago.org/city/en/depts/cdot.html) to change this: by analyzing weather and bikeshare station trends, we’ll predict how many bikes are likely to be at each Divvy station in the future.
+
+There's a catch, however: to predict things in the future, you need lots of data about the past. And since Divvy just launched, there's not much data about Chicago bikeshare yet. 
+
+But it turns out that [Alta Bike Share](http://www.altabicycleshare.com/), the company operating Divvy, also runs the older bikeshare systems of Boston and DC, for which we have several years of station data. So we're creating predictive statistical models for those cities first, and we'll apply them to Chicago once there's enough data. 
+
+## The solution: time series regression
+To predict the number of bikes at bike share stations in DC and Boston, we're going to use time series statistical techniques. Specifically, we're going to try to predict how many bikes will be at every station in each city's bikeshare system 60 minutes from now.
 
 To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](http://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model) regression model. This model will take in the current number of bikes at a station, the current time, day of week, month, and eventually weather conditions, and spit out the estimated number of bikes that will be at that station in 60 minutes.
 
+
+## The project
 There are three components to the project:
 
-- A database storing historical data
+**A database storing historical bikeshare and weather data**
 
-Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every station in DC's bikeshare system since late 2010. We're storing this data in postgres database, and updating it by hitting DC's real-time bikeshare API. The data is discussed in the Data section below.
+Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every bikeshare station in DC and Boston since their systems launched. We're storing this data in postgreSQL database, and updating it constantly by hitting Atla's real-time bikeshare APIs. The data is discussed in further detail below.
 
-The scripts to build the database and add current data to it are in `scrapers` and `database` folders. The database updates every minute using a cron job.
+Scripts to build the database, load historical data into it, and add real-time data to it are in the `data` and `scrapers` folders. The database updates every minute using a cron job that you need schedule on your own machine.
 
-- A model that uses this data to predict future number of bikes 
+**A model that uses this data to predict future number of bikes**
 
-The model lives in `model`. `parameter_estimate.py` crunches the historical data in the database to estimate the model's parameters. `prediction_model.py` actually implements the model consuming these parameters and fetching near real-time station availability from the database.
+The model lives in `model`. There are scripts in there that crunch the historical data in the database to estimate the model's parameters, and other that actually implement the model by consuming these parameters, fetching model inputs from the database, and spitting out predictions.
 
-- A simple webapp that displays the model's predictions 
+*This directory is undergoing heavy development*
 
-The app, which uses flask and bootstrap, lives in `web`.
+**A simple webapp that displays the model's predictions**
 
-The frontend of the webapp uses [require.js](requirejs.org) to manage dependencies. 
+The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
 
-To install either needed python depenecies, simpily clone the project and `pip install -r requirements.txt`
+To install either needed python dependencies, clone the project and run `pip install -r requirements.txt`
 
-## Data
+## The data: real-time bikeshare station availability and weather
 
-The data is based off of BIXI Data, in minute by minute snapshots. However, the data before 7/4/2013 is in 2 minute intervals, while the data after is in one minute intervals. 
+Alta bikeshare runs the bikeshare systems in [Boston](thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [Minneapolis](https://www.niceridemn.org/), [New York](http://citibikenyc.com/) and [Chicago](http://divvybikes.com/). Each system exposes either an XML ("Version 1") or JSON ("Version 2") API. 
 
-**There are two BIXI systems, BIXIV1 (Boston, Washington DC & Minneapolis) and BIXIV2 (Chicago and New York City)**
+Every few minutes, these APIs provide the location of each station, and the number of avaliable bikes and free spaces at the station.  
 
-Cityname naming conventions: (These are way city names are represented in the database) 
-`newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
+An example of Alta's XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml). [Chicago](http://divvybikes.com/stations/json) uses the JSON API. Each version of the API has a different data schema, explained below.
 
-###Schema, BIXIV1
+Researcher Oliver O'Brien has been crawling these APIs since each system launched, getting data from them every 2 minutes. He gave us this historical data, which we imported into a PostgreSQL database. To add to this historical data, we've written scrapers (`scrapers`) that update our database every minute. Unfortunately, we can't open O'Brien's historical data at this time, but you're welcome to use our scrapers to gather your own data.
+
+We also use historical weather data to aid our predictive model. We've written scripts to get it from Forecast.io (details below).
+
+### Schema of XML API (Version 1)
+* XML API cities are Boston, Washington DC and Minneapolis. They use the following schema:
 
 * Indiv (The Tablenames are `bike_ind_cityname`, ie `bike_ind_boston`)
 
@@ -53,11 +74,13 @@ Cityname naming conventions: (These are way city names are represented in the da
 * Agg (The Tablename are `bike_agg_cityname`, ie `bike_agg_boston`)
 
 timestamp | bikes | spaces | unbalanced 
--------------------------------|:----:|:------:|:----------
-| 2013-07-04 17:54:03| 838 | 1058 | 364
-| 2013-07-04 17:52:03|826 |1070 |368
+---------------------|:----:|:------:|:----
+2013-07-04 17:54:03| 838 | 1058 | 364
+2013-07-04 17:52:03| 826 | 1070 | 368
 
 ###Schema, BIXIV2
+* JSON API cities are Chicago and New York. They use a slightly different schema:
+
 * Indiv
 
 tfl_id | bikes | spaces | total_docks | timestamp
@@ -72,27 +95,22 @@ timestamp | bikes | spaces | unbalanced |total_docks
 2013-07-04 17:58:04 |  3670 |   6900 |       2007 |       11285 
 2013-07-04 17:56:04 |  3677 |   6893 |       2017 |       11285   
 
-### Metadata
-A series of metadata tables exist to corrolate `tfl_id` to lat/long and other info, the tablenames are `metadata_cityname`, ie `metadata_boston`.
+### Notes on our PostgreSQL configuration
+We maintain cityname naming conventions: (These are way city names are represented in the database) of 
+`newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
+
+A series of metadata tables also exist in our PostgreSQL to tie a station's id (the `tfl_id` field) to its lat/long and other info. The tablenames follow the `metadata_cityname` convention, i.e. `metadata_boston`.
 
 ### Scrapers
-Scrapers are built to get the metadata for the database. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
+We've built scrapers to fetch real-time bike station and weather data.
 
-The Weather Scrapers use [Forecast.io](http://forecast.io). They also use the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. To prevent a unicode error when writing to csv, we use Unicode.csv. See the `requirements.txt` file.
+- Database update scrapers are used within a cronjob to keep updated the `ind` tables each minute. You need to set up this cronjob yourself if duplicating the database. 
 
-### Notes	
-The difference in ordering is a known, legacy issue. 
+- Metadata scrapers are for the metadata tables. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
 
-Total docks _(V2 Only)_ = unavailable docks (presumed bike marked as broken or dock itself broken) + bikes + spaces.
+- Weather scraper get data from [Forecast.io](http://forecast.io), using the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. To prevent a unicode error when writing to csv, we use Unicode.csv. See the `requirements.txt` file.
 
-
-While we are on the topic, note that the timestamp I report is my own timestamp rather than an operator-supplied timestamp. The two should normally agree to within a couple of minutes, except if the operator is having system issue which causes the feed to still be available but not update.
-
-I also don't currently record dock statuses (e.g. temporary, active, locked, bonus), locations, names, addresses, or other available metadata.
-
-## Contributing
+## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
 To get in touch, email Hunter Owens at owens.hunter@gmail.com.
-
-

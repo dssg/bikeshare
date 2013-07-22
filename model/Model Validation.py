@@ -128,58 +128,163 @@ train_shift = 100
 n_slots = 15
 
 # n_forecast is the number of predictions to make past the last time point that is included in training data
-n_forecast = 10
+n_forecast = 5
 
 # n_iter is the number of validation models to fit
-#fix n_iter for now, later use min_points, train_shift and size of data frame to calculate
+# fix n_iter for now, later use min_points, train_shift and size of data frame to calculate
 n_iter = 5
+# n_iter = np.floor((len(y) - min_points - n_forecast) / train_shift) + 1 
+# This is what n_iter will be when we want to use the full dataset
 
 # y_train is the outcome variable for the model
-# because the model being fit is Binomail, y_train is an nX2 array of [number of bikes available, number of slots available]
+# because the model being fit is Binomial, y_train is an n by 2 array of [number of bikes available, number of slots available]
 y_train = bikes_slots_available
 # x_train is the array of predictor variables for the model
 x_train = logodds_lag1
-print logodds_lag1[0:10,]
-print type(logodds_lag1)
+
+# set up empty MSE list to hold MSE
+MSE = []
+plots = []
 
 for i in range(n_iter):
     glm_binom = sm.GLM(y_train[0: (min_points + i*train_shift)], x_train[0: (min_points + i*train_shift)], family=sm.families.Binomial())
     
     results = glm_binom.fit()
     
-    pred_log_odds = []
+    p_hat = []
     
     predictor = x_train[(min_points + i*train_shift)]
+    
     Y_hat = results.predict(predictor)
-    print "First Predicted value " + str(Y_hat)
-    pred_log_odds.append(Y_hat)
+    
+    p_hat.append(Y_hat)
     
     for n in range(1, n_forecast):
         # the input for .predict requires a constant, so use sm.add_constant
         # the caveat is that add_constant does not work with a one-dimensional array, so first make an array of Y_hat and .5 so that add_constant will work
         # since we only really care about Y_hat, not .5, only predict on the first row of the array
-        predicted = results.predict(sm.add_constant(np.asarray([Y_hat, .5]), prepend=True)[0])
+        predicted = results.predict(sm.add_constant(np.asarray([log(Y_hat/(1-Y_hat)), .5]), prepend=False)[0])
         
+        # [Yhat, x_train[(min_points + i*train_shift),p:] ]
         # add predicted value to the array of previous predicted values
-        pred_log_odds.append(predicted)
+        p_hat.append(predicted)
         
         # update Y_hat to be predicted value from previous step
         Y_hat = predicted
     
     
-    print pred_log_odds
     #convert y_pred scale to number of bikes
-    pred_bikes_available = [n_slots*(e**x/(1+ e**x)) for x in pred_log_odds]
-    print "Predicted number of bikes, " + str(i)
-    print pred_bikes_available
+    pred_bikes_available = [n_slots*x for x in p_hat]
     
-    #print "Error between prediction and actual, " + i
+    # Error between prediction and actual
+    this_test_MSE = (pred_bikes_available - y_train[(min_points + i*train_shift):(min_points + i*train_shift) + n_forecast,0])**2
+    MSE.append(this_test_MSE)
     
+    #figure(i)
+    p, = plt.plot(np.asarray(range(1,len(MSE[i])+1)),MSE[i],label = "Test " + str(i))
+    #legend([p], ["line " + str(i)])
+    plots.append(p,)
     
     
     #print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
 
+print "MSE " + str(MSE)
+
+for j in range(len(plots)):
+    plots[j]
+legend(plots)
+plt.axis([1, n_forecast, 0, 20])
+plt.title(r'Comparison of MSE of Different Test Runs')
+plt.xlabel('Time Steps from Original Prediction')
+plt.ylabel('Difference Between Predicted and Actual Number of Bikes at a Station')
+
+
+#for t in range(n_forecast):
+#    print "p%d = %s" % (t + 1, repr(MSE[t])), #= plot(x, MSE[t])
+
+#print len(x)
+#print MSE[0].shape
+#p1, = plot(x, MSE[0])
 
 # <codecell>
 
+#goal: PLAY- Walter's cell
+
+#test by starting with 1000 rows of data
+
+#will build a model contianing min_points first, then min_points + train_shift, min_points + 2* train_shift, etc.
+
+# min_points is the minimum number of data points with which to fit a model.  The first model will be fit with the first min_points data points
+min_points = 500
+
+# train_shift is the number of data points to add to the training data set with each subsequent time the model is fit
+train_shift = 100
+
+# n_slots is the number of slots available for bikes at the station we are modeling
+n_slots = 15
+
+# n_forecast is the number of predictions to make past the last time point that is included in training data
+n_forecast = 10
+
+# n_iter is the number of validation models to fit
+# fix n_iter for now, later use min_points, train_shift and size of data frame to calculate
+n_iter = 5
+# n_iter = np.floor((len(y) - min_points - n_forecast) / train_shift) + 1 
+# This is what n_iter will be when we want to use the full dataset
+
+# y_train is the outcome variable for the model
+# because the model being fit is Binomial, y_train is an n by 2 array of [number of bikes available, number of slots available]
+y_train = bikes_slots_available
+# x_train is the array of predictor variables for the model
+x_train = logodds_lag1
+
+glm_binom = sm.GLM(y_train, x_train, family=sm.families.Binomial())
+    
+results = glm_binom.fit()
+
+pred_log_odds = []
+    
+predictor = x_train[24000]
+
+predictor[0] = log((14./n_slots) / (1 - 14./n_slots))
+
+Y_hat = results.predict(predictor)
+
+print "First Predicted value " + str(Y_hat)
+pred_log_odds.append(Y_hat)
+    
+for n in range(1, n_forecast):
+    # the input for .predict requires a constant, so use sm.add_constant
+    # the caveat is that add_constant does not work with a one-dimensional array, so first make an array of Y_hat and .5 so that add_constant will work
+    # since we only really care about Y_hat, not .5, only predict on the first row of the array
+    predicted = results.predict(sm.add_constant(np.asarray([log(Y_hat/(1-Y_hat)), .5]), prepend=False)[0])
+        
+    # add predicted value to the array of previous predicted values
+    pred_log_odds.append(predicted)
+        
+    # update Y_hat to be predicted value from previous step
+    Y_hat = predicted
+    
+    
+print pred_log_odds
+#convert y_pred scale to number of bikes
+pred_bikes_available = [n_slots*x for x in pred_log_odds]
+print "Predicted number of bikes, "
+print pred_bikes_available
+    
+#print "Error between prediction and actual, " + i
+    
+#print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
+
+# <codecell>
+
+print boston_5_bucketed[0:10]["bikes_available"]
+
+# <codecell>
+
+MSE[0]
+
+# <codecell>
+
+y_train[(min_points + i*train_shift)][0]
 
