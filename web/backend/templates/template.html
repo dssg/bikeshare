@@ -3,15 +3,18 @@
 
 {% endblock %}
 
-{% block body %}
+{% block content %}
 
-  <div class="container-fluid container-no-padding">
-    <div class="row-fluid">
-      <div id='map' class='dark' style="width: 100%; height: 600px"></div>
+  <div class="container-fluid container-no-padding full-height">
+    <div class="row-fluid full-height">
+      <div id='map' class='dark full-height'></div>
       <script type='text/javascript'>
 
+      
       // Made TileMap with JSON with Vidhur's account
       var map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw');
+
+
 
       $.getJSON("../static/data/newyork.geojson", function(json) {
 
