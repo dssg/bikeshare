@@ -5,5 +5,9 @@ app = Flask(__name__)
 def hello():
 	return render_template('template.html')
 
+@app.route("/table")
+def show_table():
+	return render_template('table.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
