@@ -23,23 +23,48 @@
         step: 15,
         slide: function( event, ui ) {
           window.prediction_time  = ui.value.toString();
-        $( "#time" ).text( "Mins From Now: " + ui.value );
+          $( "#time" ).text( "Mins From Now: " + ui.value );
+          updateMarkerColors();
+
         }
       });
+      
+      function updateMarkerColors(){
+        json = map.markerLayer.getGeoJSON();
 
-      // Made TileMap with JSON with Vidhur's account
-      var map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw');
-
-      $.getJSON("../static/data/fullnewyork.geojson", function(json) {
-        var index = 0;
+        function rgbToHex(r, g, b) {
+          function componentToHex(c) {
+            var hex = c.toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
+          };
+          return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        };
 
         // Setting the color, maybe this can be handled server side?
         for (index = 0; index < json.features.length; index++){
 
-          json.features[index].properties['marker-color'] = '#bbc';
+          var percentage_full = parseFloat(json.features[index].properties[window.prediction_time].percentage_full);
+          var percentage_empty = parseFloat(json.features[index].properties[window.prediction_time].percentage_empty);
+
+          hex_color = rgbToHex(Math.round(percentage_full*255), 128, Math.round(percentage_empty*255));
+
+          json.features[index].properties['marker-color'] = hex_color;
         }
 
+        map.markerLayer.setGeoJSON(json);        
+
+      };
+
+      // Made TileMap with JSON with Vidhur's account
+      var map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw');
+
+
+      $.getJSON("../static/data/fullnewyork.geojson", function(json) {
+        var index = 0;
+
         map.markerLayer.setGeoJSON(json);
+
+        updateMarkerColors();
 
         // Below are mouseover/mouseout event listeners
         map.markerLayer.on('mouseover', function(e){
