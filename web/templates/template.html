@@ -5,23 +5,38 @@
 {% endblock %}
 
 {% block content %}
+  <div id="slider"></div>
+  <div id="time">Mins From Now: 0</div>
 
   <div class="container-fluid container-no-padding full-height">
     <div class="row-fluid full-height">
+
       <div id='map' class='dark full-height'></div>
       <script type='text/javascript'>
 
-      
+      window.prediction_time = "0";
+
+      $("#slider").slider({
+        value:0,
+        min: 0,
+        max: 4*60,
+        step: 15,
+        slide: function( event, ui ) {
+          window.prediction_time  = ui.value.toString();
+        $( "#time" ).text( "Mins From Now: " + ui.value );
+        }
+      });
+
       // Made TileMap with JSON with Vidhur's account
       var map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw');
 
-
-
-      $.getJSON("../static/data/newyork.geojson", function(json) {
+      $.getJSON("../static/data/fullnewyork.geojson", function(json) {
+        var index = 0;
 
         // Setting the color, maybe this can be handled server side?
-        for (var index in json.features){
-          json.features[index].properties['marker-color'] = '#abc';
+        for (index = 0; index < json.features.length; index++){
+
+          json.features[index].properties['marker-color'] = '#bbc';
         }
 
         map.markerLayer.setGeoJSON(json);
@@ -30,11 +45,13 @@
         map.markerLayer.on('mouseover', function(e){
           var marker = e.layer, feature = marker.feature;
 
-          var popupContent = "";
-          for (key_name in feature.properties){
-            popupContent += String(key_name) + ' : ' + String(feature.properties[key_name]) + '<br> ';
-          }
+          var popupContent = String("name") + ' : ' + String(feature.properties["name"]) + ' <br> ';
+          popupContent += 'For Time: ' + window.prediction_time + '<br> ';
 
+          for (key_name in feature.properties[window.prediction_time]){
+            popupContent += String(key_name) + ' : ' + String(feature.properties[window.prediction_time][key_name]) + '<br> ';
+          }
+          
           // http://leafletjs.com/reference.html#popup
           marker.bindPopup(popupContent, {
             closeButton: false,
