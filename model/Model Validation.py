@@ -196,7 +196,7 @@ legend(plots)
 plt.axis([1, n_forecast, 0, 20])
 plt.title(r'Comparison of MSE of Different Test Runs')
 plt.xlabel('Time Steps from Original Prediction')
-plt.ylabel('Difference Between Predicted and Actual Number of Bikes at a Station')
+plt.ylabel('Difference Between Predicted and Actual \n Number of Bikes at a Station')
 
 
 #for t in range(n_forecast):
@@ -208,7 +208,62 @@ plt.ylabel('Difference Between Predicted and Actual Number of Bikes at a Station
 
 # <codecell>
 
-#goal: PLAY- Walter's cell
+# run model with more predictors so that we can test the generalized code below
+
+# This model includes month effects and one previous time point
+##### previous time point is very significant predictor; months are not
+
+import datetime
+import patsy
+from patsy.contrasts import Treatment
+
+# Set up data frame with one lagged time point and a constant
+data = pd.DataFrame(logodds_lag1, columns = ["logodds_lag1", "constant"])
+
+# Strip month information from original timestamp variable
+month = pd.DatetimeIndex(boston_5_bucketed.index).month
+
+# Month as a factor variable
+# Method 1 - doesn't work
+# Month =pd.Factor(month[1:]-1, ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
+
+# Method 2- doesn't work
+#month = pd.Categorical.from_array(month[1:])
+#print patsy.dmatrix('month')
+
+#method 3
+levels = [3,4,5,6,7,8,9,10,11,12]
+contrast = Treatment(reference=0).code_without_intercept(levels)
+print contrast.matrix
+month_dummy = contrast.matrix[month-3, :]
+
+#drop first row because of lagged variable
+month_dummy = month_dummy[1:, :]
+
+#feel free to try to make this work... bree ran out of patience and did it the ugly way below
+#month_dummy.dtype.names = ('Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+#data['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] = month_dummy[:,0:11]
+
+#add dummy variables to dataset, using March as a reference variable.  do not add Jan or Feb because there are no observations in these months
+data['jul'] = month_dummy[:,3]
+data['aug'] = month_dummy[:,4]
+data['sep'] = month_dummy[:,5]
+data['oct'] = month_dummy[:,6]
+data['nov'] = month_dummy[:,7]
+data['dec'] = month_dummy[:,8]
+data['apr'] = month_dummy[:,0]
+data['may'] = month_dummy[:,1]
+data['jun'] = month_dummy[:,2]
+
+print data[1:10]
+#run model
+glm_binom_2 = sm.GLM(bikes_slots_available, data, family=sm.families.Binomial())
+
+results = glm_binom_2.fit()
+
+# <codecell>
+
+#goal: generalize so that we can validate models with more than one predictor variable
 
 #test by starting with 1000 rows of data
 
@@ -224,7 +279,7 @@ train_shift = 100
 n_slots = 15
 
 # n_forecast is the number of predictions to make past the last time point that is included in training data
-n_forecast = 10
+n_forecast = 5
 
 # n_iter is the number of validation models to fit
 # fix n_iter for now, later use min_points, train_shift and size of data frame to calculate
@@ -235,56 +290,94 @@ n_iter = 5
 # y_train is the outcome variable for the model
 # because the model being fit is Binomial, y_train is an n by 2 array of [number of bikes available, number of slots available]
 y_train = bikes_slots_available
-# x_train is the array of predictor variables for the model
-x_train = logodds_lag1
 
-glm_binom = sm.GLM(y_train, x_train, family=sm.families.Binomial())
+# x_train is the array of predictor variables for the model that are not dependent on the previous time point
+# for splitting data into lagged variables and other input variables, first copy the data
+all_predictors = data
+
+copy_pred = all_predictors.copy()
+
+# x_lagged is the predictor variables that are previous outcomes (y_t-1, etc.)
+# these need to be treated differently from x_train because we will predict them, then use the predicted values to predict subsequent time points
+x_lagged_name = "logodds_lag1"
+x_lagged = copy_pred[x_lagged_name]
+# drop the lagged variable from the copied data
+del copy_pred[x_lagged_name]
+x_train = copy_pred
+
+
+
+# set up empty MSE list to hold MSE
+MSE = []
+plots = []
+
+for i in range(n_iter):
+    # note: using .ix to index is different than traditional python indexing; both the start and end indicies are included- BEWARE!
+    glm_binom = sm.GLM(y_train[0: (min_points + i*train_shift)], all_predictors.ix[0: (min_points + i*train_shift)-1,:], family=sm.families.Binomial())
     
-results = glm_binom.fit()
-
-pred_log_odds = []
+    results = glm_binom.fit()
     
-predictor = x_train[24000]
-
-predictor[0] = log((14./n_slots) / (1 - 14./n_slots))
-
-Y_hat = results.predict(predictor)
-
-print "First Predicted value " + str(Y_hat)
-pred_log_odds.append(Y_hat)
+    p_hat = []
     
-for n in range(1, n_forecast):
-    # the input for .predict requires a constant, so use sm.add_constant
-    # the caveat is that add_constant does not work with a one-dimensional array, so first make an array of Y_hat and .5 so that add_constant will work
-    # since we only really care about Y_hat, not .5, only predict on the first row of the array
-    predicted = results.predict(sm.add_constant(np.asarray([log(Y_hat/(1-Y_hat)), .5]), prepend=False)[0])
+    predictor = all_predictors.ix[(min_points + i*train_shift),:]
+    
+    Y_hat = results.predict(predictor)
+    
+    p_hat.append(Y_hat)
+    
+    for n in range(1, n_forecast):
         
-    # add predicted value to the array of previous predicted values
-    pred_log_odds.append(predicted)
+        # save lagged variable as a data frame
+        logodds_df = pd.DataFrame([log(Y_hat/(1-Y_hat))])
         
-    # update Y_hat to be predicted value from previous step
-    Y_hat = predicted
+        # save non-lagged predictor variables as a data frame
+        x_not_lagged_df = pd.DataFrame(np.asarray(x_train.ix[(min_points + i*train_shift)+n,]))
+        
+        # combine all predictors and use them as input to the model fit above
+        complete_predictors = pd.concat([logodds_df, x_not_lagged_df], axis = 0).T
+        predicted = results.predict(complete_predictors)
+        
+        # add predicted value to the array of previous predicted values
+        p_hat.append(predicted)
+        
+        # update Y_hat to be predicted value from previous step
+        # if we use an AR(2) model, this will need to be adjusted
+        Y_hat = predicted
     
     
-print pred_log_odds
-#convert y_pred scale to number of bikes
-pred_bikes_available = [n_slots*x for x in pred_log_odds]
-print "Predicted number of bikes, "
-print pred_bikes_available
+    #convert y_pred scale to number of bikes
+    pred_bikes_available = [n_slots*x for x in p_hat]
     
-#print "Error between prediction and actual, " + i
+    # Error between prediction and actual
+    this_test_MSE = (pred_bikes_available - y_train[(min_points + i*train_shift):(min_points + i*train_shift) + n_forecast,0])**2
+    MSE.append(this_test_MSE)
     
-#print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
+    #figure(i)
+    p, = plt.plot(np.asarray(range(1,len(MSE[i])+1)),MSE[i],label = "Test " + str(i))
+    #legend([p], ["line " + str(i)])
+    plots.append(p,)
+    
+    
+    #print bikes_available[(min_points + i*train_shift) : (min_points + i*train_shift + n_forecast)]
+
+print "MSE " + str(MSE)
+
+for j in range(len(plots)):
+    plots[j]
+legend(plots)
+plt.axis([1, n_forecast, 0, 20])
+plt.title(r'Comparison of MSE of Different Test Runs')
+plt.xlabel('Time Steps from Original Prediction')
+plt.ylabel('Difference Between Predicted and Actual \n Number of Bikes at a Station')
+
+
+#for t in range(n_forecast):
+#    print "p%d = %s" % (t + 1, repr(MSE[t])), #= plot(x, MSE[t])
+
+#print len(x)
+#print MSE[0].shape
+#p1, = plot(x, MSE[0])
 
 # <codecell>
 
-print boston_5_bucketed[0:10]["bikes_available"]
-
-# <codecell>
-
-MSE[0]
-
-# <codecell>
-
-y_train[(min_points + i*train_shift)][0]
 
