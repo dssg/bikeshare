@@ -11,41 +11,14 @@ from matplotlib import pyplot as plt
 import os
 import psycopg2
 import pandas as pd
-
+from fetch_station import fetch_station
 
 # Fetch all records for a single station (tfl_id == 5)
-conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
-
-cur = conn.cursor()
-
-# Executes a SQL command
-# This SQL command selects all rows from the boston database where the station ID is 5
-cur.execute("SELECT * FROM bike_ind_boston WHERE tfl_id = 5;")
-
-# Fetches all rows in the table output of the SQL query. 
-# Remember to assign to a variable because we can only use fetchall() once for each SQL query.
-boston_5 = cur.fetchall()
-
-# Note that we cannot directly print boston_5. In order to view portions of it, we can use boston_5.head() [see below]
+boston_5_bucketed = fetch_station('Boston',5,15)
 
 # <codecell>
 
-# Converts python list of tuples containing data to a pandas dataframe, and renames the columns.
-# 
-# Set timezone
-timezone = 'US/Eastern'
 
-# Import data and set index to be timestamp
-boston_5_df = pd.DataFrame.from_records(boston_5, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = ["timestamp"])
-
-boston_5_df.index = boston_5_df.index.tz_localize('UTC').tz_convert(timezone)
-
-#put all data into 15 minute buckets, since some data was collected every 2 minutes and some every minute
-boston_5_bucketed = boston_5_df.resample('2MIN')
-
-# Drop rows that have missing observations for bikes_available or slots_available
-boston_5_bucketed = boston_5_bucketed[np.isfinite(boston_5_bucketed['bikes_available'])]
-boston_5_bucketed = boston_5_bucketed[np.isfinite(boston_5_bucketed['slots_available'])]
 
 # <codecell>
 
