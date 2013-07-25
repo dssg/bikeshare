@@ -36,6 +36,14 @@ nosetests.xml
 
 #tmp models.py ignore
 #models.py
+howto.md
 
 #emacs 
 *~
+
+Flask Folder
+
+web/backend/include/
+*.Python
+
+.DS_Store
