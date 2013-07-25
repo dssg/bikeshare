@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+
 {% block head %}
 
 
@@ -25,11 +26,13 @@
           window.prediction_time  = ui.value.toString();
           $( "#time" ).text( "Mins From Now: " + ui.value );
           updateMarkerColors();
-
         }
       });
-      
+
       function updateMarkerColors(){
+        var index = 0;
+        var current_feature = null;
+
         json = map.markerLayer.getGeoJSON();
 
         function rgbToHex(r, g, b) {
@@ -42,16 +45,18 @@
 
         // Setting the color, maybe this can be handled server side?
         for (index = 0; index < json.features.length; index++){
+          current_feature = json.features[index];
 
-          var percentage_full = parseFloat(json.features[index].properties[window.prediction_time].percentage_full);
-          var percentage_empty = parseFloat(json.features[index].properties[window.prediction_time].percentage_empty);
+          var percentage_full = parseFloat(current_feature.properties[window.prediction_time].percentage_full);
+          var percentage_empty = parseFloat(current_feature.properties[window.prediction_time].percentage_empty);
 
-          hex_color = rgbToHex(Math.round(percentage_full*255), 128, Math.round(percentage_empty*255));
+          hex_color = rgbToHex(Math.round(percentage_full * 255), 128, Math.round(percentage_empty * 255));
 
-          json.features[index].properties['marker-color'] = hex_color;
+          current_feature.properties['marker-color'] = hex_color;
         }
 
         map.markerLayer.setGeoJSON(json);        
+        console.log("updating colors");
 
       };
 
@@ -60,8 +65,6 @@
 
 
       $.getJSON("../static/data/fullnewyork.geojson", function(json) {
-        var index = 0;
-
         map.markerLayer.setGeoJSON(json);
 
         updateMarkerColors();
@@ -71,10 +74,10 @@
           var marker = e.layer, feature = marker.feature;
 
           var popupContent = String("name") + ' : ' + String(feature.properties["name"]) + ' <br> ';
-          popupContent += 'For Time: ' + window.prediction_time + '<br> ';
+          popupContent += 'For Time: ' + window.prediction_time + ' <br> ';
 
           for (key_name in feature.properties[window.prediction_time]){
-            popupContent += String(key_name) + ' : ' + String(feature.properties[window.prediction_time][key_name]) + '<br> ';
+            popupContent += String(key_name) + ' : ' + String(feature.properties[window.prediction_time][key_name]) + ' <br> ';
           }
           
           // http://leafletjs.com/reference.html#popup
