@@ -3,7 +3,7 @@
 
 # <codecell>
 
-def fetch_station(city, station_id, time_agg_level):
+def fetch_station(city, station_id, time_agg_level,agg_type):
     import os
     import psycopg2
     import pandas as pd
@@ -40,9 +40,18 @@ def fetch_station(city, station_id, time_agg_level):
 
     station_df.index = station_df.index.tz_localize('UTC').tz_convert(timezone)
 
+    # figure out which row is the first row with non-zero bikes available
+    non_zero_row = 0
+    
+    while station_df.ix[non_zero_row,"bikes_available"] == 0:
+        non_zero_row += 1
+    print non_zero_row
+    # subset data we drop all the leading rows with zeros in available_bikes
+    station_df_non_zero_row = station_df.ix[non_zero_row:,]
+    
     #put all data into 15 minute buckets, since some data was collected every 2 minutes and some every minute
-    station_bucketed = station_df.resample(str(time_agg_level)+'MIN')
-
+    station_bucketed = station_df_non_zero_row.resample(str(time_agg_level)+'MIN', how = agg_type)
+    
     # Drop rows that have missing observations for bikes_available or slots_available
     station_bucketed = station_bucketed[np.isfinite(station_bucketed['bikes_available'])]
     station_bucketed = station_bucketed[np.isfinite(station_bucketed['slots_available'])]
@@ -51,12 +60,11 @@ def fetch_station(city, station_id, time_agg_level):
 # <codecell>
 
 # Test
-#boston_5 = fetch_station('Boston',5,15)
+#boston_5 = fetch_station('Boston',5,15,'max')
 #dc_5 = fetch_station("Washington, D.C.",5,15)
 
 # <codecell>
 
-#boston_5.head()
 
 # <codecell>
 
