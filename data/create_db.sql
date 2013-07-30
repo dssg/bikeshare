@@ -139,6 +139,58 @@ ALTER TABLE bike_ind_boston DROP COLUMN key;
 ALTER TABLE bike_ind_newyork DROP COLUMN key;
 ALTER TABLE bike_ind_chicago DROP COLUMN key;
 
+CREATE TABLE IF NOT EXISTS weather_boston (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
+CREATE TABLE IF NOT EXISTS weather_washingtondc (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
+CREATE TABLE IF NOT EXISTS weather_minneapolis (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
+
+CREATE TABLE IF NOT EXISTS weather_newyork (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
+
+CREATE TABLE IF NOT EXISTS weather_chicago (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
 
 \copy bike_agg_minneapolis FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/bike_agg_minneapolis_c.csv' DELIMITER ',' CSV; 
 \copy bike_ind_minneapolis FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/bike_ind_minneapolis_c.csv' DELIMITER ',' CSV;
@@ -163,7 +215,3 @@ ALTER TABLE bike_ind_chicago DROP COLUMN key;
 
 \copy metadata_newyork FROM '/home/ec2-user/bikeshare/scrapers/v2/newyork.csv' DELIMITER ',' CSV HEADER;
 \copy metadata_chicago FROM '/home/ec2-user/bikeshare/scrapers/v2/chicago.csv' DELIMITER ',' CSV HEADER;
-
-
-
-

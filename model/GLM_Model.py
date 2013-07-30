@@ -7,55 +7,22 @@ import numpy as np
 import statsmodels.api as sm
 from scipy import stats
 from matplotlib import pyplot as plt
+import sklearn
 
 import os
 import psycopg2
 import pandas as pd
-
+from fetch_station import fetch_station
 
 # Fetch all records for a single station (tfl_id == 5)
-conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
-
-cur = conn.cursor()
-
-# Executes a SQL command
-# This SQL command selects all rows from the boston database where the station ID is 5
-cur.execute("SELECT * FROM bike_ind_boston WHERE tfl_id = 5;")
-
-# Fetches all rows in the table output of the SQL query. 
-# Remember to assign to a variable because we can only use fetchall() once for each SQL query.
-boston_5 = cur.fetchall()
-
-# Note that we cannot directly print boston_5. In order to view portions of it, we can use boston_5.head() [see below]
-
-# <codecell>
-
-# Converts python list of tuples containing data to a pandas dataframe, and renames the columns.
-# 
-# Set timezone
-timezone = 'US/Eastern'
-
-# Import data and set index to be timestamp
-boston_5_df = pd.DataFrame.from_records(boston_5, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = ["timestamp"])
-
-boston_5_df.index = boston_5_df.index.tz_localize('UTC').tz_convert(timezone)
-
-#put all data into 15 minute buckets, since some data was collected every 2 minutes and some every minute
-boston_5_bucketed = boston_5_df.resample('2MIN')
-
-# Drop rows that have missing observations for bikes_available or slots_available
-boston_5_bucketed = boston_5_bucketed[np.isfinite(boston_5_bucketed['bikes_available'])]
-boston_5_bucketed = boston_5_bucketed[np.isfinite(boston_5_bucketed['slots_available'])]
+boston_5_bucketed = fetch_station('Boston',5,15, 'max')
 
 # <codecell>
 
 # Calculate the percent full 
 #first convert to arrays so that Python doesn't do integer division
 bikes_available=np.asarray(boston_5_bucketed["bikes_available"], dtype=np.float32)
-print bikes_available[0:50]
-print np.isnan(np.min(bikes_available))
 slots_available=np.asarray(boston_5_bucketed["slots_available"], dtype=np.float32)
-print slots_available[0:50]
 
 # Fix for Convergence Issues Using MLE, Option 1: Zero Entries -> 0.01 or Option 2: All Entries += 0.01 (Similar Results)
 bikes_available[bikes_available == 0] = 0.01
@@ -67,25 +34,31 @@ slots_available[slots_available == 0] = 0.01
 # Creating list of [success , failure] outcomes
 bikes_slots_available=np.asarray(zip(bikes_available,slots_available))
 
+# create log odds ratio of bikes to slots
+phat = bikes_available / (bikes_available + slots_available) 
+logodds = np.log(phat/(1-phat))
+
 # Creating Lags of Bike and Slot Variables
 bikes_available_lag0 = bikes_available[1:]
 bikes_available_lag1 = bikes_available[0:len(bikes_available)-1]
 slots_available_lag1 = slots_available[0:len(slots_available)-1]
-bikes_slots_available = bikes_slots_available[1:]
+bikes_slots_available_lag1 = bikes_slots_available[1:]
 
 # Calculated the lag-log-odds ratio 
 phat_lag1 = (bikes_available_lag1) / (bikes_available_lag1+slots_available_lag1)
+#print "phat_lag1" + str(phat_lag1)
+#print len(phat_lag1)
 
 logodds_lag1 = np.log( phat_lag1 / (1-phat_lag1) )
 
 
 # Add Constant to Exogenous Variables
-logodds_lag1 = sm.add_constant(logodds_lag1, prepend=False)
+logodds_lag1_cons = sm.add_constant(logodds_lag1, prepend=False)
 
 
 # Fit Binomial Regression.  Coefficients constant in time
 
-glm_binom = sm.GLM(bikes_slots_available, logodds_lag1, family=sm.families.Binomial())
+glm_binom = sm.GLM(bikes_slots_available_lag1, logodds_lag1_cons, family=sm.families.Binomial())
 
 res = glm_binom.fit()
 
@@ -101,7 +74,7 @@ import patsy
 from patsy.contrasts import Treatment
 
 # Set up data frame with one lagged time point and a constant
-data = pd.DataFrame(logodds_lag1, columns = ["logodds", "constant"])
+data = pd.DataFrame(logodds_lag1_cons, columns = ["logodds", "constant"])
 
 # Strip month information from original timestamp variable
 month = pd.DatetimeIndex(boston_5_bucketed.index).month
@@ -140,7 +113,7 @@ data['jun'] = month_dummy[:,2]
 
 print data[1:10]
 #run model
-glm_binom_2 = sm.GLM(bikes_slots_available, data, family=sm.families.Binomial())
+glm_binom_2 = sm.GLM(bikes_slots_available_lag1, data, family=sm.families.Binomial())
 
 res = glm_binom_2.fit()
 
@@ -186,7 +159,7 @@ data['10PM'] = time_dummy[:,21]
 data['11PM'] = time_dummy[:,22]
 
 
-glm_binom_3 = sm.GLM(bikes_slots_available, data, family=sm.families.Binomial())
+glm_binom_3 = sm.GLM(bikes_slots_available_lag1, data, family=sm.families.Binomial())
 
 res = glm_binom_3.fit()
 
@@ -202,41 +175,68 @@ print res.summary()
 season = []
 #create seasonal indicator variable
 for i in range(0,len(month)):
-    #print i
+    # winter
     if month[i]==0 | month[i] == 1 | month[i]==11 :
         try:
-            season.append("winter")
+            season.append(0)
         except:
             print i
             break
-    elif month[i]==2| month[i] == 3 | month[i] == 4:
+    # spring
+    elif month[i]==2 | month[i] == 3 | month[i] == 4:
         try:
-            season.append("spring")
+            season.append(1)
         except:
             print i
             break
-    elif month[i]==5| month[i] == 6 | month[i] == 7:
+    # summer
+    elif month[i]==5 | month[i] == 6 | month[i] == 7:
         try:
-            season.append("summer")
+            season.append(2)
         except:
             print ":(" +str(i)
             break
-    elif month[i]==8| month[i] == 9 | month[i] == 10:
+    # fall
+    elif month[i]==8 | month[i] == 9 | month[i] == 10:
         try:
-            season.append("spring")
+            season.append(3)
         except:
             print i
             break
 
 #make dummy variables for season
 
-levels = [1,2,3,4]
+levels = [0,1,2,3]
 contrast = Treatment(reference=0).code_without_intercept(levels)
-print contrast.matrix
-season_dummy = contrast.matrix[season-1, :]
+#print contrast.matrix
+season_df = pd.DataFrame(season)
+season_dummy = contrast.matrix[season_df-1, :]
 
 #drop first row because of lagged variable
 month_dummy = month_dummy[1:, :]
+
+# <codecell>
+
+# incorporate day of week
+day_of_week = pd.DatetimeIndex(boston_5_bucketed.index).weekday
+
+levels = list(range(0,7))
+contrast = Treatment(reference=0).code_without_intercept(levels)
+
+day_dummy = contrast.matrix[day_of_week, :]
+day_dummy = day_dummy[1:, :]
+
+# Monday is the reference variable
+data['TUES'] = time_dummy[:,0]
+data['WED'] = time_dummy[:,1]
+data['THUR'] = time_dummy[:,2]
+data['FRI'] = time_dummy[:,3]
+data['SAT'] = time_dummy[:,4]
+data['SUN'] = time_dummy[:,5]
+
+data.ix[0,:]
+
+
 
 # <codecell>
 
@@ -248,8 +248,172 @@ month_series.value_counts()
 
 # <codecell>
 
-print data.shape
-print type(phat_lag1)
+# AR(3) model
+
+# function from energy team to create matrix of predictors
+def change_mat(ts, binom, d):
+    """Recieve a time series and a markov delay period.
+       Return a matix of that design."""
+    n=len(ts)
+    x = np.array(ts[(d-1):n-1])
+    for r in range(2,d+1):
+        b = np.array(ts[(d-r):(n-r)])
+        x = np.concatenate([x.reshape(len(x),-1),b.reshape(len(b),-1)],axis=1)
+    y = binom[d:]
+    return x, y
+
+pred_ar3, outcome_ar3 = change_mat(logodds, bikes_slots_available, 3)
+
+glm_ar3 = sm.GLM(outcome_ar3, pred_ar3, family=sm.families.Binomial())
+
+results = glm_ar3.fit()
+
+print results.summary()
+
+# <codecell>
+
+# vary coefficients based on time of day
+# start with a model that has two sets of coefficients per day- one for midnight to noon, one for noon to midnight
+all_time_dummy = numpy.append(time_dummy,numpy.zeros([len(time_dummy),1]),1)
+
+# recode all_time_dummy to be 1 if the observations between midnight and 1 a.m. (this happens when all other columns of all_time_dummy sum to 0)
+for i in range(len(all_time_dummy[:,0])):
+    if np.sum(all_time_dummy[i,:]) == 0:
+        all_time_dummy[i,23] = 1
+
+# create matrix of zeros and ones to indicate which time period a point falls into
+morning = np.sum(all_time_dummy[:,0:8], axis=1)
+midday = np.sum(all_time_dummy[:,8:16], axis=1)
+evening = np.sum(all_time_dummy[:,16:23], axis=1)
+
+print morning[1:10]
+
+#for i in range(len(morning)):
+ #   if (morning[i] == 0 and midday[i] == 0 and evening[i] == 0):
+  #      evening[i] = 1
+
+
+
+# multiply predictor variable by each column of created 0/1 matrix
+# want to do this for each lagged time variable- start with only one previous time point
+morn_logodds = pd.DataFrame(morning * logodds_lag1, columns = ["I_morn"])
+print morn_logodds.head()
+mid_logodds = pd.DataFrame(midday * logodds_lag1, columns= ["I_mid"])
+eve_logodds = pd.DataFrame(evening * logodds_lag1, columns = ["I_eve"])
+
+# remove original lagged variable, add new versions that are multiplied by time of day indicator
+colnames = set(data.columns)
+colnames.remove("logodds")
+
+ar1_pred = data.ix[:, colnames]
+ar1_pred = pd.concat([ar1_pred, morn_logodds, mid_logodds, eve_logodds], axis=1)
+
+        
+# fit model
+glm_ar1_timevary = sm.GLM(bikes_slots_available_lag1, ar1_pred, family=sm.families.Binomial())
+
+results = glm_ar1_timevary.fit()
+
+print results.summary()
+
+# use result as predictor in model
+
+# <codecell>
+
+#pickling to send stuff to Scott
+
+import cPickle
+cPickle.dump(phat_lag1, open("phatlag1.pkl", "wb"))
+
+boston_5_bucketed_lag = boston_5_bucketed.ix[1:,:]
+timestamps_lag1 = pd.DatetimeIndex(boston_5_bucketed_lag.index)
+cPickle.dump(timestamps_lag1, open("timestampslag1.pkl", "wb"))
+
+# <codecell>
+
+sum(ar1_pred.ix[:,"morn_logodds"], axis=1)
+
+# <codecell>
+
+x= np.asarray([1,2,3,4])
+y = np.asarray([1,2,3,4])
+x*y
+
+# <codecell>
+
+np.sum(time_dummy[:,0:12], axis=1))
+
+# <codecell>
+
+type(time_dummy)
+
+# <codecell>
+
+time_dummy[:,0:12]
+
+# <codecell>
+
+ar1_pred.ix[:,"morn_logodds"]
+
+# <codecell>
+
+data.ix[:,data.columns - data["logodds"]]
+
+# <codecell>
+
+data.columns.remove("logodds")
+
+# <codecell>
+
+colnames = set(data.columns)
+colnames.remove("logodds")
+colnames
+
+# <codecell>
+
+time_dummy[:,23] = 0
+
+# <codecell>
+
+type(time_dummy)
+
+# <codecell>
+
+
+# <codecell>
+
+len(all_time_dummy[0,:])
+
+# <codecell>
+
+print len(logodds_lag1)
+print logodds_lag1.shape
+
+# <codecell>
+
+print len(morning)
+
+# <codecell>
+
+print len(midday)
+print morning.shape
+
+# <codecell>
+
+print len(evening)
+
+# <codecell>
+
+a = np.asarray([[1,2,4,5],[2,2,2,2]])
+b = np.asarray([2,3,5,6])
+a*b
+
+# <codecell>
+
+
+# <codecell>
+
+a*b
 
 # <codecell>
 
