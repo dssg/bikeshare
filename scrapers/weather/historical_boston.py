@@ -40,7 +40,7 @@ while d <= end_date:
     precip_type = item.precipType
     precip_accumulation = item.precipAccumulation
     temperature = item.temperature
-    if (time != null):
+    if (time is None):
       cur.execute("""INSERT INTO weather_boston (time,summary,precipIntensity,precipProbability,precipType,precipAccumulation,temperature) VALUES
           (%s,%s,%s,%s,%s,%s,%s);""",
           (time,summary,precip_intensity,precip_probility,precip_type,precip_accumulation,temperature))
