@@ -108,7 +108,10 @@ We've built scrapers to fetch real-time bike station and weather data.
 
 - Metadata scrapers are for the metadata tables. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
 
-- Weather scraper get data from [Forecast.io](http://forecast.io), using the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep the weather data up to date, you'll need a forecast.io API key. To prevent a unicode error when writing to csv, we use Unicode.csv. See the `requirements.txt` file.
+- Weather scraper get data from [Forecast.io](http://forecast.io), using the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep/get the weather data you'll need a forecast.io API key. Follow the below steps to retrieve the weather data. 
+	1.  Set the `dbuser`,`dbname`,and `dburl` environmental varibles to the proper credentials for postgres. Also set the `FORECASTIOKEY` environmental variable to your forecast.io key. 
+	2. Make sure that the tables specified in `data/create_db.sql` exist.
+	3. Each city has its own script to load weather data, named as `historical_[[city_name]].py`. Simply run that script to load in the data for each city. 
 
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
