@@ -159,6 +159,39 @@ CREATE TABLE IF NOT EXISTS weather_washingtondc (
   temperature double precision
 );
 
+CREATE TABLE IF NOT EXISTS weather_minneapolis (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
+
+CREATE TABLE IF NOT EXISTS weather_newyork (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
+
+CREATE TABLE IF NOT EXISTS weather_chicago (
+  time timestamp NOT NULL PRIMARY KEY,
+  summary text,
+  precipIntensity text,
+  precipProbability integer,
+  precipType text,
+  precipAccumulation double precision,
+  temperature double precision
+);
+
+
 \copy bike_agg_minneapolis FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/bike_agg_minneapolis_c.csv' DELIMITER ',' CSV; 
 \copy bike_ind_minneapolis FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/bike_ind_minneapolis_c.csv' DELIMITER ',' CSV;
 
