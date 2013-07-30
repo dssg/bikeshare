@@ -217,6 +217,29 @@ month_dummy = month_dummy[1:, :]
 
 # <codecell>
 
+# incorporate day of week
+day_of_week = pd.DatetimeIndex(boston_5_bucketed.index).weekday
+
+levels = list(range(0,7))
+contrast = Treatment(reference=0).code_without_intercept(levels)
+
+day_dummy = contrast.matrix[day_of_week, :]
+day_dummy = day_dummy[1:, :]
+
+# Monday is the reference variable
+data['TUES'] = time_dummy[:,0]
+data['WED'] = time_dummy[:,1]
+data['THUR'] = time_dummy[:,2]
+data['FRI'] = time_dummy[:,3]
+data['SAT'] = time_dummy[:,4]
+data['SUN'] = time_dummy[:,5]
+
+data.ix[0,:]
+
+
+
+# <codecell>
+
 #goal: calculate the monthly average number of bikes
 
 month_series= pd.Series(month)
