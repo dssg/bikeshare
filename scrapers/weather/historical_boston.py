@@ -2,7 +2,6 @@ import os
 import json
 import urllib2
 import time
-import unicodecsv as csv
 import datetime
 from forecastio import forecastio 
 import psycopg2
@@ -31,11 +30,6 @@ start_date = datetime.datetime(2010,1,2)
 end_date = datetime.datetime(2013,7,30)
 d = start_date
 delta = datetime.timedelta(hours=1)
-
-myfile = open('weather_data_boston_2.csv', 'wb')
-wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
-header_list = ["time","summary","precipIntensity","precipProbability","precipType","precipAccumulation","temperature"]
-wr.writerow(header_list)
 
 while d <= end_date:
     print d
