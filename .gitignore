@@ -1,3 +1,6 @@
+#ignore virtual environment
+venv
+
 *.py[cod]
 
 # C extensions

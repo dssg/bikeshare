@@ -5,3 +5,4 @@ HOME=/
 # run-parts
 * * * * * /home/ec2-user/bikeshare/scrapers/v1/update_script.sh
 * * * * * /home/ec2-user/bikeshare/scrapers/v2/update_script.sh
+0 * * * * /home/ec2-user/bikeshare/scrapers/weather/update_script.sh                                                                     

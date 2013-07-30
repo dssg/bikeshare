@@ -17,11 +17,6 @@ except:
 cur = conn.cursor()
 
 #Casts float from string when the is the posbility of the empty string
-def add_zero(item):
-  if (item == 0 or item == "None" or item == ""):
-    return 0.0
-  else:
-    return item
 
 forecast = forecastio.Forecastio(str(os.environ.get('FORECASTIOKEY')))
 result = forecast.load_forecast(city_lat,city_long)
