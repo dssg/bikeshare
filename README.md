@@ -112,6 +112,7 @@ We've built scrapers to fetch real-time bike station and weather data.
 	1.  Set the `dbuser`,`dbname`,and `dburl` environmental varibles to the proper credentials for postgres. Also set the `FORECASTIOKEY` environmental variable to your forecast.io key. 
 	2. Make sure that the tables specified in `data/create_db.sql` exist.
 	3. Each city has its own script to load weather data, named as `historical_[[city_name]].py`. Simply run that script to load in the data for each city. 
+	4. To keep the data fresh, schedule an hourly cronjob (see `scrapers/crontab.example`) of `weather_updater.py`.
 
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
