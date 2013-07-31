@@ -27,7 +27,6 @@ d = start_date
 delta = datetime.timedelta(hours=1)
 
 while d <= end_date:
-    print d
     result = forecast.load_forecast(city_lat,city_long,d,lazy=True)
     current = forecast.get_currently()
     days_list = []
@@ -40,9 +39,15 @@ while d <= end_date:
     precip_accumulation = item.precipAccumulation
     temperature = item.temperature
     if (time is not None):
-      cur.execute("""INSERT INTO weather_washingtondc (time,summary,precipIntensity,precipProbability,precipType,precipAccumulation,temperature) VALUES
-          (%s,%s,%s,%s,%s,%s,%s);""",
-          (time,summary,precip_intensity,precip_probility,precip_type,precip_accumulation,temperature))
+      try:
+        cur.execute("""INSERT INTO weather_washingtondc (time,summary,precipIntensity,precipProbability,precipType,precipAccumulation,temperature) VALUES
+            (%s,%s,%s,%s,%s,%s,%s);""",
+            (time,summary,precip_intensity,precip_probility,precip_type,precip_accumulation,temperature))
+        conn.commit()
+      except:
+        print d
+        print "Unexpected error:", sys.exc_info()[0]
+        pass
     d += delta
 
 conn.commit()
