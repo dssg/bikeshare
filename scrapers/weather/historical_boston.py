@@ -5,6 +5,7 @@ import time
 import datetime
 from forecastio import forecastio 
 import psycopg2
+import sys
 
 city_lat  = 42.3587
 city_long = -71.0567
