@@ -22,7 +22,7 @@ cur = conn.cursor()
 forecast = forecastio.Forecastio(str(os.environ.get('FORECASTIOKEY')))
 result = forecast.load_forecast(city_lat,city_long)
 
-start_date = datetime.datetime(2010,1,2)
+start_date = datetime.datetime(2013,1,1)
 end_date = datetime.datetime(2013,7,30)
 d = start_date
 delta = datetime.timedelta(hours=1)
