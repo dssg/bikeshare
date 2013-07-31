@@ -28,7 +28,6 @@ d = start_date
 delta = datetime.timedelta(hours=1)
 
 while d <= end_date:
-    print d
     result = forecast.load_forecast(city_lat,city_long,d,lazy=True)
     current = forecast.get_currently()
     days_list = []
