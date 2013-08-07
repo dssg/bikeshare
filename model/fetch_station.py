@@ -77,12 +77,12 @@ def fetch_station(city, station_id, time_agg_level,agg_type):
 
 # <codecell>
 
-dc_17.ix[:,"preciptype"].value_counts()
+#dc_17.ix[:,"preciptype"].value_counts()
 
 # <codecell>
 
 #dc_17.ix[:,"preciptype" == "rain"]
-dc_17["2010-10-06"]
+#dc_17["2010-10-06"]
 
 # <codecell>
 
