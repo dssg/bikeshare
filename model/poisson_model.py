@@ -11,6 +11,8 @@ import pandas as pd
 import patsy
 import statsmodels.api as sm
 
+from pandas.io.parsers import read_csv
+
 # Connect to postgres db
 conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')
 + " host="+os.environ.get('dburl'))
@@ -35,8 +37,7 @@ print station_updates
 
 # <codecell>
 
-def fit_poisson(station_updates):
-
+def find_hourly_arr_dep_deltas(station_updates):
     # Find changes (deltas) in bike count
     bikes_available = station_updates.bikes_available
 
@@ -61,28 +62,92 @@ def fit_poisson(station_updates):
     arrivals = pos_interval_counts_null.fillna(0)
     departures = neg_interval_counts_null.fillna(0)
 
-    arrivals_departures = pd.DataFrame(arrivals, columns=["arrivals"])
-    arrivals_departures['departures'] = departures
+    arrival_departure_deltas = pd.DataFrame(arrivals, columns=["arrivals"])
+    arrival_departure_deltas['departures'] = departures
+
+    return arrival_departure_deltas
+
+def remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, station_id):
+
+    # Define station id to terminalname mapper
+    # Stations in the rebalancing trip data are identified by a 'terminalName' numerical id
+    # that corresponds to the station ids in the bike update data.
+    station_id_2_terminal_name = { 17 : 31103 }
+
+
+    # Read in csv of rebalancing trips
+    print >> sys.stderr, "Loading rebalancing data!"
+    rebalancing_trips = read_csv(rebalancing_data)
+
+    # Fetch the station's terminalname
+    station_terminal_name = station_id_2_terminal_name[station_id]
+
+    # Get rebalancing trips that start/depart and end/arrive at the station
+    rebalancing_departures = rebalancing_trips[rebalancing_trips['Start terminal'] == station_terminal_name ]
+    rebalancing_arrivals = rebalancing_trips[rebalancing_trips['End terminal'] == station_terminal_name ]
+
+    # Convert departing and arriving trip times to timestamps, add datetimeindex to both.
+    print >> sys.stderr, "Timestamping the data!"
+
+    rebalancing_departures["Start date"] = pd.to_datetime(rebalancing_departures["Start date"])
+    rebalancing_departures = pd.DataFrame.from_records(rebalancing_departures, index = "Start date")
+
+    rebalancing_arrivals["End date"] = pd.to_datetime(rebalancing_arrivals["End date"])
+    rebalancing_arrivals = pd.DataFrame.from_records(rebalancing_arrivals, index = "End date")
+
+    # Count rebalancing trip arrivals and departures per hour
+    print >> sys.stderr, "Getting hourly counts!"
+
+    rebalancing_departures['Departures'] = 1
+    rebalancing_arrivals['Arrivals'] = 1
+
+    hourly_departure_counts = rebalancing_departures['Departures'].resample('1H', sum)
+    hourly_arrival_counts = rebalancing_arrivals['Arrivals'].resample('1H', sum)
+
+    # Align postive and negative deltas, our estimates of hourly arrivals and departures, with hourly counts 
+    # of rebalancing arrivals and departures. The bike station data goes back further than the rebalancing
+    # data, so we only want to estimate on the observations that fill within the rebalancing data timeframe
+    # and that we can clean.
+    print >> sys.stderr, "Getting total and rebalancing counts!"
+
+    total_departures, rebalancing_departures = arrival_departure_deltas['departures'].align(hourly_departure_counts, join='inner')
+    total_arrivals, rebalancing_arrivals = arrival_departure_deltas['arrivals'].align(hourly_arrivals_counts, join='inner')
+
+    print >> sys.stderr, "Check to see if total and rebalancing departures aligned correctly:"
+    print total_departures.head(30), rebalancing_departures.head(30)
+
+    # Calculate rider-only arrivals and departures
+    # Subtract hourly rebalancing arrivals from (estimated) hourly total arrivals to get (estimated) rider-only arrivals.
+
+    hourly_rider_departures = total_departures - rebalancing_departures
+    hourly_rider_arrivals = total_arrivals - rebalancing_arrivals
+
+    clean_arrival_departure_deltas = (hourly_rider_arrivals, hourly_rider_departures)
+
+    # THIS IS A TUPLE OF SERIES, BUT FIT_POISSON EXPECTS A DATAFRAME. MAKE IT WORK.
+    return clean_arrival_departure_deltas
+
+def fit_poisson(arrival_departure_deltas):
     
     # Extract months for Month feature, add to model data
-    delta_months = arrivals_departures.index.month
-    arrivals_departures['months'] = delta_months
+    delta_months = arrival_departure_deltas.index.month
+    arrival_departure_deltas['months'] = delta_months
 
     # Extract hours for Hour feature
-    delta_hours = arrivals_departures.index.hour
-    arrivals_departures['hours'] = delta_hours
+    delta_hours = arrival_departure_deltas.index.hour
+    arrival_departure_deltas['hours'] = delta_hours
 
     # Extract weekday vs. weekend variable
-    delta_dayofweek = arrivals_departures.index.weekday
+    delta_dayofweek = arrival_departure_deltas.index.weekday
 
     delta_weekday_dummy = delta_dayofweek.copy()
     delta_weekday_dummy[delta_dayofweek < 5] = 1
     delta_weekday_dummy[delta_dayofweek >= 5] = 0
 
-    arrivals_departures['weekday_dummy'] = delta_weekday_dummy
+    arrival_departure_deltas['weekday_dummy'] = delta_weekday_dummy
 
-    print arrivals_departures
-    print arrivals_departures.head(20)
+    print arrival_departure_deltas
+    print arrival_departure_deltas.head(20)
     
     # Create design matrix for months, hours, and weekday vs. weekend.
     # We can't just create a "month" column to toss into our model, because it doesnt
@@ -124,6 +189,7 @@ def fit_poisson(station_updates):
 # the prediction of the expected value of how many bikes will be there.
 
 def predict_net_lambda(current_time, prediction_interval, month, weekday, poisson_results):
+    "Compute the net lambda value - change in bikes at station - for a specific time interval (hour), month, and weekday."
     
     # Define function that takes in a month, time, weekday and returns 
     # a lambda - the expected value of arrivals or departures during that hour (given that month)
@@ -207,9 +273,20 @@ def predict_net_lambda(current_time, prediction_interval, month, weekday, poisso
     
     return net_lambda
 
+#<codecell>
 
-# Estimate the poisson!
-poisson_results = fit_poisson(station_updates)
+# Convert bike availability time series into hourly interval count data
+arrival_departure_deltas = find_hourly_arr_dep_deltas(station_updates)
+
+# Remove hourly swings in bike arrivals and departures caused by station rebalancing
+rebalancing_data = '../data/rebalancing_trips_2_2012_to_3_2013_sample.csv'
+
+# THIS IS A TUPLE OF SERIES, BUT FIT_POISSON EXPECTS A DATAFRAME. MAKE IT WORK. need to check that both series have same length/timeframe
+# and can live in a dataframe.
+clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, station_id)
+
+# Estimate the poisson point process
+poisson_results = fit_poisson(clean_arrival_departure_deltas)
 
 # Try to predict!
 current_time = 17.5
@@ -233,26 +310,25 @@ for hour in hours_of_day:
 pd.Series(bikes).plot()
 
 
-
 # <codecell>
 
 # Validate the model!
-min_time_pt = datetime.datetime(2010,10,8)
+# min_time_pt = datetime.datetime(2010,10,8)
 # prediction_interval =
 # time_step =
 
 
-def validate_model(min_time_pt):
+# def validate_model(min_time_pt):
     
     # Generate list of time points incremented by the time_step
     
     # Get observations before timepoint
-    smaller_updates = station_updates[:min_time_pt]
+    # smaller_updates = station_updates[:min_time_pt]
     
-    print station_updates
-    print smaller_updates
+    # print station_updates
+    # print smaller_updates
 
-validate_model(min_time_pt)
+# validate_model(min_time_pt)
 
 # <codecell>
 
