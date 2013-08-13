@@ -38,3 +38,21 @@ html,body {height:100%;}
   text-align: center
 }
 
+ .leaflet-div-icon {
+  background: none;
+  border: none;
+}
+ 
+.leaflet-marker-icon .number{
+  background: transparent;
+  position: relative;
+  top: -78px;
+  left: 4px;
+  font-size: 12px;
+  width: 25px;
+  text-align: center;
+}
+
+.leaflet-marker-icon {
+  border: none;
+}

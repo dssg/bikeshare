@@ -5,10 +5,6 @@ app = Flask(__name__)
 def show_map():
 	return render_template('template.html')
 
-@app.route("/table/")
-def show_table():
-	return render_template('table.html')
-
 @app.route("/")
 def hello():
 	return render_template('template.html')
