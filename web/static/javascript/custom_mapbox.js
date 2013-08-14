@@ -10,12 +10,12 @@ $(document).ready(function(){
     min   : 0,
     max   : 4 * 60 - 15,  // hours * mins
     step  : 15,     // 15 min intervals, can change with model
-    slide: function( event, ui ) {
-      window.prediction_time  = ui.value.toString();
-      $( "#time" ).text( "Mins From Now: " + ui.value );
+  }).on('slide', function(event) {
+      window.prediction_time  = event.value.toString();
+      $( "#time" ).text( "Mins From Now: " + event.value );
       updateMarkerColorsAndAddGeoJSON();
-    }
   });
+
 
   // Made TileMap with JSON with Vidhur's account
   window.map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw').whenReady(function(){
@@ -25,6 +25,8 @@ $(document).ready(function(){
       updateMarkerColorsAndAddGeoJSON();
     });    
   });
+
+  map.invalidateSize();
 
   function updateMarkerColorsAndAddGeoJSON(){
 
