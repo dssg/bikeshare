@@ -1,3 +1,21 @@
+# -*- coding: utf-8 -*-
+# <nbformat>3.0</nbformat>
+
+# <codecell>
+
+import patsy
+import statsmodels.api as sm
+from scipy import misc
+import numpy as np
+import pandas as pd
+    
+from build_log_odds_df import build_log_odds_df
+from build_log_odds_df import make_present_logodds_df
+from make_dummy import make_dummy_inner
+from make_dummy import make_dummy
+
+# <codecell>
+
 def binomial_fit(data,n):
     import patsy
     import statsmodels.api as sm
@@ -69,6 +87,3 @@ def binomial_fit(data,n):
         return pred_prob,ev_bikes
     
     return output
-
-
-
