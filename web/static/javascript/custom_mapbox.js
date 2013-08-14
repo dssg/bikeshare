@@ -10,9 +10,10 @@ $(document).ready(function(){
     min   : 0,
     max   : 4 * 60 - 15,  // hours * mins
     step  : 15,     // 15 min intervals, can change with model
-  }).on('slide', function(event) {
-      window.prediction_time  = event.value.toString();
-      $( "#time" ).text( "Mins From Now: " + event.value );
+  }).on('slide', function(event, ui) {
+      console.log(ui);
+      window.prediction_time  = ui.value + "";
+      $( "#time" ).text( "Mins From Now: " + ui.value );
       updateMarkerColorsAndAddGeoJSON();
   });
 
