@@ -1,4 +1,4 @@
-def binomial_fit(data,n):
+def binomial_fit(data,stationid,n):
     import patsy
     import statsmodels.api as sm
     from scipy import misc
