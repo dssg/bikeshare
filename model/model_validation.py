@@ -12,6 +12,7 @@ from binomial_fit_function import binomial_fit
 from poisson_fit_function import poisson_fit
 
 def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=None):
+
     if startdate == None:
         startdate = data.index[0]
     else:
@@ -21,9 +22,11 @@ def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=N
             print >> sys.stderr, "That date is after the end of biketime. We'll choose the first date in our dataset."
             startdate = data.index[0]
     print >> sys.stderr, "Fixed the start date"        
+    
     enddate = startdate + DateOffset(years=1)
     offset = DateOffset(days=1, hours=1)
     print >> sys.stderr, "Set the offset"
+
     MSE15 = []
     MSE30 = []
     MSE45 = []
@@ -34,9 +37,14 @@ def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=N
             print >> sys.stderr, "Step forward in time"
         try:
            print >> sys.stderr, "%s" % data[str(enddate):].head()
+
+        # Get next 7 15-minute observations after the training data.
 	   if modeltype == "poisson":
+        # The interval data that goes into poison is sampled every 2 min,
+        # whereas the binomial data is 15, so this is hacky way of making
+        # the observations we're trying to predict in our validation comparable.
 		test_data = data[str(enddate):].iloc[0::8].iloc[1:8]
-		true_test_data = data[str(enddate):].iloc[1::8].iloc[1:8]
+		true_test_data = data[str(enddate):].iloc[0::8].iloc[1:8]
            else:
 		test_data = data[str(enddate):].iloc[1:8]
             	print >> sys.stderr, "Established test data"
@@ -48,17 +56,34 @@ def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=N
         else:
             print "Training on data up to %s" % str(enddate)
         
-        fit_data = data[str(startdate):str(enddate)]
+        # Get training data for this round of prediction.
         print >> sys.stderr, "Set the fit data"
-        model = modelfit(fit_data, stationid, n)
+        fit_data = data[str(startdate):str(enddate)]
+        
+        # Fit the model on this training data, return a function that uses
+        # coefficient estimates to predict.
         print >> sys.stderr, "Fit the model"
+        model = modelfit(fit_data, stationid, n)
+
+        # Get next 7 16-minute bike observations after the current end date, use the first
+        # three observations (30 min ago, 15 min ago, and now) to predict 15 minutes out.
+        # Use this predicted number of bikes and bikes now/15 min ago to predict 30 min out.
+        # Do this until you predict up to the hour. Poisson only uses the current number 
+        # of bikes to predict, no time lags.
         print "Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE"
         for i in range(4):
-            lst_prob,ev_bikes = model(test_data.iloc[i:( i + 3 )], n)
+
+            # Predict number of bikes and save to dataframe.
+            lst_prob, ev_bikes = model(test_data.iloc[i:( i + 3 )], n)
             ev_slots = n - ev_bikes
             test_data.iloc[ i + 3 ]["bikes_available"] = ev_bikes
             test_data.iloc[ i + 3 ]["slots_available"] = ev_slots
+
+            # Fetch the true number of bikes at each 15-minute time step.
             true_bikes = true_test_data.iloc[ i + 3 ]["bikes_available"]
+            
+            # Compute squared error between the predicted number of bikes and the actual
+            # 15 then 30, 45, and 60 minutes from now.
             mse = pow((ev_bikes-true_bikes), 2)
 	   
 	    if i == 0:
