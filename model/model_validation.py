@@ -22,7 +22,7 @@ def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=N
             startdate = data.index[0]
     print >> sys.stderr, "Fixed the start date"        
     enddate = startdate + DateOffset(years=1)
-    offset = DateOffset(months = 1, days=1, hours=1)
+    offset = DateOffset(days=1, hours=1)
     print >> sys.stderr, "Set the offset"
     MSE15 = []
     MSE30 = []
