@@ -3,7 +3,7 @@
 
 # <codecell>
 
-def binomial_fit(data,n):
+def binomial_fit(data, n, stationid):
     import patsy
     import statsmodels.api as sm
     from scipy import misc
@@ -60,29 +60,4 @@ def binomial_fit(data,n):
         return pred_prob,ev_bikes
     
     return output
-
-# <codecell>
-
-from fetch_station import fetch_station
-dc_17=fetch_station("Washington, D.C.", 17, 15, 'max')
-
-# <codecell>
-
-mdl = binomial_fit(dc_17,25)
-
-# <codecell>
-
-mdl(dc_17,25)
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
 

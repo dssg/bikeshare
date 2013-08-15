@@ -1,5 +1,5 @@
-# This function
-def poisson_fit(data, n):
+# This function is used in the model validation script to predict bikes
+def poisson_fit(data, stationid, n):
     import patsy
     import statsmodels.api as sm
 
@@ -13,14 +13,13 @@ def poisson_fit(data, n):
 
     # Remove hourly swings in bike arrivals and departures caused by station rebalancing
     rebalancing_data = '/mnt/data1/BikeShare/rebalancing_trips_2_2012_to_3_2013.csv'
-    clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, station_id)
+    clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, stationid)
 
     # Estimate the poisson point process
     print "Poisson results with rebalancing trips removed:"
     poisson_results = fit_poisson(clean_arrival_departure_deltas)
 
-
-    def predict_bikes(test_data):
+    def predict_bikes(test_data, n):
         "Compute the net lambda value - change in bikes at station - for a specific time interval (hour), month, and weekday."
 
         # Set prediction parameters
@@ -28,7 +27,11 @@ def poisson_fit(data, n):
         current_time = test_data.index[2]
         prediction_interval = .25
         month = current_time.month
-        weekday = current_time.#WHATEVER
+        day_of_week = current_time.weekday
+        if day_of_week < 5:
+            weekday = 1
+        else:
+            weekday = 0
 
         # Create list of hour-chunks in between the current time and the prediction time
         # Need to do this to calculate cumulative lambda rate of arrivals and departures below.

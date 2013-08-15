@@ -3,7 +3,7 @@
 
 # <codecell>
 
-def fetch_station(city, station_id, time_agg_level,agg_type):
+def fetch_station(city, station_id, time_agg_level=None,agg_type=None):
     import os
     import psycopg2
     import pandas as pd
@@ -59,11 +59,16 @@ def fetch_station(city, station_id, time_agg_level,agg_type):
     station_df_non_zero_row = station_df.ix[non_zero_row:,]
     
     #put all data into 15 minute buckets, since some data was collected every 2 minutes and some every minute
-    station_bucketed = station_df_non_zero_row.resample(str(time_agg_level)+'MIN', how = agg_type)
+    if time_agg_level == None:
+        station_bucketed = station_df_non_zero_row
+
+    else:
+        station_bucketed = station_df_non_zero_row.resample(str(time_agg_level)+'MIN', how = agg_type)
     
-    # Drop rows that have missing observations for bikes_available or slots_available
-    station_bucketed = station_bucketed[np.isfinite(station_bucketed['bikes_available'])]
-    station_bucketed = station_bucketed[np.isfinite(station_bucketed['slots_available'])]
+        # Drop rows that have missing observations for bikes_available or slots_available
+        station_bucketed = station_bucketed[np.isfinite(station_bucketed['bikes_available'])]
+        station_bucketed = station_bucketed[np.isfinite(station_bucketed['slots_available'])]
+
     return station_bucketed
 
 # <codecell>

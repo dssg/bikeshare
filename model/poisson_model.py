@@ -197,6 +197,48 @@ def fit_poisson(arrival_departure_deltas):
     
     return poisson_results
 
+# Define function that takes in a month, time, weekday and returns 
+# a lambda - the expected value of arrivals or departures during that hour (given that month)
+# - using the covariate coefficients estimated above.
+def lambda_calc(month, time, weekday, poisson_results):
+    "Compute the lambda value for a specific month, time (hour), and weekday."
+    
+    # Pull out coefficient estimates for the factored covariants
+    estimates = poisson_results.params
+
+    # Fetch intercept
+    intercept = estimates['Intercept']
+    
+    # Fetch coefficient estimate that corresponds to the month..
+    if month == 1:
+        # If the month is January, month estimate is 0 because January's
+        # effect is already reflected in the intercept. The monthly effects
+        # are all relative to January. Same for hour of day.
+        month_estimate = 0
+    else:
+        month_estimate = estimates['C(months, Treatment)[T.'+str(month)+']']
+
+    # .. to the hour
+    hour = floor(time)
+    if hour == 1:
+        hour_estimate = 0
+    else:
+        hour_estimate = estimates['C(hours, Treatment)[T.'+str(int(hour))+']']
+
+    # .. and to the weekday status.
+    if weekday == 0:
+        weekday_estimate = 0
+    else:
+        weekday_estimate = estimates['C(weekday_dummy, Treatment)[T.'+str(weekday)+']']
+
+    # Compute log lambda, which is a linear function of the hour, month, and weekday coefficient estimates
+    log_lambda = intercept + month_estimate + hour_estimate + weekday_estimate
+    
+    # Raise e to log lambda to compute the lambda/expected value of the Poisson distribution for given covariates.
+    est_lambda = exp(log_lambda)
+    
+    return est_lambda
+
 # <codecell>
 
 # Predict *net* lambda value some time in the future, using the list of hours created above.
@@ -217,49 +259,7 @@ def fit_poisson(arrival_departure_deltas):
 
 def predict_net_lambda(current_time, prediction_interval, month, weekday, poisson_results):
     "Compute the net lambda value - change in bikes at station - for a specific time interval (hour), month, and weekday."
-    
-    # Define function that takes in a month, time, weekday and returns 
-    # a lambda - the expected value of arrivals or departures during that hour (given that month)
-    # - using the covariate coefficients estimated above.
-    def lambda_calc(month, time, weekday, poisson_results):
-        "Compute the lambda value for a specific month, time (hour), and weekday."
-        
-        # Pull out coefficient estimates for the factored covariants
-        estimates = poisson_results.params
-    
-        # Fetch intercept
-        intercept = estimates['Intercept']
-        
-        # Fetch coefficient estimate that corresponds to the month..
-        if month == 1:
-            # If the month is January, month estimate is 0 because January's
-            # effect is already reflected in the intercept. The monthly effects
-            # are all relative to January. Same for hour of day.
-            month_estimate = 0
-        else:
-            month_estimate = estimates['C(months, Treatment)[T.'+str(month)+']']
-    
-        # .. to the hour
-        hour = floor(time)
-        if hour == 1:
-            hour_estimate = 0
-        else:
-            hour_estimate = estimates['C(hours, Treatment)[T.'+str(int(hour))+']']
-    
-        # .. and to the weekday status.
-        if weekday == 0:
-            weekday_estimate = 0
-        else:
-            weekday_estimate = estimates['C(weekday_dummy, Treatment)[T.'+str(weekday)+']']
-    
-        # Compute log lambda, which is a linear function of the hour, month, and weekday coefficient estimates
-        log_lambda = intercept + month_estimate + hour_estimate + weekday_estimate
-        
-        # Raise e to log lambda to compute the lambda/expected value of the Poisson distribution for given covariates.
-        est_lambda = exp(log_lambda)
-        
-        return est_lambda
-    
+   
     # Create list of hour-chunks in between the current time and the prediction time
     # Need to do this to calculate cumulative lambda rate of arrivals and departures below.
     prediction_time = current_time + prediction_interval
@@ -307,32 +307,34 @@ def predict_net_lambda(current_time, prediction_interval, month, weekday, poisso
 
 #<codecell>
 
-# Convert bike availability time series into hourly interval count data
-arrival_departure_deltas = find_hourly_arr_dep_deltas(station_updates)
+if __name__ == "__main__":
+    # Convert bike availability time series into hourly interval count data
+    arrival_departure_deltas = find_hourly_arr_dep_deltas(station_updates)
 
-# Remove hourly swings in bike arrivals and departures caused by station rebalancing
-rebalancing_data = '/mnt/data1/BikeShare/rebalancing_trips_2_2012_to_3_2013.csv'
-clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, station_id)
+    # Remove hourly swings in bike arrivals and departures caused by station rebalancing
+    rebalancing_data = '/mnt/data1/BikeShare/rebalancing_trips_2_2012_to_3_2013.csv'
+    clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, station_id)
 
-# Estimate the poisson point process
-print "Poisson results without removing rebalancing trips:"
-poisson_results = fit_poisson(arrival_departure_deltas)
-print "Poisson results with rebalancing trips removed:"
-clean_poisson_results = fit_poisson(clean_arrival_departure_deltas)
+    # Estimate the poisson point process
+    print "Poisson results without removing rebalancing trips:"
+    poisson_results = fit_poisson(arrival_departure_deltas)
+    print "Poisson results with rebalancing trips removed:"
+    clean_poisson_results = fit_poisson(clean_arrival_departure_deltas)
 
 # <codecell>
 
-# Try to predict!
-current_time = 17.5
-prediction_interval = 1
-month = 5
-weekday = 0
+    # Try to predict!
+    current_time = 17.5
+    prediction_interval = 1
+    month = 5
+    weekday = 0
 
-bike_change = predict_net_lambda(current_time, prediction_interval, month, weekday, poisson_results)
-print "The predicted change in bikes at time %s and month %s is %s" % (str(floor(current_time)), str(month), str(bike_change))
+    bike_change = predict_net_lambda(current_time, prediction_interval, month, weekday, poisson_results)
+    print "The predicted change in bikes at time %s and month %s is %s" % (str(floor(current_time)), str(month), str(bike_change))
 
-clean_bike_change = predict_net_lambda(current_time, prediction_interval, month, weekday, clean_poisson_results)
-print "The predicted change in bikes (with clean poisson) at time %s and month %s is %s" % (str(floor(current_time)), str(month), str(clean_bike_change))
+    clean_bike_change = predict_net_lambda(current_time, prediction_interval, month, weekday, clean_poisson_results)
+    print "The predicted change in bikes (with clean poisson) at time %s and month %s is %s" % (str(floor(current_time)), str(month), str(clean_bike_change))
+
 # <codecell>
 
 # Validate the model!
