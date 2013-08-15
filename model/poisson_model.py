@@ -44,9 +44,6 @@ def find_hourly_arr_dep_deltas(station_updates):
 
     arrival_departure_deltas = pd.DataFrame(arrivals, columns=["arrivals"])
     arrival_departure_deltas['departures'] = departures
-    
-    print >> sys.stderr, "Station %s arrival and departures deltas:" % station_id
-    print >> sys.stderr, arrival_departure_deltas.head()
 
     return arrival_departure_deltas
 
