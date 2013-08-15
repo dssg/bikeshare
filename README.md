@@ -71,12 +71,6 @@ We also use historical weather data to aid our predictive model. We've written s
 | 5	| 7 | 10	| 2011-07-28 11:58:12 |
 | 8 	| 5 | 6 	| 2011-07-28 11:58:12 |
 
-* Agg (The Tablename are `bike_agg_cityname`, ie `bike_agg_boston`)
-
-timestamp | bikes | spaces | unbalanced 
----------------------|:----:|:------:|:----
-2013-07-04 17:54:03| 838 | 1058 | 364
-2013-07-04 17:52:03| 826 | 1070 | 368
 
 ###Schema, BIXIV2
 * JSON API cities are Chicago and New York. They use a slightly different schema:
@@ -88,12 +82,6 @@ tfl_id | bikes | spaces | total_docks | timestamp
   72 | 0 | 39 | 39 | 2013-05-24 19:32:02  
   79 | 15 | 15 | 32 | 2013-05-24 19:32:02  
 
-* Agg
-
-timestamp | bikes | spaces | unbalanced |total_docks 
------------------|:---------:|:--------:|:---------:|:----------
-2013-07-04 17:58:04 |  3670 |   6900 |       2007 |       11285 
-2013-07-04 17:56:04 |  3677 |   6893 |       2017 |       11285   
 
 ### Notes on our PostgreSQL configuration
 We maintain cityname naming conventions: (These are way city names are represented in the database) of 
@@ -101,18 +89,7 @@ We maintain cityname naming conventions: (These are way city names are represent
 
 A series of metadata tables also exist in our PostgreSQL to tie a station's id (the `tfl_id` field) to its lat/long and other info. The tablenames follow the `metadata_cityname` convention, i.e. `metadata_boston`.
 
-### Scrapers
-We've built scrapers to fetch real-time bike station and weather data.
-
-- Database update scrapers are used within a cronjob to keep updated the `ind` tables each minute. You need to set up this cronjob yourself if duplicating the database. 
-
-- Metadata scrapers are for the metadata tables. Many thanks to Anna Meredith & [Patrick Collins](https://github.com/capitalsigma) for their code contributions on this. 
-
-- Weather scraper get data from [Forecast.io](http://forecast.io), using the corresponding [python wrapper](https://github.com/ZeevG/python-forcast.io). To keep/get the weather data you'll need a forecast.io API key. Follow the below steps to retrieve the weather data. 
-	1.  Set the `dbuser`,`dbname`,and `dburl` environmental varibles to the proper credentials for postgres. Also set the `FORECASTIOKEY` environmental variable to your forecast.io key. 
-	2. Make sure that the tables specified in `data/create_db.sql` exist.
-	3. Each city has its own script to load weather data, named as `historical_[[city_name]].py`. Simply run that script to load in the data for each city. 
-	4. To keep the data fresh, schedule an hourly cronjob (see `scrapers/crontab.example`) of `weather_updater.py`.
+You can learn more more about the dataset and scrapers in the [wiki](./wiki/data)
 
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
