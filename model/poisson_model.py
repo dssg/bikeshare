@@ -280,6 +280,32 @@ def predict_net_lambda(current_time, prediction_interval, month, weekday, poisso
 #<codecell>
 
 if __name__ == "__main__":
+    # Connect to postgres db
+    conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')
+    + " host="+os.environ.get('dburl'))
+    cur = conn.cursor()
+
+    # <codecell>
+
+    print >> sys.stderr, "Getting station data from postgres!"
+    # Fetch data for station 17 in Washington, DC - 16th & Harvard St NW, terminalName: 31103
+    station_id = 17
+    cur.execute("SELECT * FROM bike_ind_washingtondc WHERE tfl_id = " + str(station_id) + ";")
+    station_data = cur.fetchall()
+
+    # <codecell>
+
+    # Put data in pandas dataframe
+    station_updates = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "spaces_available", "timestamp"], index = "timestamp")
+
+    # Convert UTC timezone of the timestamps to DC's Eastern time
+    station_updates.index = station_updates.index.tz_localize('UTC').tz_convert('US/Eastern')
+
+    print >> sys.stderr, "Here's the interval data for station %s" % station_id
+    print >> sys.stderr, station_updates.head()
+
+    # <codecell>
+
     # Convert bike availability time series into hourly interval count data
     arrival_departure_deltas = find_hourly_arr_dep_deltas(station_updates)
 
@@ -336,31 +362,5 @@ if __name__ == "__main__":
 
 # <codecell>
 
-if __name__ == '__main__':
-        # Connect to postgres db
-    conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')
-    + " host="+os.environ.get('dburl'))
-    cur = conn.cursor()
-
-    # <codecell>
-
-    print >> sys.stderr, "Getting station data from postgres!"
-    # Fetch data for station 17 in Washington, DC - 16th & Harvard St NW, terminalName: 31103
-    station_id = 17
-    cur.execute("SELECT * FROM bike_ind_washingtondc WHERE tfl_id = " + str(station_id) + ";")
-    station_data = cur.fetchall()
-
-    # <codecell>
-
-    # Put data in pandas dataframe
-    station_updates = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "spaces_available", "timestamp"], index = "timestamp")
-
-    # Convert UTC timezone of the timestamps to DC's Eastern time
-    station_updates.index = station_updates.index.tz_localize('UTC').tz_convert('US/Eastern')
-
-    print >> sys.stderr, "Here's the interval data for station %s" % station_id
-    print >> sys.stderr, station_updates.head()
-
-    # <codecell>
 
 
