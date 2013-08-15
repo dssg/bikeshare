@@ -39,8 +39,8 @@ def find_hourly_arr_dep_deltas(station_updates):
     # Set NaN delta counts to 0
     # By default the resampling step puts NaN (null values) into the data when there were no observations
     # to count up during those thirty minutes. 
-    arrival_departure_deltas = pd.DataFrame(arrivals, columns=["arrivals"])
-    arrival_departure_deltas['departures'] = departures
+    arrival_departure_deltas = pd.DataFrame(pos_interval_counts_null, columns=["arrivals"])
+    arrival_departure_deltas['departures'] = neg_interval_counts_null
 
     arrival_departure_deltas = arrival_departure_deltas.fillna(0)
 
