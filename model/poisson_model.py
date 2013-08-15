@@ -4,6 +4,7 @@
 # <codecell>
 
 import os
+import sys
 
 import psycopg2
 import numpy as np
@@ -12,32 +13,11 @@ import patsy
 import statsmodels.api as sm
 
 from pandas.io.parsers import read_csv
+from math import floor, exp
 
-# Connect to postgres db
-conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')
-+ " host="+os.environ.get('dburl'))
-cur = conn.cursor()
-
-# <codecell>
-
-# Fetch data for station 17 in Washington, DC - 16th & Harvard St NW, terminalName: 31103
-station_id = str(17)
-cur.execute("SELECT * FROM bike_ind_washingtondc WHERE tfl_id = " + station_id + ";")
-station_data = cur.fetchall()
-
-# <codecell>
-
-# Put data in pandas dataframe
-station_updates = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "spaces_available", "timestamp"], index = "timestamp")
-
-# Convert UTC timezone of the timestamps to DC's Eastern time
-station_updates.index = station_updates.index.tz_localize('UTC').tz_convert('US/Eastern')
-
-print station_updates
-
-# <codecell>
 
 def find_hourly_arr_dep_deltas(station_updates):
+    print >> sys.stderr, "Computing total arrival and departure deltas for the station."
     # Find changes (deltas) in bike count
     bikes_available = station_updates.bikes_available
 
@@ -59,11 +39,10 @@ def find_hourly_arr_dep_deltas(station_updates):
     # Set NaN delta counts to 0
     # By default the resampling step puts NaN (null values) into the data when there were no observations
     # to count up during those thirty minutes. 
-    arrivals = pos_interval_counts_null.fillna(0)
-    departures = neg_interval_counts_null.fillna(0)
+    arrival_departure_deltas = pd.DataFrame(pos_interval_counts_null, columns=["arrivals"])
+    arrival_departure_deltas['departures'] = neg_interval_counts_null
 
-    arrival_departure_deltas = pd.DataFrame(arrivals, columns=["arrivals"])
-    arrival_departure_deltas['departures'] = departures
+    arrival_departure_deltas = arrival_departure_deltas.fillna(0)
 
     return arrival_departure_deltas
 
@@ -74,9 +53,8 @@ def remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, statio
     # that corresponds to the station ids in the bike update data.
     station_id_2_terminal_name = { 17 : 31103 }
 
-
     # Read in csv of rebalancing trips
-    print >> sys.stderr, "Loading rebalancing data!"
+    print >> sys.stderr, "Loading system-wide rebalancing trip data."
     rebalancing_trips = read_csv(rebalancing_data)
 
     # Fetch the station's terminalname
@@ -86,17 +64,17 @@ def remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, statio
     rebalancing_departures = rebalancing_trips[rebalancing_trips['Start terminal'] == station_terminal_name ]
     rebalancing_arrivals = rebalancing_trips[rebalancing_trips['End terminal'] == station_terminal_name ]
 
-    # Convert departing and arriving trip times to timestamps, add datetimeindex to both.
-    print >> sys.stderr, "Timestamping the data!"
-
+    # Convert departing and arriving trip times to timezone-aware timestamps, add datetimeindex to both.
     rebalancing_departures["Start date"] = pd.to_datetime(rebalancing_departures["Start date"])
     rebalancing_departures = pd.DataFrame.from_records(rebalancing_departures, index = "Start date")
+    rebalancing_departures.index = rebalancing_departures.index.tz_localize('US/Eastern')
 
     rebalancing_arrivals["End date"] = pd.to_datetime(rebalancing_arrivals["End date"])
     rebalancing_arrivals = pd.DataFrame.from_records(rebalancing_arrivals, index = "End date")
+    rebalancing_arrivals.index = rebalancing_arrivals.index.tz_localize('US/Eastern')
 
     # Count rebalancing trip arrivals and departures per hour
-    print >> sys.stderr, "Getting hourly counts!"
+    print >> sys.stderr, "Computing hourly rebalancing arrival and departure deltas."
 
     rebalancing_departures['Departures'] = 1
     rebalancing_arrivals['Arrivals'] = 1
@@ -104,31 +82,47 @@ def remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, statio
     hourly_departure_counts = rebalancing_departures['Departures'].resample('1H', sum)
     hourly_arrival_counts = rebalancing_arrivals['Arrivals'].resample('1H', sum)
 
+    # Make rebalancing count vectors same length.
+    # Rebalancing arrival trips may start later than departures, so we need to make
+    # the two rebalancing vectors the length of the longest one, otherwise we'll
+    # produce NaN values on one column or the other when we put rider deltas back into a dataframe, 
+    # which breaks the 
+    rebalancing_deltas = pd.DataFrame(hourly_arrival_counts, columns=["arrivals"])
+    rebalancing_deltas['departures'] = hourly_departure_counts
+    rebalancing_deltas = rebalancing_deltas.fillna(0)
+
     # Align postive and negative deltas, our estimates of hourly arrivals and departures, with hourly counts 
     # of rebalancing arrivals and departures. The bike station data goes back further than the rebalancing
     # data, so we only want to estimate on the observations that fill within the rebalancing data timeframe
     # and that we can clean.
-    print >> sys.stderr, "Getting total and rebalancing counts!"
+    total_departures, rebalancing_departures = arrival_departure_deltas['departures'].align(rebalancing_deltas.departures, join='inner')
+    total_arrivals, rebalancing_arrivals = arrival_departure_deltas['arrivals'].align(rebalancing_deltas.arrivals, join='inner')
 
-    total_departures, rebalancing_departures = arrival_departure_deltas['departures'].align(hourly_departure_counts, join='inner')
-    total_arrivals, rebalancing_arrivals = arrival_departure_deltas['arrivals'].align(hourly_arrivals_counts, join='inner')
-
-    print >> sys.stderr, "Check to see if total and rebalancing departures aligned correctly:"
-    print total_departures.head(30), rebalancing_departures.head(30)
+    print >> sys.stderr, "Check to see if total and rebalancing departure deltas correctly:"
+    print >> sys.stderr, total_departures.head(20) 
+    print >> sys.stderr, rebalancing_departures.head(20)
 
     # Calculate rider-only arrivals and departures
     # Subtract hourly rebalancing arrivals from (estimated) hourly total arrivals to get (estimated) rider-only arrivals.
-
+    print >> sys.stderr, "Subtracting rebalancing deltas from total to get rider deltas."
     hourly_rider_departures = total_departures - rebalancing_departures
     hourly_rider_arrivals = total_arrivals - rebalancing_arrivals
 
-    clean_arrival_departure_deltas = (hourly_rider_arrivals, hourly_rider_departures)
+    # Set negative departure or arrivals equal to 0.
+    # Because our total arrival and departure deltas are estimated from 2-min interval data
+    # and not true aggregated trips, you might end up with negative rider deltas, which
+    # chockes our poisson estimation function.
+    hourly_rider_departures[hourly_rider_departures < 0] = 0
+    hourly_rider_arrivals[hourly_rider_arrivals < 0] = 0
 
-    # THIS IS A TUPLE OF SERIES, BUT FIT_POISSON EXPECTS A DATAFRAME. MAKE IT WORK.
+    # Packaging rider deltas for poisson estimator
+    clean_arrival_departure_deltas = pd.DataFrame(hourly_rider_arrivals, columns=["arrivals"])
+    clean_arrival_departure_deltas['departures'] = hourly_rider_departures
+   
     return clean_arrival_departure_deltas
 
 def fit_poisson(arrival_departure_deltas):
-    
+
     # Extract months for Month feature, add to model data
     delta_months = arrival_departure_deltas.index.month
     arrival_departure_deltas['months'] = delta_months
@@ -145,30 +139,76 @@ def fit_poisson(arrival_departure_deltas):
     delta_weekday_dummy[delta_dayofweek >= 5] = 0
 
     arrival_departure_deltas['weekday_dummy'] = delta_weekday_dummy
-
-    print arrival_departure_deltas
-    print arrival_departure_deltas.head(20)
     
     # Create design matrix for months, hours, and weekday vs. weekend.
     # We can't just create a "month" column to toss into our model, because it doesnt
     # understand what "June" is. Instead, we need to create a column for each month
     # and code each row according to what month it's in. Ditto for hours and weekday (=1).
     
-    y_arr, X_arr = patsy.dmatrices("arrivals ~ C(months, Treatment) + C(hours, Treatment) + C(weekday_dummy, Treatment)", arrivals_departures, return_type='dataframe')
-    y_dep, X_dep = patsy.dmatrices("departures ~ C(months, Treatment) + C(hours, Treatment) + C(weekday_dummy, Treatment)", arrivals_departures, return_type='dataframe')
+    y_arr, X_arr = patsy.dmatrices("arrivals ~ C(months, Treatment) + C(hours, Treatment) + C(weekday_dummy, Treatment)", arrival_departure_deltas, return_type='dataframe')
+    y_dep, X_dep = patsy.dmatrices("departures ~ C(months, Treatment) + C(hours, Treatment) + C(weekday_dummy, Treatment)", arrival_departure_deltas, return_type='dataframe')
+
+    print >> sys.stderr, "Here's the design matrix of departure deltas, ready for poisson estimator:"
+    print >> sys.stderr, y_dep
+    print >> sys.stderr, X_dep
 
     # Fit poisson distributions for arrivals and departures, print results
+    print >> sys.stderr, "Fitting poisson models for arrivals and departures!"
     arr_poisson_model = sm.Poisson(y_arr, X_arr)
     arr_poisson_results = arr_poisson_model.fit()
     
     dep_poisson_model = sm.Poisson(y_dep, X_dep)
     dep_poisson_results = dep_poisson_model.fit()
     
-    print arr_poisson_results.summary(), dep_poisson_results.summary()
+    # Print model results to stdout
+    print >> sys.stderr, arr_poisson_results.summary()
+    print >> sys.stderr, dep_poisson_results.summary()
     
-    poisson_results = [arr_poisson_results, dep_poisson_results]
+    poisson_results = {"arrivals": arr_poisson_results, "departures": dep_poisson_results}
     
     return poisson_results
+
+# Define function that takes in a month, time, weekday and returns 
+# a lambda - the expected value of arrivals or departures during that hour (given that month)
+# - using the covariate coefficients estimated above.
+def lambda_calc(month, time, weekday, poisson_results):
+    "Compute the lambda value for a specific month, time (hour), and weekday."
+    
+    # Pull out coefficient estimates for the factored covariants
+    estimates = poisson_results.params
+
+    # Fetch intercept
+    intercept = estimates['Intercept']
+    
+    # Fetch coefficient estimate that corresponds to the month..
+    if month == 1:
+        # If the month is January, month estimate is 0 because January's
+        # effect is already reflected in the intercept. The monthly effects
+        # are all relative to January. Same for hour of day.
+        month_estimate = 0
+    else:
+        month_estimate = estimates['C(months, Treatment)[T.'+str(month)+']']
+
+    # .. to the hour
+    hour = floor(time)
+    if hour == 0:
+        hour_estimate = 0
+    else:
+        hour_estimate = estimates['C(hours, Treatment)[T.'+str(int(hour))+']']
+
+    # .. and to the weekday status.
+    if weekday == 0:
+        weekday_estimate = 0
+    else:
+        weekday_estimate = estimates['C(weekday_dummy, Treatment)[T.'+str(weekday)+']']
+
+    # Compute log lambda, which is a linear function of the hour, month, and weekday coefficient estimates
+    log_lambda = intercept + month_estimate + hour_estimate + weekday_estimate
+    
+    # Raise e to log lambda to compute the lambda/expected value of the Poisson distribution for given covariates.
+    est_lambda = exp(log_lambda)
+    
+    return est_lambda
 
 # <codecell>
 
@@ -190,48 +230,9 @@ def fit_poisson(arrival_departure_deltas):
 
 def predict_net_lambda(current_time, prediction_interval, month, weekday, poisson_results):
     "Compute the net lambda value - change in bikes at station - for a specific time interval (hour), month, and weekday."
-    
-    # Define function that takes in a month, time, weekday and returns 
-    # a lambda - the expected value of arrivals or departures during that hour (given that month)
-    # - using the covariate coefficients estimated above.
-    def lambda_calc(month, time, weekday, poisson_results):
-        "Compute the lambda value for a specific month, time (hour), and weekday."
-        
-        # Pull out coefficient estimates for the factored covariants
-        estimates = poisson_results.params
-    
-        # Fetch intercept
-        intercept = estimates['Intercept']
-        
-        # Fetch coefficient estimate that corresponds to the month..
-        if month == 1:
-            month_estimate = 0
-        else:
-            month_estimate = estimates['C(months, Treatment)[T.'+str(month)+']']
-    
-        # .. to the hour
-        hour = floor(time)
-        if hour == 1:
-            hour_estimate = 0
-        else:
-            hour_estimate = estimates['C(hours, Treatment)[T.'+str(int(hour))+']']
-    
-        # .. and to the weekday status.
-        if weekday == 0:
-            weekday_estimate = 0
-        else:
-            weekday_estimate = estimates['C(weekday_dummy, Treatment)[T.'+str(weekday)+']']
-    
-        # Compute log lambda, which is linear function of the hour, month, and weekday coefficient estimates
-        log_lambda = intercept + month_estimate + hour_estimate + weekday_estimate
-        
-        # Raise e to the computed log lambda to find the estimated value of the Poisson distribution for these covariates.
-        est_lambda = exp(log_lambda)
-        
-        return est_lambda
-    
-    # Create list of hours in between the current time and the prediction time
-    # Need to do this to calculate cumulative rate of arrivals and departures
+   
+    # Create list of hour-chunks in between the current time and the prediction time
+    # Need to do this to calculate cumulative lambda rate of arrivals and departures below.
     prediction_time = current_time + prediction_interval
 
     time_list = [current_time]
@@ -240,75 +241,96 @@ def predict_net_lambda(current_time, prediction_interval, month, weekday, poisso
     
         if floor(next_step) + 1 < prediction_time:
             next_step = floor(next_step) + 1
-            time_list.append(next_step)
         
         else:
             next_step = prediction_time
-            time_list.append(next_step)
+            
+        time_list.append(next_step)
         
-    
     # Calculate the cumulative lambda rate over the predition interval
+    # For arrivals..
     arr_cum_lambda = 0 
-    dep_cum_lambda = 0 
-    
-    # Find cumulative lambda for arrivals..
     for i in range(1, len(time_list)):
-        est_lambda = lambda_calc(month, time_list[ i - 1 ], weekday, poisson_results[0])
+        # Compute arrival lambda for entire current hour
+        est_lambda = lambda_calc(month, time_list[ i - 1 ], weekday, poisson_results["arrivals"])
+
+        # Find hour-chunk lambda
         hour_proportion = time_list[i] - time_list[ i - 1 ]
-    
         interval_lambda = est_lambda * hour_proportion
         
+        # Count up hour-chunk lambdas to get cumulative lambda
         arr_cum_lambda += interval_lambda
         
     # .. and departures
+    dep_cum_lambda = 0 
     for i in range(1, len(time_list)):
-        est_lambda = lambda_calc(month, time_list[ i - 1 ], weekday, poisson_results[1])
+        est_lambda = lambda_calc(month, time_list[ i - 1 ], weekday, poisson_results["departures"])
         hour_proportion = time_list[i] - time_list[ i - 1 ]
-    
         interval_lambda = est_lambda * hour_proportion
         
         dep_cum_lambda += interval_lambda
     
+    # Subtract cumulative departure lambdas from arrival lambdas to find net lamdas 
+    # over the prediction interval
     net_lambda = arr_cum_lambda - dep_cum_lambda
     
     return net_lambda
 
 #<codecell>
 
-# Convert bike availability time series into hourly interval count data
-arrival_departure_deltas = find_hourly_arr_dep_deltas(station_updates)
+if __name__ == "__main__":
+    # Connect to postgres db
+    conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')
+    + " host="+os.environ.get('dburl'))
+    cur = conn.cursor()
 
-# Remove hourly swings in bike arrivals and departures caused by station rebalancing
-rebalancing_data = '../data/rebalancing_trips_2_2012_to_3_2013_sample.csv'
+    # <codecell>
 
-# THIS IS A TUPLE OF SERIES, BUT FIT_POISSON EXPECTS A DATAFRAME. MAKE IT WORK. need to check that both series have same length/timeframe
-# and can live in a dataframe.
-clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, station_id)
+    print >> sys.stderr, "Getting station data from postgres!"
+    # Fetch data for station 17 in Washington, DC - 16th & Harvard St NW, terminalName: 31103
+    station_id = 17
+    cur.execute("SELECT * FROM bike_ind_washingtondc WHERE tfl_id = " + str(station_id) + ";")
+    station_data = cur.fetchall()
 
-# Estimate the poisson point process
-poisson_results = fit_poisson(clean_arrival_departure_deltas)
+    # <codecell>
 
-# Try to predict!
-current_time = 17.5
-prediction_interval = 1
-month = 5
-weekday = 0
+    # Put data in pandas dataframe
+    station_updates = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "spaces_available", "timestamp"], index = "timestamp")
 
-bike_change = predict_net_lambda(current_time, prediction_interval, month, weekday, poisson_results)
-print "The change in bikes at time %s and month %s is %s" % (str(floor(current_time)), str(month), str(bike_change))
+    # Convert UTC timezone of the timestamps to DC's Eastern time
+    station_updates.index = station_updates.index.tz_localize('UTC').tz_convert('US/Eastern')
 
-# Plot predictions of available bikes by hour for given covariates
-init_bikes = 22
-bike = init_bikes
-bikes = [init_bikes]
-hours_of_day  = range(1,24)
+    print >> sys.stderr, "Here's the interval data for station %s" % station_id
+    print >> sys.stderr, station_updates.head()
 
-for hour in hours_of_day:
-    bike += predict_net_lambda(hour, prediction_interval, month, weekday, poisson_results)
-    bikes.append(bike)
-       
-pd.Series(bikes).plot()
+    # <codecell>
 
+    # Convert bike availability time series into hourly interval count data
+    arrival_departure_deltas = find_hourly_arr_dep_deltas(station_updates)
+
+    # Remove hourly swings in bike arrivals and departures caused by station rebalancing
+    rebalancing_data = '/mnt/data1/BikeShare/rebalancing_trips_2_2012_to_3_2013.csv'
+    clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, station_id)
+
+    # Estimate the poisson point process
+    print "Poisson results without removing rebalancing trips:"
+    poisson_results = fit_poisson(arrival_departure_deltas)
+    print "Poisson results with rebalancing trips removed:"
+    clean_poisson_results = fit_poisson(clean_arrival_departure_deltas)
+
+# <codecell>
+
+    # Try to predict!
+    current_time = 17.5
+    prediction_interval = 1
+    month = 5
+    weekday = 0
+
+    bike_change = predict_net_lambda(current_time, prediction_interval, month, weekday, poisson_results)
+    print "The predicted change in bikes at time %s and month %s is %s" % (str(floor(current_time)), str(month), str(bike_change))
+
+    clean_bike_change = predict_net_lambda(current_time, prediction_interval, month, weekday, clean_poisson_results)
+    print "The predicted change in bikes (with clean poisson) at time %s and month %s is %s" % (str(floor(current_time)), str(month), str(clean_bike_change))
 
 # <codecell>
 
@@ -338,5 +360,6 @@ pd.Series(bikes).plot()
 # is what bikeshare operators want.
 
 # <codecell>
+
 
 
