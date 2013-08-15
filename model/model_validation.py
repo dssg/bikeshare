@@ -11,7 +11,7 @@ import os
 from binomial_fit_function import binomial_fit
 from poisson_fit_function import poisson_fit
 
-def model_validation(modelfit, n, data, stationid, startdate = None):
+def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=None):
     if startdate == None:
         startdate = data.index[0]
     else:
@@ -22,18 +22,26 @@ def model_validation(modelfit, n, data, stationid, startdate = None):
             startdate = data.index[0]
     print >> sys.stderr, "Fixed the start date"        
     enddate = startdate + DateOffset(years=1)
-    offset = DateOffset(days=1, hours=1)
+    offset = DateOffset(months = 1, days=1, hours=1)
     print >> sys.stderr, "Set the offset"
+    MSE15 = []
+    MSE30 = []
+    MSE45 = []
+    MSE60 = []
     for i in range(10000):
         if i != 0:
             enddate += offset
             print >> sys.stderr, "Step forward in time"
         try:
-            print >> sys.stderr, "%s" % data[str(enddate):].head()
-            test_data = data[str(enddate):].iloc[1:8]
-            print >> sys.stderr, "Established test data"
-            true_test_data = data[str(enddate):].iloc[1:8]
-            print >> sys.stderr, "Oh phew! We can still test more points"
+           print >> sys.stderr, "%s" % data[str(enddate):].head()
+	   if modeltype == "poisson":
+		test_data = data[str(enddate):].iloc[0::8].iloc[1:8]
+		true_test_data = data[str(enddate):].iloc[1::8].iloc[1:8]
+           else:
+		test_data = data[str(enddate):].iloc[1:8]
+            	print >> sys.stderr, "Established test data"
+            	true_test_data = data[str(enddate):].iloc[1:8]
+            	print >> sys.stderr, "Oh phew! We can still test more points"
         except:
             print >> sys.stderr, "Shit! Guess we're done now."
             break
@@ -45,15 +53,31 @@ def model_validation(modelfit, n, data, stationid, startdate = None):
         model = modelfit(fit_data, stationid, n)
         print >> sys.stderr, "Fit the model"
         print "Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE"
-        for i in range(3):
+        for i in range(4):
             lst_prob,ev_bikes = model(test_data.iloc[i:( i + 3 )], n)
             ev_slots = n - ev_bikes
             test_data.iloc[ i + 3 ]["bikes_available"] = ev_bikes
             test_data.iloc[ i + 3 ]["slots_available"] = ev_slots
             true_bikes = true_test_data.iloc[ i + 3 ]["bikes_available"]
             mse = pow((ev_bikes-true_bikes), 2)
-            print "%d,%f,%d,%f" % (i, ev_bikes, true_bikes, mse)
+	   
+	    if i == 0:
+		MSE15.append(mse)
+           
+	    elif i == 1:
+		MSE30.append(mse)
             
+            elif i == 2:
+		MSE45.append(mse)
+            
+            elif i ==3:
+		MSE60.append(mse)
+            print >> sys.stderr, "%d,%f,%d,%f" % (i, ev_bikes, true_bikes, mse)
+            
+    print "Mean Squared Error at 15 minutes out %f" % (sum(MSE15) / len(MSE15)) 
+    print "Mean Squared Error at 30 minutes out %f" % (sum(MSE30) / len(MSE30)) 
+    print "Mean Squared Error at 45 minutes out %f" % (sum(MSE45) / len(MSE45)) 
+    print "Mean Squared Error at 60 minutes out %f" % (sum(MSE60) / len(MSE60)) 
 
 # <codecell>
 if __name__ == '__main__':
@@ -74,11 +98,11 @@ if __name__ == '__main__':
         station_data = cur.fetchall()
 
         # Add data to dataframe, add timezone
-        dc_station_17_poisson = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "spaces_available", "timestamp"], index = "timestamp")
+        dc_station_17_poisson = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = "timestamp")
         dc_station_17_poisson.index = dc_station_17_poisson.index.tz_localize('UTC').tz_convert('US/Eastern')
 
         print >> sys.stderr, "Running model validation script for poisson."
-        model_validation(poisson_fit, 25, dc_station_17_poisson, station_id, start_date)
+        model_validation(poisson_fit, 25, dc_station_17_poisson, station_id, start_date, modeltype = "poisson")
 
 # <codecell>
     elif model == "binomial":

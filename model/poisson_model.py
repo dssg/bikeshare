@@ -161,8 +161,8 @@ def fit_poisson(arrival_departure_deltas):
     dep_poisson_results = dep_poisson_model.fit()
     
     # Print model results to stdout
-    print arr_poisson_results.summary()
-    print dep_poisson_results.summary()
+    print >> sys.stderr, arr_poisson_results.summary()
+    print >> sys.stderr, dep_poisson_results.summary()
     
     poisson_results = {"arrivals": arr_poisson_results, "departures": dep_poisson_results}
     
@@ -191,7 +191,7 @@ def lambda_calc(month, time, weekday, poisson_results):
 
     # .. to the hour
     hour = floor(time)
-    if hour == 1:
+    if hour == 0:
         hour_estimate = 0
     else:
         hour_estimate = estimates['C(hours, Treatment)[T.'+str(int(hour))+']']
