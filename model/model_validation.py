@@ -36,7 +36,7 @@ def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=N
            print >> sys.stderr, "%s" % data[str(enddate):].head()
 	   if modeltype == "poisson":
 		test_data = data[str(enddate):].iloc[0::8].iloc[1:8]
-		true_test_data = data[str(enddate):].iloc[1::8].iloc[1:8]
+		true_test_data = data[str(enddate):].iloc[0::8].iloc[1:8]
            else:
 		test_data = data[str(enddate):].iloc[1:8]
             	print >> sys.stderr, "Established test data"
