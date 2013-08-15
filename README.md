@@ -89,7 +89,7 @@ We maintain cityname naming conventions: (These are way city names are represent
 
 A series of metadata tables also exist in our PostgreSQL to tie a station's id (the `tfl_id` field) to its lat/long and other info. The tablenames follow the `metadata_cityname` convention, i.e. `metadata_boston`.
 
-You can learn more more about the dataset and scrapers in the [wiki](./wiki/data)
+You can learn more more about the dataset and scrapers in the [wiki](https://github.com/dssg/bikeshare/wiki/data).
 
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
