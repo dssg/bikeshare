@@ -55,7 +55,7 @@ if __name__ == '__main__':
     station_id = 17
 
     model = sys.argv[1]
-    model = model.lower
+    model = model.lower()
 
     if model == "poisson":
 

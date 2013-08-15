@@ -11,13 +11,21 @@ def poisson_fit(data, stationid, n):
     # Convert bike availability time series into hourly interval count data
     arrival_departure_deltas = find_hourly_arr_dep_deltas(data)
 
+    print arrival_departure_deltas
+    print arrival_departure_deltas.head()
+
     # Remove hourly swings in bike arrivals and departures caused by station rebalancing
     rebalancing_data = '/mnt/data1/BikeShare/rebalancing_trips_2_2012_to_3_2013.csv'
     clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, stationid)
 
+    print clean_arrival_departure_deltas
+    print clean_arrival_departure_deltas.head()
+
     # Estimate the poisson point process
     print "Poisson results with rebalancing trips removed:"
     poisson_results = fit_poisson(clean_arrival_departure_deltas)
+
+    print poisson_results
 
     def predict_bikes(test_data, n):
         "Compute the net lambda value - change in bikes at station - for a specific time interval (hour), month, and weekday."

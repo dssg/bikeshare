@@ -3,6 +3,7 @@ def binomial_fit(data,stationid,n):
     import statsmodels.api as sm
     from scipy import misc
     import numpy as np
+    import pandas as pd
     
     from build_log_odds_df import build_log_odds_df
     from build_log_odds_df import make_present_logodds_df
