@@ -2,10 +2,10 @@
 def poisson_fit(data, stationid, n):
     import patsy
     import statsmodels.api as sm
-
+    from pandas.core.datetools import DateOffset
     from pandas.io.parsers import read_csv
     from math import floor, exp
-
+    import sys
     from poisson_model import find_hourly_arr_dep_deltas, remove_rebalancing_deltas, fit_poisson, lambda_calc
 
     # Convert bike availability time series into hourly interval count data
@@ -43,12 +43,12 @@ def poisson_fit(data, stationid, n):
 
         # Create list of hour-chunks in between the current time and the prediction time
         # Need to do this to calculate cumulative lambda rate of arrivals and departures below.
-        prediction_time = current_time + prediction_interval
-
+        prediction_time = (current_time.hour + float(current_time.minute)/60) + prediction_interval
+        prediction_time = prediction_time % 24
         time_list = [current_time]
-        next_step = current_time
-        while next_step != prediction_time:
-        
+        next_step = (current_time.hour + float(current_time.minute)/60) % 24
+        while next_step < prediction_time:
+            print >> sys.stderr, type(floor(next_step))
             if floor(next_step) + 1 < prediction_time:
                 next_step = floor(next_step) + 1
             

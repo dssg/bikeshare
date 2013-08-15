@@ -20,23 +20,30 @@ def model_validation(modelfit, n, data, stationid, startdate = None):
         except:
             print >> sys.stderr, "That date is after the end of biketime. We'll choose the first date in our dataset."
             startdate = data.index[0]
-            
+    print >> sys.stderr, "Fixed the start date"        
     enddate = startdate + DateOffset(years=1)
     offset = DateOffset(days=1, hours=1)
+    print >> sys.stderr, "Set the offset"
     for i in range(10000):
         if i != 0:
             enddate += offset
-            
+            print >> sys.stderr, "Step forward in time"
         try:
-            test_data = data[np.datetime64(enddate):].iloc[1:7]
-            true_test_data = data[np.datetime64(enddate):].iloc[1:7]
+            print >> sys.stderr, "%s" % data[str(enddate):].head()
+            test_data = data[str(enddate):].iloc[1:8]
+            print >> sys.stderr, "Established test data"
+            true_test_data = data[str(enddate):].iloc[1:8]
+            print >> sys.stderr, "Oh phew! We can still test more points"
         except:
+            print >> sys.stderr, "Shit! Guess we're done now."
             break
         else:
             print "Training on data up to %s" % str(enddate)
         
-        fit_data = data[np.datetime64(startdate):np.datetime64(enddate)]
+        fit_data = data[str(startdate):str(enddate)]
+        print >> sys.stderr, "Set the fit data"
         model = modelfit(fit_data, stationid, n)
+        print >> sys.stderr, "Fit the model"
         print "Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE"
         for i in range(3):
             lst_prob,ev_bikes = model(test_data.iloc[i:( i + 3 )], n)
