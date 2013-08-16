@@ -1,0 +1,16 @@
+Training on data up to 2013-02-16 00:00:00-05:00
+Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE
+Training on data up to 2013-03-17 02:00:00-04:00
+Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE
+Training on data up to 2013-04-18 03:00:00-04:00
+Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE
+Training on data up to 2013-05-19 04:00:00-04:00
+Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE
+Training on data up to 2013-06-20 05:00:00-04:00
+Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE
+Training on data up to 2013-07-21 06:00:00-04:00
+Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE
+Mean Squared Error at 15 minutes out nan
+Mean Squared Error at 30 minutes out nan
+Mean Squared Error at 45 minutes out 4.000000
+Mean Squared Error at 60 minutes out 0.916515

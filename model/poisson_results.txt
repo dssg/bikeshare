@@ -1,0 +1,212 @@
+Poisson results without removing rebalancing trips:
+Optimization terminated successfully.
+         Current function value: 62469.312999
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: nan
+         Iterations 1
+                          Poisson Regression Results                          
+==============================================================================
+Dep. Variable:               arrivals   No. Observations:                25031
+Model:                        Poisson   Df Residuals:                    24995
+Method:                           MLE   Df Model:                           35
+Date:                Wed, 14 Aug 2013   Pseudo R-squ.:                  0.1831
+Time:                        17:51:32   Log-Likelihood:                -62469.
+converged:                       True   LL-Null:                       -76475.
+                                        LLR p-value:                     0.000
+====================================================================================================
+                                       coef    std err          z      P>|z|      [95.0% Conf. Int.]
+----------------------------------------------------------------------------------------------------
+Intercept                            1.1657      0.023     50.823      0.000         1.121     1.211
+C(months, Treatment)[T.2]            0.0911      0.022      4.153      0.000         0.048     0.134
+C(months, Treatment)[T.3]            0.2391      0.021     11.538      0.000         0.199     0.280
+C(months, Treatment)[T.4]            0.3662      0.020     18.030      0.000         0.326     0.406
+C(months, Treatment)[T.5]            0.4239      0.020     21.237      0.000         0.385     0.463
+C(months, Treatment)[T.6]            0.4436      0.020     22.196      0.000         0.404     0.483
+C(months, Treatment)[T.7]            0.3004      0.020     14.688      0.000         0.260     0.340
+C(months, Treatment)[T.8]            0.4142      0.021     19.806      0.000         0.373     0.455
+C(months, Treatment)[T.9]            0.3886      0.022     17.511      0.000         0.345     0.432
+C(months, Treatment)[T.10]           0.1084      0.022      5.007      0.000         0.066     0.151
+C(months, Treatment)[T.11]           0.0890      0.022      4.115      0.000         0.047     0.131
+C(months, Treatment)[T.12]          -0.0653      0.022     -2.929      0.003        -0.109    -0.022
+C(hours, Treatment)[T.1]            -0.7293      0.029    -25.415      0.000        -0.785    -0.673
+C(hours, Treatment)[T.2]            -1.7490      0.043    -41.038      0.000        -1.833    -1.665
+C(hours, Treatment)[T.3]            -2.2777      0.054    -42.396      0.000        -2.383    -2.172
+C(hours, Treatment)[T.4]            -2.9450      0.073    -40.186      0.000        -3.089    -2.801
+C(hours, Treatment)[T.5]            -3.2125      0.083    -38.576      0.000        -3.376    -3.049
+C(hours, Treatment)[T.6]            -2.1028      0.050    -42.343      0.000        -2.200    -2.005
+C(hours, Treatment)[T.7]            -1.1643      0.034    -34.664      0.000        -1.230    -1.098
+C(hours, Treatment)[T.8]            -0.6282      0.028    -22.618      0.000        -0.683    -0.574
+C(hours, Treatment)[T.9]            -0.5844      0.027    -21.342      0.000        -0.638    -0.531
+C(hours, Treatment)[T.10]           -0.3074      0.025    -12.214      0.000        -0.357    -0.258
+C(hours, Treatment)[T.11]           -0.3998      0.026    -15.462      0.000        -0.451    -0.349
+C(hours, Treatment)[T.12]           -0.4031      0.026    -15.571      0.000        -0.454    -0.352
+C(hours, Treatment)[T.13]           -0.3875      0.026    -15.041      0.000        -0.438    -0.337
+C(hours, Treatment)[T.14]           -0.5535      0.027    -20.405      0.000        -0.607    -0.500
+C(hours, Treatment)[T.15]           -0.8526      0.030    -28.449      0.000        -0.911    -0.794
+C(hours, Treatment)[T.16]           -0.6294      0.028    -22.651      0.000        -0.684    -0.575
+C(hours, Treatment)[T.17]           -0.1303      0.024     -5.436      0.000        -0.177    -0.083
+C(hours, Treatment)[T.18]            0.2276      0.022     10.365      0.000         0.185     0.271
+C(hours, Treatment)[T.19]            0.2353      0.022     10.732      0.000         0.192     0.278
+C(hours, Treatment)[T.20]            0.1939      0.022      8.764      0.000         0.151     0.237
+C(hours, Treatment)[T.21]            0.2237      0.022     10.181      0.000         0.181     0.267
+C(hours, Treatment)[T.22]            0.2707      0.022     12.445      0.000         0.228     0.313
+C(hours, Treatment)[T.23]            0.0881      0.023      3.885      0.000         0.044     0.133
+C(weekday_dummy, Treatment)[T.1]    -0.1930      0.009    -22.045      0.000        -0.210    -0.176
+====================================================================================================
+                          Poisson Regression Results                          
+==============================================================================
+Dep. Variable:             departures   No. Observations:                25031
+Model:                        Poisson   Df Residuals:                    24995
+Method:                           MLE   Df Model:                           35
+Date:                Wed, 14 Aug 2013   Pseudo R-squ.:                     nan
+Time:                        17:51:32   Log-Likelihood:                    nan
+converged:                       True   LL-Null:                           nan
+                                        LLR p-value:                       nan
+====================================================================================================
+                                       coef    std err          z      P>|z|      [95.0% Conf. Int.]
+----------------------------------------------------------------------------------------------------
+Intercept                               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.2]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.3]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.4]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.5]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.6]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.7]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.8]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.9]               nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.10]              nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.11]              nan        nan        nan        nan           nan       nan
+C(months, Treatment)[T.12]              nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.1]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.2]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.3]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.4]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.5]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.6]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.7]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.8]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.9]                nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.10]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.11]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.12]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.13]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.14]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.15]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.16]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.17]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.18]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.19]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.20]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.21]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.22]               nan        nan        nan        nan           nan       nan
+C(hours, Treatment)[T.23]               nan        nan        nan        nan           nan       nan
+C(weekday_dummy, Treatment)[T.1]        nan        nan        nan        nan           nan       nan
+====================================================================================================
+Poisson results with rebalancing trips removed:
+Optimization terminated successfully.
+         Current function value: 31195.498020
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 29725.071325
+         Iterations 12
+                          Poisson Regression Results                          
+==============================================================================
+Dep. Variable:               arrivals   No. Observations:                12950
+Model:                        Poisson   Df Residuals:                    12914
+Method:                           MLE   Df Model:                           35
+Date:                Wed, 14 Aug 2013   Pseudo R-squ.:                  0.2088
+Time:                        17:51:34   Log-Likelihood:                -31195.
+converged:                       True   LL-Null:                       -39429.
+                                        LLR p-value:                     0.000
+====================================================================================================
+                                       coef    std err          z      P>|z|      [95.0% Conf. Int.]
+----------------------------------------------------------------------------------------------------
+Intercept                            0.9811      0.040     24.775      0.000         0.904     1.059
+C(months, Treatment)[T.2]            0.0062      0.044      0.143      0.886        -0.079     0.092
+C(months, Treatment)[T.3]            0.3490      0.039      9.038      0.000         0.273     0.425
+C(months, Treatment)[T.4]            0.8536      0.037     23.268      0.000         0.782     0.925
+C(months, Treatment)[T.5]            0.8515      0.037     23.269      0.000         0.780     0.923
+C(months, Treatment)[T.6]            0.8406      0.037     22.894      0.000         0.769     0.913
+C(months, Treatment)[T.7]            0.5858      0.038     15.599      0.000         0.512     0.659
+C(months, Treatment)[T.8]            0.8474      0.039     21.964      0.000         0.772     0.923
+C(months, Treatment)[T.9]            0.9019      0.040     22.818      0.000         0.824     0.979
+C(months, Treatment)[T.10]           0.7889      0.040     19.689      0.000         0.710     0.867
+C(months, Treatment)[T.11]           0.1245      0.046      2.712      0.007         0.035     0.215
+C(months, Treatment)[T.12]          -0.0876      0.048     -1.828      0.068        -0.182     0.006
+C(hours, Treatment)[T.1]            -0.5835      0.034    -17.083      0.000        -0.650    -0.517
+C(hours, Treatment)[T.2]            -1.7818      0.054    -33.022      0.000        -1.888    -1.676
+C(hours, Treatment)[T.3]            -2.3024      0.068    -33.941      0.000        -2.435    -2.169
+C(hours, Treatment)[T.4]            -2.8516      0.088    -32.574      0.000        -3.023    -2.680
+C(hours, Treatment)[T.5]            -3.1061      0.099    -31.435      0.000        -3.300    -2.912
+C(hours, Treatment)[T.6]            -2.7616      0.084    -32.913      0.000        -2.926    -2.597
+C(hours, Treatment)[T.7]            -1.8493      0.055    -33.338      0.000        -1.958    -1.741
+C(hours, Treatment)[T.8]            -1.0001      0.039    -25.360      0.000        -1.077    -0.923
+C(hours, Treatment)[T.9]            -1.2136      0.043    -28.401      0.000        -1.297    -1.130
+C(hours, Treatment)[T.10]           -0.7237      0.036    -20.231      0.000        -0.794    -0.654
+C(hours, Treatment)[T.11]           -0.7878      0.037    -21.547      0.000        -0.859    -0.716
+C(hours, Treatment)[T.12]           -0.9977      0.039    -25.330      0.000        -1.075    -0.920
+C(hours, Treatment)[T.13]           -0.7066      0.036    -19.867      0.000        -0.776    -0.637
+C(hours, Treatment)[T.14]           -0.8195      0.037    -22.171      0.000        -0.892    -0.747
+C(hours, Treatment)[T.15]           -0.9886      0.039    -25.184      0.000        -1.066    -0.912
+C(hours, Treatment)[T.16]           -0.8791      0.038    -23.292      0.000        -0.953    -0.805
+C(hours, Treatment)[T.17]           -0.2564      0.031     -8.284      0.000        -0.317    -0.196
+C(hours, Treatment)[T.18]            0.0872      0.028      3.083      0.002         0.032     0.143
+C(hours, Treatment)[T.19]           -0.0050      0.029     -0.173      0.863        -0.062     0.052
+C(hours, Treatment)[T.20]           -0.1216      0.030     -4.078      0.000        -0.180    -0.063
+C(hours, Treatment)[T.21]           -0.1660      0.030     -5.501      0.000        -0.225    -0.107
+C(hours, Treatment)[T.22]           -0.0692      0.029     -2.352      0.019        -0.127    -0.012
+C(hours, Treatment)[T.23]           -0.2234      0.031     -7.286      0.000        -0.284    -0.163
+C(weekday_dummy, Treatment)[T.1]    -0.1443      0.013    -11.422      0.000        -0.169    -0.120
+====================================================================================================
+                          Poisson Regression Results                          
+==============================================================================
+Dep. Variable:             departures   No. Observations:                12950
+Model:                        Poisson   Df Residuals:                    12914
+Method:                           MLE   Df Model:                           35
+Date:                Wed, 14 Aug 2013   Pseudo R-squ.:                  0.2268
+Time:                        17:51:34   Log-Likelihood:                -29725.
+converged:                       True   LL-Null:                       -38445.
+                                        LLR p-value:                     0.000
+====================================================================================================
+                                       coef    std err          z      P>|z|      [95.0% Conf. Int.]
+----------------------------------------------------------------------------------------------------
+Intercept                            0.2757      0.043      6.376      0.000         0.191     0.360
+C(months, Treatment)[T.2]            0.0463      0.031      1.486      0.137        -0.015     0.107
+C(months, Treatment)[T.3]            0.1835      0.028      6.439      0.000         0.128     0.239
+C(months, Treatment)[T.4]            0.2978      0.028     10.571      0.000         0.243     0.353
+C(months, Treatment)[T.5]            0.2994      0.028     10.673      0.000         0.244     0.354
+C(months, Treatment)[T.6]            0.2772      0.028      9.816      0.000         0.222     0.333
+C(months, Treatment)[T.7]            0.1454      0.029      5.074      0.000         0.089     0.202
+C(months, Treatment)[T.8]            0.3473      0.030     11.548      0.000         0.288     0.406
+C(months, Treatment)[T.9]            0.3447      0.031     10.952      0.000         0.283     0.406
+C(months, Treatment)[T.10]           0.2647      0.032      8.312      0.000         0.202     0.327
+C(months, Treatment)[T.11]           0.1226      0.033      3.699      0.000         0.058     0.188
+C(months, Treatment)[T.12]          -0.0541      0.034     -1.578      0.115        -0.121     0.013
+C(hours, Treatment)[T.1]            -0.4445      0.057     -7.828      0.000        -0.556    -0.333
+C(hours, Treatment)[T.2]            -0.7877      0.064    -12.386      0.000        -0.912    -0.663
+C(hours, Treatment)[T.3]            -1.0878      0.071    -15.376      0.000        -1.226    -0.949
+C(hours, Treatment)[T.4]            -1.4280      0.081    -17.682      0.000        -1.586    -1.270
+C(hours, Treatment)[T.5]            -0.9847      0.068    -14.459      0.000        -1.118    -0.851
+C(hours, Treatment)[T.6]            -0.0738      0.051     -1.443      0.149        -0.174     0.026
+C(hours, Treatment)[T.7]             0.7083      0.043     16.332      0.000         0.623     0.793
+C(hours, Treatment)[T.8]             1.8003      0.038     46.987      0.000         1.725     1.875
+C(hours, Treatment)[T.9]             1.6549      0.039     42.719      0.000         1.579     1.731
+C(hours, Treatment)[T.10]            0.7897      0.043     18.452      0.000         0.706     0.874
+C(hours, Treatment)[T.11]            0.8117      0.043     19.032      0.000         0.728     0.895
+C(hours, Treatment)[T.12]            0.8814      0.042     20.884      0.000         0.799     0.964
+C(hours, Treatment)[T.13]            0.7689      0.043     17.907      0.000         0.685     0.853
+C(hours, Treatment)[T.14]            0.6199      0.044     14.083      0.000         0.534     0.706
+C(hours, Treatment)[T.15]            0.5283      0.045     11.807      0.000         0.441     0.616
+C(hours, Treatment)[T.16]            0.4374      0.046      9.607      0.000         0.348     0.527
+C(hours, Treatment)[T.17]            0.6144      0.044     13.946      0.000         0.528     0.701
+C(hours, Treatment)[T.18]            0.9188      0.042     21.888      0.000         0.837     1.001
+C(hours, Treatment)[T.19]            1.1252      0.041     27.548      0.000         1.045     1.205
+C(hours, Treatment)[T.20]            1.0050      0.041     24.228      0.000         0.924     1.086
+C(hours, Treatment)[T.21]            0.7971      0.043     18.647      0.000         0.713     0.881
+C(hours, Treatment)[T.22]            0.6772      0.044     15.537      0.000         0.592     0.763
+C(hours, Treatment)[T.23]            0.4374      0.046      9.607      0.000         0.348     0.527
+C(weekday_dummy, Treatment)[T.1]    -0.1428      0.011    -12.830      0.000        -0.165    -0.121
+====================================================================================================
+The predicted change in bikes at time 17.0 and month 5 is nan
+The predicted change in bikes (with clean poisson) at time 17.0 and month 5 is 1.95874204007
