@@ -21,7 +21,7 @@ $(document).ready(function(){
   // Made TileMap with JSON with Vidhur's account
   window.map = L.mapbox.map('map', 'darkzeroman.map-gxrlhgnw').whenReady(function(){
     // only load the json when the map is ready
-    $.getJSON("../static/data/fullnewyork.geojson", function(json) {
+    $.getJSON("../predict_all/10", function(json) {
       window.vanilla_json = json;
       updateMarkerColorsAndAddGeoJSON();
     });    
@@ -49,14 +49,12 @@ $(document).ready(function(){
     };
 
     // Setting the color, maybe this can be handled server side?
-    for (index = 0; index < json.features.length; index++){
+    for (index = 0; index < json.predictions.length; index++){
 
-      var current_feature = json.features[index];
+      console.log(json.predictions[index]);
+      var current_feature = json.predictions[index];
 
-      var percentage_full = parseFloat(current_feature.properties[window.prediction_time].percentage_full);
-      var percentage_empty = parseFloat(current_feature.properties[window.prediction_time].percentage_empty);
-
-      var hex_color = rgbToHex(Math.round(percentage_full * 255), 128, Math.round(percentage_empty * 255));
+      // var hex_color = rgbToHex(Math.round(percentage_full * 255), 128, Math.round(percentage_empty * 255));
 
       var circle_options = {
         color       : 'red',      // Stroke color

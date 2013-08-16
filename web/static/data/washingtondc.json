@@ -1,0 +1,440 @@
+[
+    {
+        "lat": 38.8561,
+        "lon": -77.0512,
+        "name": "20th & Bell St",
+        "id": 1
+    },
+    {
+        "lat": 38.85725,
+        "lon": -77.05332,
+        "name": "18th & Eads St.",
+        "id": 2
+    },
+    {
+        "lat": 38.8564,
+        "lon": -77.0492,
+        "name": "20th & Crystal Dr",
+        "id": 3
+    },
+    {
+        "lat": 38.860244,
+        "lon": -77.050276,
+        "name": "15th & Crystal Dr",
+        "id": 4
+    },
+    {
+        "lat": 38.8573,
+        "lon": -77.0574,
+        "name": "18th & Hayes St",
+        "id": 5
+    },
+    {
+        "lat": 38.8604,
+        "lon": -77.0603,
+        "name": "15th & Hayes St",
+        "id": 6
+    },
+    {
+        "lat": 38.8637,
+        "lon": -77.0633,
+        "name": "S Joyce & Army Navy Dr",
+        "id": 7
+    },
+    {
+        "lat": 38.8573,
+        "lon": -77.0511,
+        "name": "Crystal City Metro / 18th & Bell St",
+        "id": 8
+    },
+    {
+        "lat": 38.8629,
+        "lon": -77.0528,
+        "name": "12th & Army Navy Dr",
+        "id": 9
+    },
+    {
+        "lat": 38.848441,
+        "lon": -77.051516,
+        "name": "27th & Crystal Dr",
+        "id": 10
+    },
+    {
+        "lat": 38.8426,
+        "lon": -77.0502,
+        "name": "S Glebe & Potomac Ave",
+        "id": 11
+    },
+    {
+        "lat": 38.8533,
+        "lon": -77.0498,
+        "name": "23rd & Crystal Dr",
+        "id": 12
+    },
+    {
+        "lat": 38.8518,
+        "lon": -77.0498,
+        "name": "26th & Crystal Dr",
+        "id": 13
+    },
+    {
+        "lat": 38.9003,
+        "lon": -77.0429,
+        "name": "19th St & Pennsylvania Ave NW",
+        "id": 14
+    },
+    {
+        "lat": 38.9176,
+        "lon": -77.0321,
+        "name": "14th & V St NW",
+        "id": 15
+    },
+    {
+        "lat": 38.929464,
+        "lon": -77.027822,
+        "name": "11th & Kenyon St NW",
+        "id": 16
+    },
+    {
+        "lat": 38.926088,
+        "lon": -77.036536,
+        "name": "16th & Harvard St NW",
+        "id": 17
+    },
+    {
+        "lat": 38.922925,
+        "lon": -77.042581,
+        "name": "Adams Mill & Columbia Rd NW",
+        "id": 18
+    },
+    {
+        "lat": 38.9268,
+        "lon": -77.0322,
+        "name": "14th & Harvard St NW",
+        "id": 19
+    },
+    {
+        "lat": 38.9236,
+        "lon": -77.0501,
+        "name": "Calvert St & Woodley Pl NW",
+        "id": 20
+    },
+    {
+        "lat": 38.9319,
+        "lon": -77.0388,
+        "name": "Lamont & Mt Pleasant NW",
+        "id": 21
+    },
+    {
+        "lat": 38.8767,
+        "lon": -77.0178,
+        "name": "4th & M St SW",
+        "id": 22
+    },
+    {
+        "lat": 38.90985,
+        "lon": -77.034438,
+        "name": "15th & P St NW",
+        "id": 23
+    },
+    {
+        "lat": 38.912682,
+        "lon": -77.031681,
+        "name": "14th & R St NW",
+        "id": 24
+    },
+    {
+        "lat": 38.9086,
+        "lon": -77.0323,
+        "name": "14th & Rhode Island Ave NW",
+        "id": 25
+    },
+    {
+        "lat": 38.8963,
+        "lon": -77.045,
+        "name": "20th & E St NW",
+        "id": 26
+    },
+    {
+        "lat": 38.9008,
+        "lon": -77.047,
+        "name": "21st & I St NW",
+        "id": 27
+    },
+    {
+        "lat": 38.936043,
+        "lon": -77.024649,
+        "name": "Georgia & New Hampshire Ave NW",
+        "id": 28
+    },
+    {
+        "lat": 38.9375,
+        "lon": -77.0328,
+        "name": "14th St & Spring Rd NW",
+        "id": 29
+    },
+    {
+        "lat": 38.9346,
+        "lon": -76.9955,
+        "name": "John McCormack Dr & Michigan Ave NE",
+        "id": 30
+    },
+    {
+        "lat": 38.90304,
+        "lon": -77.019027,
+        "name": "5th & K St NW",
+        "id": 31
+    },
+    {
+        "lat": 38.8896,
+        "lon": -76.9769,
+        "name": "19th & East Capitol St SE",
+        "id": 32
+    },
+    {
+        "lat": 38.9308,
+        "lon": -77.0315,
+        "name": "Park Rd & Holmead Pl NW",
+        "id": 33
+    },
+    {
+        "lat": 38.8601,
+        "lon": -76.9672,
+        "name": "Good Hope & Naylor Rd SE",
+        "id": 34
+    },
+    {
+        "lat": 38.934267,
+        "lon": -77.057979,
+        "name": "Connecticut Ave & Newark St NW / Cleveland Park",
+        "id": 35
+    },
+    {
+        "lat": 38.878,
+        "lon": -76.9607,
+        "name": "Randle Circle & Minnesota Ave SE",
+        "id": 36
+    },
+    {
+        "lat": 38.897063,
+        "lon": -76.947446,
+        "name": "Minnesota Ave Metro/DOES",
+        "id": 37
+    },
+    {
+        "lat": 38.9016,
+        "lon": -76.9422,
+        "name": "Nannie Helen Burroughs & Minnesota Ave NE",
+        "id": 38
+    },
+    {
+        "lat": 38.8624,
+        "lon": -76.9949,
+        "name": "Anacostia Metro",
+        "id": 39
+    },
+    {
+        "lat": 38.867373,
+        "lon": -76.988039,
+        "name": "Good Hope Rd & MLK Ave SE",
+        "id": 40
+    },
+    {
+        "lat": 38.8952,
+        "lon": -77.0436,
+        "name": "19th & E Street NW",
+        "id": 41
+    },
+    {
+        "lat": 38.919488,
+        "lon": -77.000624,
+        "name": "4th St & Rhode Island Ave NE",
+        "id": 42
+    },
+    {
+        "lat": 38.9172,
+        "lon": -77.0259,
+        "name": "10th & U St NW",
+        "id": 43
+    },
+    {
+        "lat": 38.9249,
+        "lon": -77.0222,
+        "name": "Georgia Ave and Fairmont St NW",
+        "id": 44
+    },
+    {
+        "lat": 38.8743,
+        "lon": -77.0057,
+        "name": "1st & N St  SE",
+        "id": 45
+    },
+    {
+        "lat": 38.9154,
+        "lon": -77.0446,
+        "name": "20th St & Florida Ave NW",
+        "id": 46
+    },
+    {
+        "lat": 38.9155,
+        "lon": -77.0222,
+        "name": "7th & T St NW",
+        "id": 47
+    },
+    {
+        "lat": 38.853613,
+        "lon": -77.053535,
+        "name": "23rd & Eads St",
+        "id": 48
+    },
+    {
+        "lat": 38.8763,
+        "lon": -77.0037,
+        "name": "M St & New Jersey Ave SE",
+        "id": 49
+    },
+    {
+        "lat": 38.9101,
+        "lon": -77.0444,
+        "name": "Massachusetts Ave & Dupont Circle NW",
+        "id": 51
+    },
+    {
+        "lat": 38.9057,
+        "lon": -77.0056,
+        "name": "1st & M St NE",
+        "id": 52
+    },
+    {
+        "lat": 38.9054,
+        "lon": -77.0471,
+        "name": "21st & M St NW",
+        "id": 53
+    },
+    {
+        "lat": 38.90276,
+        "lon": -77.03863,
+        "name": "17th & K St NW",
+        "id": 54
+    },
+    {
+        "lat": 38.9003,
+        "lon": -77.016,
+        "name": "4th St & Massachusetts Ave NW",
+        "id": 55
+    },
+    {
+        "lat": 38.8851,
+        "lon": -77.0023,
+        "name": "3rd & D St SE",
+        "id": 56
+    },
+    {
+        "lat": 38.8803,
+        "lon": -76.9862,
+        "name": "Potomac & Pennsylvania Ave SE",
+        "id": 57
+    },
+    {
+        "lat": 38.884,
+        "lon": -76.9861,
+        "name": "14th & D St SE",
+        "id": 58
+    },
+    {
+        "lat": 38.9121,
+        "lon": -77.0387,
+        "name": "17th & Corcoran St NW",
+        "id": 59
+    },
+    {
+        "lat": 38.944551,
+        "lon": -77.063896,
+        "name": "Van Ness Metro / UDC",
+        "id": 60
+    },
+    {
+        "lat": 38.9126,
+        "lon": -77.0135,
+        "name": "Florida Ave & R St NW",
+        "id": 61
+    },
+    {
+        "lat": 38.8792,
+        "lon": -76.9953,
+        "name": "8th & Eye St SE / Barracks Row",
+        "id": 62
+    },
+    {
+        "lat": 38.938736,
+        "lon": -77.087171,
+        "name": "Ward Circle / American University",
+        "id": 63
+    },
+    {
+        "lat": 38.934751,
+        "lon": -77.074647,
+        "name": "Idaho Ave & Newark St NW [on 2nd District patio]",
+        "id": 64
+    },
+    {
+        "lat": 38.947774,
+        "lon": -77.032818,
+        "name": "14th St Heights / 14th & Crittenden St NW",
+        "id": 65
+    },
+    {
+        "lat": 38.865784,
+        "lon": -76.9784,
+        "name": "Anacostia Library",
+        "id": 66
+    },
+    {
+        "lat": 38.873057,
+        "lon": -76.971015,
+        "name": "Pennsylvania & Minnesota Ave SE",
+        "id": 67
+    },
+    {
+        "lat": 38.886952,
+        "lon": -76.996806,
+        "name": "Eastern Market / 7th & North Carolina Ave SE",
+        "id": 68
+    },
+    {
+        "lat": 38.899641,
+        "lon": -77.032005,
+        "name": "McPherson Square / 14th & H St NW",
+        "id": 69
+    },
+    {
+        "lat": 38.894,
+        "lon": -76.947974,
+        "name": "Benning Branch Library",
+        "id": 70
+    },
+    {
+        "lat": 38.887237,
+        "lon": -77.028226,
+        "name": "USDA / 12th & Independence Ave SW",
+        "id": 71
+    },
+    {
+        "lat": 38.9022212,
+        "lon": -77.059219,
+        "name": "Georgetown Harbor / 30th St NW",
+        "id": 72
+    },
+    {
+        "lat": 38.933668,
+        "lon": -76.991016,
+        "name": "12th & Newton St NE",
+        "id": 73
+    },
+    {
+        "lat": 38.894919,
+        "lon": -77.046587,
+        "name": "US Dept of State / Virginia Ave & 21st St NW",
+        "id": 74
+    }
+]
