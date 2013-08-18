@@ -104,7 +104,76 @@ def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=N
     print "Mean Squared Error at 45 minutes out %f" % (sum(MSE45) / len(MSE45)) 
     print "Mean Squared Error at 60 minutes out %f" % (sum(MSE60) / len(MSE60)) 
 
-# <codecell>
+
+import pandas as pd
+from pandas.core.datetools import *
+import numpy as np
+from binomial_fit_function import binomial_fit
+import math
+
+def no_nan(lst):
+    return [x for x in lst if math.isnan(x) == False]
+
+def model_validation_binomial(modelfit, n, data, startdate = None):
+    if startdate == None:
+        startdate = data.index[0]
+    else:
+        try:
+            startdate = data[startdate:].index[0]
+        except:
+            print "That date is after the end of biketime. We'll choose the first date in our dataset."
+            startdate = data.index[0]
+            
+    enddate = startdate + DateOffset(years=1)
+    offset = DateOffset(days=1, hours =1)
+    MSE15 = []
+    MSE30 = []
+    MSE45 = []
+    MSE60 = []
+    for i in range(10000):
+        if i !=0:
+            enddate += offset
+            
+        try:
+            test_data = data[str(enddate):].iloc[1:8]
+            true_test_data = data[str(enddate):].iloc[1:8]
+        except:
+            break
+        else:
+            print "Training on data up to %s" % str(enddate)
+        
+        fit_data = data[str(startdate):str(enddate)]
+        model = modelfit(fit_data,n = None)
+        #print "Steps Out, Expected Number of Bikes,  True Expected Number of Bikes, MSE"
+        for i in range(4):
+            lst_prob,ev_bikes = model(test_data.iloc[i:(i+3)],n)
+            ev_slots = n-ev_bikes
+            test_data.iloc[i+3]["bikes_available"] = ev_bikes
+            test_data.iloc[i+3]["slots_available"] = ev_slots
+            true_bikes = true_test_data.iloc[i+3]["bikes_available"]
+            mse = pow((ev_bikes-true_bikes),2)
+            if i == 0: 
+                MSE15.append(mse)
+
+            elif i == 1:
+                MSE30.append(mse)
+
+            elif i == 2: 
+                MSE45.append(mse)
+
+            elif i ==3: 
+               MSE60.append(mse)
+            print "%d,%f,%d,%f" % (i,ev_bikes,true_bikes,mse)
+    
+    
+
+    
+    print "Mean Squared Error at 15 minutes out %f" % (sum(no_nan(MSE15)) / len(no_nan(MSE15)))
+    print "Mean Squared Error at 30 minutes out %f" % (sum(no_nan(MSE30)) / len(no_nan(MSE30)))
+    print "Mean Squared Error at 45 minutes out %f" % (sum(no_nan(MSE45)) / len(no_nan(MSE45)))
+    print "Mean Squared Error at 60 minutes out %f" % (sum(no_nan(MSE60)) / len(no_nan(MSE60)))
+
+
 if __name__ == '__main__':
 
     start_date = "02/16/2012"
@@ -139,7 +208,7 @@ if __name__ == '__main__':
         dc_station_17_binomial = fetch_station("Washington, D.C.", station_id, 15, 'max')
 
         print >> sys.stderr, "Running model validation script for binomial."
-        model_validation(binomial_fit, 25, dc_station_17_binomial, station_id, start_date)
+        model_validation_binomial(binomial_fit, 25, dc_station_17_binomial, start_date)
 
     else:
         print >> sys.stderr, "Can't validate that model!"

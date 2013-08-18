@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block head %}
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+
+  <!-- DataTables -->
+  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+{% endblock %}
+{% block content %}
+
+	<table id="example">
+		<td>
+		</td>
+
+	</table>
+	<script>
+	$(document).ready(function() {
+	$('#example').dataTable( {
+		"bProcessing": true,
+		"sAjaxSource": '../static/data/newyork.geojson',
+		"aaSorting",
+		});
+	});
+	</script>
+{% endblock %}..

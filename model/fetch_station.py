@@ -3,12 +3,13 @@
 
 # <codecell>
 
-def fetch_station(city, station_id, time_agg_level=None,agg_type=None):
+def fetch_station(city, station_id, time_agg_level,agg_type=None):
     import os
     import psycopg2
     import pandas as pd
     import numpy as np
-    
+    from pandas.tseries.resample import TimeGrouper
+
     # Dictionary of timezones
     timezones = {'Chicago':'US/Central','Boston':'US/Eastern','New York':'US/Eastern','Washington, D.C.':'US/Eastern'}
     
@@ -59,16 +60,17 @@ def fetch_station(city, station_id, time_agg_level=None,agg_type=None):
     station_df_non_zero_row = station_df.ix[non_zero_row:,]
     
     #put all data into 15 minute buckets, since some data was collected every 2 minutes and some every minute
-    if time_agg_level == None:
-        station_bucketed = station_df_non_zero_row
-
-    else:
+    if agg_type != None:
         station_bucketed = station_df_non_zero_row.resample(str(time_agg_level)+'MIN', how = agg_type)
-    
-        # Drop rows that have missing observations for bikes_available or slots_available
-        station_bucketed = station_bucketed[np.isfinite(station_bucketed['bikes_available'])]
-        station_bucketed = station_bucketed[np.isfinite(station_bucketed['slots_available'])]
+    else:
+        new_data = station_df_non_zero_row.groupby(TimeGrouper(str(time_agg_level) + 'min'))
+        def first_row(x):
+            return x[0,:]
+        station_bucketed = new_data.apply(first_row)
 
+    # Drop rows that have missing observations for bikes_available or slots_available
+    station_bucketed = station_bucketed[np.isfinite(station_bucketed['bikes_available'])]
+    station_bucketed = station_bucketed[np.isfinite(station_bucketed['slots_available'])]
     return station_bucketed
 
 # <codecell>
