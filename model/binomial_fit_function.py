@@ -16,7 +16,7 @@ from make_dummy import make_dummy
 
 # <codecell>
 
-def binomial_fit(data,stationid, n):
+def binomial_fit(data, n):
     import patsy
     import statsmodels.api as sm
     from scipy import misc
