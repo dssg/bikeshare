@@ -115,9 +115,11 @@ if __name__ == '__main__':
 
     if model == "poisson":
 
+        # Connect to postgres database
         conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser') + " host="+os.environ.get('dburl'))
         cur = conn.cursor()
 
+        # Get 2-min station bike availability data
         print >> sys.stderr, "Getting data for station."
         cur.execute("SELECT * FROM bike_ind_washingtondc WHERE tfl_id = " + str(station_id) + ";")
         station_data = cur.fetchall()
@@ -126,6 +128,7 @@ if __name__ == '__main__':
         dc_station_17_poisson = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = "timestamp")
         dc_station_17_poisson.index = dc_station_17_poisson.index.tz_localize('UTC').tz_convert('US/Eastern')
 
+        # Measure predictive accuracy of poisson model
         print >> sys.stderr, "Running model validation script for poisson."
         model_validation(poisson_fit, 25, dc_station_17_poisson, station_id, start_date, modeltype = "poisson")
 
