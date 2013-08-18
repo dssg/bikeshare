@@ -3,7 +3,7 @@
 
 # <codecell>
 
-def fetch_station(city, station_id, time_agg_level,agg_type='first'):
+def fetch_station(city, station_id, time_agg_level=None,agg_type='first'):
     import os
     import psycopg2
     import pandas as pd
