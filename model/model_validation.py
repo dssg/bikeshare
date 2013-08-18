@@ -11,7 +11,7 @@ import os
 from binomial_fit_function import binomial_fit
 from poisson_fit_function import poisson_fit
 
-def model_validation(modelfit, n, data, stationid, startdate = None, modeltype=None):
+def model_validation_poisson(modelfit, n, data, stationid, startdate = None, modeltype=None):
     if startdate == None:
         startdate = data.index[0]
     else:
@@ -171,7 +171,7 @@ if __name__ == '__main__':
         dc_station_17_poisson.index = dc_station_17_poisson.index.tz_localize('UTC').tz_convert('US/Eastern')
 
         print >> sys.stderr, "Running model validation script for poisson."
-        model_validation(poisson_fit, 25, dc_station_17_poisson, station_id, start_date, modeltype = "poisson")
+        model_validation_poisson(poisson_fit, 25, dc_station_17_poisson, station_id, start_date, modeltype = "poisson")
 
 # <codecell>
     elif model == "binomial":
