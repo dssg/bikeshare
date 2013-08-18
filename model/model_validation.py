@@ -11,6 +11,7 @@ from pandas.core.datetools import *
 import numpy as np
 import math
 
+from fetch_station import fetch_station
 from binomial_fit_function import binomial_fit
 from poisson_fit_function import poisson_fit
 
@@ -239,18 +240,8 @@ if __name__ == '__main__':
 
     if model == "poisson":
 
-        # Connect to postgres database
-        conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser') + " host="+os.environ.get('dburl'))
-        cur = conn.cursor()
-
-        # Get 2-min station bike availability data
-        print >> sys.stderr, "Getting data for station."
-        cur.execute("SELECT * FROM bike_ind_washingtondc WHERE tfl_id = " + str(station_id) + ";")
-        station_data = cur.fetchall()
-
-        # Add data to dataframe, add timezone
-        dc_station_17_poisson = pd.DataFrame.from_records(station_data, columns = ["station_id", "bikes_available", "slots_available", "timestamp"], index = "timestamp")
-        dc_station_17_poisson.index = dc_station_17_poisson.index.tz_localize('UTC').tz_convert('US/Eastern')
+        # Get 2-min station bike availability + hourly weather data.
+        dc_station_17_poisson = fetch_station("Washington, D.C.", station_id)
 
         # Measure predictive accuracy of poisson model using sliding window validation.
         print >> sys.stderr, "Running model validation script for poisson."
@@ -259,8 +250,7 @@ if __name__ == '__main__':
 # <codecell>
     elif model == "binomial":
 
-        # Get 15-min station bike availability data, binomial model fits every 15 minutes.
-        from fetch_station import fetch_station
+        # Get 15-min station bike availability + hourly weather data, binomial model fits every 15 minutes.
         dc_station_17_binomial = fetch_station("Washington, D.C.", station_id, 15)
 
         # Measure predictive accuracy of binomial model using sliding window validation.
