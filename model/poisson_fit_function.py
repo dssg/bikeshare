@@ -35,11 +35,12 @@ def poisson_fit(data, stationid, n):
 
         # Create list of hour-chunks in between the current time and the prediction time
         # Need to do this to calculate cumulative lambda rate of arrivals and departures below.
-	# This code was originally for floats and in order to get it to work with real-real timestamp objects, we had to do some conversions. See the lines below. 
+	    # This code was originally for floats and in order to get it to work with real-real timestamp objects, we had to do some conversions. See the lines below. 
         prediction_time = (current_time.hour + float(current_time.minute)/60) + prediction_interval
         prediction_time = prediction_time % 24
         time_list = [(current_time.hour + float(current_time.minute)/60) % 24]
         next_step = (current_time.hour + float(current_time.minute)/60) % 24
+
         while next_step < prediction_time:
             print >> sys.stderr, type(floor(next_step))
             if floor(next_step) + 1 < prediction_time:
@@ -49,11 +50,8 @@ def poisson_fit(data, stationid, n):
                 next_step = prediction_time
                 
             time_list.append(next_step)
-	try:
-        	time_list = [(x.hour + float(x.minute)/60) % 24 for x in time_list]    
-        except:
-		print >> sys.stderr, "THAT HACKY FIX DIDN'T WORK"
-	 # Calculate the cumulative lambda rate over the predition interval
+
+	    # Calculate the cumulative lambda rate over the predition interval
         # For arrivals..
         arr_cum_lambda = 0 
         for i in range(1, len(time_list)):
@@ -87,10 +85,7 @@ def poisson_fit(data, stationid, n):
         elif predicted_bikes < 0:
             predicted_bikes = 0
 
-        # Find probability distribution for bikes at stations given the current lambda
-        probability_distribution = []
-
-        prediction_output = (probability_distribution, predicted_bikes)
+        prediction_output = predicted_bikes
         
         return prediction_output
 
