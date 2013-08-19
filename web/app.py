@@ -16,17 +16,14 @@ def hello():
 
 @app.route("/predict/<station_id>/<many_mins>")
 def predict(station_id, many_mins):
-
-  # file = open("./static/data/washingtondc.json", "rb")
-  # temp = json.load(file)
-  return str(make_prediction(station_id, int(many_mins)))
-  # return jsonify({"washingtondc": temp})
+  stations = getStations()
+  return jsonify(make_prediction(stations[int(station_id)], int(many_mins)))
 
 @app.route("/predict_all/<many_mins>")
-def predict_all(many_mins=10):
-  stations = getStations()
+def predict_all(many_mins=0):
+  stations = getStations()[:73]
   prediction_list = []
-  for station in stations[:2]:
+  for station in stations:
     prediction_list.append(make_prediction(station, int(many_mins)))
   return jsonify({"predictions": prediction_list, "time": many_mins})
 	

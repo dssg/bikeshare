@@ -367,10 +367,8 @@ def make_prediction(station, how_many_mins):
         cur = conn.cursor()
         cur.execute("select * from bike_ind_washingtondc where tfl_id = %s order by timestamp desc limit 1;" % station_id)
 
-        try:
-            _, starting_bikes_available, num_spaces, _  = cur.fetchall()[0] #(station_id, bikes, spaces, timestamp)
-        except IndexError:
-            return (-1,-1,-1) 
+        _, starting_bikes_available, num_spaces, _  = cur.fetchall()[0] #(station_id, bikes, spaces, timestamp)
+
         max_slots = starting_bikes_available + num_spaces
         
         month = starting_datetime.month # Between 1-12
@@ -396,8 +394,8 @@ def make_prediction(station, how_many_mins):
         print ('Probability of Being (Empty, Full) Any Time in the Next %0.2f hours: (%0.2f, %0.2f)' % \
             (ending_time - starting_time, round(np.mean(empty_results),2), round(np.mean(full_results),2)))
         temp_res = (int(station_id), round(np.mean(bikes_results),2), round(np.mean(empty_results),2), \
-            round(np.mean(full_results),2), station[2], station[3])
-        res_names = ("station_id", "expected_num_bikes", "prob_empty", "prob_full", "lat", "lon")
+            round(np.mean(full_results),2), station[2], station[3], station[1], starting_bikes_available, max_slots)
+        res_names = ("station_id", "expected_num_bikes", "prob_empty", "prob_full", "lat", "lon", "name", "current_bikes", "max_slots")
         return dict(zip(res_names, temp_res))
     except KeyError:
         return (int(station_id), "Prediction Error")
