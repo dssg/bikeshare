@@ -115,7 +115,10 @@ cd bikeshare/web
 virtualenv ./
 . bin/activate
 pip install -r requirements.text
+python web/app.py
 ````
+
+To deploy the webapp, use [Gunicorn](http://gunicorn.org/) & [nginx](http://nginx.org/).
 
 
 ## Contributing to the project
