@@ -32,19 +32,19 @@ To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](h
 ## The project
 There are three components to the project:
 
-**A database storing historical bikeshare and weather data**
+###A database storing historical bikeshare and weather data**
 
 Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every bikeshare station in DC and Boston since their systems launched. We're storing this data in postgreSQL database, and updating it constantly by hitting Atla's real-time bikeshare APIs. The data is discussed in further detail below.
 
 Scripts to build the database, load historical data into it, and add real-time data to it are in the `data` and `scrapers` folders. The database updates every minute using a cron job that you need schedule on your own machine.
 
-**A model that uses this data to predict future number of bikes**
+###A model that uses this data to predict future number of bikes**
 
 The model lives in `model`. There are scripts in there that crunch the historical data in the database to estimate the model's parameters, and other that actually implement the model by consuming these parameters, fetching model inputs from the database, and spitting out predictions.
 
 *This directory is undergoing heavy development*
 
-**A simple webapp that displays the model's predictions**
+###A simple webapp that displays the model's predictions**
 
 The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
 
