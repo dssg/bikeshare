@@ -92,6 +92,31 @@ A series of metadata tables also exist in our PostgreSQL to tie a station's id (
 
 You can learn more more about the dataset and scrapers in the [wiki](https://github.com/dssg/bikeshare/wiki/data).
 
+## Installation 
+
+First you will need to clone the repo. 
+````
+git clone https://github.com/dssg/bikeshare
+cd bikeshare/
+````
+
+### Database Configuration 
+You will need a working postgresql 9.x series install. Run `data/create_db.sql` to create all the appropriate tables. 
+
+### Scraper Configuration 
+We use several scrapers to populate the data. Inside `scrapers` there is more detailed install instructions and example crontabs. You will need a [forecast.io](http://forecast.io/developer) API key. Historical data will be made avalible shortly. 
+
+### Webapp Installation
+
+** How To Run The Flask Web App **
+````
+cd bikeshare/web
+virtualenv ./
+. bin/activate
+pip install -r requirements.text
+````
+
+
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
