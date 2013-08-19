@@ -108,7 +108,7 @@ We use several scrapers to populate the data. Inside `scrapers` there is more de
 
 ### Webapp Installation
 
-** How To Run The Flask Web App **
+*How To Run The Flask Web App*
 
 ````
 cd bikeshare/web
