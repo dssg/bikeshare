@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, make_response, jsonify, url_for
 import json
+from threading import Thread
+import pickle
 
 # import config
 from poisson_web import make_prediction, getStations
@@ -19,13 +21,14 @@ def predict(station_id, many_mins):
   stations = getStations()
   return jsonify(make_prediction(stations[int(station_id)], int(many_mins)))
 
-@app.route("/predict_all/<many_mins>")
-def predict_all(many_mins=0):
-  stations = getStations()[:73]
-  prediction_list = []
-  for station in stations:
-    prediction_list.append(make_prediction(station, int(many_mins)))
-  return jsonify({"predictions": prediction_list, "time": many_mins})
-	
+@app.route("/predict_all/")
+def predict_all():
+  d = dict()
+  cache = pickle.load(open("cache.p", "rb"))
+  return jsonify(cache)
+
+  # start_thread()
+  return "ok starting to predict"
 if __name__ == "__main__":
     app.run(debug=True)
+

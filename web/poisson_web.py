@@ -381,18 +381,19 @@ def make_prediction(station, how_many_mins):
         ending_time = round(ending_datetime.hour + (ending_datetime.minute / float(60)), 3)
         
         bikes_results, empty_results, full_results = simulation(station_id, starting_time, ending_time, max_slots, \
-            starting_bikes_available, month, weekday, simulate_bikes, 500)
+            starting_bikes_available, month, weekday, simulate_bikes, 250)
         
         week_dict = {'0': 'Week', '1' : 'Weekend'}
 
         # net_lambda = predict_net_lambda(starting_time, final_time - starting_time, month, weekday, poisson_results)
         
-        print ("In %s during the %s" % (calendar.month_name[month], week_dict[str(weekday)]))
-        print ("For Starting Time: %0.2f and Ending Time: %0.2f with Initial Bikes: %d out of a Maximum: %d" % (starting_time, ending_time, starting_bikes_available, max_slots))
-        print ('Expected Number of Bikes at %s: %0.2f' % (ending_time, round(np.mean(bikes_results),2)))
+        # print ("In %s during the %s" % (calendar.month_name[month], week_dict[str(weekday)]))
+        # print ("For Starting Time: %0.2f and Ending Time: %0.2f with Initial Bikes: %d out of a Maximum: %d" % (starting_time, ending_time, starting_bikes_available, max_slots))
+        # print ('Expected Number of Bikes at %s: %0.2f' % (ending_time, round(np.mean(bikes_results),2)))
         # print 'Other Expected Value : ', starting_bikes_available + net_lambda
-        print ('Probability of Being (Empty, Full) Any Time in the Next %0.2f hours: (%0.2f, %0.2f)' % \
-            (ending_time - starting_time, round(np.mean(empty_results),2), round(np.mean(full_results),2)))
+        # print ('Probability of Being (Empty, Full) Any Time in the Next %0.2f hours: (%0.2f, %0.2f)' % \
+            # (ending_time - starting_time, round(np.mean(empty_results),2), round(np.mean(full_results),2)))
+        print ", ".join(map(str, [how_many_mins, station_id]))
         temp_res = (int(station_id), round(np.mean(bikes_results),2), round(np.mean(empty_results),2), \
             round(np.mean(full_results),2), station[2], station[3], station[1], starting_bikes_available, max_slots)
         res_names = ("station_id", "expected_num_bikes", "prob_empty", "prob_full", "lat", "lon", "name", "current_bikes", "max_slots")
