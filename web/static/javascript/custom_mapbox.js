@@ -49,19 +49,16 @@ $(document).ready(function () {
       try {
         var p = parseFloat(current_feature.expected_num_bikes) / parseFloat(current_feature.max_slots);
         var weight = 4*((1.0 / 4.0) - p * (1 - p));
-        // console.log(weight);
+        
         weight_index = Math.round(weight*10);
-        console.log(weight_index);
-        if (p <= 0.5) {
-          hexColor = MYAPP.make_gradients()[weight_index];
-          // hexColor = MYAPP.rgbToHex(127 + 128 * (weight), 255, 255);
-        } else {
-          // hexColor = MYAPP.rgbToHex(255, 255, 127 + 128 * (weight));
-          hexColor = MYAPP.make_gradients()[weight_index];
-        }
+        
+        var bigger_num = Math.max(current_feature.prob_empty, current_feature.prob_full);
+        bigger_num = Math.round(bigger_num*10);
+
+        hexColor = MYAPP.make_gradients()[bigger_num];
 
         var circle_options = {
-          color: 'red', // Stroke color
+          color: 'black', // Stroke color
           //opacity   : 1,          // Stroke opacity
           weight: 2, // Stroke weight
           fillColor: hexColor, // Fill color
@@ -70,7 +67,7 @@ $(document).ready(function () {
 
         var circle_marker = L.circle(coords, 50 + 10 * weight_index, circle_options).addTo(MYAPP.map.markerLayer);
       } catch (err) {
-        console.log(err)
+        // console.log(err)
         continue;
       }
 

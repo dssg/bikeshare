@@ -11,9 +11,9 @@ MYAPP.rgbToHex = function (r, g, b) {
 MYAPP.marker_mouseover = function (e) {
   var feature = e.target.feature_properties;
 
-  var popupContent = 'For Time: ' + 'None' + ' <br> ';
+  var popupContent ='';
   for (key_name in feature) {
-    popupContent += String(key_name) + ' : ' + String(feature[key_name]) + ' <br> ';
+    popupContent += '<b>' + String(key_name) + '</b>' + ' : ' + String(feature[key_name]) + ' <br> ';
   }
 
   // http://leafletjs.com/reference.html#popup for more options
@@ -30,6 +30,7 @@ MYAPP.marker_mouseout = function (e) {
 MYAPP.make_gradients = function(){
   return MYAPP.gradient("#35B927", "#DB4D27", 11);
 }
+
 
 MYAPP.gradient = function(startColor, endColor, steps) {
      var start = {

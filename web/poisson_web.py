@@ -241,8 +241,8 @@ def save_poisson_results():
     print("done saving")
         
 # <codecell>
-# pickle_folder = "/mnt/data1/BikeShare/pickles/"
-pickle_folder = "/Users/darkzeroman/dssg/bikeshare/web/static/pickles/"
+pickle_folder = "/mnt/data1/BikeShare/pickles/"
+# pickle_folder = "/Users/darkzeroman/dssg/bikeshare/web/static/pickles/"
 
 # save_poisson_results()
 
