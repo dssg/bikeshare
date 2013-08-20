@@ -187,7 +187,7 @@ def model_validation_binomial(modelfit, n, data, startdate = None):
             break
 
         else:
-            print "Training on data up to %s" % str(enddate)
+            print >> sys.stderr,  "Training on data up to %s" % str(enddate)
         
             # Get training data for this round of prediction.
             print >> sys.stderr, "Getting training data."
@@ -202,7 +202,7 @@ def model_validation_binomial(modelfit, n, data, startdate = None):
             # three observations (30 min ago, 15 min ago, and now) to predict 15 minutes out.
             # Use this predicted number of bikes and bikes now/15 min ago to predict 30 min out.
             # Do this until you predict up to the hour.
-            print "Steps Out, Expected Number of Bikes, Actual Number of Bikes, MSE"
+            print >> sys.stderr, "Steps Out, Expected Number of Bikes, Actual Number of Bikes, MSE"
 
             # Predict bikes in next 15, 30, 45, and 60 minutes, and compute squared error relative to actual number of bikes.
             for i in range(4):
@@ -234,7 +234,7 @@ def model_validation_binomial(modelfit, n, data, startdate = None):
 
                 elif i ==3: 
                    MSE60.append(mse)
-                print "%d, %f, %d, %f" % (i, ev_bikes, true_bikes, mse)
+                print >> sys.stderr, "%d, %f, %d, %f" % (i, ev_bikes, true_bikes, mse)
         
     
     print "Mean Squared Error at 15 minutes out %f" % (sum(no_nan(MSE15)) / len(no_nan(MSE15)))
