@@ -9,23 +9,26 @@ def poisson_fit(data, stationid, n):
     from poisson_model import find_hourly_arr_dep_deltas, remove_rebalancing_deltas, fit_poisson, lambda_calc
 
     # Convert bike availability time series into hourly interval count data
-    arrival_departure_deltas = find_hourly_arr_dep_deltas(data)
+    arrival_departure_deltas = find_hourly_arr_dep_deltas(data, '1H')
 
     # Remove hourly swings in bike arrivals and departures caused by station rebalancing
     rebalancing_data = '/mnt/data1/BikeShare/rebalancing_trips_2_2012_to_3_2013.csv'
-    clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, stationid)
+    clean_arrival_departure_deltas = remove_rebalancing_deltas(arrival_departure_deltas, rebalancing_data, stationid, '1H')
+
+    print "CLEAN TRAINING DATA!!"
+    print clean_arrival_departure_deltas
+    print clean_arrival_departure_deltas.head()
 
     # Estimate the poisson point process
-
     poisson_results = fit_poisson(clean_arrival_departure_deltas)
 
     def predict_bikes(test_data, n):
         "Compute the net lambda value - change in bikes at station - for a specific time interval (hour), month, and weekday."
 
         # Set prediction parameters
-        current_bikes = test_data["bikes_available"][2]
-        current_time = test_data.index[2]
         prediction_interval = .25
+
+        current_time = test_data.index[0]
         month = current_time.month
         day_of_week = current_time.weekday
         if day_of_week < 5:
@@ -35,7 +38,7 @@ def poisson_fit(data, stationid, n):
 
         # Create list of hour-chunks in between the current time and the prediction time
         # Need to do this to calculate cumulative lambda rate of arrivals and departures below.
-	    # This code was originally for floats and in order to get it to work with real-real timestamp objects, we had to do some conversions. See the lines below. 
+	    # This code was originally for floats and in order to get it to work with real timestamp objects, we had to do some conversions. See the lines below. 
         prediction_time = (current_time.hour + float(current_time.minute)/60) + prediction_interval
         prediction_time = prediction_time % 24
         time_list = [(current_time.hour + float(current_time.minute)/60) % 24]
@@ -77,17 +80,8 @@ def poisson_fit(data, stationid, n):
         # Subtract cumulative departure lambdas from arrival lambdas to find net lamdas 
         # over the prediction interval
         net_lambda = arr_cum_lambda - dep_cum_lambda
-
-        # Constrain number of bike predictions to max available bikes at station
-        predicted_bikes = current_bikes + net_lambda
-        if predicted_bikes > n:
-            predicted_bikes = n
-        elif predicted_bikes < 0:
-            predicted_bikes = 0
-
-        prediction_output = predicted_bikes
         
-        return prediction_output
+        return net_lambda
 
     return predict_bikes
 
