@@ -30,6 +30,12 @@ def binomial_fit(data, n):
     # Make lag dataframe
     columns = ["bikes_available", "slots_available", "temperature"]
     data_trimmed = data.ix[:,columns]
+
+    # Remove null values in the station update data, such as from missing
+    # hourly temperatures in the weather data that become nulls when joined
+    # to the bike data.
+    data_trimmed = data_trimmed.dropna()
+
     X_raw, y = build_log_odds_df(data_trimmed) 
     
     X_columns = ["temperature", "logodds_lag1", "logodds_lag2", "logodds_lag3", "const"] 

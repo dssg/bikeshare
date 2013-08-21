@@ -192,6 +192,14 @@ CREATE TABLE IF NOT EXISTS weather_chicago (
 );
 
 
+
+# Join tables
+
+CREATE TABLE weather_bike_ind_washingtondc AS 
+(SELECT * FROM bike_ind_washingtondc INNER JOIN weather_washingtondc ON (date_part('year',bike_ind_washingtondc.timestamp)=date_part('year',weather_washingtondc.time) 
+  AND date_part('month',bike_ind_washingtondc.timestamp)=date_part('month',weather_washingtondc.time)
+  AND date_part('day', bike_ind_washingtondc.timestamp) = date_part('day', weather_washingtondc.time) 
+  AND date_part('hour', bike_ind_washingtondc.timestamp) = date_part('hour', weather_washingtondc.time)));
 \copy bike_agg_minneapolis FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/bike_agg_minneapolis_c.csv' DELIMITER ',' CSV; 
 \copy bike_ind_minneapolis FROM '/mnt/data1/BikeShare/raw_data/casa.oobrien.com/misc/bikedata/bike_ind_minneapolis_c.csv' DELIMITER ',' CSV;
 
