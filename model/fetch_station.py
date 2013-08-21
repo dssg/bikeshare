@@ -3,7 +3,7 @@
 
 # <codecell>
 
-def fetch_station(city, station_id, time_agg_level=None,agg_type='first'):
+def fetch_station(city, station_id, time_agg_level=None, agg_type='first'):
     import os
     import psycopg2
     import pandas as pd
@@ -29,7 +29,8 @@ def fetch_station(city, station_id, time_agg_level=None,agg_type='first'):
     # Executes a SQL command
     # This SQL command selects all rows from the boston database where the station ID is 5
     #cur.execute("SELECT * FROM bike_ind_"+str(lower_city)+" WHERE tfl_id = "+str(station_id)+";")
-    cur.execute("SELECT * FROM bike_ind_" +str(lower_city)+" INNER JOIN weather_"+str(lower_city)+" ON (date_part('year',bike_ind_"+str(lower_city)+".timestamp)=date_part('year',weather_"+str(lower_city)+".time) AND date_part('month',bike_ind_"+str(lower_city)+".timestamp)=date_part('month',weather_"+str(lower_city)+".time) AND date_part('day', bike_ind_"+str(lower_city)+".timestamp) = date_part('day', weather_"+str(lower_city)+".time) AND date_part('hour', bike_ind_"+str(lower_city)+".timestamp) = date_part('hour', weather_"+str(lower_city)+".time)) WHERE bike_ind_"+str(lower_city)+".tfl_id ="+str(station_id)+";")
+
+    cur.execute("SELECT * FROM bike_ind_" +str(lower_city)+" LEFT OUTER JOIN weather_"+str(lower_city)+" ON (date_part('year',bike_ind_"+str(lower_city)+".timestamp)=date_part('year',weather_"+str(lower_city)+".time) AND date_part('month',bike_ind_"+str(lower_city)+".timestamp)=date_part('month',weather_"+str(lower_city)+".time) AND date_part('day', bike_ind_"+str(lower_city)+".timestamp) = date_part('day', weather_"+str(lower_city)+".time) AND date_part('hour', bike_ind_"+str(lower_city)+".timestamp) = date_part('hour', weather_"+str(lower_city)+".time)) WHERE bike_ind_"+str(lower_city)+".tfl_id ="+str(station_id)+" ORDER BY bike_ind_"+str(lower_city)+".timestamp asc;")
     
 
     # Fetches all rows in the table output of the SQL query. 
