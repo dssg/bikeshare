@@ -15,10 +15,9 @@
 	</table>
 	<script>
 	$(document).ready(function() {
-	$('#example').dataTable( {
-		"bProcessing": true,
-		"sAjaxSource": '../static/data/newyork.geojson',
-		"aaSorting",
+  	$('#example').dataTable({
+  		"bProcessing": true,
+  		"sAjaxSource": '../predict_all/'
 		});
 	});
 	</script>

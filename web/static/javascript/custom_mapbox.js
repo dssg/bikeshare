@@ -62,20 +62,48 @@ $(document).ready(function(){
       }
 
 
-      // var hex_color = rgbToHex(Math.round(percentage_full * 255), 128, Math.round(percentage_empty * 255));
-
-      var circle_options = {
-        color       : 'red',      // Stroke color
-        //opacity   : 1,          // Stroke opacity
-        //weight    : 1,          // Stroke weight
-        fillColor   : "#fff",  // Fill color
-        fillOpacity : 1           // Fill opacity
-      };
-
       //
       var coords = [current_feature.lat, current_feature.lon];
-      var temp_circle = L.circle(coords, 200*.5, circle_options).addTo(map.markerLayer);
-      temp_circle.feature_properties = current_feature;
+      try {
+        var p = parseFloat(current_feature.expected_num_bikes) / parseFloat(current_feature.max_slots);
+        var weight = 4*((1.0 / 4.0) - p * (1 - p));
+        // console.log(weight);
+        var weight_index = Math.round(weight*10);
+        var bigger_value = Math.max(current_feature.prob_empty, current_feature.prob_full);
+        bigger_value = Math.round(bigger_value * 10);
+        hexColor = MYAPP.make_gradients()[bigger_value];
+
+        var circle_options = {
+          color       : 'black', // Stroke color
+          //opacity   : 1,          // Stroke opacity
+          weight      : 2, // Stroke weight
+          fillColor   : hexColor, // Fill color
+          fillOpacity : 1 // Fill opacity
+        };
+        // circle_marker = L.pie(coords, [1,1]).addTo(MYAPP.map);
+        var pie_parts = [current_feature.expected_num_bikes, current_feature.max_slots - current_feature.expected_num_bikes];
+        circle_marker = L.pie(coords, pie_parts, {
+            labels: false, 
+            radius: 100,
+            colors: ["#B8DC3C", "#CB2402"],
+            pathOptions: {
+              // clickable: false,
+              riseOnHover: true,
+              fillOpacity: 1
+
+            }
+          }).addTo(MYAPP.map);
+
+        circle_marker.current_feature = current_feature;
+
+        // var circle_marker = L.circle(coords, 50 + 20 * weight_index, circle_options).addTo(MYAPP.map.markerLayer);
+      } catch (err) {
+        console.log(err)
+        continue;
+      }
+
+      circle_marker.addClick(popUp(current_feature));
+      circle_marker.feature_properties = current_feature;
 
       window.marker_arr.push(temp_circle);
 
@@ -93,7 +121,15 @@ $(document).ready(function(){
       });
 
       temp_circle.on('mouseout', function(e){e.target.closePopup();});
+
     }
   };
 
 });
+
+function popUp(properties){
+
+  return function(){
+    console.log(properties);
+  }
+};
