@@ -124,7 +124,7 @@ To deploy the webapp, use [Gunicorn](http://gunicorn.org/) & [nginx](http://ngin
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
-To get in touch, email Hunter Owens at owens.hunter@gmail.com.
+To get in touch, email the team at BlueSteal@googlegroups.com.
 
 ## License 
 
