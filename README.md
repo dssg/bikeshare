@@ -1,5 +1,5 @@
 # Realtime Bikeshare Prediction Project 
-This is a [Data Science for Social Good](http://www.dssg.io) data science project to predict when bikeshare stations will be empty or full in major American cities.
+This is a [Data Science for Social Good](http://www.dssg.io) project to predict when bikeshare stations will be empty or full in major American cities.
 
 ## The problem: bikeshare rebalancing
 
