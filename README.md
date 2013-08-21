@@ -1,3 +1,4 @@
+# Realtime Bikeshare Prediction Project 
 This is a [Data Science for Social Good](http://www.dssg.io) data science project to predict when bikeshare stations will be empty or full in major American cities.
 
 ## The problem: bikeshare rebalancing
@@ -31,19 +32,19 @@ To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](h
 ## The project
 There are three components to the project:
 
-**A database storing historical bikeshare and weather data**
+### **A database storing historical bikeshare and weather data**
 
 Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every bikeshare station in DC and Boston since their systems launched. We're storing this data in postgreSQL database, and updating it constantly by hitting Atla's real-time bikeshare APIs. The data is discussed in further detail below.
 
 Scripts to build the database, load historical data into it, and add real-time data to it are in the `data` and `scrapers` folders. The database updates every minute using a cron job that you need schedule on your own machine.
 
-**A model that uses this data to predict future number of bikes**
+### **A model that uses this data to predict future number of bikes**
 
 The model lives in `model`. There are scripts in there that crunch the historical data in the database to estimate the model's parameters, and other that actually implement the model by consuming these parameters, fetching model inputs from the database, and spitting out predictions.
 
 *This directory is undergoing heavy development*
 
-**A simple webapp that displays the model's predictions**
+### **A simple webapp that displays the model's predictions**
 
 The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
 
@@ -90,6 +91,35 @@ We maintain cityname naming conventions: (These are way city names are represent
 A series of metadata tables also exist in our PostgreSQL to tie a station's id (the `tfl_id` field) to its lat/long and other info. The tablenames follow the `metadata_cityname` convention, i.e. `metadata_boston`.
 
 You can learn more more about the dataset and scrapers in the [wiki](https://github.com/dssg/bikeshare/wiki/data).
+
+## Installation 
+
+First you will need to clone the repo. 
+````
+git clone https://github.com/dssg/bikeshare
+cd bikeshare/
+````
+
+### Database Configuration 
+You will need a working postgresql 9.x series install. Run `data/create_db.sql` to create all the appropriate tables. 
+
+### Scraper Configuration 
+We use several scrapers to populate the data. Inside `scrapers` there is more detailed install instructions and example crontabs. You will need a [forecast.io](http://forecast.io/developer) API key. Historical data will be made avalible shortly. 
+
+### Webapp Installation
+
+*How To Run The Flask Web App*
+
+````
+cd bikeshare/web
+virtualenv ./
+. bin/activate
+pip install -r requirements.text
+python web/app.py
+````
+
+To deploy the webapp, use [Gunicorn](http://gunicorn.org/) & [nginx](http://nginx.org/).
+
 
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
