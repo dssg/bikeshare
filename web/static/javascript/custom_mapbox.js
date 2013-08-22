@@ -49,26 +49,27 @@ $(document).ready(function () {
       try {
         var p = parseFloat(current_feature.expected_num_bikes) / parseFloat(current_feature.max_slots);
         var weight = 4*((1.0 / 4.0) - p * (1 - p));
-        // console.log(weight);
+        var data = [current_feature.expected_num_bikes, current_feature.max_slots - current_feature.expected_num_bikes];
         weight_index = Math.round(weight*10);
-        // console.log(weight_index);
-        if (p <= 0.5) {
-          hexColor = MYAPP.make_gradients()[weight_index];
-          // hexColor = MYAPP.rgbToHex(127 + 128 * (weight), 255, 255);
-        } else {
-          // hexColor = MYAPP.rgbToHex(255, 255, 127 + 128 * (weight));
-          hexColor = MYAPP.make_gradients()[weight_index];
+        var colors = ["#DF151A", "#00DA3C"]
+
+
+        // var colors = [MYAPP.make_gradients()[weight_index], ]
+        var pieOptions = {
+          labels: false,
+          radius: 100,
+          colors: colors,
+          pathOptions: {
+            fillOpacity: 1,
+            color: 'black',
+            weight: 1
+          }
+
         }
 
-        var circle_options = {
-          color: 'red', // Stroke color
-          //opacity   : 1,          // Stroke opacity
-          weight: 2, // Stroke weight
-          fillColor: hexColor, // Fill color
-          fillOpacity: 1 // Fill opacity
-        };
-
-        var circle_marker = L.circle(coords, 50 + 10 * weight_index, circle_options).addTo(MYAPP.map.markerLayer);
+        var circle_marker = L.pie(coords, data, pieOptions).addTo(MYAPP.map);
+        var hexColor = MYAPP.make_gradients()[weight_index];
+        
       } catch (err) {
         console.log(err)
         continue;
@@ -79,8 +80,8 @@ $(document).ready(function () {
       MYAPP.marker_arr.push(circle_marker);
 
       // Below are mouseover/mouseout event listeners
-      circle_marker.on('mouseover', MYAPP.marker_mouseover);
-      circle_marker.on('mouseout', MYAPP.marker_mouseout);
+      // circle_marker.on('mouseover', MYAPP.marker_mouseover);
+      // circle_marker.on('mouseout', MYAPP.marker_mouseout);
       
     }
   };

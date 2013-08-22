@@ -28,7 +28,7 @@ MYAPP.marker_mouseout = function (e) {
 };
 
 MYAPP.make_gradients = function(){
-  return MYAPP.gradient("#35B927", "#DB4D27", 11);
+  return MYAPP.gradient("#DF151A", "#00DA3C", 11);
 }
 
 MYAPP.gradient = function(startColor, endColor, steps) {

@@ -8,9 +8,13 @@ from poisson_web import make_prediction, getStations
 
 app = Flask(__name__)
 
-@app.route("/maps/")
+@app.route("/map/")
 def show_map():
 	return render_template('template.html')
+
+@app.route("/table/")
+def show_table():
+  return render_template('table.html')
 
 @app.route("/")
 def hello():
