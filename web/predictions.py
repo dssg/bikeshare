@@ -37,15 +37,8 @@ def run_threaded(job_func, args):
     job_thread.start()
 
 def start_threads():
-  run_threaded(prediction_loop, (0,))
-  run_threaded(prediction_loop, (15,))
-  run_threaded(prediction_loop, (30,))
-  run_threaded(prediction_loop, (45,))
-  run_threaded(prediction_loop, (60,))
-  run_threaded(prediction_loop, (75,))
-  run_threaded(prediction_loop, (90,))
-  run_threaded(prediction_loop, (105,))
-  run_threaded(prediction_loop, (120,))
 
+  for i in range(0,120+1,15):
+    run_threaded(prediction_loop, (i,))
 if __name__ == "__main__":
   start_threads()

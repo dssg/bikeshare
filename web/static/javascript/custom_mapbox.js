@@ -51,20 +51,17 @@ $(document).ready(function () {
         var weight = 4*((1.0 / 4.0) - p * (1 - p));
         var data = [current_feature.expected_num_bikes, current_feature.max_slots - current_feature.expected_num_bikes];
         weight_index = Math.round(weight*10);
-        var colors = ["#DF151A", "#00DA3C"]
+        var colors = ["#DF151A", "#00DA3C"];
 
-
-        // var colors = [MYAPP.make_gradients()[weight_index], ]
         var pieOptions = {
           labels: false,
           radius: 100,
           colors: colors,
           pathOptions: {
-            fillOpacity: 1,
-            color: 'black',
-            weight: 1
+            fillOpacity : 1,
+            color       : 'black',
+            weight      : 1
           }
-
         }
 
         var circle_marker = L.pie(coords, data, pieOptions).addTo(MYAPP.map);
@@ -81,8 +78,6 @@ $(document).ready(function () {
 
       // Below are mouseover/mouseout event listeners
       // circle_marker.on('mouseover', MYAPP.marker_mouseover);
-      // circle_marker.on('mouseout', MYAPP.marker_mouseout);
-      
     }
   };
 
