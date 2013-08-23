@@ -11,9 +11,18 @@ MYAPP.rgbToHex = function (r, g, b) {
 MYAPP.marker_mouseover = function (e) {
   var feature = e.target.feature_properties;
 
-  var popupContent ='';
+  var popupContent = "";
+  popupContent +='<b><font size = +1>' + feature["name"] + '</font size></b><br>';
+  popupContent += '<br>Total Docks: ' + feature["max_slots"];
+  popupContent += '<br>Bikes Now: ' + feature["current_bikes"];
+  popupContent += '<br>Estimated Bikes: ' + feature["expected_num_bikes"];
+  popupContent += '<br>';
+  popupContent += '<br>Probability Empty: ' + feature["prob_empty"];
+  popupContent += '<br>Probability Full: ' + feature["prob_full"];
+
+
   for (key_name in feature) {
-    popupContent += '<b>' + String(key_name) + '</b>' + ' : ' + String(feature[key_name]) + ' <br> ';
+    // popupContent += '<b>' + String(key_name) + '</b>' + ' : ' + String(feature[key_name]) + ' <br> ';
   }
 
   // http://leafletjs.com/reference.html#popup for more options
@@ -28,7 +37,7 @@ MYAPP.marker_mouseout = function (e) {
 };
 
 MYAPP.make_gradients = function(){
-  return MYAPP.gradient("#35B927", "#DB4D27", 11);
+  return MYAPP.gradient("#35B927", "#DB4D27", 21);
 }
 
 
