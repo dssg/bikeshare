@@ -223,8 +223,7 @@ def predict_net_lambda(current_time, prediction_interval, month, weekday, poisso
 # Estimate the poisson!
 def save_poisson_results():
     print ("saving")
-    # station_ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74]
-    # station_ids = getStations()
+    # station_ids = get_stations()
     for station in station_ids:
         station_id = station[0]
         if (os.path.isfile("%spoisson_results_%s.p" % (pickle_folder, station_id))):
@@ -431,7 +430,7 @@ def run_code():
 
 # <codecell>
 
-def getStations():
+def get_stations():
     cur = conn.cursor()
     cur.execute("SELECT DISTINCT * FROM metadata_washingtondc order by id;")
     station_ids = cur.fetchall()

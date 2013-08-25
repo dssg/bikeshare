@@ -3,14 +3,15 @@ from threading import Thread, RLock
 from flask import jsonify
 import time
 import timeit
-from poisson_web import make_prediction, getStations
+from poisson_web import make_prediction, get_stations
 import pickle
 
 lock = RLock()
 cache = dict()
 
 def get_prediction_and_save(many_mins):
-  stations = getStations()
+  
+  stations = get_stations()
   prediction_list = []
   for station in stations:
     prediction_list.append(make_prediction(station, int(many_mins)))
@@ -37,8 +38,9 @@ def run_threaded(job_func, args):
     job_thread.start()
 
 def start_threads():
-
-  for i in range(0,120+1,15):
+  # i represents the minutes from current to make predictions
+  for i in range(0, 120+1, 15):
     run_threaded(prediction_loop, (i,))
+
 if __name__ == "__main__":
   start_threads()

@@ -2,7 +2,11 @@
 
 This directory contains the web app which shows a map of the current and predicted loads on bike stations. 
 
-The app is built on Flask (Python minimalist web framework) and uses external libraries such as Mapbox and Bootstrap.
+The app is built on Flask (Python minimalist web framework) and uses external libraries Mapbox and Bootstrap.
+
+## Prediction Set up
+
+Run `predictions.py` which outputs `cache.p`.
 
 ## How To Run The Flask Web App
 ````
@@ -11,5 +15,6 @@ cd bikeshare/web
 virtualenv ./
 . bin/activate
 pip install -r requirements.text
+python app.py
 ````
 
