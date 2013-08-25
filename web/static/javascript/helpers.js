@@ -12,13 +12,13 @@ MYAPP.marker_mouseover = function (e) {
   var feature = e.target.feature_properties;
 
   var popupContent = "";
-  popupContent +='<b><font size = +1>' + feature["name"] + '</font size></b><br>';
-  popupContent += '<br>Total Docks: ' + feature["max_slots"];
-  popupContent += '<br>Bikes Now: ' + feature["current_bikes"];
-  popupContent += '<br>Estimated Bikes: ' + feature["expected_num_bikes"];
+  popupContent +='<b><font size = +0>' + feature["name"] + '</font size></b><br>';
+  popupContent += '<br><i>Total Docks</i>: ' + feature["max_slots"];
+  popupContent += '<br><i>Bikes Now</i>: ' + feature["current_bikes"];
+  popupContent += '<br><i>Estimated Bikes</i>: ' + feature["expected_num_bikes"];
   popupContent += '<br>';
-  popupContent += '<br>Probability Empty: ' + feature["prob_empty"];
-  popupContent += '<br>Probability Full: ' + feature["prob_full"];
+  popupContent += '<br><i>Probability Empty:</i> ' + feature["prob_empty"];
+  popupContent += '<br><i>Probability Full:</i> ' + feature["prob_full"];
 
 
   for (key_name in feature) {
@@ -37,7 +37,7 @@ MYAPP.marker_mouseout = function (e) {
 };
 
 MYAPP.make_gradients = function(){
-  return MYAPP.gradient("#35B927", "#DB4D27", 21);
+  return MYAPP.gradient("#35B927", "#DB4D27", 10);
 }
 
 

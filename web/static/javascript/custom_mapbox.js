@@ -55,15 +55,19 @@ $(document).ready(function () {
         var bigger_num = Math.max(current_feature.prob_empty, current_feature.prob_full);
         bigger_num = Math.round(bigger_num*10);
 
-        if (current_feature.prob_full > current_feature.prob_empty) {
-          bigger_num = bigger_num + 10;
-        } else {
-          bigger_num = 10 - bigger_num;
-        }
+        // if (current_feature.prob_full > current_feature.prob_empty) {
+          // bigger_num = bigger_num + 10;
+        // } else {
+          // bigger_num = 10 - bigger_num;
+        // }
 
-        console.log(bigger_num);
+        // console.log(bigger_num);
 
         hexColor = MYAPP.make_gradients()[bigger_num];
+
+        if (MYAPP.prediction_time === '0'){
+          hexColor = 'gray';
+        }
 
         var circle_options = {
           color: 'black', // Stroke color
@@ -73,7 +77,7 @@ $(document).ready(function () {
           fillOpacity: 1 // Fill opacity
         };
 
-        var circle_marker = L.circle(coords, 50, circle_options).addTo(MYAPP.map.markerLayer);
+        var circle_marker = L.circle(coords, 75, circle_options).addTo(MYAPP.map.markerLayer);
       } catch (err) {
         // console.log(err)
         continue;
