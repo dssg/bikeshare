@@ -5,6 +5,7 @@ beautifulsoup4==4.2.1
 psycopg2==2.5.1
 SQLAlchemy==0.8.1
 #minirank==0.1
+numpy==1.7.1
 scikit-learn==0.13.1
 ipython==0.13.2
 patsy==0.1.0

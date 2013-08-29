@@ -1,5 +1,7 @@
 #ignore virtual environment
 venv
+#log files
+run
 
 *.py[cod]
 
@@ -56,3 +58,6 @@ data/rebalancing_trips_2_2012_to_3_2013.csv
 data/rebalancing_trips_2_2012_to_3_2013_sample.csv
 
 web/config.py
+
+#venv
+web/venv/
