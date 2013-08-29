@@ -61,3 +61,5 @@ web/config.py
 
 #venv
 web/venv/
+#pickes, ignore
+web/static/pickles

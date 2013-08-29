@@ -1,5 +1,5 @@
 # Realtime Bikeshare Prediction Project 
-This is a [Data Science for Social Good](http://www.dssg.io) data science project to predict when bikeshare stations will be empty or full in major American cities.
+This is a [Data Science for Social Good](http://www.dssg.io) project to predict when bikeshare stations will be empty or full in major American cities.
 
 ## The problem: bikeshare rebalancing
 
@@ -124,7 +124,7 @@ To deploy the webapp, use [Gunicorn](http://gunicorn.org/) & [nginx](http://ngin
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
 
-To get in touch, email Hunter Owens at owens.hunter@gmail.com.
+To get in touch, email the team at BlueSteal@googlegroups.com.
 
 ## License 
 
