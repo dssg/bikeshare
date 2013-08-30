@@ -1,3 +1,5 @@
+#cache.p
+web/cache.p
 
 #ignore virtual environment
 venv
