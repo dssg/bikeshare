@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   // Made TileMap with JSON with Vidhur's account
   // darkzeroman.map-gxrlhgnw : NYC MAP
-  MYAPP.map = L.mapbox.map('map', 'darkzeroman.map-bi97back').whenReady(function () {
+  MYAPP.map = L.mapbox.map('map', 'jpvelez.map-zuhdyp2h').whenReady(function () {
     // only load the json when the map is ready
     $.getJSON("../predict_all/  ", function (json) {
       MYAPP.vanilla_json = json;
