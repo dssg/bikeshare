@@ -50,12 +50,24 @@ $(document).ready(function () {
         var p = parseFloat(current_feature.expected_num_bikes) / parseFloat(current_feature.max_slots);
         var weight = 4*((1.0 / 4.0) - p * (1 - p));
         
-        weight_index = Math.round(weight*10);
+        weight_index = Math.round(weight*10); 
         
         var bigger_num = Math.max(current_feature.prob_empty, current_feature.prob_full);
         bigger_num = Math.round(bigger_num*10);
 
+        // if (current_feature.prob_full > current_feature.prob_empty) {
+          // bigger_num = bigger_num + 10;
+        // } else {
+          // bigger_num = 10 - bigger_num;
+        // }
+
+        // console.log(bigger_num);
+
         hexColor = MYAPP.make_gradients()[bigger_num];
+
+        if (MYAPP.prediction_time === '0'){
+          hexColor = 'gray';
+        }
 
         var circle_options = {
           color: 'black', // Stroke color
@@ -65,7 +77,7 @@ $(document).ready(function () {
           fillOpacity: 1 // Fill opacity
         };
 
-        var circle_marker = L.circle(coords, 50 + 10 * weight_index, circle_options).addTo(MYAPP.map.markerLayer);
+        var circle_marker = L.circle(coords, 75, circle_options).addTo(MYAPP.map.markerLayer);
       } catch (err) {
         // console.log(err)
         continue;
