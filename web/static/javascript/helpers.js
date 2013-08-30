@@ -13,12 +13,14 @@ MYAPP.marker_mouseover = function (e) {
 
   var popupContent = "";
   popupContent +='<b><font size = +0>' + feature["name"] + '</font size></b><br>';
-  popupContent += '<br><i>Total Docks</i>: ' + feature["max_slots"];
-  popupContent += '<br><i>Bikes Now</i>: ' + feature["current_bikes"];
-  popupContent += '<br><i>Estimated Bikes</i>: ' + feature["expected_num_bikes"];
+  
+  popupContent += '<br>Bikes Now: <b>' + feature["current_bikes"] + ' </b>';
+  popupContent += '<br>Predicted Bikes: <b>' + feature["expected_num_bikes"] + ' </b>';
+  popupContent += '<br>Total Docks: <b>' + feature["max_slots"] + ' </b>';
+  
   popupContent += '<br>';
-  popupContent += '<br><i>Probability Empty:</i> ' + feature["prob_empty"];
-  popupContent += '<br><i>Probability Full:</i> ' + feature["prob_full"];
+  popupContent += '<br>Probability Empty: <b>' + Math.floor(feature["prob_empty"]*100) + '% </b>';
+  popupContent += '<br>Probability Full: <b>' + Math.floor(feature["prob_full"]*100) + '% </b>';
 
 
   for (key_name in feature) {
