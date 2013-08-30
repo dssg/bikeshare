@@ -19,8 +19,7 @@ import calendar
 from config import config
 
 # Connect to postgres db
-conn = psycopg2.connect("dbname= %s user= %s host=%s" % (config()["DB"], config()["USER"], config()["DB_URL"]))
-
+# conn = psycopg2.connect("dbname= %s user= %s host=%s" % (config()["DB"], config()["USER"], config()["DB_URL"]))
 # <codecell>
 
 def get_station_data(station_id):
