@@ -30,15 +30,6 @@ def predict_all():
   d = dict()
   cache = pickle.load(open("cache.p", "rb"))
   return jsonify(cache)
-<<<<<<< HEAD
-	 
+
 if __name__ == "__main__":
     app.run(debug=True)
-=======
-
-  # start_thread()
-  return "ok starting to predict"
-if __name__ == "__main__":
-    app.run(debug=True)
-
->>>>>>> c5da41c47510e2dd1c46bea439d0e1b4959970af

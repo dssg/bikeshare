@@ -18,7 +18,7 @@ def get_prediction_and_save(many_mins):
   lock.acquire()
   try: 
     cache[many_mins] = prediction_list
-    pickle.dump(cache, open("cache.p", "wb") )
+    pickle.dump(cache, open("/home/ubuntu/bikeshare/web/cache.p", "wb") )
   finally:
     lock.release()
 
