@@ -64,9 +64,9 @@ F0.0
 sg8
 I13
 sg9
-F7.0
+F6.0
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p16
@@ -164,9 +164,9 @@ F0.0
 sg8
 I19
 sg9
-F10.0
+F9.0
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p26
@@ -344,9 +344,9 @@ F0.0
 sg8
 I33
 sg9
-F1.0
+F0.0
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p44
@@ -364,9 +364,9 @@ F0.0
 sg8
 I15
 sg9
-F2.0
+F1.0
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p46
@@ -384,9 +384,9 @@ F0.0
 sg8
 I19
 sg9
-F1.0
+F0.0
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p48
@@ -464,9 +464,9 @@ F0.0
 sg8
 I19
 sg9
-F7.0
+F8.0
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p56
@@ -504,9 +504,9 @@ F0.0
 sg8
 I23
 sg9
-F3.0
+F1.0
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p60
@@ -524,9 +524,9 @@ F0.0
 sg8
 I15
 sg9
-F7.0
+F6.0
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p62
@@ -544,9 +544,9 @@ F0.0
 sg8
 I35
 sg9
-F25.0
+F26.0
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p64
@@ -624,9 +624,9 @@ F0.0
 sg8
 I19
 sg9
-F2.0
+F1.0
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p72
@@ -664,9 +664,9 @@ F0.0
 sg8
 I19
 sg9
-F7.0
+F9.0
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p76
@@ -682,7 +682,7 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
 F1.0
 sg10
@@ -984,9 +984,9 @@ F0.0
 sg8
 I15
 sg9
-F6.0
+F10.0
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p108
@@ -1004,9 +1004,9 @@ F0.0
 sg8
 I41
 sg9
-F15.0
+F13.0
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p110
@@ -1024,9 +1024,9 @@ F0.0
 sg8
 I15
 sg9
-F5.0
+F6.0
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p112
@@ -1064,9 +1064,9 @@ F0.0
 sg8
 I17
 sg9
-F11.0
+F12.0
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p116
@@ -1084,9 +1084,9 @@ F0.0
 sg8
 I15
 sg9
-F2.0
+F3.0
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p118
@@ -1124,9 +1124,9 @@ F0.0
 sg8
 I15
 sg9
-F4.0
+F3.0
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p122
@@ -1164,9 +1164,9 @@ F0.0
 sg8
 I19
 sg9
-F4.0
+F5.0
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p126
@@ -1344,9 +1344,9 @@ F0.0
 sg8
 I15
 sg9
-F9.0
+F10.0
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p144
@@ -1364,9 +1364,9 @@ F0.0
 sg8
 I17
 sg9
-F16.0
+F17.0
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p146
@@ -1424,9 +1424,9 @@ F0.0
 sg8
 I18
 sg9
-F8.0
+F10.0
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p152
@@ -1502,11 +1502,11 @@ F38.893028
 sg7
 F0.0
 sg8
-I31
+I30
 sg9
-F22.0
+F24.0
 sg10
-I22
+I24
 sg11
 S'10th St & Constitution Ave NW'
 p160
@@ -1544,9 +1544,9 @@ F0.0
 sg8
 I19
 sg9
-F16.0
+F19.0
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p164
@@ -1624,9 +1624,9 @@ F0.0
 sg8
 I31
 sg9
-F14.0
+F13.0
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p172
@@ -1664,9 +1664,9 @@ F0.0
 sg8
 I18
 sg9
-F1.0
+F0.0
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p176
@@ -1684,9 +1684,9 @@ F0.0
 sg8
 I15
 sg9
-F4.0
+F5.0
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p178
@@ -1704,9 +1704,9 @@ F0.0
 sg8
 I15
 sg9
-F3.0
+F4.0
 sg10
-I3
+I4
 sg11
 S'19th & L St NW'
 p180
@@ -1724,9 +1724,9 @@ F0.0
 sg8
 I22
 sg9
-F13.0
+F16.0
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p182
@@ -1944,9 +1944,9 @@ F0.0
 sg8
 I11
 sg9
-F3.0
+F7.0
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p204
@@ -2044,9 +2044,9 @@ F0.0
 sg8
 I31
 sg9
-F16.0
+F15.0
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p214
@@ -2064,9 +2064,9 @@ F0.0
 sg8
 I25
 sg9
-F16.0
+F17.0
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p216
@@ -2084,9 +2084,9 @@ F0.0
 sg8
 I18
 sg9
-F7.0
+F8.0
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p218
@@ -2104,9 +2104,9 @@ F0.0
 sg8
 I27
 sg9
-F19.0
+F20.0
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p220
@@ -2124,9 +2124,9 @@ F0.0
 sg8
 I19
 sg9
-F11.0
+F12.0
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p222
@@ -2164,9 +2164,9 @@ F0.0
 sg8
 I23
 sg9
-F11.0
+F9.0
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p226
@@ -2204,9 +2204,9 @@ F0.0
 sg8
 I18
 sg9
-F7.0
+F8.0
 sg10
-I7
+I8
 sg11
 S'11th & H St NE'
 p230
@@ -2224,9 +2224,9 @@ F0.0
 sg8
 I14
 sg9
-F6.0
+F5.0
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p232
@@ -2244,9 +2244,9 @@ F0.0
 sg8
 I31
 sg9
-F24.0
+F23.0
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p234
@@ -2284,9 +2284,9 @@ F0.0
 sg8
 I18
 sg9
-F1.0
+F2.0
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p238
@@ -2322,7 +2322,7 @@ F38.898069
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
 F20.0
 sg10
@@ -2424,9 +2424,9 @@ F0.0
 sg8
 I18
 sg9
-F4.0
+F5.0
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p252
@@ -2484,9 +2484,9 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F9.0
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p258
@@ -2564,9 +2564,9 @@ F0.0
 sg8
 I15
 sg9
-F4.0
+F5.0
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p266
@@ -2624,9 +2624,9 @@ F0.0
 sg8
 I33
 sg9
-F1.0
+F0.0
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p272
@@ -2644,9 +2644,9 @@ F0.0
 sg8
 I11
 sg9
-F6.0
+F8.0
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p274
@@ -2664,9 +2664,9 @@ F0.0
 sg8
 I14
 sg9
-F11.0
+F10.0
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p276
@@ -2704,9 +2704,9 @@ F0.0
 sg8
 I15
 sg9
-F6.0
+F5.0
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p280
@@ -2724,9 +2724,9 @@ F0.0
 sg8
 I39
 sg9
-F16.0
+F17.0
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p282
@@ -2744,9 +2744,9 @@ F0.0
 sg8
 I17
 sg9
-F1.0
+F0.0
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p284
@@ -2804,9 +2804,9 @@ F0.0
 sg8
 I15
 sg9
-F7.0
+F8.0
 sg10
-I7
+I8
 sg11
 S'9th & Upshur St NW'
 p290
@@ -2824,9 +2824,9 @@ F0.0
 sg8
 I14
 sg9
-F0.0
+F2.0
 sg10
-I0
+I2
 sg11
 S'1st & Rhode Island Ave NW'
 p292
@@ -2864,9 +2864,9 @@ F0.0
 sg8
 I19
 sg9
-F6.0
+F5.0
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p296
@@ -3064,9 +3064,9 @@ F0.0
 sg8
 I18
 sg9
-F2.0
+F4.0
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p316
@@ -3104,9 +3104,9 @@ F0.0
 sg8
 I11
 sg9
-F7.0
+F8.0
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p320
@@ -3124,9 +3124,9 @@ F0.0
 sg8
 I15
 sg9
-F2.0
+F3.0
 sg10
-I2
+I3
 sg11
 S'1st & K St SE'
 p322
@@ -3144,9 +3144,9 @@ F0.0
 sg8
 I19
 sg9
-F2.0
+F1.0
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p324
@@ -3244,9 +3244,9 @@ F0.0
 sg8
 I23
 sg9
-F7.0
+F5.0
 sg10
-I7
+I5
 sg11
 S'Jefferson Dr & 14th St SW'
 p334
@@ -3304,9 +3304,9 @@ F0.0
 sg8
 I18
 sg9
-F12.0
+F13.0
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p340
@@ -3404,9 +3404,9 @@ F0.0
 sg8
 I19
 sg9
-F7.0
+F6.0
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p350
@@ -3444,9 +3444,9 @@ F0.0
 sg8
 I23
 sg9
-F15.0
+F13.0
 sg10
-I15
+I13
 sg11
 S'Jefferson Memorial'
 p354
@@ -3464,9 +3464,9 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F9.0
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p356
@@ -3524,9 +3524,9 @@ F0.0
 sg8
 I11
 sg9
-F7.0
+F8.0
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p362
@@ -3544,9 +3544,9 @@ F0.0
 sg8
 I19
 sg9
-F15.0
+F14.0
 sg10
-I15
+I14
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p364
@@ -3564,9 +3564,9 @@ F0.0
 sg8
 I19
 sg9
-F15.0
+F14.0
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p366
@@ -3584,9 +3584,9 @@ F0.0
 sg8
 I19
 sg9
-F1.0
+F0.0
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p368
@@ -3724,9 +3724,9 @@ F0.0
 sg8
 I19
 sg9
-F4.0
+F3.0
 sg10
-I4
+I3
 sg11
 S'15th & K St NW'
 p382
@@ -3824,9 +3824,9 @@ F0.0
 sg8
 I15
 sg9
-F14.0
+F15.0
 sg10
-I14
+I15
 sg11
 S'24th & N St NW'
 p392
@@ -3844,9 +3844,9 @@ F0.0
 sg8
 I15
 sg9
-F15.0
+F14.0
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p394
@@ -3864,9 +3864,9 @@ F0.0
 sg8
 I14
 sg9
-F13.0
+F12.0
 sg10
-I13
+I12
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p396
@@ -3904,9 +3904,9 @@ F0.0
 sg8
 I11
 sg9
-F7.0
+F6.0
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p400
@@ -3944,9 +3944,9 @@ F0.0
 sg8
 I25
 sg9
-F4.0
+F2.0
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p404
@@ -4042,11 +4042,11 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F6.0
+F7.0
 sg10
-I6
+I7
 sg11
 S'M St & Delaware Ave NE'
 p414
@@ -4364,9 +4364,9 @@ F0.0
 sg8
 I17
 sg9
-F9.0
+F8.0
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p446
@@ -4424,9 +4424,9 @@ F0.0
 sg8
 I19
 sg9
-F3.0
+F2.0
 sg10
-I3
+I2
 sg11
 S'17th St & Massachusetts Ave NW'
 p452
@@ -4464,9 +4464,9 @@ F0.0
 sg8
 I11
 sg9
-F6.0
+F5.0
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p456
@@ -4484,9 +4484,9 @@ F0.0
 sg8
 I15
 sg9
-F1.0
+F6.0
 sg10
-I1
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p458
@@ -4564,9 +4564,9 @@ F0.0
 sg8
 I19
 sg9
-F6.0
+F7.0
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p466
@@ -4684,9 +4684,9 @@ F0.0
 sg8
 I23
 sg9
-F1.0
+F0.0
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p478
@@ -4824,9 +4824,9 @@ F0.0
 sg8
 I15
 sg9
-F6.0
+F5.0
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p492
@@ -4884,9 +4884,9 @@ F0.0
 sg8
 I25
 sg9
-F21.0
+F20.0
 sg10
-I21
+I20
 sg11
 S'Washington & Independence Ave SW/HHS'
 p498
@@ -4934,7 +4934,7 @@ sasI105
 (lp503
 (dp504
 g3
-F0.03
+F0.0
 sg4
 F-77.0512
 sg5
@@ -4946,7 +4946,7 @@ F0.0
 sg8
 I11
 sg9
-F2.82
+F2.94
 sg10
 I3
 sg11
@@ -4962,7 +4962,7 @@ I2
 sg6
 F38.85725
 sg7
-F0.07
+F0.08
 sg8
 I9
 sg9
@@ -4974,7 +4974,7 @@ S'18th & Eads St.'
 p507
 sa(dp508
 g3
-F0.0
+F0.01
 sg4
 F-77.0492
 sg5
@@ -4982,13 +4982,13 @@ I3
 sg6
 F38.8564
 sg7
-F0.01
+F0.0
 sg8
 I13
 sg9
-F6.81
+F5.86
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p509
@@ -5006,7 +5006,7 @@ F0.06
 sg8
 I10
 sg9
-F6.8
+F6.87
 sg10
 I7
 sg11
@@ -5026,7 +5026,7 @@ F0.0
 sg8
 I11
 sg9
-F3.93
+F3.94
 sg10
 I4
 sg11
@@ -5046,7 +5046,7 @@ F0.0
 sg8
 I17
 sg9
-F8.94
+F9.05
 sg10
 I9
 sg11
@@ -5054,7 +5054,7 @@ S'15th & Hayes St'
 p515
 sa(dp516
 g3
-F0.01
+F0.0
 sg4
 F-77.0633
 sg5
@@ -5062,11 +5062,11 @@ I7
 sg6
 F38.8637
 sg7
-F0.01
+F0.0
 sg8
 I10
 sg9
-F5.08
+F4.89
 sg10
 I5
 sg11
@@ -5086,9 +5086,9 @@ F0.0
 sg8
 I19
 sg9
-F10.2
+F9.05
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p519
@@ -5106,7 +5106,7 @@ F0.0
 sg8
 I11
 sg9
-F4.67
+F4.61
 sg10
 I5
 sg11
@@ -5114,7 +5114,7 @@ S'12th & Army Navy Dr'
 p521
 sa(dp522
 g3
-F0.47
+F0.53
 sg4
 F-77.051516
 sg5
@@ -5126,7 +5126,7 @@ F0.0
 sg8
 I11
 sg9
-F1.02
+F0.92
 sg10
 I1
 sg11
@@ -5142,11 +5142,11 @@ I11
 sg6
 F38.8426
 sg7
-F0.12
+F0.1
 sg8
 I11
 sg9
-F7.75
+F7.71
 sg10
 I8
 sg11
@@ -5166,7 +5166,7 @@ F0.0
 sg8
 I16
 sg9
-F6.83
+F6.76
 sg10
 I7
 sg11
@@ -5174,7 +5174,7 @@ S'23rd & Crystal Dr'
 p527
 sa(dp528
 g3
-F0.0
+F0.01
 sg4
 F-77.0498
 sg5
@@ -5186,7 +5186,7 @@ F0.0
 sg8
 I11
 sg9
-F2.89
+F2.82
 sg10
 I3
 sg11
@@ -5202,11 +5202,11 @@ I14
 sg6
 F38.9003
 sg7
-F0.0
+F0.01
 sg8
 I15
 sg9
-F8.48
+F8.63
 sg10
 I9
 sg11
@@ -5214,7 +5214,7 @@ S'19th St & Pennsylvania Ave NW'
 p531
 sa(dp532
 g3
-F0.57
+F0.64
 sg4
 F-77.0321
 sg5
@@ -5226,7 +5226,7 @@ F0.0
 sg8
 I27
 sg9
-F3.69
+F3.52
 sg10
 I2
 sg11
@@ -5234,7 +5234,7 @@ S'14th & V St NW'
 p533
 sa(dp534
 g3
-F0.87
+F0.86
 sg4
 F-77.027822
 sg5
@@ -5246,7 +5246,7 @@ F0.0
 sg8
 I27
 sg9
-F1.53
+F1.84
 sg10
 I0
 sg11
@@ -5254,7 +5254,7 @@ S'11th & Kenyon St NW'
 p535
 sa(dp536
 g3
-F0.77
+F0.92
 sg4
 F-77.036536
 sg5
@@ -5266,15 +5266,15 @@ F0.0
 sg8
 I33
 sg9
-F2.37
+F1.99
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p537
 sa(dp538
 g3
-F0.65
+F0.78
 sg4
 F-77.042581
 sg5
@@ -5282,19 +5282,19 @@ I18
 sg6
 F38.922925
 sg7
-F0.0
+F0.01
 sg8
 I15
 sg9
-F3.05
+F2.81
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p539
 sa(dp540
 g3
-F0.83
+F0.88
 sg4
 F-77.0322
 sg5
@@ -5306,15 +5306,15 @@ F0.0
 sg8
 I19
 sg9
-F2.13
+F1.98
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p541
 sa(dp542
 g3
-F0.56
+F0.6
 sg4
 F-77.0501
 sg5
@@ -5326,7 +5326,7 @@ F0.0
 sg8
 I23
 sg9
-F2.91
+F2.7
 sg10
 I2
 sg11
@@ -5334,7 +5334,7 @@ S'Calvert St & Woodley Pl NW'
 p543
 sa(dp544
 g3
-F0.9
+F0.88
 sg4
 F-77.0388
 sg5
@@ -5346,7 +5346,7 @@ F0.0
 sg8
 I19
 sg9
-F1.92
+F1.86
 sg10
 I0
 sg11
@@ -5354,7 +5354,7 @@ S'Lamont & Mt Pleasant NW'
 p545
 sa(dp546
 g3
-F0.73
+F0.69
 sg4
 F-77.0178
 sg5
@@ -5366,7 +5366,7 @@ F0.0
 sg8
 I19
 sg9
-F3.09
+F3.04
 sg10
 I1
 sg11
@@ -5374,7 +5374,7 @@ S'4th & M St SW'
 p547
 sa(dp548
 g3
-F0.12
+F0.1
 sg4
 F-77.034438
 sg5
@@ -5386,15 +5386,15 @@ F0.03
 sg8
 I19
 sg9
-F7.6
+F8.46
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p549
 sa(dp550
 g3
-F0.33
+F0.34
 sg4
 F-77.031681
 sg5
@@ -5406,7 +5406,7 @@ F0.0
 sg8
 I15
 sg9
-F3.88
+F3.92
 sg10
 I3
 sg11
@@ -5414,7 +5414,7 @@ S'14th & R St NW'
 p551
 sa(dp552
 g3
-F0.43
+F0.76
 sg4
 F-77.0323
 sg5
@@ -5426,15 +5426,15 @@ F0.0
 sg8
 I23
 sg9
-F3.98
+F3.15
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p553
 sa(dp554
 g3
-F0.02
+F0.04
 sg4
 F-77.045
 sg5
@@ -5446,9 +5446,9 @@ F0.0
 sg8
 I15
 sg9
-F6.17
+F5.55
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p555
@@ -5462,19 +5462,19 @@ I27
 sg6
 F38.9008
 sg7
-F0.0
+F0.01
 sg8
 I35
 sg9
-F24.68
+F25.76
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p557
 sa(dp558
 g3
-F0.04
+F0.03
 sg4
 F-77.024649
 sg5
@@ -5486,7 +5486,7 @@ F0.0
 sg8
 I13
 sg9
-F5.17
+F5.19
 sg10
 I5
 sg11
@@ -5502,11 +5502,11 @@ I29
 sg6
 F38.9375
 sg7
-F0.06
+F0.04
 sg8
 I11
 sg9
-F7.06
+F7.14
 sg10
 I7
 sg11
@@ -5526,7 +5526,7 @@ F0.0
 sg8
 I11
 sg9
-F5.9
+F6.06
 sg10
 I6
 sg11
@@ -5534,7 +5534,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p563
 sa(dp564
 g3
-F0.52
+F0.78
 sg4
 F-77.019027
 sg5
@@ -5546,9 +5546,9 @@ F0.0
 sg8
 I19
 sg9
-F3.39
+F2.76
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p565
@@ -5566,7 +5566,7 @@ F0.0
 sg8
 I15
 sg9
-F7.68
+F7.45
 sg10
 I8
 sg11
@@ -5574,7 +5574,7 @@ S'19th & East Capitol St SE'
 p567
 sa(dp568
 g3
-F0.05
+F0.02
 sg4
 F-77.0315
 sg5
@@ -5586,9 +5586,9 @@ F0.0
 sg8
 I19
 sg9
-F6.84
+F8.64
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p569
@@ -5604,9 +5604,9 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
-F0.99
+F0.97
 sg10
 I1
 sg11
@@ -5614,7 +5614,7 @@ S'Good Hope & Naylor Rd SE'
 p571
 sa(dp572
 g3
-F0.39
+F0.45
 sg4
 F-77.057979
 sg5
@@ -5626,7 +5626,7 @@ F0.0
 sg8
 I11
 sg9
-F2.63
+F2.45
 sg10
 I2
 sg11
@@ -5646,7 +5646,7 @@ F0.0
 sg8
 I11
 sg9
-F5.97
+F6.02
 sg10
 I6
 sg11
@@ -5666,7 +5666,7 @@ F0.0
 sg8
 I11
 sg9
-F7.08
+F6.96
 sg10
 I7
 sg11
@@ -5690,7 +5690,7 @@ F0.0
 sg8
 I11
 sg9
-F7.95
+F8.05
 sg10
 I8
 sg11
@@ -5706,11 +5706,11 @@ I40
 sg6
 F38.867373
 sg7
-F0.02
+F0.0
 sg8
 I11
 sg9
-F8.99
+F8.92
 sg10
 I9
 sg11
@@ -5718,7 +5718,7 @@ S'Good Hope Rd & MLK Ave SE'
 p583
 sa(dp584
 g3
-F0.26
+F0.31
 sg4
 F-77.0436
 sg5
@@ -5730,7 +5730,7 @@ F0.0
 sg8
 I11
 sg9
-F1.69
+F1.64
 sg10
 I2
 sg11
@@ -5750,7 +5750,7 @@ F0.0
 sg8
 I11
 sg9
-F3.86
+F3.89
 sg10
 I4
 sg11
@@ -5758,7 +5758,7 @@ S'4th St & Rhode Island Ave NE'
 p587
 sa(dp588
 g3
-F0.55
+F0.61
 sg4
 F-77.0259
 sg5
@@ -5770,7 +5770,7 @@ F0.0
 sg8
 I14
 sg9
-F3.17
+F2.82
 sg10
 I2
 sg11
@@ -5778,7 +5778,7 @@ S'10th & U St NW'
 p589
 sa(dp590
 g3
-F0.43
+F0.51
 sg4
 F-77.0222
 sg5
@@ -5790,7 +5790,7 @@ F0.0
 sg8
 I11
 sg9
-F1.73
+F1.55
 sg10
 I1
 sg11
@@ -5798,7 +5798,7 @@ S'Georgia Ave and Fairmont St NW'
 p591
 sa(dp592
 g3
-F0.65
+F0.63
 sg4
 F-77.0057
 sg5
@@ -5810,7 +5810,7 @@ F0.0
 sg8
 I23
 sg9
-F1.56
+F1.64
 sg10
 I0
 sg11
@@ -5818,7 +5818,7 @@ S'1st & N St  SE'
 p593
 sa(dp594
 g3
-F0.39
+F0.41
 sg4
 F-77.0446
 sg5
@@ -5830,7 +5830,7 @@ F0.0
 sg8
 I15
 sg9
-F3.71
+F3.79
 sg10
 I3
 sg11
@@ -5838,7 +5838,7 @@ S'20th St & Florida Ave NW'
 p595
 sa(dp596
 g3
-F0.81
+F0.79
 sg4
 F-77.0222
 sg5
@@ -5850,7 +5850,7 @@ F0.0
 sg8
 I14
 sg9
-F2.1
+F1.95
 sg10
 I0
 sg11
@@ -5870,7 +5870,7 @@ F0.0
 sg8
 I11
 sg9
-F5.16
+F5.29
 sg10
 I5
 sg11
@@ -5878,7 +5878,7 @@ S'23rd & Eads St'
 p599
 sa(dp600
 g3
-F0.01
+F0.0
 sg4
 F-77.0037
 sg5
@@ -5886,19 +5886,19 @@ I49
 sg6
 F38.8763
 sg7
-F0.0
+F0.08
 sg8
 I15
 sg9
-F6.22
+F10.04
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p601
 sa(dp602
 g3
-F0.01
+F0.04
 sg4
 F-77.0444
 sg5
@@ -5910,15 +5910,15 @@ F0.0
 sg8
 I41
 sg9
-F14.24
+F12.02
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p603
 sa(dp604
 g3
-F0.14
+F0.06
 sg4
 F-77.0056
 sg5
@@ -5930,9 +5930,9 @@ F0.0
 sg8
 I15
 sg9
-F4.65
+F5.59
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p605
@@ -5950,7 +5950,7 @@ F0.01
 sg8
 I19
 sg9
-F9.38
+F9.51
 sg10
 I10
 sg11
@@ -5966,19 +5966,19 @@ I54
 sg6
 F38.90276
 sg7
-F0.03
+F0.05
 sg8
 I17
 sg9
-F10.48
+F11.51
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p609
 sa(dp610
 g3
-F0.49
+F0.27
 sg4
 F-77.016
 sg5
@@ -5990,15 +5990,15 @@ F0.0
 sg8
 I15
 sg9
-F2.86
+F3.49
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p611
 sa(dp612
 g3
-F0.23
+F0.25
 sg4
 F-77.0023
 sg5
@@ -6006,11 +6006,11 @@ I56
 sg6
 F38.8851
 sg7
-F0.02
+F0.01
 sg8
 I11
 sg9
-F3.93
+F3.9
 sg10
 I4
 sg11
@@ -6018,7 +6018,7 @@ S'3rd & D St SE'
 p613
 sa(dp614
 g3
-F0.23
+F0.33
 sg4
 F-76.9862
 sg5
@@ -6030,15 +6030,15 @@ F0.0
 sg8
 I15
 sg9
-F3.43
+F3.15
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p615
 sa(dp616
 g3
-F0.27
+F0.25
 sg4
 F-76.9861
 sg5
@@ -6050,7 +6050,7 @@ F0.0
 sg8
 I15
 sg9
-F2.84
+F3.06
 sg10
 I3
 sg11
@@ -6058,7 +6058,7 @@ S'14th & D St SE'
 p617
 sa(dp618
 g3
-F0.36
+F0.22
 sg4
 F-77.0387
 sg5
@@ -6070,9 +6070,9 @@ F0.0
 sg8
 I19
 sg9
-F4.66
+F5.55
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p619
@@ -6086,11 +6086,11 @@ I60
 sg6
 F38.944551
 sg7
-F0.27
+F0.26
 sg8
 I15
 sg9
-F12.48
+F12.5
 sg10
 I13
 sg11
@@ -6098,7 +6098,7 @@ S'Van Ness Metro / UDC'
 p621
 sa(dp622
 g3
-F0.74
+F0.67
 sg4
 F-77.0135
 sg5
@@ -6110,7 +6110,7 @@ F0.0
 sg8
 I15
 sg9
-F1.92
+F2.22
 sg10
 I1
 sg11
@@ -6126,11 +6126,11 @@ I62
 sg6
 F38.8792
 sg7
-F0.01
+F0.02
 sg8
 I11
 sg9
-F5.82
+F5.78
 sg10
 I6
 sg11
@@ -6150,7 +6150,7 @@ F0.0
 sg8
 I15
 sg9
-F9.59
+F9.7
 sg10
 I10
 sg11
@@ -6158,7 +6158,7 @@ S'Ward Circle / American University'
 p627
 sa(dp628
 g3
-F0.57
+F0.56
 sg4
 F-77.074647
 sg5
@@ -6170,7 +6170,7 @@ F0.0
 sg8
 I15
 sg9
-F1.88
+F1.85
 sg10
 I1
 sg11
@@ -6178,7 +6178,7 @@ S'Idaho Ave & Newark St NW [on 2nd District patio]'
 p629
 sa(dp630
 g3
-F0.03
+F0.02
 sg4
 F-77.032818
 sg5
@@ -6190,7 +6190,7 @@ F0.0
 sg8
 I10
 sg9
-F2.98
+F3.03
 sg10
 I3
 sg11
@@ -6210,7 +6210,7 @@ F0.0
 sg8
 I11
 sg9
-F2.96
+F2.94
 sg10
 I3
 sg11
@@ -6246,13 +6246,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.13
+F0.19
 sg8
 I15
 sg9
-F8.81
+F9.23
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p637
@@ -6266,13 +6266,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.6
+F0.74
 sg8
 I17
 sg9
-F15.02
+F15.27
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p639
@@ -6286,11 +6286,11 @@ I70
 sg6
 F38.894
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F9.07
+F9.0
 sg10
 I9
 sg11
@@ -6310,7 +6310,7 @@ F0.0
 sg8
 I39
 sg9
-F25.91
+F26.37
 sg10
 I25
 sg11
@@ -6318,7 +6318,7 @@ S'USDA / 12th & Independence Ave SW'
 p643
 sa(dp644
 g3
-F0.06
+F0.02
 sg4
 F-77.059219
 sg5
@@ -6326,19 +6326,19 @@ I72
 sg6
 F38.9022212
 sg7
-F0.02
+F0.06
 sg8
 I18
 sg9
-F8.36
+F10.34
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p645
 sa(dp646
 g3
-F0.08
+F0.06
 sg4
 F-76.991016
 sg5
@@ -6350,7 +6350,7 @@ F0.0
 sg8
 I11
 sg9
-F1.8
+F1.78
 sg10
 I2
 sg11
@@ -6358,7 +6358,7 @@ S'12th & Newton St NE'
 p647
 sa(dp648
 g3
-F0.17
+F0.15
 sg4
 F-77.046587
 sg5
@@ -6370,7 +6370,7 @@ F0.0
 sg8
 I15
 sg9
-F2.67
+F2.8
 sg10
 I3
 sg11
@@ -6386,11 +6386,11 @@ I75
 sg6
 F38.886266
 sg7
-F0.08
+F0.1
 sg8
 I15
 sg9
-F10.06
+F9.97
 sg10
 I10
 sg11
@@ -6406,13 +6406,13 @@ I76
 sg6
 F38.893028
 sg7
-F0.1
+F0.46
 sg8
-I31
+I30
 sg9
-F23.64
+F26.08
 sg10
-I22
+I25
 sg11
 S'10th St & Constitution Ave NW'
 p653
@@ -6430,7 +6430,7 @@ F0.0
 sg8
 I11
 sg9
-F5.18
+F4.96
 sg10
 I5
 sg11
@@ -6446,13 +6446,13 @@ I78
 sg6
 F38.884
 sg7
-F0.41
+F0.87
 sg8
 I19
 sg9
-F14.48
+F15.31
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p657
@@ -6466,11 +6466,11 @@ I79
 sg6
 F38.904742
 sg7
-F0.7
+F0.64
 sg8
 I19
 sg9
-F16.7
+F16.52
 sg10
 I18
 sg11
@@ -6486,11 +6486,11 @@ I80
 sg6
 F38.947607
 sg7
-F0.0
+F0.01
 sg8
 I14
 sg9
-F7.63
+F7.82
 sg10
 I8
 sg11
@@ -6498,7 +6498,7 @@ S'Tenleytown / Wisconsin Ave & Albemarle St NW'
 p661
 sa(dp662
 g3
-F0.12
+F0.15
 sg4
 F-76.9882
 sg5
@@ -6510,7 +6510,7 @@ F0.0
 sg8
 I27
 sg9
-F4.37
+F4.2
 sg10
 I4
 sg11
@@ -6530,15 +6530,15 @@ F0.0
 sg8
 I31
 sg9
-F14.27
+F13.55
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p665
 sa(dp666
 g3
-F0.03
+F0.0
 sg4
 F-77.0337
 sg5
@@ -6558,7 +6558,7 @@ S'New York Ave & 15th St NW'
 p667
 sa(dp668
 g3
-F0.71
+F0.86
 sg4
 F-77.022264
 sg5
@@ -6570,15 +6570,15 @@ F0.0
 sg8
 I18
 sg9
-F2.49
+F2.35
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p669
 sa(dp670
 g3
-F0.08
+F0.04
 sg4
 F-77.043358
 sg5
@@ -6590,15 +6590,15 @@ F0.0
 sg8
 I15
 sg9
-F3.84
+F4.82
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p671
 sa(dp672
 g3
-F0.19
+F0.18
 sg4
 F-77.043648
 sg5
@@ -6610,7 +6610,7 @@ F0.0
 sg8
 I15
 sg9
-F2.77
+F3.1
 sg10
 I3
 sg11
@@ -6626,13 +6626,13 @@ I87
 sg6
 F38.90375
 sg7
-F0.06
+F0.18
 sg8
 I22
 sg9
-F13.54
+F15.88
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p675
@@ -6650,7 +6650,7 @@ F0.0
 sg8
 I19
 sg9
-F10.2
+F10.18
 sg10
 I10
 sg11
@@ -6658,7 +6658,7 @@ S'7th & Water St SW / SW Waterfront'
 p677
 sa(dp678
 g3
-F0.21
+F0.28
 sg4
 F-76.997114
 sg5
@@ -6670,7 +6670,7 @@ F0.0
 sg8
 I22
 sg9
-F3.82
+F3.4
 sg10
 I3
 sg11
@@ -6690,7 +6690,7 @@ F0.0
 sg8
 I11
 sg9
-F1.23
+F1.35
 sg10
 I0
 sg11
@@ -6710,7 +6710,7 @@ F0.0
 sg8
 I22
 sg9
-F11.14
+F11.33
 sg10
 I12
 sg11
@@ -6730,7 +6730,7 @@ F0.0
 sg8
 I33
 sg9
-F18.6
+F18.29
 sg10
 I17
 sg11
@@ -6738,7 +6738,7 @@ S'8th & H St NW'
 p685
 sa(dp686
 g3
-F0.43
+F0.38
 sg4
 F-76.992889
 sg5
@@ -6750,7 +6750,7 @@ F0.0
 sg8
 I11
 sg9
-F1.18
+F1.27
 sg10
 I1
 sg11
@@ -6758,7 +6758,7 @@ S'10th & Monroe St NE'
 p687
 sa(dp688
 g3
-F0.33
+F0.26
 sg4
 F-77.00495
 sg5
@@ -6778,7 +6778,7 @@ S'Eckington Pl & Q St NE'
 p689
 sa(dp690
 g3
-F0.33
+F0.37
 sg4
 F-76.99831
 sg5
@@ -6790,7 +6790,7 @@ F0.0
 sg8
 I23
 sg9
-F2.88
+F2.65
 sg10
 I3
 sg11
@@ -6806,11 +6806,11 @@ I96
 sg6
 F38.90002
 sg7
-F0.1
+F0.04
 sg8
 I19
 sg9
-F14.0
+F13.63
 sg10
 I14
 sg11
@@ -6818,7 +6818,7 @@ S'3rd & H St NE'
 p693
 sa(dp694
 g3
-F0.27
+F0.22
 sg4
 F-76.982872
 sg5
@@ -6830,7 +6830,7 @@ F0.0
 sg8
 I15
 sg9
-F1.98
+F1.99
 sg10
 I2
 sg11
@@ -6838,7 +6838,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p695
 sa(dp696
 g3
-F0.31
+F0.03
 sg4
 F-77.000349
 sg5
@@ -6846,19 +6846,19 @@ I98
 sg6
 F38.889955
 sg7
-F0.01
+F0.23
 sg8
 I11
 sg9
-F3.69
+F6.98
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p697
 sa(dp698
 g3
-F0.31
+F0.29
 sg4
 F-76.988355
 sg5
@@ -6870,7 +6870,7 @@ F0.0
 sg8
 I25
 sg9
-F3.72
+F3.4
 sg10
 I3
 sg11
@@ -6890,7 +6890,7 @@ F0.0
 sg8
 I10
 sg9
-F3.97
+F3.99
 sg10
 I4
 sg11
@@ -6898,7 +6898,7 @@ S'Branch & Pennsylvania Ave SE'
 p701
 sa(dp702
 g3
-F0.43
+F0.41
 sg4
 F-76.987633
 sg5
@@ -6910,7 +6910,7 @@ F0.0
 sg8
 I31
 sg9
-F2.14
+F2.53
 sg10
 I2
 sg11
@@ -6918,7 +6918,7 @@ S'13th & D St NE'
 p703
 sa(dp704
 g3
-F0.88
+F0.91
 sg4
 F-77.03818
 sg5
@@ -6930,7 +6930,7 @@ F0.0
 sg8
 I23
 sg9
-F2.63
+F2.97
 sg10
 I0
 sg11
@@ -6950,9 +6950,9 @@ F0.0
 sg8
 I31
 sg9
-F16.24
+F15.8
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p707
@@ -6966,19 +6966,19 @@ I104
 sg6
 F38.894514
 sg7
-F0.0
+F0.01
 sg8
 I25
 sg9
-F15.62
+F17.38
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p709
 sa(dp710
 g3
-F0.08
+F0.06
 sg4
 F-77.022322
 sg5
@@ -6990,9 +6990,9 @@ F0.01
 sg8
 I18
 sg9
-F7.57
+F7.9
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p711
@@ -7010,9 +7010,9 @@ F0.0
 sg8
 I27
 sg9
-F18.87
+F19.67
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p713
@@ -7026,13 +7026,13 @@ I107
 sg6
 F38.908905
 sg7
-F0.02
+F0.0
 sg8
 I19
 sg9
-F10.99
+F11.94
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p715
@@ -7050,7 +7050,7 @@ F0.01
 sg8
 I15
 sg9
-F9.68
+F9.55
 sg10
 I10
 sg11
@@ -7058,7 +7058,7 @@ S'4th & D St NW / Judiciary Square'
 p717
 sa(dp718
 g3
-F0.02
+F0.04
 sg4
 F-77.0436
 sg5
@@ -7066,13 +7066,13 @@ I109
 sg6
 F38.8923
 sg7
-F0.01
+F0.0
 sg8
 I23
 sg9
-F10.22
+F7.98
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p719
@@ -7086,13 +7086,13 @@ I110
 sg6
 F38.90774
 sg7
-F0.17
+F0.35
 sg8
 I23
 sg9
-F19.35
+F19.94
 sg10
-I19
+I20
 sg11
 S'37th & O St NW / Georgetown University'
 p721
@@ -7110,7 +7110,7 @@ F0.0
 sg8
 I18
 sg9
-F7.41
+F7.59
 sg10
 I7
 sg11
@@ -7118,7 +7118,7 @@ S'11th & H St NE'
 p723
 sa(dp724
 g3
-F0.13
+F0.23
 sg4
 F-77.053485
 sg5
@@ -7130,9 +7130,9 @@ F0.02
 sg8
 I14
 sg9
-F6.06
+F5.22
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p725
@@ -7146,13 +7146,13 @@ I113
 sg6
 F38.89696
 sg7
-F0.04
+F0.01
 sg8
 I31
 sg9
-F23.77
+F22.72
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p727
@@ -7166,11 +7166,11 @@ I114
 sg6
 F38.897446
 sg7
-F0.0
+F0.01
 sg8
 I23
 sg9
-F13.57
+F13.91
 sg10
 I14
 sg11
@@ -7178,7 +7178,7 @@ S'North Capitol St & F St NW'
 p729
 sa(dp730
 g3
-F0.71
+F0.51
 sg4
 F-77.027137
 sg5
@@ -7190,9 +7190,9 @@ F0.0
 sg8
 I18
 sg9
-F2.61
+F3.49
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p731
@@ -7210,7 +7210,7 @@ F0.0
 sg8
 I15
 sg9
-F7.87
+F7.89
 sg10
 I8
 sg11
@@ -7226,11 +7226,11 @@ I117
 sg6
 F38.898069
 sg7
-F0.55
+F0.29
 sg8
-I22
+I23
 sg9
-F19.4
+F19.36
 sg10
 I20
 sg11
@@ -7250,7 +7250,7 @@ F0.0
 sg8
 I23
 sg9
-F9.64
+F9.66
 sg10
 I10
 sg11
@@ -7258,7 +7258,7 @@ S'Potomac Ave & 35th St S'
 p737
 sa(dp738
 g3
-F0.93
+F0.73
 sg4
 F-77.04657
 sg5
@@ -7270,9 +7270,9 @@ F0.0
 sg8
 I23
 sg9
-F3.59
+F4.27
 sg10
-I0
+I2
 sg11
 S'Ohio Dr & West Basin Dr SW / MLK & FDR Memorials'
 p739
@@ -7286,11 +7286,11 @@ I125
 sg6
 F38.897857
 sg7
-F0.86
+F0.84
 sg8
 I15
 sg9
-F13.16
+F13.07
 sg10
 I15
 sg11
@@ -7306,11 +7306,11 @@ I126
 sg6
 F38.896104
 sg7
-F0.01
+F0.0
 sg8
 I19
 sg9
-F11.19
+F11.31
 sg10
 I12
 sg11
@@ -7318,7 +7318,7 @@ S'23rd & E St NW '
 p743
 sa(dp744
 g3
-F0.12
+F0.05
 sg4
 F-77.070993
 sg5
@@ -7330,9 +7330,9 @@ F0.0
 sg8
 I18
 sg9
-F4.19
+F4.8
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p745
@@ -7350,7 +7350,7 @@ F0.0
 sg8
 I15
 sg9
-F7.22
+F6.78
 sg10
 I7
 sg11
@@ -7358,7 +7358,7 @@ S'Rosslyn Metro / Wilson Blvd & Ft Myer Dr'
 p747
 sa(dp748
 g3
-F0.04
+F0.05
 sg4
 F-77.076701
 sg5
@@ -7370,7 +7370,7 @@ F0.0
 sg8
 I11
 sg9
-F3.08
+F2.92
 sg10
 I3
 sg11
@@ -7386,19 +7386,19 @@ I130
 sg6
 F38.891696
 sg7
-F0.01
+F0.0
 sg8
 I15
 sg9
-F8.73
+F7.79
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p751
 sa(dp752
 g3
-F0.2
+F0.15
 sg4
 F-77.079375
 sg5
@@ -7410,7 +7410,7 @@ F0.0
 sg8
 I11
 sg9
-F1.77
+F2.04
 sg10
 I2
 sg11
@@ -7430,7 +7430,7 @@ F0.0
 sg8
 I15
 sg9
-F4.07
+F4.04
 sg10
 I4
 sg11
@@ -7450,7 +7450,7 @@ F0.0
 sg8
 I15
 sg9
-F1.76
+F1.91
 sg10
 I2
 sg11
@@ -7458,7 +7458,7 @@ S'21st St & Constitution Ave NW'
 p757
 sa(dp758
 g3
-F0.01
+F0.02
 sg4
 F-77.0925
 sg5
@@ -7470,15 +7470,15 @@ F0.0
 sg8
 I15
 sg9
-F4.29
+F4.9
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p759
 sa(dp760
 g3
-F0.06
+F0.04
 sg4
 F-77.04368
 sg5
@@ -7490,7 +7490,7 @@ F0.0
 sg8
 I19
 sg9
-F5.89
+F6.0
 sg10
 I6
 sg11
@@ -7510,7 +7510,7 @@ F0.0
 sg8
 I23
 sg9
-F5.35
+F5.17
 sg10
 I6
 sg11
@@ -7518,7 +7518,7 @@ S'17th & Rhode Island Ave NW'
 p763
 sa(dp764
 g3
-F0.78
+F0.91
 sg4
 F-77.0325
 sg5
@@ -7530,9 +7530,9 @@ F0.0
 sg8
 I33
 sg9
-F2.84
+F2.61
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p765
@@ -7546,13 +7546,13 @@ I138
 sg6
 F38.8904
 sg7
-F0.0
+F0.07
 sg8
 I11
 sg9
-F5.63
+F7.61
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p767
@@ -7566,13 +7566,13 @@ I139
 sg6
 F38.8881
 sg7
-F0.11
+F0.03
 sg8
 I14
 sg9
-F10.84
+F9.88
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p769
@@ -7590,7 +7590,7 @@ F0.0
 sg8
 I17
 sg9
-F5.86
+F5.84
 sg10
 I6
 sg11
@@ -7598,7 +7598,7 @@ S'Clarendon Metro / Wilson Blvd & N Highland St'
 p771
 sa(dp772
 g3
-F0.06
+F0.09
 sg4
 F-77.041539
 sg5
@@ -7610,9 +7610,9 @@ F0.0
 sg8
 I15
 sg9
-F5.69
+F5.01
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p773
@@ -7630,15 +7630,15 @@ F0.0
 sg8
 I39
 sg9
-F19.44
+F19.43
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p775
 sa(dp776
 g3
-F0.81
+F0.87
 sg4
 F-77.017445
 sg5
@@ -7650,15 +7650,15 @@ F0.0
 sg8
 I17
 sg9
-F1.47
+F1.35
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p777
 sa(dp778
 g3
-F0.04
+F0.03
 sg4
 F-77.001828
 sg5
@@ -7670,7 +7670,7 @@ F0.0
 sg8
 I19
 sg9
-F5.07
+F5.16
 sg10
 I5
 sg11
@@ -7690,7 +7690,7 @@ F0.0
 sg8
 I15
 sg9
-F1.85
+F1.95
 sg10
 I0
 sg11
@@ -7710,7 +7710,7 @@ F0.0
 sg8
 I15
 sg9
-F7.18
+F7.2
 sg10
 I7
 sg11
@@ -7718,7 +7718,7 @@ S'9th & Upshur St NW'
 p783
 sa(dp784
 g3
-F0.81
+F0.13
 sg4
 F-77.012289
 sg5
@@ -7730,15 +7730,15 @@ F0.0
 sg8
 I14
 sg9
-F2.09
+F4.48
 sg10
-I0
+I4
 sg11
 S'1st & Rhode Island Ave NW'
 p785
 sa(dp786
 g3
-F0.33
+F0.34
 sg4
 F-77.02344
 sg5
@@ -7750,7 +7750,7 @@ F0.0
 sg8
 I19
 sg9
-F2.33
+F2.27
 sg10
 I2
 sg11
@@ -7758,7 +7758,7 @@ S'Columbia Rd & Georgia Ave NW'
 p787
 sa(dp788
 g3
-F0.07
+F0.14
 sg4
 F-77.04062
 sg5
@@ -7770,9 +7770,9 @@ F0.0
 sg8
 I19
 sg9
-F6.0
+F5.09
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p789
@@ -7790,7 +7790,7 @@ F0.0
 sg8
 I19
 sg9
-F5.97
+F6.02
 sg10
 I6
 sg11
@@ -7798,7 +7798,7 @@ S'Benning Rd & East Capitol St NE / Benning Rd Metro'
 p791
 sa(dp792
 g3
-F0.06
+F0.04
 sg4
 F-77.055599
 sg5
@@ -7810,7 +7810,7 @@ F0.0
 sg8
 I15
 sg9
-F5.36
+F5.25
 sg10
 I5
 sg11
@@ -7830,7 +7830,7 @@ F0.0
 sg8
 I15
 sg9
-F6.9
+F6.97
 sg10
 I7
 sg11
@@ -7846,11 +7846,11 @@ I153
 sg6
 F38.905126
 sg7
-F0.6
+F0.62
 sg8
 I18
 sg9
-F15.1
+F15.28
 sg10
 I15
 sg11
@@ -7858,7 +7858,7 @@ S'M St & Pennsylvania Ave NW'
 p797
 sa(dp798
 g3
-F0.85
+F0.78
 sg4
 F-76.983569
 sg5
@@ -7870,7 +7870,7 @@ F0.0
 sg8
 I15
 sg9
-F1.2
+F1.42
 sg10
 I0
 sg11
@@ -7890,7 +7890,7 @@ F0.0
 sg8
 I15
 sg9
-F2.95
+F2.93
 sg10
 I3
 sg11
@@ -7898,7 +7898,7 @@ S'Congress Heights Metro'
 p801
 sa(dp802
 g3
-F0.01
+F0.0
 sg4
 F-77.107735
 sg5
@@ -7910,7 +7910,7 @@ F0.0
 sg8
 I11
 sg9
-F3.77
+F3.9
 sg10
 I4
 sg11
@@ -7930,7 +7930,7 @@ F0.0
 sg8
 I11
 sg9
-F6.02
+F5.8
 sg10
 I6
 sg11
@@ -7950,7 +7950,7 @@ F0.0
 sg8
 I15
 sg9
-F6.92
+F6.79
 sg10
 I7
 sg11
@@ -7958,7 +7958,7 @@ S'N Veitch  & 20th St N'
 p807
 sa(dp808
 g3
-F0.64
+F0.26
 sg4
 F-77.02674
 sg5
@@ -7970,9 +7970,9 @@ F0.0
 sg8
 I18
 sg9
-F2.35
+F4.14
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p809
@@ -7986,11 +7986,11 @@ I160
 sg6
 F38.885801
 sg7
-F0.01
+F0.02
 sg8
 I11
 sg9
-F6.29
+F6.31
 sg10
 I6
 sg11
@@ -8006,19 +8006,19 @@ I161
 sg6
 F38.896015
 sg7
-F0.0
+F0.02
 sg8
 I11
 sg9
-F6.97
+F7.96
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p813
 sa(dp814
 g3
-F0.24
+F0.19
 sg4
 F-77.006004
 sg5
@@ -8030,7 +8030,7 @@ F0.0
 sg8
 I15
 sg9
-F4.18
+F4.41
 sg10
 I3
 sg11
@@ -8038,7 +8038,7 @@ S'1st & K St SE'
 p815
 sa(dp816
 g3
-F0.33
+F0.64
 sg4
 F-77.077271
 sg5
@@ -8050,9 +8050,9 @@ F0.0
 sg8
 I19
 sg9
-F2.31
+F1.69
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p817
@@ -8070,7 +8070,7 @@ F0.0
 sg8
 I15
 sg9
-F2.81
+F2.87
 sg10
 I3
 sg11
@@ -8090,7 +8090,7 @@ F0.0
 sg8
 I19
 sg9
-F11.82
+F12.0
 sg10
 I12
 sg11
@@ -8106,11 +8106,11 @@ I166
 sg6
 F38.88397
 sg7
-F0.02
+F0.01
 sg8
 I11
 sg9
-F6.97
+F7.06
 sg10
 I7
 sg11
@@ -8118,7 +8118,7 @@ S'Central Library / N Quincy St & 10th St N'
 p823
 sa(dp824
 g3
-F0.53
+F0.56
 sg4
 F-77.093485
 sg5
@@ -8130,7 +8130,7 @@ F0.0
 sg8
 I15
 sg9
-F1.1
+F1.04
 sg10
 I1
 sg11
@@ -8138,7 +8138,7 @@ S'Washington Blvd & 10th St N'
 p825
 sa(dp826
 g3
-F0.29
+F0.39
 sg4
 F-77.032429
 sg5
@@ -8150,15 +8150,15 @@ F0.03
 sg8
 I23
 sg9
-F9.01
+F8.23
 sg10
-I7
+I5
 sg11
 S'Jefferson Dr & 14th St SW'
 p827
 sa(dp828
 g3
-F0.02
+F0.0
 sg4
 F-77.02858
 sg5
@@ -8166,13 +8166,13 @@ I169
 sg6
 F38.888767
 sg7
-F0.18
+F0.31
 sg8
 I23
 sg9
-F14.95
+F16.53
 sg10
-I13
+I15
 sg11
 S'Smithsonian / Jefferson Dr & 12th St SW'
 p829
@@ -8190,7 +8190,7 @@ F0.0
 sg8
 I15
 sg9
-F7.08
+F7.0
 sg10
 I7
 sg11
@@ -8198,7 +8198,7 @@ S'George Mason Dr & Wilson Blvd'
 p831
 sa(dp832
 g3
-F0.01
+F0.0
 sg4
 F-77.01994
 sg5
@@ -8206,13 +8206,13 @@ I171
 sg6
 F38.894573
 sg7
-F0.14
+F0.29
 sg8
 I18
 sg9
-F12.23
+F13.43
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p833
@@ -8230,7 +8230,7 @@ F0.0
 sg8
 I11
 sg9
-F5.9
+F5.73
 sg10
 I6
 sg11
@@ -8250,7 +8250,7 @@ F0.0
 sg8
 I15
 sg9
-F3.0
+F3.08
 sg10
 I3
 sg11
@@ -8258,7 +8258,7 @@ S'N Adams St & Lee Hwy'
 p837
 sa(dp838
 g3
-F0.11
+F0.1
 sg4
 F-77.08095
 sg5
@@ -8270,7 +8270,7 @@ F0.0
 sg8
 I11
 sg9
-F2.63
+F2.59
 sg10
 I3
 sg11
@@ -8290,7 +8290,7 @@ F0.0
 sg8
 I11
 sg9
-F5.06
+F4.9
 sg10
 I5
 sg11
@@ -8310,9 +8310,9 @@ F0.0
 sg8
 I19
 sg9
-F6.67
+F5.8
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p843
@@ -8330,7 +8330,7 @@ F0.0
 sg8
 I11
 sg9
-F0.77
+F0.68
 sg10
 I0
 sg11
@@ -8346,11 +8346,11 @@ I178
 sg6
 F38.879819
 sg7
-F0.08
+F0.12
 sg8
 I23
 sg9
-F14.68
+F15.23
 sg10
 I15
 sg11
@@ -8370,9 +8370,9 @@ F0.0
 sg8
 I15
 sg9
-F9.98
+F8.92
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p849
@@ -8386,11 +8386,11 @@ I180
 sg6
 F38.883921
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F7.79
+F7.85
 sg10
 I8
 sg11
@@ -8406,11 +8406,11 @@ I181
 sg6
 F38.880151
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F5.81
+F5.98
 sg10
 I6
 sg11
@@ -8426,13 +8426,13 @@ I182
 sg6
 F38.884616
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F6.94
+F7.92
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p855
@@ -8450,9 +8450,9 @@ F0.0
 sg8
 I19
 sg9
-F13.66
+F11.52
 sg10
-I14
+I12
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p857
@@ -8466,19 +8466,19 @@ I185
 sg6
 F38.903584
 sg7
-F0.03
+F0.0
 sg8
 I19
 sg9
-F14.68
+F13.67
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p859
 sa(dp860
 g3
-F0.67
+F0.84
 sg4
 F-77.0284
 sg5
@@ -8490,9 +8490,9 @@ F0.0
 sg8
 I19
 sg9
-F1.89
+F1.75
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p861
@@ -8506,11 +8506,11 @@ I187
 sg6
 F38.901539
 sg7
-F0.7
+F0.67
 sg8
 I19
 sg9
-F17.58
+F17.67
 sg10
 I19
 sg11
@@ -8530,7 +8530,7 @@ F0.0
 sg8
 I22
 sg9
-F13.82
+F13.9
 sg10
 I14
 sg11
@@ -8550,7 +8550,7 @@ F0.0
 sg8
 I19
 sg9
-F9.22
+F9.18
 sg10
 I8
 sg11
@@ -8566,11 +8566,11 @@ I190
 sg6
 F38.804718
 sg7
-F0.07
+F0.09
 sg8
 I15
 sg9
-F11.34
+F11.27
 sg10
 I11
 sg11
@@ -8590,7 +8590,7 @@ F0.0
 sg8
 I14
 sg9
-F8.09
+F8.14
 sg10
 I8
 sg11
@@ -8610,7 +8610,7 @@ F0.0
 sg8
 I15
 sg9
-F6.14
+F6.02
 sg10
 I6
 sg11
@@ -8618,7 +8618,7 @@ S'King St & Patrick St'
 p873
 sa(dp874
 g3
-F0.16
+F0.59
 sg4
 F-77.03353
 sg5
@@ -8630,9 +8630,9 @@ F0.0
 sg8
 I19
 sg9
-F3.52
+F1.74
 sg10
-I4
+I2
 sg11
 S'15th & K St NW'
 p875
@@ -8650,7 +8650,7 @@ F0.0
 sg8
 I15
 sg9
-F10.13
+F10.07
 sg10
 I10
 sg11
@@ -8670,7 +8670,7 @@ F0.0
 sg8
 I17
 sg9
-F8.92
+F8.93
 sg10
 I9
 sg11
@@ -8690,7 +8690,7 @@ F0.0
 sg8
 I19
 sg9
-F6.76
+F6.81
 sg10
 I7
 sg11
@@ -8710,7 +8710,7 @@ F0.0
 sg8
 I19
 sg9
-F4.85
+F4.94
 sg10
 I5
 sg11
@@ -8726,11 +8726,11 @@ I198
 sg6
 F38.9066
 sg7
-F0.76
+F0.77
 sg8
 I15
 sg9
-F13.45
+F13.36
 sg10
 I15
 sg11
@@ -8746,13 +8746,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.85
+F0.76
 sg8
 I15
 sg9
-F12.77
+F12.59
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p887
@@ -8766,19 +8766,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.75
+F0.43
 sg8
 I14
 sg9
-F11.54
+F10.63
 sg10
-I13
+I11
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p889
 sa(dp890
 g3
-F0.13
+F0.1
 sg4
 F-77.113905
 sg5
@@ -8790,7 +8790,7 @@ F0.0
 sg8
 I11
 sg9
-F1.88
+F2.01
 sg10
 I2
 sg11
@@ -8810,15 +8810,15 @@ F0.0
 sg8
 I11
 sg9
-F7.14
+F6.09
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p893
 sa(dp894
 g3
-F0.65
+F0.63
 sg4
 F-77.077294
 sg5
@@ -8830,7 +8830,7 @@ F0.0
 sg8
 I11
 sg9
-F0.76
+F0.77
 sg10
 I0
 sg11
@@ -8838,7 +8838,7 @@ S'Arlington Blvd & N Queen St'
 p895
 sa(dp896
 g3
-F0.81
+F0.9
 sg4
 F-77.049426
 sg5
@@ -8846,13 +8846,13 @@ I204
 sg6
 F38.888251
 sg7
-F0.0
+F0.01
 sg8
 I25
 sg9
-F5.52
+F5.88
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p897
@@ -8870,7 +8870,7 @@ F0.0
 sg8
 I15
 sg9
-F7.92
+F7.8
 sg10
 I8
 sg11
@@ -8878,7 +8878,7 @@ S'20th St & Virginia Ave NW'
 p899
 sa(dp900
 g3
-F0.76
+F0.74
 sg4
 F-77.018677
 sg5
@@ -8890,7 +8890,7 @@ F0.0
 sg8
 I19
 sg9
-F2.84
+F2.49
 sg10
 I1
 sg11
@@ -8898,7 +8898,7 @@ S'5th St & Massachusetts Ave NW'
 p901
 sa(dp902
 g3
-F0.04
+F0.12
 sg4
 F-77.077078
 sg5
@@ -8910,9 +8910,9 @@ F0.0
 sg8
 I15
 sg9
-F3.51
+F2.53
 sg10
-I4
+I3
 sg11
 S'39th & Veazey St NW'
 p903
@@ -8930,7 +8930,7 @@ F0.0
 sg8
 I15
 sg9
-F7.76
+F7.72
 sg10
 I8
 sg11
@@ -8948,9 +8948,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F5.35
+F5.17
 sg10
 I6
 sg11
@@ -8970,7 +8970,7 @@ F0.0
 sg8
 I15
 sg9
-F6.01
+F6.16
 sg10
 I7
 sg11
@@ -8990,7 +8990,7 @@ F0.0
 sg8
 I11
 sg9
-F5.61
+F5.67
 sg10
 I6
 sg11
@@ -9010,7 +9010,7 @@ F0.0
 sg8
 I15
 sg9
-F5.59
+F5.57
 sg10
 I6
 sg11
@@ -9030,7 +9030,7 @@ F0.0
 sg8
 I23
 sg9
-F1.72
+F1.78
 sg10
 I0
 sg11
@@ -9050,7 +9050,7 @@ F0.0
 sg8
 I14
 sg9
-F8.66
+F8.65
 sg10
 I9
 sg11
@@ -9058,7 +9058,7 @@ S'5th & Kennedy St NW'
 p917
 sa(dp918
 g3
-F0.02
+F0.01
 sg4
 F-77.027333
 sg5
@@ -9070,7 +9070,7 @@ F0.0
 sg8
 I19
 sg9
-F2.67
+F2.58
 sg10
 I3
 sg11
@@ -9078,7 +9078,7 @@ S'Georgia Ave & Emerson St NW'
 p919
 sa(dp920
 g3
-F0.08
+F0.12
 sg4
 F-77.032652
 sg5
@@ -9090,7 +9090,7 @@ F0.0
 sg8
 I18
 sg9
-F2.53
+F2.48
 sg10
 I3
 sg11
@@ -9110,7 +9110,7 @@ F0.0
 sg8
 I19
 sg9
-F5.18
+F5.28
 sg10
 I6
 sg11
@@ -9130,7 +9130,7 @@ F0.0
 sg8
 I11
 sg9
-F4.83
+F4.71
 sg10
 I5
 sg11
@@ -9150,7 +9150,7 @@ F0.0
 sg8
 I11
 sg9
-F5.93
+F5.98
 sg10
 I6
 sg11
@@ -9190,7 +9190,7 @@ F0.0
 sg8
 I10
 sg9
-F6.9
+F6.91
 sg10
 I7
 sg11
@@ -9210,7 +9210,7 @@ F0.0
 sg8
 I15
 sg9
-F8.47
+F8.45
 sg10
 I8
 sg11
@@ -9238,7 +9238,7 @@ S'S Kenmore & 24th St S'
 p935
 sa(dp936
 g3
-F0.83
+F0.86
 sg4
 F-77.065131
 sg5
@@ -9250,7 +9250,7 @@ F0.0
 sg8
 I19
 sg9
-F0.68
+F0.69
 sg10
 I0
 sg11
@@ -9258,7 +9258,7 @@ S'Connecticut Ave & Yuma St NW'
 p937
 sa(dp938
 g3
-F0.0
+F0.01
 sg4
 F-77.063586
 sg5
@@ -9266,13 +9266,13 @@ I226
 sg6
 F38.90849
 sg7
-F0.08
+F0.02
 sg8
 I17
 sg9
-F11.16
+F10.12
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p939
@@ -9290,7 +9290,7 @@ F0.0
 sg8
 I11
 sg9
-F7.08
+F7.07
 sg10
 I7
 sg11
@@ -9298,7 +9298,7 @@ S'S George Mason Dr & 13th St S'
 p941
 sa(dp942
 g3
-F0.22
+F0.2
 sg4
 F-77.069956
 sg5
@@ -9310,7 +9310,7 @@ F0.0
 sg8
 I23
 sg9
-F2.04
+F1.99
 sg10
 I2
 sg11
@@ -9318,7 +9318,7 @@ S'Connecticut & Nebraska Ave NW'
 p943
 sa(dp944
 g3
-F0.32
+F0.36
 sg4
 F-77.038359
 sg5
@@ -9330,7 +9330,7 @@ F0.0
 sg8
 I19
 sg9
-F3.0
+F3.18
 sg10
 I3
 sg11
@@ -9338,7 +9338,7 @@ S'17th St & Massachusetts Ave NW'
 p945
 sa(dp946
 g3
-F0.88
+F0.93
 sg4
 F-77.0352
 sg5
@@ -9350,7 +9350,7 @@ F0.0
 sg8
 I15
 sg9
-F1.53
+F1.49
 sg10
 I0
 sg11
@@ -9358,7 +9358,7 @@ S'15th & Euclid St  NW'
 p947
 sa(dp948
 g3
-F0.02
+F0.05
 sg4
 F-76.995193
 sg5
@@ -9366,19 +9366,19 @@ I231
 sg6
 F38.889988
 sg7
-F0.07
+F0.03
 sg8
 I11
 sg9
-F6.25
+F5.42
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p949
 sa(dp950
 g3
-F0.3
+F0.02
 sg4
 F-77.017669
 sg5
@@ -9390,15 +9390,15 @@ F0.0
 sg8
 I15
 sg9
-F2.65
+F5.41
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p951
 sa(dp952
 g3
-F0.02
+F0.03
 sg4
 F-76.983326
 sg5
@@ -9410,7 +9410,7 @@ F0.0
 sg8
 I11
 sg9
-F5.03
+F4.97
 sg10
 I5
 sg11
@@ -9418,7 +9418,7 @@ S'15th & East Capitol St NE'
 p953
 sa(dp954
 g3
-F0.02
+F0.0
 sg4
 F-76.994749
 sg5
@@ -9430,7 +9430,7 @@ F0.0
 sg8
 I15
 sg9
-F7.16
+F7.33
 sg10
 I7
 sg11
@@ -9450,7 +9450,7 @@ F0.0
 sg8
 I15
 sg9
-F7.71
+F7.82
 sg10
 I8
 sg11
@@ -9470,9 +9470,9 @@ F0.0
 sg8
 I19
 sg9
-F5.4
+F6.38
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p959
@@ -9490,7 +9490,7 @@ F0.0
 sg8
 I15
 sg9
-F4.69
+F4.64
 sg10
 I5
 sg11
@@ -9510,7 +9510,7 @@ F0.0
 sg8
 I10
 sg9
-F4.08
+F4.06
 sg10
 I4
 sg11
@@ -9518,7 +9518,7 @@ S'34th St & Minnesota Ave SE'
 p963
 sa(dp964
 g3
-F0.03
+F0.04
 sg4
 F-76.999388
 sg5
@@ -9530,7 +9530,7 @@ F0.0
 sg8
 I11
 sg9
-F1.08
+F1.05
 sg10
 I1
 sg11
@@ -9550,7 +9550,7 @@ F0.0
 sg8
 I11
 sg9
-F9.02
+F9.05
 sg10
 I9
 sg11
@@ -9570,7 +9570,7 @@ F0.0
 sg8
 I15
 sg9
-F5.02
+F5.04
 sg10
 I5
 sg11
@@ -9578,7 +9578,7 @@ S'Neal St & Trinidad Ave NE'
 p969
 sa(dp970
 g3
-F0.67
+F0.8
 sg4
 F-77.029779
 sg5
@@ -9590,9 +9590,9 @@ F0.0
 sg8
 I23
 sg9
-F2.48
+F2.15
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p971
@@ -9610,7 +9610,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F4.08
 sg10
 I4
 sg11
@@ -9630,7 +9630,7 @@ F0.0
 sg8
 I15
 sg9
-F10.02
+F10.03
 sg10
 I10
 sg11
@@ -9650,7 +9650,7 @@ F0.0
 sg8
 I11
 sg9
-F6.11
+F6.08
 sg10
 I6
 sg11
@@ -9670,7 +9670,7 @@ F0.0
 sg8
 I11
 sg9
-F4.86
+F4.88
 sg10
 I5
 sg11
@@ -9678,7 +9678,7 @@ S'Columbia Pike & S Orme St'
 p979
 sa(dp980
 g3
-F0.03
+F0.01
 sg4
 F-77.001955
 sg5
@@ -9686,19 +9686,19 @@ I247
 sg6
 F38.887378
 sg7
-F0.02
+F0.13
 sg8
 I15
 sg9
-F6.9
+F8.73
 sg10
-I7
+I9
 sg11
 S'3rd St & Pennsylvania Ave SE'
 p981
 sa(dp982
 g3
-F0.2
+F0.24
 sg4
 F-77.02324
 sg5
@@ -9710,7 +9710,7 @@ F0.0
 sg8
 I15
 sg9
-F4.45
+F4.37
 sg10
 I3
 sg11
@@ -9718,7 +9718,7 @@ S'8th & D St NW'
 p983
 sa(dp984
 g3
-F0.0
+F0.01
 sg4
 F-77.01597
 sg5
@@ -9730,9 +9730,9 @@ F0.0
 sg8
 I15
 sg9
-F5.71
+F4.65
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p985
@@ -9750,7 +9750,7 @@ F0.0
 sg8
 I19
 sg9
-F6.66
+F6.56
 sg10
 I7
 sg11
@@ -9758,7 +9758,7 @@ S'Rhode Island Ave & V St NE'
 p987
 sa(dp988
 g3
-F0.01
+F0.03
 sg4
 F-77.013917
 sg5
@@ -9770,7 +9770,7 @@ F0.0
 sg8
 I27
 sg9
-F10.89
+F10.31
 sg10
 I12
 sg11
@@ -9789,7 +9789,7 @@ asI75
 (lp993
 (dp994
 g3
-F0.0
+F0.01
 sg4
 F-77.0512
 sg5
@@ -9801,7 +9801,7 @@ F0.0
 sg8
 I11
 sg9
-F2.99
+F2.96
 sg10
 I3
 sg11
@@ -9817,11 +9817,11 @@ I2
 sg6
 F38.85725
 sg7
-F0.04
+F0.03
 sg8
 I9
 sg9
-F5.98
+F6.02
 sg10
 I6
 sg11
@@ -9841,9 +9841,9 @@ F0.0
 sg8
 I13
 sg9
-F7.01
+F6.13
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p999
@@ -9861,7 +9861,7 @@ F0.04
 sg8
 I10
 sg9
-F6.81
+F6.91
 sg10
 I7
 sg11
@@ -9881,7 +9881,7 @@ F0.0
 sg8
 I11
 sg9
-F3.82
+F3.87
 sg10
 I4
 sg11
@@ -9901,7 +9901,7 @@ F0.0
 sg8
 I17
 sg9
-F8.95
+F9.12
 sg10
 I9
 sg11
@@ -9921,7 +9921,7 @@ F0.0
 sg8
 I10
 sg9
-F5.14
+F5.01
 sg10
 I5
 sg11
@@ -9941,9 +9941,9 @@ F0.0
 sg8
 I19
 sg9
-F10.07
+F9.11
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p1009
@@ -9961,7 +9961,7 @@ F0.0
 sg8
 I11
 sg9
-F4.78
+F4.76
 sg10
 I5
 sg11
@@ -9969,7 +9969,7 @@ S'12th & Army Navy Dr'
 p1011
 sa(dp1012
 g3
-F0.44
+F0.49
 sg4
 F-77.051516
 sg5
@@ -9981,7 +9981,7 @@ F0.0
 sg8
 I11
 sg9
-F0.92
+F0.88
 sg10
 I1
 sg11
@@ -10001,7 +10001,7 @@ F0.06
 sg8
 I11
 sg9
-F7.94
+F8.0
 sg10
 I8
 sg11
@@ -10021,7 +10021,7 @@ F0.0
 sg8
 I16
 sg9
-F6.85
+F6.81
 sg10
 I7
 sg11
@@ -10029,7 +10029,7 @@ S'23rd & Crystal Dr'
 p1017
 sa(dp1018
 g3
-F0.01
+F0.0
 sg4
 F-77.0498
 sg5
@@ -10041,7 +10041,7 @@ F0.0
 sg8
 I11
 sg9
-F2.96
+F2.95
 sg10
 I3
 sg11
@@ -10061,7 +10061,7 @@ F0.0
 sg8
 I15
 sg9
-F8.68
+F8.55
 sg10
 I9
 sg11
@@ -10069,7 +10069,7 @@ S'19th St & Pennsylvania Ave NW'
 p1021
 sa(dp1022
 g3
-F0.55
+F0.48
 sg4
 F-77.0321
 sg5
@@ -10081,7 +10081,7 @@ F0.0
 sg8
 I27
 sg9
-F3.32
+F3.36
 sg10
 I2
 sg11
@@ -10089,7 +10089,7 @@ S'14th & V St NW'
 p1023
 sa(dp1024
 g3
-F0.86
+F0.8
 sg4
 F-77.027822
 sg5
@@ -10101,7 +10101,7 @@ F0.0
 sg8
 I27
 sg9
-F1.43
+F1.58
 sg10
 I0
 sg11
@@ -10109,7 +10109,7 @@ S'11th & Kenyon St NW'
 p1025
 sa(dp1026
 g3
-F0.75
+F0.91
 sg4
 F-77.036536
 sg5
@@ -10121,15 +10121,15 @@ F0.0
 sg8
 I33
 sg9
-F1.9
+F1.68
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p1027
 sa(dp1028
 g3
-F0.63
+F0.77
 sg4
 F-77.042581
 sg5
@@ -10141,15 +10141,15 @@ F0.0
 sg8
 I15
 sg9
-F2.88
+F2.39
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p1029
 sa(dp1030
 g3
-F0.75
+F0.88
 sg4
 F-77.0322
 sg5
@@ -10161,15 +10161,15 @@ F0.0
 sg8
 I19
 sg9
-F2.04
+F1.52
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p1031
 sa(dp1032
 g3
-F0.5
+F0.48
 sg4
 F-77.0501
 sg5
@@ -10181,7 +10181,7 @@ F0.0
 sg8
 I23
 sg9
-F2.9
+F2.57
 sg10
 I2
 sg11
@@ -10189,7 +10189,7 @@ S'Calvert St & Woodley Pl NW'
 p1033
 sa(dp1034
 g3
-F0.85
+F0.86
 sg4
 F-77.0388
 sg5
@@ -10201,7 +10201,7 @@ F0.0
 sg8
 I19
 sg9
-F1.69
+F1.76
 sg10
 I0
 sg11
@@ -10209,7 +10209,7 @@ S'Lamont & Mt Pleasant NW'
 p1035
 sa(dp1036
 g3
-F0.71
+F0.68
 sg4
 F-77.0178
 sg5
@@ -10221,7 +10221,7 @@ F0.0
 sg8
 I19
 sg9
-F2.35
+F2.53
 sg10
 I1
 sg11
@@ -10229,7 +10229,7 @@ S'4th & M St SW'
 p1037
 sa(dp1038
 g3
-F0.07
+F0.08
 sg4
 F-77.034438
 sg5
@@ -10237,19 +10237,19 @@ I23
 sg6
 F38.90985
 sg7
-F0.01
+F0.0
 sg8
 I19
 sg9
-F7.57
+F8.09
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p1039
 sa(dp1040
 g3
-F0.28
+F0.31
 sg4
 F-77.031681
 sg5
@@ -10261,7 +10261,7 @@ F0.0
 sg8
 I15
 sg9
-F3.56
+F3.38
 sg10
 I3
 sg11
@@ -10269,7 +10269,7 @@ S'14th & R St NW'
 p1041
 sa(dp1042
 g3
-F0.31
+F0.8
 sg4
 F-77.0323
 sg5
@@ -10281,15 +10281,15 @@ F0.0
 sg8
 I23
 sg9
-F3.61
+F2.51
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p1043
 sa(dp1044
 g3
-F0.0
+F0.01
 sg4
 F-77.045
 sg5
@@ -10301,9 +10301,9 @@ F0.0
 sg8
 I15
 sg9
-F6.46
+F5.39
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p1045
@@ -10321,15 +10321,15 @@ F0.0
 sg8
 I35
 sg9
-F24.33
+F25.33
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p1047
 sa(dp1048
 g3
-F0.04
+F0.02
 sg4
 F-77.024649
 sg5
@@ -10341,7 +10341,7 @@ F0.0
 sg8
 I13
 sg9
-F4.96
+F5.12
 sg10
 I5
 sg11
@@ -10361,7 +10361,7 @@ F0.04
 sg8
 I11
 sg9
-F7.12
+F7.24
 sg10
 I7
 sg11
@@ -10381,7 +10381,7 @@ F0.0
 sg8
 I11
 sg9
-F6.04
+F6.01
 sg10
 I6
 sg11
@@ -10389,7 +10389,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p1053
 sa(dp1054
 g3
-F0.51
+F0.73
 sg4
 F-77.019027
 sg5
@@ -10401,9 +10401,9 @@ F0.0
 sg8
 I19
 sg9
-F3.13
+F2.44
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p1055
@@ -10421,7 +10421,7 @@ F0.0
 sg8
 I15
 sg9
-F7.49
+F7.5
 sg10
 I8
 sg11
@@ -10429,7 +10429,7 @@ S'19th & East Capitol St SE'
 p1057
 sa(dp1058
 g3
-F0.02
+F0.01
 sg4
 F-77.0315
 sg5
@@ -10441,9 +10441,9 @@ F0.0
 sg8
 I19
 sg9
-F6.64
+F8.94
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p1059
@@ -10459,9 +10459,9 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
-F1.0
+F1.02
 sg10
 I1
 sg11
@@ -10469,7 +10469,7 @@ S'Good Hope & Naylor Rd SE'
 p1061
 sa(dp1062
 g3
-F0.35
+F0.31
 sg4
 F-77.057979
 sg5
@@ -10481,7 +10481,7 @@ F0.0
 sg8
 I11
 sg9
-F2.22
+F2.34
 sg10
 I2
 sg11
@@ -10501,7 +10501,7 @@ F0.0
 sg8
 I11
 sg9
-F5.99
+F6.02
 sg10
 I6
 sg11
@@ -10544,7 +10544,7 @@ F0.0
 sg8
 I11
 sg9
-F7.97
+F8.0
 sg10
 I8
 sg11
@@ -10560,11 +10560,11 @@ I40
 sg6
 F38.867373
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F8.96
+F9.02
 sg10
 I9
 sg11
@@ -10572,7 +10572,7 @@ S'Good Hope Rd & MLK Ave SE'
 p1072
 sa(dp1073
 g3
-F0.18
+F0.21
 sg4
 F-77.0436
 sg5
@@ -10584,7 +10584,7 @@ F0.0
 sg8
 I11
 sg9
-F1.8
+F1.63
 sg10
 I2
 sg11
@@ -10604,7 +10604,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F3.76
 sg10
 I4
 sg11
@@ -10612,7 +10612,7 @@ S'4th St & Rhode Island Ave NE'
 p1076
 sa(dp1077
 g3
-F0.44
+F0.43
 sg4
 F-77.0259
 sg5
@@ -10624,7 +10624,7 @@ F0.0
 sg8
 I14
 sg9
-F3.02
+F2.9
 sg10
 I2
 sg11
@@ -10632,7 +10632,7 @@ S'10th & U St NW'
 p1078
 sa(dp1079
 g3
-F0.38
+F0.41
 sg4
 F-77.0222
 sg5
@@ -10644,7 +10644,7 @@ F0.0
 sg8
 I11
 sg9
-F1.58
+F1.66
 sg10
 I1
 sg11
@@ -10652,7 +10652,7 @@ S'Georgia Ave and Fairmont St NW'
 p1080
 sa(dp1081
 g3
-F0.63
+F0.66
 sg4
 F-77.0057
 sg5
@@ -10664,7 +10664,7 @@ F0.0
 sg8
 I23
 sg9
-F1.12
+F1.13
 sg10
 I0
 sg11
@@ -10672,7 +10672,7 @@ S'1st & N St  SE'
 p1082
 sa(dp1083
 g3
-F0.29
+F0.33
 sg4
 F-77.0446
 sg5
@@ -10684,7 +10684,7 @@ F0.0
 sg8
 I15
 sg9
-F3.37
+F3.35
 sg10
 I3
 sg11
@@ -10692,7 +10692,7 @@ S'20th St & Florida Ave NW'
 p1084
 sa(dp1085
 g3
-F0.8
+F0.73
 sg4
 F-77.0222
 sg5
@@ -10704,7 +10704,7 @@ F0.0
 sg8
 I14
 sg9
-F1.57
+F1.63
 sg10
 I0
 sg11
@@ -10724,7 +10724,7 @@ F0.0
 sg8
 I11
 sg9
-F5.0
+F5.28
 sg10
 I5
 sg11
@@ -10740,13 +10740,13 @@ I49
 sg6
 F38.8763
 sg7
-F0.0
+F0.01
 sg8
 I15
 sg9
-F6.01
+F9.85
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p1090
@@ -10764,15 +10764,15 @@ F0.0
 sg8
 I41
 sg9
-F14.46
+F12.45
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p1092
 sa(dp1093
 g3
-F0.12
+F0.04
 sg4
 F-77.0056
 sg5
@@ -10784,15 +10784,15 @@ F0.0
 sg8
 I15
 sg9
-F4.2
+F5.32
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p1094
 sa(dp1095
 g3
-F0.0
+F0.01
 sg4
 F-77.0471
 sg5
@@ -10804,7 +10804,7 @@ F0.0
 sg8
 I19
 sg9
-F9.58
+F9.51
 sg10
 I10
 sg11
@@ -10820,19 +10820,19 @@ I54
 sg6
 F38.90276
 sg7
-F0.01
+F0.03
 sg8
 I17
 sg9
-F10.88
+F11.84
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p1098
 sa(dp1099
 g3
-F0.38
+F0.19
 sg4
 F-77.016
 sg5
@@ -10844,15 +10844,15 @@ F0.0
 sg8
 I15
 sg9
-F2.69
+F3.39
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p1100
 sa(dp1101
 g3
-F0.11
+F0.13
 sg4
 F-77.0023
 sg5
@@ -10860,11 +10860,11 @@ I56
 sg6
 F38.8851
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F4.12
+F4.15
 sg10
 I4
 sg11
@@ -10872,7 +10872,7 @@ S'3rd & D St SE'
 p1102
 sa(dp1103
 g3
-F0.1
+F0.25
 sg4
 F-76.9862
 sg5
@@ -10884,15 +10884,15 @@ F0.0
 sg8
 I15
 sg9
-F3.9
+F3.02
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p1104
 sa(dp1105
 g3
-F0.15
+F0.23
 sg4
 F-76.9861
 sg5
@@ -10904,7 +10904,7 @@ F0.0
 sg8
 I15
 sg9
-F2.74
+F2.78
 sg10
 I3
 sg11
@@ -10912,7 +10912,7 @@ S'14th & D St SE'
 p1106
 sa(dp1107
 g3
-F0.24
+F0.18
 sg4
 F-77.0387
 sg5
@@ -10924,9 +10924,9 @@ F0.0
 sg8
 I19
 sg9
-F4.37
+F5.24
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p1108
@@ -10940,11 +10940,11 @@ I60
 sg6
 F38.944551
 sg7
-F0.21
+F0.18
 sg8
 I15
 sg9
-F12.64
+F12.5
 sg10
 I13
 sg11
@@ -10952,7 +10952,7 @@ S'Van Ness Metro / UDC'
 p1110
 sa(dp1111
 g3
-F0.71
+F0.62
 sg4
 F-77.0135
 sg5
@@ -10964,7 +10964,7 @@ F0.0
 sg8
 I15
 sg9
-F1.69
+F1.85
 sg10
 I1
 sg11
@@ -10980,11 +10980,11 @@ I62
 sg6
 F38.8792
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F5.86
+F6.06
 sg10
 I6
 sg11
@@ -11004,7 +11004,7 @@ F0.0
 sg8
 I15
 sg9
-F9.74
+F9.61
 sg10
 I10
 sg11
@@ -11024,7 +11024,7 @@ F0.0
 sg8
 I15
 sg9
-F1.67
+F1.54
 sg10
 I1
 sg11
@@ -11032,7 +11032,7 @@ S'Idaho Ave & Newark St NW [on 2nd District patio]'
 p1118
 sa(dp1119
 g3
-F0.02
+F0.0
 sg4
 F-77.032818
 sg5
@@ -11044,7 +11044,7 @@ F0.0
 sg8
 I10
 sg9
-F2.94
+F3.02
 sg10
 I3
 sg11
@@ -11064,7 +11064,7 @@ F0.0
 sg8
 I11
 sg9
-F2.9
+F2.99
 sg10
 I3
 sg11
@@ -11084,7 +11084,7 @@ F0.0
 sg8
 I10
 sg9
-F3.97
+F3.94
 sg10
 I4
 sg11
@@ -11092,7 +11092,7 @@ S'Pennsylvania & Minnesota Ave SE'
 p1124
 sa(dp1125
 g3
-F0.02
+F0.01
 sg4
 F-76.996806
 sg5
@@ -11100,13 +11100,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.06
+F0.14
 sg8
 I15
 sg9
-F8.85
+F9.88
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p1126
@@ -11120,13 +11120,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.52
+F0.7
 sg8
 I17
 sg9
-F14.97
+F15.55
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p1128
@@ -11144,7 +11144,7 @@ F0.0
 sg8
 I11
 sg9
-F8.98
+F9.02
 sg10
 I9
 sg11
@@ -11164,7 +11164,7 @@ F0.0
 sg8
 I39
 sg9
-F25.53
+F25.64
 sg10
 I25
 sg11
@@ -11172,7 +11172,7 @@ S'USDA / 12th & Independence Ave SW'
 p1132
 sa(dp1133
 g3
-F0.01
+F0.0
 sg4
 F-77.059219
 sg5
@@ -11180,19 +11180,19 @@ I72
 sg6
 F38.9022212
 sg7
-F0.01
+F0.03
 sg8
 I18
 sg9
-F7.9
+F9.85
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p1134
 sa(dp1135
 g3
-F0.04
+F0.03
 sg4
 F-76.991016
 sg5
@@ -11204,7 +11204,7 @@ F0.0
 sg8
 I11
 sg9
-F1.88
+F1.92
 sg10
 I2
 sg11
@@ -11212,7 +11212,7 @@ S'12th & Newton St NE'
 p1136
 sa(dp1137
 g3
-F0.1
+F0.13
 sg4
 F-77.046587
 sg5
@@ -11224,7 +11224,7 @@ F0.0
 sg8
 I15
 sg9
-F2.61
+F2.67
 sg10
 I3
 sg11
@@ -11240,11 +11240,11 @@ I75
 sg6
 F38.886266
 sg7
-F0.04
+F0.06
 sg8
 I15
 sg9
-F10.18
+F10.01
 sg10
 I10
 sg11
@@ -11260,13 +11260,13 @@ I76
 sg6
 F38.893028
 sg7
-F0.04
+F0.21
 sg8
-I31
+I30
 sg9
-F23.24
+F25.18
 sg10
-I22
+I24
 sg11
 S'10th St & Constitution Ave NW'
 p1142
@@ -11284,7 +11284,7 @@ F0.0
 sg8
 I11
 sg9
-F5.02
+F5.16
 sg10
 I5
 sg11
@@ -11300,13 +11300,13 @@ I78
 sg6
 F38.884
 sg7
-F0.35
+F0.87
 sg8
 I19
 sg9
-F14.92
+F16.03
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p1146
@@ -11320,11 +11320,11 @@ I79
 sg6
 F38.904742
 sg7
-F0.67
+F0.59
 sg8
 I19
 sg9
-F17.29
+F16.76
 sg10
 I18
 sg11
@@ -11344,7 +11344,7 @@ F0.0
 sg8
 I14
 sg9
-F8.01
+F8.04
 sg10
 I8
 sg11
@@ -11352,7 +11352,7 @@ S'Tenleytown / Wisconsin Ave & Albemarle St NW'
 p1150
 sa(dp1151
 g3
-F0.09
+F0.11
 sg4
 F-76.9882
 sg5
@@ -11364,7 +11364,7 @@ F0.0
 sg8
 I27
 sg9
-F4.27
+F4.23
 sg10
 I4
 sg11
@@ -11384,15 +11384,15 @@ F0.0
 sg8
 I31
 sg9
-F14.23
+F13.16
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p1154
 sa(dp1155
 g3
-F0.01
+F0.0
 sg4
 F-77.0337
 sg5
@@ -11400,11 +11400,11 @@ I83
 sg6
 F38.8991
 sg7
-F0.04
+F0.08
 sg8
 I15
 sg9
-F8.67
+F9.09
 sg10
 I9
 sg11
@@ -11412,7 +11412,7 @@ S'New York Ave & 15th St NW'
 p1156
 sa(dp1157
 g3
-F0.71
+F0.8
 sg4
 F-77.022264
 sg5
@@ -11424,15 +11424,15 @@ F0.0
 sg8
 I18
 sg9
-F2.06
+F1.84
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p1158
 sa(dp1159
 g3
-F0.07
+F0.02
 sg4
 F-77.043358
 sg5
@@ -11444,15 +11444,15 @@ F0.0
 sg8
 I15
 sg9
-F3.76
+F4.66
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p1160
 sa(dp1161
 g3
-F0.13
+F0.16
 sg4
 F-77.043648
 sg5
@@ -11464,7 +11464,7 @@ F0.0
 sg8
 I15
 sg9
-F2.79
+F2.84
 sg10
 I3
 sg11
@@ -11480,13 +11480,13 @@ I87
 sg6
 F38.90375
 sg7
-F0.02
+F0.15
 sg8
 I22
 sg9
-F13.56
+F16.37
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p1164
@@ -11504,7 +11504,7 @@ F0.0
 sg8
 I19
 sg9
-F9.94
+F10.1
 sg10
 I10
 sg11
@@ -11512,7 +11512,7 @@ S'7th & Water St SW / SW Waterfront'
 p1166
 sa(dp1167
 g3
-F0.24
+F0.22
 sg4
 F-76.997114
 sg5
@@ -11524,7 +11524,7 @@ F0.0
 sg8
 I22
 sg9
-F3.32
+F3.19
 sg10
 I3
 sg11
@@ -11532,7 +11532,7 @@ S'D St & Maryland Ave NE'
 p1168
 sa(dp1169
 g3
-F0.65
+F0.71
 sg4
 F-77.0682
 sg5
@@ -11544,7 +11544,7 @@ F0.0
 sg8
 I11
 sg9
-F1.16
+F0.96
 sg10
 I0
 sg11
@@ -11564,7 +11564,7 @@ F0.0
 sg8
 I22
 sg9
-F11.3
+F11.38
 sg10
 I12
 sg11
@@ -11584,7 +11584,7 @@ F0.0
 sg8
 I33
 sg9
-F18.6
+F18.74
 sg10
 I17
 sg11
@@ -11592,7 +11592,7 @@ S'8th & H St NW'
 p1174
 sa(dp1175
 g3
-F0.31
+F0.25
 sg4
 F-76.992889
 sg5
@@ -11604,7 +11604,7 @@ F0.0
 sg8
 I11
 sg9
-F1.24
+F1.33
 sg10
 I1
 sg11
@@ -11612,7 +11612,7 @@ S'10th & Monroe St NE'
 p1176
 sa(dp1177
 g3
-F0.22
+F0.16
 sg4
 F-77.00495
 sg5
@@ -11624,7 +11624,7 @@ F0.0
 sg8
 I11
 sg9
-F1.88
+F1.92
 sg10
 I2
 sg11
@@ -11632,7 +11632,7 @@ S'Eckington Pl & Q St NE'
 p1178
 sa(dp1179
 g3
-F0.27
+F0.29
 sg4
 F-76.99831
 sg5
@@ -11644,7 +11644,7 @@ F0.0
 sg8
 I23
 sg9
-F2.66
+F2.79
 sg10
 I3
 sg11
@@ -11664,7 +11664,7 @@ F0.04
 sg8
 I19
 sg9
-F13.71
+F13.6
 sg10
 I14
 sg11
@@ -11672,7 +11672,7 @@ S'3rd & H St NE'
 p1182
 sa(dp1183
 g3
-F0.21
+F0.17
 sg4
 F-76.982872
 sg5
@@ -11684,7 +11684,7 @@ F0.0
 sg8
 I15
 sg9
-F1.84
+F1.89
 sg10
 I2
 sg11
@@ -11692,7 +11692,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p1184
 sa(dp1185
 g3
-F0.32
+F0.01
 sg4
 F-77.000349
 sg5
@@ -11700,19 +11700,19 @@ I98
 sg6
 F38.889955
 sg7
-F0.01
+F0.13
 sg8
 I11
 sg9
-F3.08
+F6.96
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p1186
 sa(dp1187
 g3
-F0.29
+F0.28
 sg4
 F-76.988355
 sg5
@@ -11724,7 +11724,7 @@ F0.0
 sg8
 I25
 sg9
-F3.22
+F2.97
 sg10
 I3
 sg11
@@ -11744,7 +11744,7 @@ F0.0
 sg8
 I10
 sg9
-F3.94
+F3.96
 sg10
 I4
 sg11
@@ -11752,7 +11752,7 @@ S'Branch & Pennsylvania Ave SE'
 p1190
 sa(dp1191
 g3
-F0.38
+F0.33
 sg4
 F-76.987633
 sg5
@@ -11764,7 +11764,7 @@ F0.0
 sg8
 I31
 sg9
-F1.94
+F2.21
 sg10
 I2
 sg11
@@ -11772,7 +11772,7 @@ S'13th & D St NE'
 p1192
 sa(dp1193
 g3
-F0.89
+F0.81
 sg4
 F-77.03818
 sg5
@@ -11784,7 +11784,7 @@ F0.0
 sg8
 I23
 sg9
-F2.37
+F2.42
 sg10
 I0
 sg11
@@ -11804,9 +11804,9 @@ F0.0
 sg8
 I31
 sg9
-F16.78
+F15.3
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p1196
@@ -11820,19 +11820,19 @@ I104
 sg6
 F38.894514
 sg7
-F0.0
+F0.01
 sg8
 I25
 sg9
-F15.78
+F16.72
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p1198
 sa(dp1199
 g3
-F0.06
+F0.02
 sg4
 F-77.022322
 sg5
@@ -11840,13 +11840,13 @@ I105
 sg6
 F38.897324
 sg7
-F0.0
+F0.02
 sg8
 I18
 sg9
-F7.27
+F8.59
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p1200
@@ -11864,9 +11864,9 @@ F0.0
 sg8
 I27
 sg9
-F18.9
+F20.01
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p1202
@@ -11884,9 +11884,9 @@ F0.01
 sg8
 I19
 sg9
-F11.03
+F12.0
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p1204
@@ -11900,11 +11900,11 @@ I108
 sg6
 F38.895344
 sg7
-F0.01
+F0.0
 sg8
 I15
 sg9
-F9.69
+F9.47
 sg10
 I10
 sg11
@@ -11912,7 +11912,7 @@ S'4th & D St NW / Judiciary Square'
 p1206
 sa(dp1207
 g3
-F0.02
+F0.03
 sg4
 F-77.0436
 sg5
@@ -11924,9 +11924,9 @@ F0.0
 sg8
 I23
 sg9
-F10.05
+F8.03
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p1208
@@ -11940,13 +11940,13 @@ I110
 sg6
 F38.90774
 sg7
-F0.11
+F0.17
 sg8
 I23
 sg9
-F19.26
+F19.9
 sg10
-I19
+I20
 sg11
 S'37th & O St NW / Georgetown University'
 p1210
@@ -11964,7 +11964,7 @@ F0.0
 sg8
 I18
 sg9
-F7.09
+F7.25
 sg10
 I7
 sg11
@@ -11972,7 +11972,7 @@ S'11th & H St NE'
 p1212
 sa(dp1213
 g3
-F0.05
+F0.09
 sg4
 F-77.053485
 sg5
@@ -11980,13 +11980,13 @@ I112
 sg6
 F38.903827
 sg7
-F0.0
+F0.01
 sg8
 I14
 sg9
-F6.26
+F5.32
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p1214
@@ -12000,13 +12000,13 @@ I113
 sg6
 F38.89696
 sg7
-F0.04
+F0.01
 sg8
 I31
 sg9
-F23.68
+F22.63
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p1216
@@ -12024,7 +12024,7 @@ F0.0
 sg8
 I23
 sg9
-F13.89
+F13.82
 sg10
 I14
 sg11
@@ -12032,7 +12032,7 @@ S'North Capitol St & F St NW'
 p1218
 sa(dp1219
 g3
-F0.67
+F0.46
 sg4
 F-77.027137
 sg5
@@ -12044,9 +12044,9 @@ F0.0
 sg8
 I18
 sg9
-F2.62
+F2.69
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p1220
@@ -12064,7 +12064,7 @@ F0.0
 sg8
 I15
 sg9
-F7.87
+F7.85
 sg10
 I8
 sg11
@@ -12080,11 +12080,11 @@ I117
 sg6
 F38.898069
 sg7
-F0.43
+F0.27
 sg8
-I22
+I23
 sg9
-F19.73
+F19.86
 sg10
 I20
 sg11
@@ -12104,7 +12104,7 @@ F0.0
 sg8
 I23
 sg9
-F9.65
+F9.76
 sg10
 I10
 sg11
@@ -12112,7 +12112,7 @@ S'Potomac Ave & 35th St S'
 p1226
 sa(dp1227
 g3
-F0.94
+F0.68
 sg4
 F-77.04657
 sg5
@@ -12124,9 +12124,9 @@ F0.0
 sg8
 I23
 sg9
-F2.93
+F3.6
 sg10
-I0
+I2
 sg11
 S'Ohio Dr & West Basin Dr SW / MLK & FDR Memorials'
 p1228
@@ -12140,11 +12140,11 @@ I125
 sg6
 F38.897857
 sg7
-F0.82
+F0.79
 sg8
 I15
 sg9
-F13.52
+F13.33
 sg10
 I15
 sg11
@@ -12164,7 +12164,7 @@ F0.0
 sg8
 I19
 sg9
-F11.39
+F11.57
 sg10
 I12
 sg11
@@ -12172,7 +12172,7 @@ S'23rd & E St NW '
 p1232
 sa(dp1233
 g3
-F0.07
+F0.01
 sg4
 F-77.070993
 sg5
@@ -12184,9 +12184,9 @@ F0.0
 sg8
 I18
 sg9
-F3.82
+F5.0
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p1234
@@ -12204,7 +12204,7 @@ F0.0
 sg8
 I15
 sg9
-F6.82
+F7.06
 sg10
 I7
 sg11
@@ -12212,7 +12212,7 @@ S'Rosslyn Metro / Wilson Blvd & Ft Myer Dr'
 p1236
 sa(dp1237
 g3
-F0.02
+F0.03
 sg4
 F-77.076701
 sg5
@@ -12224,7 +12224,7 @@ F0.0
 sg8
 I11
 sg9
-F2.98
+F2.99
 sg10
 I3
 sg11
@@ -12244,15 +12244,15 @@ F0.0
 sg8
 I15
 sg9
-F9.11
+F8.18
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p1240
 sa(dp1241
 g3
-F0.06
+F0.1
 sg4
 F-77.079375
 sg5
@@ -12264,7 +12264,7 @@ F0.0
 sg8
 I11
 sg9
-F2.1
+F2.02
 sg10
 I2
 sg11
@@ -12284,7 +12284,7 @@ F0.0
 sg8
 I15
 sg9
-F4.01
+F4.07
 sg10
 I4
 sg11
@@ -12292,7 +12292,7 @@ S'Fairfax Village'
 p1244
 sa(dp1245
 g3
-F0.7
+F0.71
 sg4
 F-77.046567
 sg5
@@ -12304,7 +12304,7 @@ F0.0
 sg8
 I15
 sg9
-F1.5
+F1.49
 sg10
 I2
 sg11
@@ -12324,15 +12324,15 @@ F0.0
 sg8
 I15
 sg9
-F4.24
+F5.04
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p1248
 sa(dp1249
 g3
-F0.04
+F0.02
 sg4
 F-77.04368
 sg5
@@ -12344,7 +12344,7 @@ F0.0
 sg8
 I19
 sg9
-F5.97
+F6.1
 sg10
 I6
 sg11
@@ -12352,7 +12352,7 @@ S'Columbia Rd & Belmont St NW'
 p1250
 sa(dp1251
 g3
-F0.04
+F0.05
 sg4
 F-77.038785
 sg5
@@ -12364,7 +12364,7 @@ F0.0
 sg8
 I23
 sg9
-F5.42
+F5.51
 sg10
 I6
 sg11
@@ -12372,7 +12372,7 @@ S'17th & Rhode Island Ave NW'
 p1252
 sa(dp1253
 g3
-F0.86
+F0.89
 sg4
 F-77.0325
 sg5
@@ -12384,9 +12384,9 @@ F0.0
 sg8
 I33
 sg9
-F2.26
+F2.08
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p1254
@@ -12400,13 +12400,13 @@ I138
 sg6
 F38.8904
 sg7
-F0.0
+F0.02
 sg8
 I11
 sg9
-F5.65
+F7.69
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p1256
@@ -12420,13 +12420,13 @@ I139
 sg6
 F38.8881
 sg7
-F0.07
+F0.02
 sg8
 I14
 sg9
-F11.14
+F10.06
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p1258
@@ -12444,7 +12444,7 @@ F0.0
 sg8
 I17
 sg9
-F6.01
+F5.88
 sg10
 I6
 sg11
@@ -12452,7 +12452,7 @@ S'Clarendon Metro / Wilson Blvd & N Highland St'
 p1260
 sa(dp1261
 g3
-F0.03
+F0.05
 sg4
 F-77.041539
 sg5
@@ -12464,9 +12464,9 @@ F0.0
 sg8
 I15
 sg9
-F5.55
+F4.69
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p1262
@@ -12484,15 +12484,15 @@ F0.0
 sg8
 I39
 sg9
-F18.65
+F19.12
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p1264
 sa(dp1265
 g3
-F0.73
+F0.85
 sg4
 F-77.017445
 sg5
@@ -12504,15 +12504,15 @@ F0.0
 sg8
 I17
 sg9
-F1.29
+F0.92
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p1266
 sa(dp1267
 g3
-F0.04
+F0.01
 sg4
 F-77.001828
 sg5
@@ -12524,7 +12524,7 @@ F0.0
 sg8
 I19
 sg9
-F5.1
+F5.14
 sg10
 I5
 sg11
@@ -12532,7 +12532,7 @@ S'3rd & G St SE'
 p1268
 sa(dp1269
 g3
-F0.8
+F0.82
 sg4
 F-77.022155
 sg5
@@ -12544,7 +12544,7 @@ F0.0
 sg8
 I15
 sg9
-F1.6
+F1.7
 sg10
 I0
 sg11
@@ -12564,7 +12564,7 @@ F0.0
 sg8
 I15
 sg9
-F7.1
+F7.21
 sg10
 I7
 sg11
@@ -12572,7 +12572,7 @@ S'9th & Upshur St NW'
 p1272
 sa(dp1273
 g3
-F0.83
+F0.08
 sg4
 F-77.012289
 sg5
@@ -12584,15 +12584,15 @@ F0.0
 sg8
 I14
 sg9
-F1.53
+F4.39
 sg10
-I0
+I4
 sg11
 S'1st & Rhode Island Ave NW'
 p1274
 sa(dp1275
 g3
-F0.33
+F0.31
 sg4
 F-77.02344
 sg5
@@ -12604,7 +12604,7 @@ F0.0
 sg8
 I19
 sg9
-F2.22
+F2.08
 sg10
 I2
 sg11
@@ -12612,7 +12612,7 @@ S'Columbia Rd & Georgia Ave NW'
 p1276
 sa(dp1277
 g3
-F0.02
+F0.11
 sg4
 F-77.04062
 sg5
@@ -12624,9 +12624,9 @@ F0.0
 sg8
 I19
 sg9
-F6.22
+F4.83
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p1278
@@ -12644,7 +12644,7 @@ F0.0
 sg8
 I19
 sg9
-F6.0
+F5.99
 sg10
 I6
 sg11
@@ -12652,7 +12652,7 @@ S'Benning Rd & East Capitol St NE / Benning Rd Metro'
 p1280
 sa(dp1281
 g3
-F0.03
+F0.01
 sg4
 F-77.055599
 sg5
@@ -12664,7 +12664,7 @@ F0.0
 sg8
 I15
 sg9
-F5.29
+F5.32
 sg10
 I5
 sg11
@@ -12684,7 +12684,7 @@ F0.0
 sg8
 I15
 sg9
-F6.95
+F6.97
 sg10
 I7
 sg11
@@ -12704,7 +12704,7 @@ F0.51
 sg8
 I18
 sg9
-F15.26
+F15.08
 sg10
 I15
 sg11
@@ -12712,7 +12712,7 @@ S'M St & Pennsylvania Ave NW'
 p1286
 sa(dp1287
 g3
-F0.72
+F0.79
 sg4
 F-76.983569
 sg5
@@ -12724,7 +12724,7 @@ F0.0
 sg8
 I15
 sg9
-F1.27
+F1.17
 sg10
 I0
 sg11
@@ -12744,7 +12744,7 @@ F0.0
 sg8
 I15
 sg9
-F2.97
+F3.0
 sg10
 I3
 sg11
@@ -12752,7 +12752,7 @@ S'Congress Heights Metro'
 p1290
 sa(dp1291
 g3
-F0.0
+F0.01
 sg4
 F-77.107735
 sg5
@@ -12764,7 +12764,7 @@ F0.0
 sg8
 I11
 sg9
-F3.9
+F3.82
 sg10
 I4
 sg11
@@ -12784,7 +12784,7 @@ F0.0
 sg8
 I11
 sg9
-F6.06
+F6.02
 sg10
 I6
 sg11
@@ -12812,7 +12812,7 @@ S'N Veitch  & 20th St N'
 p1296
 sa(dp1297
 g3
-F0.56
+F0.15
 sg4
 F-77.02674
 sg5
@@ -12824,9 +12824,9 @@ F0.0
 sg8
 I18
 sg9
-F2.04
+F3.8
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p1298
@@ -12844,7 +12844,7 @@ F0.0
 sg8
 I11
 sg9
-F6.12
+F6.25
 sg10
 I6
 sg11
@@ -12864,15 +12864,15 @@ F0.0
 sg8
 I11
 sg9
-F6.88
+F7.88
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p1302
 sa(dp1303
 g3
-F0.14
+F0.2
 sg4
 F-77.006004
 sg5
@@ -12884,7 +12884,7 @@ F0.0
 sg8
 I15
 sg9
-F3.86
+F3.84
 sg10
 I3
 sg11
@@ -12892,7 +12892,7 @@ S'1st & K St SE'
 p1304
 sa(dp1305
 g3
-F0.24
+F0.51
 sg4
 F-77.077271
 sg5
@@ -12904,15 +12904,15 @@ F0.0
 sg8
 I19
 sg9
-F2.24
+F1.64
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p1306
 sa(dp1307
 g3
-F0.0
+F0.01
 sg4
 F-77.012457
 sg5
@@ -12924,7 +12924,7 @@ F0.0
 sg8
 I15
 sg9
-F2.87
+F2.9
 sg10
 I3
 sg11
@@ -12944,7 +12944,7 @@ F0.0
 sg8
 I19
 sg9
-F11.68
+F11.83
 sg10
 I12
 sg11
@@ -12960,11 +12960,11 @@ I166
 sg6
 F38.88397
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F7.0
+F7.12
 sg10
 I7
 sg11
@@ -12972,7 +12972,7 @@ S'Central Library / N Quincy St & 10th St N'
 p1312
 sa(dp1313
 g3
-F0.41
+F0.44
 sg4
 F-77.093485
 sg5
@@ -12984,7 +12984,7 @@ F0.0
 sg8
 I15
 sg9
-F1.09
+F1.01
 sg10
 I1
 sg11
@@ -12992,7 +12992,7 @@ S'Washington Blvd & 10th St N'
 p1314
 sa(dp1315
 g3
-F0.16
+F0.22
 sg4
 F-77.032429
 sg5
@@ -13000,13 +13000,13 @@ I168
 sg6
 F38.888553
 sg7
-F0.02
+F0.01
 sg8
 I23
 sg9
-F8.32
+F8.03
 sg10
-I7
+I6
 sg11
 S'Jefferson Dr & 14th St SW'
 p1316
@@ -13020,13 +13020,13 @@ I169
 sg6
 F38.888767
 sg7
-F0.08
+F0.14
 sg8
 I23
 sg9
-F14.43
+F15.22
 sg10
-I13
+I14
 sg11
 S'Smithsonian / Jefferson Dr & 12th St SW'
 p1318
@@ -13044,7 +13044,7 @@ F0.0
 sg8
 I15
 sg9
-F7.04
+F7.05
 sg10
 I7
 sg11
@@ -13060,13 +13060,13 @@ I171
 sg6
 F38.894573
 sg7
-F0.07
+F0.18
 sg8
 I18
 sg9
-F12.08
+F13.33
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p1322
@@ -13084,7 +13084,7 @@ F0.0
 sg8
 I11
 sg9
-F5.79
+F5.87
 sg10
 I6
 sg11
@@ -13092,7 +13092,7 @@ S'N Veitch & Key Blvd'
 p1324
 sa(dp1325
 g3
-F0.03
+F0.04
 sg4
 F-77.089006
 sg5
@@ -13104,7 +13104,7 @@ F0.0
 sg8
 I15
 sg9
-F2.94
+F2.98
 sg10
 I3
 sg11
@@ -13124,7 +13124,7 @@ F0.0
 sg8
 I11
 sg9
-F2.6
+F2.8
 sg10
 I3
 sg11
@@ -13144,7 +13144,7 @@ F0.0
 sg8
 I11
 sg9
-F4.98
+F5.03
 sg10
 I5
 sg11
@@ -13164,15 +13164,15 @@ F0.0
 sg8
 I19
 sg9
-F6.76
+F5.84
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p1332
 sa(dp1333
 g3
-F0.81
+F0.78
 sg4
 F-77.109366
 sg5
@@ -13184,7 +13184,7 @@ F0.0
 sg8
 I11
 sg9
-F0.53
+F0.63
 sg10
 I0
 sg11
@@ -13204,7 +13204,7 @@ F0.07
 sg8
 I23
 sg9
-F15.25
+F15.52
 sg10
 I15
 sg11
@@ -13224,9 +13224,9 @@ F0.0
 sg8
 I15
 sg9
-F9.96
+F8.94
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p1338
@@ -13244,7 +13244,7 @@ F0.0
 sg8
 I11
 sg9
-F7.82
+F7.87
 sg10
 I8
 sg11
@@ -13264,7 +13264,7 @@ F0.0
 sg8
 I11
 sg9
-F6.01
+F5.97
 sg10
 I6
 sg11
@@ -13284,9 +13284,9 @@ F0.0
 sg8
 I11
 sg9
-F6.93
+F8.01
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p1344
@@ -13304,9 +13304,9 @@ F0.0
 sg8
 I19
 sg9
-F13.83
+F11.77
 sg10
-I14
+I12
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p1346
@@ -13320,19 +13320,19 @@ I185
 sg6
 F38.903584
 sg7
-F0.01
+F0.0
 sg8
 I19
 sg9
-F14.69
+F13.63
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p1348
 sa(dp1349
 g3
-F0.65
+F0.82
 sg4
 F-77.0284
 sg5
@@ -13344,9 +13344,9 @@ F0.0
 sg8
 I19
 sg9
-F1.46
+F1.14
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p1350
@@ -13360,11 +13360,11 @@ I187
 sg6
 F38.901539
 sg7
-F0.66
+F0.67
 sg8
 I19
 sg9
-F17.91
+F17.97
 sg10
 I19
 sg11
@@ -13404,7 +13404,7 @@ F0.0
 sg8
 I19
 sg9
-F8.73
+F8.78
 sg10
 I8
 sg11
@@ -13420,11 +13420,11 @@ I190
 sg6
 F38.804718
 sg7
-F0.02
+F0.06
 sg8
 I15
 sg9
-F11.06
+F11.3
 sg10
 I11
 sg11
@@ -13444,7 +13444,7 @@ F0.0
 sg8
 I14
 sg9
-F8.08
+F8.16
 sg10
 I8
 sg11
@@ -13464,7 +13464,7 @@ F0.0
 sg8
 I15
 sg9
-F6.07
+F6.02
 sg10
 I6
 sg11
@@ -13472,7 +13472,7 @@ S'King St & Patrick St'
 p1362
 sa(dp1363
 g3
-F0.12
+F0.31
 sg4
 F-77.03353
 sg5
@@ -13484,9 +13484,9 @@ F0.0
 sg8
 I19
 sg9
-F3.44
+F2.35
 sg10
-I4
+I3
 sg11
 S'15th & K St NW'
 p1364
@@ -13504,7 +13504,7 @@ F0.0
 sg8
 I15
 sg9
-F10.11
+F10.08
 sg10
 I10
 sg11
@@ -13524,7 +13524,7 @@ F0.0
 sg8
 I17
 sg9
-F8.95
+F8.8
 sg10
 I9
 sg11
@@ -13544,7 +13544,7 @@ F0.0
 sg8
 I19
 sg9
-F6.85
+F6.91
 sg10
 I7
 sg11
@@ -13552,7 +13552,7 @@ S'Braddock Rd Metro'
 p1370
 sa(dp1371
 g3
-F0.0
+F0.01
 sg4
 F-77.06072
 sg5
@@ -13564,7 +13564,7 @@ F0.0
 sg8
 I19
 sg9
-F4.96
+F4.71
 sg10
 I5
 sg11
@@ -13580,11 +13580,11 @@ I198
 sg6
 F38.9066
 sg7
-F0.73
+F0.71
 sg8
 I15
 sg9
-F13.76
+F13.82
 sg10
 I15
 sg11
@@ -13600,13 +13600,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.83
+F0.74
 sg8
 I15
 sg9
-F12.97
+F12.55
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p1376
@@ -13620,19 +13620,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.73
+F0.49
 sg8
 I14
 sg9
-F11.85
+F11.27
 sg10
-I13
+I12
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p1378
 sa(dp1379
 g3
-F0.1
+F0.06
 sg4
 F-77.113905
 sg5
@@ -13644,7 +13644,7 @@ F0.0
 sg8
 I11
 sg9
-F1.86
+F2.0
 sg10
 I2
 sg11
@@ -13664,15 +13664,15 @@ F0.0
 sg8
 I11
 sg9
-F7.0
+F6.08
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p1382
 sa(dp1383
 g3
-F0.65
+F0.69
 sg4
 F-77.077294
 sg5
@@ -13684,7 +13684,7 @@ F0.0
 sg8
 I11
 sg9
-F0.61
+F0.57
 sg10
 I0
 sg11
@@ -13692,7 +13692,7 @@ S'Arlington Blvd & N Queen St'
 p1384
 sa(dp1385
 g3
-F0.69
+F0.87
 sg4
 F-77.049426
 sg5
@@ -13704,9 +13704,9 @@ F0.0
 sg8
 I25
 sg9
-F5.73
+F4.87
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p1386
@@ -13724,7 +13724,7 @@ F0.0
 sg8
 I15
 sg9
-F7.79
+F7.78
 sg10
 I8
 sg11
@@ -13732,7 +13732,7 @@ S'20th St & Virginia Ave NW'
 p1388
 sa(dp1389
 g3
-F0.66
+F0.71
 sg4
 F-77.018677
 sg5
@@ -13744,7 +13744,7 @@ F0.0
 sg8
 I19
 sg9
-F2.08
+F2.11
 sg10
 I1
 sg11
@@ -13752,7 +13752,7 @@ S'5th St & Massachusetts Ave NW'
 p1390
 sa(dp1391
 g3
-F0.01
+F0.07
 sg4
 F-77.077078
 sg5
@@ -13764,9 +13764,9 @@ F0.0
 sg8
 I15
 sg9
-F3.77
+F2.69
 sg10
-I4
+I3
 sg11
 S'39th & Veazey St NW'
 p1392
@@ -13784,7 +13784,7 @@ F0.0
 sg8
 I15
 sg9
-F7.71
+F7.83
 sg10
 I8
 sg11
@@ -13792,7 +13792,7 @@ S'Fessenden St & Wisconsin Ave NW'
 p1394
 sa(dp1395
 g3
-F0.03
+F0.01
 sg4
 F-77.003041
 sg5
@@ -13802,9 +13802,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F5.2
+F5.22
 sg10
 I6
 sg11
@@ -13824,7 +13824,7 @@ F0.0
 sg8
 I15
 sg9
-F6.52
+F6.45
 sg10
 I7
 sg11
@@ -13844,7 +13844,7 @@ F0.0
 sg8
 I11
 sg9
-F5.88
+F5.76
 sg10
 I6
 sg11
@@ -13864,7 +13864,7 @@ F0.0
 sg8
 I15
 sg9
-F5.66
+F5.73
 sg10
 I6
 sg11
@@ -13872,7 +13872,7 @@ S'28th St S & S Meade St'
 p1402
 sa(dp1403
 g3
-F0.84
+F0.85
 sg4
 F-77.041571
 sg5
@@ -13884,7 +13884,7 @@ F0.0
 sg8
 I23
 sg9
-F1.65
+F1.45
 sg10
 I0
 sg11
@@ -13904,7 +13904,7 @@ F0.0
 sg8
 I14
 sg9
-F8.71
+F8.73
 sg10
 I9
 sg11
@@ -13912,7 +13912,7 @@ S'5th & Kennedy St NW'
 p1406
 sa(dp1407
 g3
-F0.01
+F0.0
 sg4
 F-77.027333
 sg5
@@ -13924,7 +13924,7 @@ F0.0
 sg8
 I19
 sg9
-F2.73
+F2.78
 sg10
 I3
 sg11
@@ -13932,7 +13932,7 @@ S'Georgia Ave & Emerson St NW'
 p1408
 sa(dp1409
 g3
-F0.05
+F0.03
 sg4
 F-77.032652
 sg5
@@ -13944,7 +13944,7 @@ F0.0
 sg8
 I18
 sg9
-F2.65
+F2.69
 sg10
 I3
 sg11
@@ -13964,7 +13964,7 @@ F0.0
 sg8
 I19
 sg9
-F5.43
+F5.38
 sg10
 I6
 sg11
@@ -13984,7 +13984,7 @@ F0.0
 sg8
 I11
 sg9
-F4.89
+F4.85
 sg10
 I5
 sg11
@@ -14004,7 +14004,7 @@ F0.0
 sg8
 I11
 sg9
-F5.96
+F5.94
 sg10
 I6
 sg11
@@ -14024,7 +14024,7 @@ F0.0
 sg8
 I11
 sg9
-F4.98
+F5.01
 sg10
 I5
 sg11
@@ -14044,7 +14044,7 @@ F0.0
 sg8
 I10
 sg9
-F6.93
+F6.91
 sg10
 I7
 sg11
@@ -14064,7 +14064,7 @@ F0.0
 sg8
 I15
 sg9
-F8.41
+F8.54
 sg10
 I8
 sg11
@@ -14084,7 +14084,7 @@ F0.0
 sg8
 I11
 sg9
-F4.01
+F3.99
 sg10
 I4
 sg11
@@ -14092,7 +14092,7 @@ S'S Kenmore & 24th St S'
 p1424
 sa(dp1425
 g3
-F0.9
+F0.84
 sg4
 F-77.065131
 sg5
@@ -14104,7 +14104,7 @@ F0.0
 sg8
 I19
 sg9
-F0.41
+F0.47
 sg10
 I0
 sg11
@@ -14120,13 +14120,13 @@ I226
 sg6
 F38.90849
 sg7
-F0.04
+F0.0
 sg8
 I17
 sg9
-F10.66
+F9.61
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p1428
@@ -14144,7 +14144,7 @@ F0.0
 sg8
 I11
 sg9
-F7.07
+F7.06
 sg10
 I7
 sg11
@@ -14152,7 +14152,7 @@ S'S George Mason Dr & 13th St S'
 p1430
 sa(dp1431
 g3
-F0.15
+F0.14
 sg4
 F-77.069956
 sg5
@@ -14164,7 +14164,7 @@ F0.0
 sg8
 I23
 sg9
-F2.06
+F1.93
 sg10
 I2
 sg11
@@ -14184,7 +14184,7 @@ F0.0
 sg8
 I19
 sg9
-F2.87
+F3.03
 sg10
 I3
 sg11
@@ -14192,7 +14192,7 @@ S'17th St & Massachusetts Ave NW'
 p1434
 sa(dp1435
 g3
-F0.9
+F0.87
 sg4
 F-77.0352
 sg5
@@ -14204,7 +14204,7 @@ F0.0
 sg8
 I15
 sg9
-F1.17
+F1.22
 sg10
 I0
 sg11
@@ -14212,7 +14212,7 @@ S'15th & Euclid St  NW'
 p1436
 sa(dp1437
 g3
-F0.0
+F0.03
 sg4
 F-76.995193
 sg5
@@ -14224,15 +14224,15 @@ F0.01
 sg8
 I11
 sg9
-F5.92
+F5.22
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p1438
 sa(dp1439
 g3
-F0.22
+F0.0
 sg4
 F-77.017669
 sg5
@@ -14244,9 +14244,9 @@ F0.0
 sg8
 I15
 sg9
-F2.81
+F5.46
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p1440
@@ -14264,7 +14264,7 @@ F0.0
 sg8
 I11
 sg9
-F4.89
+F4.95
 sg10
 I5
 sg11
@@ -14284,7 +14284,7 @@ F0.0
 sg8
 I15
 sg9
-F7.28
+F7.18
 sg10
 I7
 sg11
@@ -14304,7 +14304,7 @@ F0.0
 sg8
 I15
 sg9
-F7.86
+F7.84
 sg10
 I8
 sg11
@@ -14324,9 +14324,9 @@ F0.0
 sg8
 I19
 sg9
-F5.58
+F6.46
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p1448
@@ -14364,7 +14364,7 @@ F0.0
 sg8
 I10
 sg9
-F4.0
+F3.98
 sg10
 I4
 sg11
@@ -14372,7 +14372,7 @@ S'34th St & Minnesota Ave SE'
 p1452
 sa(dp1453
 g3
-F0.04
+F0.03
 sg4
 F-76.999388
 sg5
@@ -14384,7 +14384,7 @@ F0.0
 sg8
 I11
 sg9
-F1.05
+F1.04
 sg10
 I1
 sg11
@@ -14404,7 +14404,7 @@ F0.0
 sg8
 I11
 sg9
-F9.03
+F9.0
 sg10
 I9
 sg11
@@ -14424,7 +14424,7 @@ F0.0
 sg8
 I15
 sg9
-F5.09
+F5.16
 sg10
 I5
 sg11
@@ -14432,7 +14432,7 @@ S'Neal St & Trinidad Ave NE'
 p1458
 sa(dp1459
 g3
-F0.66
+F0.81
 sg4
 F-77.029779
 sg5
@@ -14444,9 +14444,9 @@ F0.0
 sg8
 I23
 sg9
-F2.21
+F2.03
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p1460
@@ -14504,7 +14504,7 @@ F0.0
 sg8
 I11
 sg9
-F6.11
+F6.08
 sg10
 I6
 sg11
@@ -14524,7 +14524,7 @@ F0.0
 sg8
 I11
 sg9
-F4.94
+F4.95
 sg10
 I5
 sg11
@@ -14540,19 +14540,19 @@ I247
 sg6
 F38.887378
 sg7
-F0.03
+F0.08
 sg8
 I15
 sg9
-F8.0
+F10.03
 sg10
-I7
+I9
 sg11
 S'3rd St & Pennsylvania Ave SE'
 p1470
 sa(dp1471
 g3
-F0.22
+F0.31
 sg4
 F-77.02324
 sg5
@@ -14564,7 +14564,7 @@ F0.0
 sg8
 I15
 sg9
-F3.71
+F3.29
 sg10
 I3
 sg11
@@ -14584,9 +14584,9 @@ F0.0
 sg8
 I15
 sg9
-F5.82
+F4.8
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p1474
@@ -14604,7 +14604,7 @@ F0.0
 sg8
 I19
 sg9
-F6.68
+F6.67
 sg10
 I7
 sg11
@@ -14624,7 +14624,7 @@ F0.0
 sg8
 I27
 sg9
-F11.69
+F11.08
 sg10
 I12
 sg11
@@ -14655,7 +14655,7 @@ F0.0
 sg8
 I11
 sg9
-F2.98
+F2.96
 sg10
 I3
 sg11
@@ -14675,7 +14675,7 @@ F0.02
 sg8
 I9
 sg9
-F5.99
+F6.02
 sg10
 I6
 sg11
@@ -14695,9 +14695,9 @@ F0.0
 sg8
 I13
 sg9
-F6.97
+F5.96
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p1488
@@ -14711,7 +14711,7 @@ I4
 sg6
 F38.860244
 sg7
-F0.01
+F0.0
 sg8
 I10
 sg9
@@ -14735,7 +14735,7 @@ F0.0
 sg8
 I11
 sg9
-F3.92
+F3.96
 sg10
 I4
 sg11
@@ -14755,7 +14755,7 @@ F0.0
 sg8
 I17
 sg9
-F9.06
+F9.05
 sg10
 I9
 sg11
@@ -14775,7 +14775,7 @@ F0.0
 sg8
 I10
 sg9
-F5.06
+F5.18
 sg10
 I5
 sg11
@@ -14795,9 +14795,9 @@ F0.0
 sg8
 I19
 sg9
-F10.05
+F8.95
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p1498
@@ -14815,7 +14815,7 @@ F0.0
 sg8
 I11
 sg9
-F4.98
+F4.77
 sg10
 I5
 sg11
@@ -14823,7 +14823,7 @@ S'12th & Army Navy Dr'
 p1500
 sa(dp1501
 g3
-F0.35
+F0.29
 sg4
 F-77.051516
 sg5
@@ -14835,7 +14835,7 @@ F0.0
 sg8
 I11
 sg9
-F0.89
+F0.92
 sg10
 I1
 sg11
@@ -14855,7 +14855,7 @@ F0.01
 sg8
 I11
 sg9
-F7.83
+F7.97
 sg10
 I8
 sg11
@@ -14875,7 +14875,7 @@ F0.0
 sg8
 I16
 sg9
-F6.86
+F6.92
 sg10
 I7
 sg11
@@ -14895,7 +14895,7 @@ F0.0
 sg8
 I11
 sg9
-F2.94
+F2.93
 sg10
 I3
 sg11
@@ -14915,7 +14915,7 @@ F0.0
 sg8
 I15
 sg9
-F8.86
+F8.7
 sg10
 I9
 sg11
@@ -14935,7 +14935,7 @@ F0.0
 sg8
 I27
 sg9
-F2.7
+F2.75
 sg10
 I2
 sg11
@@ -14955,7 +14955,7 @@ F0.0
 sg8
 I27
 sg9
-F1.1
+F1.19
 sg10
 I0
 sg11
@@ -14963,7 +14963,7 @@ S'11th & Kenyon St NW'
 p1514
 sa(dp1515
 g3
-F0.69
+F0.87
 sg4
 F-77.036536
 sg5
@@ -14975,15 +14975,15 @@ F0.0
 sg8
 I33
 sg9
-F1.43
+F1.02
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p1516
 sa(dp1517
 g3
-F0.44
+F0.7
 sg4
 F-77.042581
 sg5
@@ -14995,15 +14995,15 @@ F0.0
 sg8
 I15
 sg9
-F2.53
+F1.89
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p1518
 sa(dp1519
 g3
-F0.66
+F0.8
 sg4
 F-77.0322
 sg5
@@ -15015,15 +15015,15 @@ F0.0
 sg8
 I19
 sg9
-F1.37
+F1.25
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p1520
 sa(dp1521
 g3
-F0.41
+F0.36
 sg4
 F-77.0501
 sg5
@@ -15035,7 +15035,7 @@ F0.0
 sg8
 I23
 sg9
-F2.04
+F2.18
 sg10
 I2
 sg11
@@ -15043,7 +15043,7 @@ S'Calvert St & Woodley Pl NW'
 p1522
 sa(dp1523
 g3
-F0.78
+F0.82
 sg4
 F-77.0388
 sg5
@@ -15055,7 +15055,7 @@ F0.0
 sg8
 I19
 sg9
-F1.16
+F1.23
 sg10
 I0
 sg11
@@ -15063,7 +15063,7 @@ S'Lamont & Mt Pleasant NW'
 p1524
 sa(dp1525
 g3
-F0.63
+F0.6
 sg4
 F-77.0178
 sg5
@@ -15075,7 +15075,7 @@ F0.0
 sg8
 I19
 sg9
-F1.73
+F1.74
 sg10
 I1
 sg11
@@ -15083,7 +15083,7 @@ S'4th & M St SW'
 p1526
 sa(dp1527
 g3
-F0.03
+F0.01
 sg4
 F-77.034438
 sg5
@@ -15095,15 +15095,15 @@ F0.0
 sg8
 I19
 sg9
-F7.34
+F8.33
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p1528
 sa(dp1529
 g3
-F0.16
+F0.19
 sg4
 F-77.031681
 sg5
@@ -15115,7 +15115,7 @@ F0.0
 sg8
 I15
 sg9
-F3.33
+F3.14
 sg10
 I3
 sg11
@@ -15123,7 +15123,7 @@ S'14th & R St NW'
 p1530
 sa(dp1531
 g3
-F0.21
+F0.69
 sg4
 F-77.0323
 sg5
@@ -15135,9 +15135,9 @@ F0.0
 sg8
 I23
 sg9
-F3.2
+F1.91
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p1532
@@ -15155,9 +15155,9 @@ F0.0
 sg8
 I15
 sg9
-F6.45
+F5.53
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p1534
@@ -15175,9 +15175,9 @@ F0.0
 sg8
 I35
 sg9
-F24.68
+F25.77
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p1536
@@ -15195,7 +15195,7 @@ F0.0
 sg8
 I13
 sg9
-F5.09
+F4.96
 sg10
 I5
 sg11
@@ -15215,7 +15215,7 @@ F0.01
 sg8
 I11
 sg9
-F7.06
+F7.12
 sg10
 I7
 sg11
@@ -15235,7 +15235,7 @@ F0.0
 sg8
 I11
 sg9
-F5.98
+F5.95
 sg10
 I6
 sg11
@@ -15243,7 +15243,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p1542
 sa(dp1543
 g3
-F0.35
+F0.63
 sg4
 F-77.019027
 sg5
@@ -15255,9 +15255,9 @@ F0.0
 sg8
 I19
 sg9
-F2.49
+F1.98
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p1544
@@ -15275,7 +15275,7 @@ F0.0
 sg8
 I15
 sg9
-F7.8
+F7.79
 sg10
 I8
 sg11
@@ -15295,15 +15295,15 @@ F0.0
 sg8
 I19
 sg9
-F7.21
+F8.95
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p1548
 sa(dp1549
 g3
-F0.01
+F0.02
 sg4
 F-76.9672
 sg5
@@ -15313,9 +15313,9 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
-F1.0
+F0.99
 sg10
 I1
 sg11
@@ -15323,7 +15323,7 @@ S'Good Hope & Naylor Rd SE'
 p1550
 sa(dp1551
 g3
-F0.23
+F0.24
 sg4
 F-77.057979
 sg5
@@ -15335,7 +15335,7 @@ F0.0
 sg8
 I11
 sg9
-F2.12
+F2.05
 sg10
 I2
 sg11
@@ -15355,7 +15355,7 @@ F0.0
 sg8
 I11
 sg9
-F6.0
+F5.98
 sg10
 I6
 sg11
@@ -15375,7 +15375,7 @@ F0.0
 sg8
 I11
 sg9
-F6.99
+F6.97
 sg10
 I7
 sg11
@@ -15398,7 +15398,7 @@ F0.0
 sg8
 I11
 sg9
-F7.94
+F7.99
 sg10
 I8
 sg11
@@ -15414,11 +15414,11 @@ I40
 sg6
 F38.867373
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F8.98
+F9.03
 sg10
 I9
 sg11
@@ -15426,7 +15426,7 @@ S'Good Hope Rd & MLK Ave SE'
 p1561
 sa(dp1562
 g3
-F0.12
+F0.14
 sg4
 F-77.0436
 sg5
@@ -15438,7 +15438,7 @@ F0.0
 sg8
 I11
 sg9
-F1.74
+F1.71
 sg10
 I2
 sg11
@@ -15458,7 +15458,7 @@ F0.0
 sg8
 I11
 sg9
-F4.06
+F4.1
 sg10
 I4
 sg11
@@ -15466,7 +15466,7 @@ S'4th St & Rhode Island Ave NE'
 p1565
 sa(dp1566
 g3
-F0.29
+F0.34
 sg4
 F-77.0259
 sg5
@@ -15478,7 +15478,7 @@ F0.0
 sg8
 I14
 sg9
-F2.31
+F2.4
 sg10
 I2
 sg11
@@ -15486,7 +15486,7 @@ S'10th & U St NW'
 p1567
 sa(dp1568
 g3
-F0.34
+F0.31
 sg4
 F-77.0222
 sg5
@@ -15498,7 +15498,7 @@ F0.0
 sg8
 I11
 sg9
-F1.38
+F1.27
 sg10
 I1
 sg11
@@ -15506,7 +15506,7 @@ S'Georgia Ave and Fairmont St NW'
 p1569
 sa(dp1570
 g3
-F0.71
+F0.65
 sg4
 F-77.0057
 sg5
@@ -15518,7 +15518,7 @@ F0.0
 sg8
 I23
 sg9
-F0.55
+F0.67
 sg10
 I0
 sg11
@@ -15538,7 +15538,7 @@ F0.0
 sg8
 I15
 sg9
-F3.41
+F3.18
 sg10
 I3
 sg11
@@ -15546,7 +15546,7 @@ S'20th St & Florida Ave NW'
 p1573
 sa(dp1574
 g3
-F0.74
+F0.71
 sg4
 F-77.0222
 sg5
@@ -15558,7 +15558,7 @@ F0.0
 sg8
 I14
 sg9
-F1.01
+F1.16
 sg10
 I0
 sg11
@@ -15578,7 +15578,7 @@ F0.0
 sg8
 I11
 sg9
-F5.12
+F5.08
 sg10
 I5
 sg11
@@ -15598,9 +15598,9 @@ F0.0
 sg8
 I15
 sg9
-F5.86
+F10.1
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p1579
@@ -15618,15 +15618,15 @@ F0.0
 sg8
 I41
 sg9
-F14.41
+F12.63
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p1581
 sa(dp1582
 g3
-F0.02
+F0.01
 sg4
 F-77.0056
 sg5
@@ -15638,9 +15638,9 @@ F0.0
 sg8
 I15
 sg9
-F4.44
+F5.27
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p1583
@@ -15658,7 +15658,7 @@ F0.0
 sg8
 I19
 sg9
-F9.67
+F9.46
 sg10
 I10
 sg11
@@ -15674,19 +15674,19 @@ I54
 sg6
 F38.90276
 sg7
-F0.0
+F0.01
 sg8
 I17
 sg9
-F10.68
+F11.89
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p1587
 sa(dp1588
 g3
-F0.22
+F0.13
 sg4
 F-77.016
 sg5
@@ -15698,15 +15698,15 @@ F0.0
 sg8
 I15
 sg9
-F2.29
+F3.18
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p1589
 sa(dp1590
 g3
-F0.05
+F0.06
 sg4
 F-77.0023
 sg5
@@ -15718,7 +15718,7 @@ F0.0
 sg8
 I11
 sg9
-F4.13
+F3.92
 sg10
 I4
 sg11
@@ -15726,7 +15726,7 @@ S'3rd & D St SE'
 p1591
 sa(dp1592
 g3
-F0.06
+F0.13
 sg4
 F-76.9862
 sg5
@@ -15738,15 +15738,15 @@ F0.0
 sg8
 I15
 sg9
-F3.91
+F2.93
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p1593
 sa(dp1594
 g3
-F0.11
+F0.09
 sg4
 F-76.9861
 sg5
@@ -15758,7 +15758,7 @@ F0.0
 sg8
 I15
 sg9
-F2.67
+F2.84
 sg10
 I3
 sg11
@@ -15766,7 +15766,7 @@ S'14th & D St SE'
 p1595
 sa(dp1596
 g3
-F0.14
+F0.08
 sg4
 F-77.0387
 sg5
@@ -15778,9 +15778,9 @@ F0.0
 sg8
 I19
 sg9
-F4.06
+F4.9
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p1597
@@ -15794,11 +15794,11 @@ I60
 sg6
 F38.944551
 sg7
-F0.13
+F0.08
 sg8
 I15
 sg9
-F12.62
+F12.6
 sg10
 I13
 sg11
@@ -15818,7 +15818,7 @@ F0.0
 sg8
 I15
 sg9
-F1.41
+F1.45
 sg10
 I1
 sg11
@@ -15838,7 +15838,7 @@ F0.0
 sg8
 I11
 sg9
-F6.02
+F6.0
 sg10
 I6
 sg11
@@ -15858,7 +15858,7 @@ F0.0
 sg8
 I15
 sg9
-F9.86
+F9.91
 sg10
 I10
 sg11
@@ -15878,7 +15878,7 @@ F0.0
 sg8
 I15
 sg9
-F1.44
+F1.4
 sg10
 I1
 sg11
@@ -15886,7 +15886,7 @@ S'Idaho Ave & Newark St NW [on 2nd District patio]'
 p1607
 sa(dp1608
 g3
-F0.01
+F0.0
 sg4
 F-77.032818
 sg5
@@ -15898,7 +15898,7 @@ F0.0
 sg8
 I10
 sg9
-F2.95
+F3.0
 sg10
 I3
 sg11
@@ -15918,7 +15918,7 @@ F0.0
 sg8
 I11
 sg9
-F2.99
+F2.96
 sg10
 I3
 sg11
@@ -15938,7 +15938,7 @@ F0.0
 sg8
 I10
 sg9
-F3.95
+F3.94
 sg10
 I4
 sg11
@@ -15954,13 +15954,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.04
+F0.05
 sg8
 I15
 sg9
-F9.07
+F9.73
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p1615
@@ -15974,13 +15974,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.5
+F0.73
 sg8
 I17
 sg9
-F15.52
+F16.22
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p1617
@@ -15998,7 +15998,7 @@ F0.0
 sg8
 I11
 sg9
-F9.01
+F9.0
 sg10
 I9
 sg11
@@ -16018,7 +16018,7 @@ F0.0
 sg8
 I39
 sg9
-F25.29
+F25.32
 sg10
 I25
 sg11
@@ -16026,7 +16026,7 @@ S'USDA / 12th & Independence Ave SW'
 p1621
 sa(dp1622
 g3
-F0.02
+F0.0
 sg4
 F-77.059219
 sg5
@@ -16038,15 +16038,15 @@ F0.0
 sg8
 I18
 sg9
-F7.62
+F10.15
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p1623
 sa(dp1624
 g3
-F0.02
+F0.01
 sg4
 F-76.991016
 sg5
@@ -16058,7 +16058,7 @@ F0.0
 sg8
 I11
 sg9
-F1.95
+F1.96
 sg10
 I2
 sg11
@@ -16066,7 +16066,7 @@ S'12th & Newton St NE'
 p1625
 sa(dp1626
 g3
-F0.03
+F0.04
 sg4
 F-77.046587
 sg5
@@ -16078,7 +16078,7 @@ F0.0
 sg8
 I15
 sg9
-F2.75
+F2.81
 sg10
 I3
 sg11
@@ -16094,11 +16094,11 @@ I75
 sg6
 F38.886266
 sg7
-F0.01
+F0.02
 sg8
 I15
 sg9
-F9.91
+F9.94
 sg10
 I10
 sg11
@@ -16114,13 +16114,13 @@ I76
 sg6
 F38.893028
 sg7
-F0.0
+F0.1
 sg8
-I31
+I30
 sg9
-F23.08
+F24.53
 sg10
-I22
+I24
 sg11
 S'10th St & Constitution Ave NW'
 p1631
@@ -16138,7 +16138,7 @@ F0.0
 sg8
 I11
 sg9
-F5.03
+F5.06
 sg10
 I5
 sg11
@@ -16154,13 +16154,13 @@ I78
 sg6
 F38.884
 sg7
-F0.24
+F0.84
 sg8
 I19
 sg9
-F15.4
+F17.06
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p1635
@@ -16174,11 +16174,11 @@ I79
 sg6
 F38.904742
 sg7
-F0.52
+F0.54
 sg8
 I19
 sg9
-F17.44
+F17.3
 sg10
 I18
 sg11
@@ -16198,7 +16198,7 @@ F0.0
 sg8
 I14
 sg9
-F8.15
+F8.12
 sg10
 I8
 sg11
@@ -16218,7 +16218,7 @@ F0.0
 sg8
 I27
 sg9
-F4.01
+F3.89
 sg10
 I4
 sg11
@@ -16238,9 +16238,9 @@ F0.0
 sg8
 I31
 sg9
-F14.33
+F13.17
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p1643
@@ -16254,11 +16254,11 @@ I83
 sg6
 F38.8991
 sg7
-F0.01
+F0.02
 sg8
 I15
 sg9
-F9.06
+F8.89
 sg10
 I9
 sg11
@@ -16266,7 +16266,7 @@ S'New York Ave & 15th St NW'
 p1645
 sa(dp1646
 g3
-F0.53
+F0.7
 sg4
 F-77.022264
 sg5
@@ -16278,15 +16278,15 @@ F0.0
 sg8
 I18
 sg9
-F1.81
+F1.47
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p1647
 sa(dp1648
 g3
-F0.02
+F0.0
 sg4
 F-77.043358
 sg5
@@ -16298,15 +16298,15 @@ F0.0
 sg8
 I15
 sg9
-F3.79
+F4.82
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p1649
 sa(dp1650
 g3
-F0.06
+F0.01
 sg4
 F-77.043648
 sg5
@@ -16318,9 +16318,9 @@ F0.0
 sg8
 I15
 sg9
-F2.92
+F3.95
 sg10
-I3
+I4
 sg11
 S'19th & L St NW'
 p1651
@@ -16334,13 +16334,13 @@ I87
 sg6
 F38.90375
 sg7
-F0.0
+F0.06
 sg8
 I22
 sg9
-F13.35
+F16.02
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p1653
@@ -16358,7 +16358,7 @@ F0.0
 sg8
 I19
 sg9
-F9.94
+F9.95
 sg10
 I10
 sg11
@@ -16366,7 +16366,7 @@ S'7th & Water St SW / SW Waterfront'
 p1655
 sa(dp1656
 g3
-F0.14
+F0.15
 sg4
 F-76.997114
 sg5
@@ -16378,7 +16378,7 @@ F0.0
 sg8
 I22
 sg9
-F2.9
+F2.85
 sg10
 I3
 sg11
@@ -16386,7 +16386,7 @@ S'D St & Maryland Ave NE'
 p1657
 sa(dp1658
 g3
-F0.7
+F0.66
 sg4
 F-77.0682
 sg5
@@ -16398,7 +16398,7 @@ F0.0
 sg8
 I11
 sg9
-F0.63
+F0.8
 sg10
 I0
 sg11
@@ -16418,7 +16418,7 @@ F0.0
 sg8
 I22
 sg9
-F11.44
+F11.55
 sg10
 I12
 sg11
@@ -16438,7 +16438,7 @@ F0.0
 sg8
 I33
 sg9
-F17.77
+F17.82
 sg10
 I17
 sg11
@@ -16446,7 +16446,7 @@ S'8th & H St NW'
 p1663
 sa(dp1664
 g3
-F0.18
+F0.24
 sg4
 F-76.992889
 sg5
@@ -16458,7 +16458,7 @@ F0.0
 sg8
 I11
 sg9
-F1.16
+F1.06
 sg10
 I1
 sg11
@@ -16466,7 +16466,7 @@ S'10th & Monroe St NE'
 p1665
 sa(dp1666
 g3
-F0.1
+F0.11
 sg4
 F-77.00495
 sg5
@@ -16478,7 +16478,7 @@ F0.0
 sg8
 I11
 sg9
-F1.88
+F1.9
 sg10
 I2
 sg11
@@ -16486,7 +16486,7 @@ S'Eckington Pl & Q St NE'
 p1667
 sa(dp1668
 g3
-F0.09
+F0.08
 sg4
 F-76.99831
 sg5
@@ -16498,7 +16498,7 @@ F0.0
 sg8
 I23
 sg9
-F2.98
+F2.96
 sg10
 I3
 sg11
@@ -16514,11 +16514,11 @@ I96
 sg6
 F38.90002
 sg7
-F0.02
+F0.01
 sg8
 I19
 sg9
-F13.98
+F13.78
 sg10
 I14
 sg11
@@ -16526,7 +16526,7 @@ S'3rd & H St NE'
 p1671
 sa(dp1672
 g3
-F0.09
+F0.07
 sg4
 F-76.982872
 sg5
@@ -16538,7 +16538,7 @@ F0.0
 sg8
 I15
 sg9
-F1.9
+F1.98
 sg10
 I2
 sg11
@@ -16546,7 +16546,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p1673
 sa(dp1674
 g3
-F0.14
+F0.0
 sg4
 F-77.000349
 sg5
@@ -16554,19 +16554,19 @@ I98
 sg6
 F38.889955
 sg7
-F0.0
+F0.06
 sg8
 I11
 sg9
-F3.02
+F6.91
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p1675
 sa(dp1676
 g3
-F0.17
+F0.18
 sg4
 F-76.988355
 sg5
@@ -16578,7 +16578,7 @@ F0.0
 sg8
 I25
 sg9
-F3.22
+F3.07
 sg10
 I3
 sg11
@@ -16606,7 +16606,7 @@ S'Branch & Pennsylvania Ave SE'
 p1679
 sa(dp1680
 g3
-F0.29
+F0.28
 sg4
 F-76.987633
 sg5
@@ -16618,7 +16618,7 @@ F0.0
 sg8
 I31
 sg9
-F1.81
+F1.84
 sg10
 I2
 sg11
@@ -16626,7 +16626,7 @@ S'13th & D St NE'
 p1681
 sa(dp1682
 g3
-F0.82
+F0.85
 sg4
 F-77.03818
 sg5
@@ -16638,7 +16638,7 @@ F0.0
 sg8
 I23
 sg9
-F1.45
+F1.8
 sg10
 I0
 sg11
@@ -16658,9 +16658,9 @@ F0.0
 sg8
 I31
 sg9
-F16.11
+F15.17
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p1685
@@ -16678,9 +16678,9 @@ F0.0
 sg8
 I25
 sg9
-F15.67
+F16.81
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p1687
@@ -16698,9 +16698,9 @@ F0.0
 sg8
 I18
 sg9
-F7.31
+F8.41
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p1689
@@ -16718,9 +16718,9 @@ F0.0
 sg8
 I27
 sg9
-F19.03
+F20.01
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p1691
@@ -16738,9 +16738,9 @@ F0.0
 sg8
 I19
 sg9
-F10.94
+F11.91
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p1693
@@ -16758,7 +16758,7 @@ F0.0
 sg8
 I15
 sg9
-F9.71
+F9.81
 sg10
 I10
 sg11
@@ -16778,9 +16778,9 @@ F0.0
 sg8
 I23
 sg9
-F10.43
+F8.55
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p1697
@@ -16794,13 +16794,13 @@ I110
 sg6
 F38.90774
 sg7
-F0.04
+F0.13
 sg8
 I23
 sg9
-F19.41
+F20.13
 sg10
-I19
+I20
 sg11
 S'37th & O St NW / Georgetown University'
 p1699
@@ -16818,7 +16818,7 @@ F0.0
 sg8
 I18
 sg9
-F7.11
+F7.19
 sg10
 I7
 sg11
@@ -16826,7 +16826,7 @@ S'11th & H St NE'
 p1701
 sa(dp1702
 g3
-F0.02
+F0.04
 sg4
 F-77.053485
 sg5
@@ -16838,9 +16838,9 @@ F0.0
 sg8
 I14
 sg9
-F5.92
+F5.22
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p1703
@@ -16858,9 +16858,9 @@ F0.0
 sg8
 I31
 sg9
-F23.73
+F22.88
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p1705
@@ -16878,7 +16878,7 @@ F0.0
 sg8
 I23
 sg9
-F14.05
+F13.76
 sg10
 I14
 sg11
@@ -16886,7 +16886,7 @@ S'North Capitol St & F St NW'
 p1707
 sa(dp1708
 g3
-F0.65
+F0.37
 sg4
 F-77.027137
 sg5
@@ -16898,9 +16898,9 @@ F0.0
 sg8
 I18
 sg9
-F1.82
+F2.44
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p1709
@@ -16918,7 +16918,7 @@ F0.0
 sg8
 I15
 sg9
-F7.88
+F7.93
 sg10
 I8
 sg11
@@ -16934,9 +16934,9 @@ I117
 sg6
 F38.898069
 sg7
-F0.29
+F0.09
 sg8
-I22
+I23
 sg9
 F19.82
 sg10
@@ -16958,7 +16958,7 @@ F0.0
 sg8
 I23
 sg9
-F9.85
+F9.97
 sg10
 I10
 sg11
@@ -16966,7 +16966,7 @@ S'Potomac Ave & 35th St S'
 p1715
 sa(dp1716
 g3
-F0.86
+F0.61
 sg4
 F-77.04657
 sg5
@@ -16978,9 +16978,9 @@ F0.0
 sg8
 I23
 sg9
-F2.18
+F2.76
 sg10
-I0
+I2
 sg11
 S'Ohio Dr & West Basin Dr SW / MLK & FDR Memorials'
 p1717
@@ -16998,7 +16998,7 @@ F0.78
 sg8
 I15
 sg9
-F13.96
+F13.92
 sg10
 I15
 sg11
@@ -17018,7 +17018,7 @@ F0.0
 sg8
 I19
 sg9
-F11.5
+F11.46
 sg10
 I12
 sg11
@@ -17026,7 +17026,7 @@ S'23rd & E St NW '
 p1721
 sa(dp1722
 g3
-F0.02
+F0.01
 sg4
 F-77.070993
 sg5
@@ -17038,9 +17038,9 @@ F0.0
 sg8
 I18
 sg9
-F3.8
+F4.85
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p1723
@@ -17058,7 +17058,7 @@ F0.0
 sg8
 I15
 sg9
-F6.85
+F6.89
 sg10
 I7
 sg11
@@ -17078,7 +17078,7 @@ F0.0
 sg8
 I11
 sg9
-F2.9
+F2.87
 sg10
 I3
 sg11
@@ -17098,9 +17098,9 @@ F0.0
 sg8
 I15
 sg9
-F9.41
+F8.41
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p1729
@@ -17118,7 +17118,7 @@ F0.0
 sg8
 I11
 sg9
-F1.95
+F2.01
 sg10
 I2
 sg11
@@ -17138,7 +17138,7 @@ F0.0
 sg8
 I15
 sg9
-F4.01
+F4.04
 sg10
 I4
 sg11
@@ -17146,7 +17146,7 @@ S'Fairfax Village'
 p1733
 sa(dp1734
 g3
-F0.58
+F0.59
 sg4
 F-77.046567
 sg5
@@ -17158,7 +17158,7 @@ F0.0
 sg8
 I15
 sg9
-F1.53
+F1.38
 sg10
 I2
 sg11
@@ -17178,9 +17178,9 @@ F0.0
 sg8
 I15
 sg9
-F4.2
+F5.26
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p1737
@@ -17198,7 +17198,7 @@ F0.0
 sg8
 I19
 sg9
-F6.05
+F5.96
 sg10
 I6
 sg11
@@ -17206,7 +17206,7 @@ S'Columbia Rd & Belmont St NW'
 p1739
 sa(dp1740
 g3
-F0.02
+F0.04
 sg4
 F-77.038785
 sg5
@@ -17218,7 +17218,7 @@ F0.0
 sg8
 I23
 sg9
-F5.65
+F5.39
 sg10
 I6
 sg11
@@ -17226,7 +17226,7 @@ S'17th & Rhode Island Ave NW'
 p1741
 sa(dp1742
 g3
-F0.76
+F0.88
 sg4
 F-77.0325
 sg5
@@ -17238,9 +17238,9 @@ F0.0
 sg8
 I33
 sg9
-F1.56
+F1.65
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p1743
@@ -17258,9 +17258,9 @@ F0.0
 sg8
 I11
 sg9
-F5.73
+F7.85
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p1745
@@ -17274,13 +17274,13 @@ I139
 sg6
 F38.8881
 sg7
-F0.01
+F0.0
 sg8
 I14
 sg9
-F11.02
+F10.03
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p1747
@@ -17298,7 +17298,7 @@ F0.0
 sg8
 I17
 sg9
-F6.16
+F5.96
 sg10
 I6
 sg11
@@ -17318,9 +17318,9 @@ F0.0
 sg8
 I15
 sg9
-F5.57
+F5.04
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p1751
@@ -17338,15 +17338,15 @@ F0.0
 sg8
 I39
 sg9
-F17.7
+F18.51
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p1753
 sa(dp1754
 g3
-F0.65
+F0.82
 sg4
 F-77.017445
 sg5
@@ -17358,9 +17358,9 @@ F0.0
 sg8
 I17
 sg9
-F0.98
+F0.73
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p1755
@@ -17378,7 +17378,7 @@ F0.0
 sg8
 I19
 sg9
-F5.03
+F5.0
 sg10
 I5
 sg11
@@ -17386,7 +17386,7 @@ S'3rd & G St SE'
 p1757
 sa(dp1758
 g3
-F0.78
+F0.76
 sg4
 F-77.022155
 sg5
@@ -17398,7 +17398,7 @@ F0.0
 sg8
 I15
 sg9
-F1.05
+F1.19
 sg10
 I0
 sg11
@@ -17418,7 +17418,7 @@ F0.0
 sg8
 I15
 sg9
-F7.16
+F7.07
 sg10
 I7
 sg11
@@ -17426,7 +17426,7 @@ S'9th & Upshur St NW'
 p1761
 sa(dp1762
 g3
-F0.8
+F0.02
 sg4
 F-77.012289
 sg5
@@ -17438,15 +17438,15 @@ F0.0
 sg8
 I14
 sg9
-F1.0
+F3.98
 sg10
-I0
+I4
 sg11
 S'1st & Rhode Island Ave NW'
 p1763
 sa(dp1764
 g3
-F0.18
+F0.21
 sg4
 F-77.02344
 sg5
@@ -17458,7 +17458,7 @@ F0.0
 sg8
 I19
 sg9
-F2.04
+F2.06
 sg10
 I2
 sg11
@@ -17466,7 +17466,7 @@ S'Columbia Rd & Georgia Ave NW'
 p1765
 sa(dp1766
 g3
-F0.01
+F0.02
 sg4
 F-77.04062
 sg5
@@ -17478,9 +17478,9 @@ F0.0
 sg8
 I19
 sg9
-F6.24
+F4.9
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p1767
@@ -17498,7 +17498,7 @@ F0.0
 sg8
 I19
 sg9
-F5.97
+F5.98
 sg10
 I6
 sg11
@@ -17506,7 +17506,7 @@ S'Benning Rd & East Capitol St NE / Benning Rd Metro'
 p1769
 sa(dp1770
 g3
-F0.01
+F0.02
 sg4
 F-77.055599
 sg5
@@ -17518,7 +17518,7 @@ F0.0
 sg8
 I15
 sg9
-F5.25
+F5.05
 sg10
 I5
 sg11
@@ -17538,7 +17538,7 @@ F0.0
 sg8
 I15
 sg9
-F7.04
+F6.98
 sg10
 I7
 sg11
@@ -17554,11 +17554,11 @@ I153
 sg6
 F38.905126
 sg7
-F0.37
+F0.38
 sg8
 I18
 sg9
-F15.43
+F15.27
 sg10
 I15
 sg11
@@ -17566,7 +17566,7 @@ S'M St & Pennsylvania Ave NW'
 p1775
 sa(dp1776
 g3
-F0.72
+F0.63
 sg4
 F-76.983569
 sg5
@@ -17578,7 +17578,7 @@ F0.0
 sg8
 I15
 sg9
-F0.73
+F0.87
 sg10
 I0
 sg11
@@ -17618,7 +17618,7 @@ F0.0
 sg8
 I11
 sg9
-F3.94
+F4.04
 sg10
 I4
 sg11
@@ -17638,7 +17638,7 @@ F0.0
 sg8
 I11
 sg9
-F6.06
+F5.88
 sg10
 I6
 sg11
@@ -17658,7 +17658,7 @@ F0.0
 sg8
 I15
 sg9
-F6.96
+F6.93
 sg10
 I7
 sg11
@@ -17666,7 +17666,7 @@ S'N Veitch  & 20th St N'
 p1785
 sa(dp1786
 g3
-F0.39
+F0.09
 sg4
 F-77.02674
 sg5
@@ -17678,9 +17678,9 @@ F0.0
 sg8
 I18
 sg9
-F1.78
+F3.72
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p1787
@@ -17698,7 +17698,7 @@ F0.0
 sg8
 I11
 sg9
-F6.19
+F6.04
 sg10
 I6
 sg11
@@ -17718,9 +17718,9 @@ F0.0
 sg8
 I11
 sg9
-F6.98
+F7.96
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p1791
@@ -17738,7 +17738,7 @@ F0.0
 sg8
 I15
 sg9
-F3.26
+F3.39
 sg10
 I3
 sg11
@@ -17746,7 +17746,7 @@ S'1st & K St SE'
 p1793
 sa(dp1794
 g3
-F0.16
+F0.51
 sg4
 F-77.077271
 sg5
@@ -17758,9 +17758,9 @@ F0.0
 sg8
 I19
 sg9
-F2.35
+F1.3
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p1795
@@ -17778,7 +17778,7 @@ F0.0
 sg8
 I15
 sg9
-F3.0
+F2.93
 sg10
 I3
 sg11
@@ -17798,7 +17798,7 @@ F0.0
 sg8
 I19
 sg9
-F11.68
+F11.85
 sg10
 I12
 sg11
@@ -17818,7 +17818,7 @@ F0.0
 sg8
 I11
 sg9
-F7.01
+F6.96
 sg10
 I7
 sg11
@@ -17826,7 +17826,7 @@ S'Central Library / N Quincy St & 10th St N'
 p1801
 sa(dp1802
 g3
-F0.33
+F0.31
 sg4
 F-77.093485
 sg5
@@ -17838,7 +17838,7 @@ F0.0
 sg8
 I15
 sg9
-F0.98
+F1.04
 sg10
 I1
 sg11
@@ -17846,7 +17846,7 @@ S'Washington Blvd & 10th St N'
 p1803
 sa(dp1804
 g3
-F0.08
+F0.14
 sg4
 F-77.032429
 sg5
@@ -17858,9 +17858,9 @@ F0.0
 sg8
 I23
 sg9
-F7.34
+F6.95
 sg10
-I7
+I6
 sg11
 S'Jefferson Dr & 14th St SW'
 p1805
@@ -17878,9 +17878,9 @@ F0.02
 sg8
 I23
 sg9
-F13.95
+F14.72
 sg10
-I13
+I14
 sg11
 S'Smithsonian / Jefferson Dr & 12th St SW'
 p1807
@@ -17898,7 +17898,7 @@ F0.0
 sg8
 I15
 sg9
-F7.06
+F7.0
 sg10
 I7
 sg11
@@ -17914,13 +17914,13 @@ I171
 sg6
 F38.894573
 sg7
-F0.02
+F0.05
 sg8
 I18
 sg9
-F12.18
+F13.06
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p1811
@@ -17938,7 +17938,7 @@ F0.0
 sg8
 I11
 sg9
-F5.96
+F5.84
 sg10
 I6
 sg11
@@ -17958,7 +17958,7 @@ F0.0
 sg8
 I15
 sg9
-F2.96
+F2.92
 sg10
 I3
 sg11
@@ -17966,7 +17966,7 @@ S'N Adams St & Lee Hwy'
 p1815
 sa(dp1816
 g3
-F0.02
+F0.01
 sg4
 F-77.08095
 sg5
@@ -17978,7 +17978,7 @@ F0.0
 sg8
 I11
 sg9
-F2.66
+F2.8
 sg10
 I3
 sg11
@@ -18018,15 +18018,15 @@ F0.0
 sg8
 I19
 sg9
-F6.71
+F5.8
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p1821
 sa(dp1822
 g3
-F0.78
+F0.76
 sg4
 F-77.109366
 sg5
@@ -18038,7 +18038,7 @@ F0.0
 sg8
 I11
 sg9
-F0.41
+F0.44
 sg10
 I0
 sg11
@@ -18054,11 +18054,11 @@ I178
 sg6
 F38.879819
 sg7
-F0.01
+F0.02
 sg8
 I23
 sg9
-F15.4
+F15.66
 sg10
 I15
 sg11
@@ -18078,9 +18078,9 @@ F0.0
 sg8
 I15
 sg9
-F9.97
+F9.0
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p1827
@@ -18098,7 +18098,7 @@ F0.0
 sg8
 I11
 sg9
-F7.86
+F7.87
 sg10
 I8
 sg11
@@ -18118,7 +18118,7 @@ F0.0
 sg8
 I11
 sg9
-F5.96
+F5.88
 sg10
 I6
 sg11
@@ -18138,9 +18138,9 @@ F0.0
 sg8
 I11
 sg9
-F6.94
+F7.98
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p1833
@@ -18158,9 +18158,9 @@ F0.0
 sg8
 I19
 sg9
-F13.81
+F11.73
 sg10
-I14
+I12
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p1835
@@ -18178,15 +18178,15 @@ F0.0
 sg8
 I19
 sg9
-F14.78
+F13.88
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p1837
 sa(dp1838
 g3
-F0.56
+F0.73
 sg4
 F-77.0284
 sg5
@@ -18198,9 +18198,9 @@ F0.0
 sg8
 I19
 sg9
-F1.38
+F0.86
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p1839
@@ -18214,11 +18214,11 @@ I187
 sg6
 F38.901539
 sg7
-F0.63
+F0.67
 sg8
 I19
 sg9
-F18.3
+F18.36
 sg10
 I19
 sg11
@@ -18238,7 +18238,7 @@ F0.0
 sg8
 I22
 sg9
-F13.92
+F13.94
 sg10
 I14
 sg11
@@ -18258,7 +18258,7 @@ F0.0
 sg8
 I19
 sg9
-F8.43
+F8.51
 sg10
 I8
 sg11
@@ -18274,11 +18274,11 @@ I190
 sg6
 F38.804718
 sg7
-F0.0
+F0.02
 sg8
 I15
 sg9
-F10.96
+F11.1
 sg10
 I11
 sg11
@@ -18298,7 +18298,7 @@ F0.0
 sg8
 I14
 sg9
-F7.98
+F8.04
 sg10
 I8
 sg11
@@ -18318,7 +18318,7 @@ F0.0
 sg8
 I15
 sg9
-F6.16
+F6.08
 sg10
 I6
 sg11
@@ -18326,7 +18326,7 @@ S'King St & Patrick St'
 p1851
 sa(dp1852
 g3
-F0.03
+F0.08
 sg4
 F-77.03353
 sg5
@@ -18338,9 +18338,9 @@ F0.0
 sg8
 I19
 sg9
-F3.5
+F2.67
 sg10
-I4
+I3
 sg11
 S'15th & K St NW'
 p1853
@@ -18358,7 +18358,7 @@ F0.0
 sg8
 I15
 sg9
-F10.06
+F10.03
 sg10
 I10
 sg11
@@ -18378,7 +18378,7 @@ F0.0
 sg8
 I17
 sg9
-F8.98
+F8.94
 sg10
 I9
 sg11
@@ -18398,7 +18398,7 @@ F0.0
 sg8
 I19
 sg9
-F6.9
+F6.89
 sg10
 I7
 sg11
@@ -18418,7 +18418,7 @@ F0.0
 sg8
 I19
 sg9
-F4.96
+F4.87
 sg10
 I5
 sg11
@@ -18434,11 +18434,11 @@ I198
 sg6
 F38.9066
 sg7
-F0.68
+F0.65
 sg8
 I15
 sg9
-F14.2
+F14.13
 sg10
 I15
 sg11
@@ -18454,13 +18454,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.83
+F0.66
 sg8
 I15
 sg9
-F13.68
+F13.13
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p1865
@@ -18474,19 +18474,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.68
+F0.33
 sg8
 I14
 sg9
-F12.64
+F11.58
 sg10
-I13
+I12
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p1867
 sa(dp1868
 g3
-F0.05
+F0.04
 sg4
 F-77.113905
 sg5
@@ -18498,7 +18498,7 @@ F0.0
 sg8
 I11
 sg9
-F1.94
+F1.96
 sg10
 I2
 sg11
@@ -18518,15 +18518,15 @@ F0.0
 sg8
 I11
 sg9
-F7.02
+F6.06
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p1871
 sa(dp1872
 g3
-F0.68
+F0.76
 sg4
 F-77.077294
 sg5
@@ -18538,7 +18538,7 @@ F0.0
 sg8
 I11
 sg9
-F0.44
+F0.38
 sg10
 I0
 sg11
@@ -18546,7 +18546,7 @@ S'Arlington Blvd & N Queen St'
 p1873
 sa(dp1874
 g3
-F0.55
+F0.78
 sg4
 F-77.049426
 sg5
@@ -18558,9 +18558,9 @@ F0.0
 sg8
 I25
 sg9
-F4.52
+F3.94
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p1875
@@ -18578,7 +18578,7 @@ F0.0
 sg8
 I15
 sg9
-F7.8
+F7.81
 sg10
 I8
 sg11
@@ -18586,7 +18586,7 @@ S'20th St & Virginia Ave NW'
 p1877
 sa(dp1878
 g3
-F0.63
+F0.6
 sg4
 F-77.018677
 sg5
@@ -18598,7 +18598,7 @@ F0.0
 sg8
 I19
 sg9
-F1.61
+F1.71
 sg10
 I1
 sg11
@@ -18618,7 +18618,7 @@ F0.0
 sg8
 I15
 sg9
-F3.75
+F3.78
 sg10
 I4
 sg11
@@ -18638,7 +18638,7 @@ F0.0
 sg8
 I15
 sg9
-F7.8
+F7.9
 sg10
 I8
 sg11
@@ -18646,7 +18646,7 @@ S'Fessenden St & Wisconsin Ave NW'
 p1883
 sa(dp1884
 g3
-F0.0
+F0.01
 sg4
 F-77.003041
 sg5
@@ -18656,9 +18656,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F5.25
+F5.39
 sg10
 I6
 sg11
@@ -18678,7 +18678,7 @@ F0.0
 sg8
 I15
 sg9
-F6.72
+F6.64
 sg10
 I7
 sg11
@@ -18698,7 +18698,7 @@ F0.0
 sg8
 I11
 sg9
-F5.87
+F5.89
 sg10
 I6
 sg11
@@ -18718,7 +18718,7 @@ F0.0
 sg8
 I15
 sg9
-F5.8
+F5.83
 sg10
 I6
 sg11
@@ -18726,7 +18726,7 @@ S'28th St S & S Meade St'
 p1891
 sa(dp1892
 g3
-F0.86
+F0.8
 sg4
 F-77.041571
 sg5
@@ -18738,7 +18738,7 @@ F0.0
 sg8
 I23
 sg9
-F1.05
+F1.04
 sg10
 I0
 sg11
@@ -18758,7 +18758,7 @@ F0.0
 sg8
 I14
 sg9
-F8.84
+F8.81
 sg10
 I9
 sg11
@@ -18778,7 +18778,7 @@ F0.0
 sg8
 I19
 sg9
-F2.86
+F2.88
 sg10
 I3
 sg11
@@ -18798,7 +18798,7 @@ F0.0
 sg8
 I18
 sg9
-F2.8
+F2.73
 sg10
 I3
 sg11
@@ -18818,7 +18818,7 @@ F0.0
 sg8
 I19
 sg9
-F5.64
+F5.52
 sg10
 I6
 sg11
@@ -18838,7 +18838,7 @@ F0.0
 sg8
 I11
 sg9
-F4.94
+F4.91
 sg10
 I5
 sg11
@@ -18858,7 +18858,7 @@ F0.0
 sg8
 I11
 sg9
-F5.93
+F5.97
 sg10
 I6
 sg11
@@ -18878,7 +18878,7 @@ F0.0
 sg8
 I11
 sg9
-F5.0
+F4.97
 sg10
 I5
 sg11
@@ -18898,7 +18898,7 @@ F0.0
 sg8
 I10
 sg9
-F6.94
+F6.97
 sg10
 I7
 sg11
@@ -18918,7 +18918,7 @@ F0.0
 sg8
 I15
 sg9
-F8.02
+F8.05
 sg10
 I8
 sg11
@@ -18946,7 +18946,7 @@ S'S Kenmore & 24th St S'
 p1913
 sa(dp1914
 g3
-F0.88
+F0.83
 sg4
 F-77.065131
 sg5
@@ -18958,7 +18958,7 @@ F0.0
 sg8
 I19
 sg9
-F0.21
+F0.37
 sg10
 I0
 sg11
@@ -18978,9 +18978,9 @@ F0.0
 sg8
 I17
 sg9
-F9.77
+F8.94
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p1917
@@ -19006,7 +19006,7 @@ S'S George Mason Dr & 13th St S'
 p1919
 sa(dp1920
 g3
-F0.06
+F0.1
 sg4
 F-77.069956
 sg5
@@ -19018,7 +19018,7 @@ F0.0
 sg8
 I23
 sg9
-F2.05
+F2.03
 sg10
 I2
 sg11
@@ -19026,7 +19026,7 @@ S'Connecticut & Nebraska Ave NW'
 p1921
 sa(dp1922
 g3
-F0.11
+F0.15
 sg4
 F-77.038359
 sg5
@@ -19038,7 +19038,7 @@ F0.0
 sg8
 I19
 sg9
-F2.9
+F2.99
 sg10
 I3
 sg11
@@ -19046,7 +19046,7 @@ S'17th St & Massachusetts Ave NW'
 p1923
 sa(dp1924
 g3
-F0.77
+F0.81
 sg4
 F-77.0352
 sg5
@@ -19058,7 +19058,7 @@ F0.0
 sg8
 I15
 sg9
-F0.96
+F0.85
 sg10
 I0
 sg11
@@ -19066,7 +19066,7 @@ S'15th & Euclid St  NW'
 p1925
 sa(dp1926
 g3
-F0.0
+F0.01
 sg4
 F-76.995193
 sg5
@@ -19074,19 +19074,19 @@ I231
 sg6
 F38.889988
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F6.33
+F4.95
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p1927
 sa(dp1928
 g3
-F0.09
+F0.0
 sg4
 F-77.017669
 sg5
@@ -19098,9 +19098,9 @@ F0.0
 sg8
 I15
 sg9
-F2.83
+F5.75
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p1929
@@ -19118,7 +19118,7 @@ F0.0
 sg8
 I11
 sg9
-F5.1
+F4.82
 sg10
 I5
 sg11
@@ -19138,7 +19138,7 @@ F0.0
 sg8
 I15
 sg9
-F7.21
+F7.18
 sg10
 I7
 sg11
@@ -19158,7 +19158,7 @@ F0.0
 sg8
 I15
 sg9
-F7.87
+F7.86
 sg10
 I8
 sg11
@@ -19178,9 +19178,9 @@ F0.0
 sg8
 I19
 sg9
-F5.81
+F6.86
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p1937
@@ -19198,7 +19198,7 @@ F0.0
 sg8
 I15
 sg9
-F4.87
+F4.82
 sg10
 I5
 sg11
@@ -19218,7 +19218,7 @@ F0.0
 sg8
 I10
 sg9
-F4.05
+F4.02
 sg10
 I4
 sg11
@@ -19258,7 +19258,7 @@ F0.0
 sg8
 I11
 sg9
-F9.02
+F9.04
 sg10
 I9
 sg11
@@ -19278,7 +19278,7 @@ F0.0
 sg8
 I15
 sg9
-F4.99
+F5.06
 sg10
 I5
 sg11
@@ -19286,7 +19286,7 @@ S'Neal St & Trinidad Ave NE'
 p1947
 sa(dp1948
 g3
-F0.58
+F0.74
 sg4
 F-77.029779
 sg5
@@ -19298,9 +19298,9 @@ F0.0
 sg8
 I23
 sg9
-F1.84
+F1.35
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p1949
@@ -19318,7 +19318,7 @@ F0.0
 sg8
 I11
 sg9
-F3.92
+F3.99
 sg10
 I4
 sg11
@@ -19338,7 +19338,7 @@ F0.0
 sg8
 I15
 sg9
-F10.02
+F10.0
 sg10
 I10
 sg11
@@ -19358,7 +19358,7 @@ F0.0
 sg8
 I11
 sg9
-F6.07
+F6.05
 sg10
 I6
 sg11
@@ -19378,7 +19378,7 @@ F0.0
 sg8
 I11
 sg9
-F4.94
+F4.96
 sg10
 I5
 sg11
@@ -19398,7 +19398,7 @@ F0.0
 sg8
 I15
 sg9
-F6.97
+F7.49
 sg10
 I7
 sg11
@@ -19418,7 +19418,7 @@ F0.0
 sg8
 I15
 sg9
-F3.73
+F3.63
 sg10
 I3
 sg11
@@ -19438,9 +19438,9 @@ F0.0
 sg8
 I15
 sg9
-F5.93
+F4.82
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p1963
@@ -19458,7 +19458,7 @@ F0.0
 sg8
 I19
 sg9
-F6.78
+F6.86
 sg10
 I7
 sg11
@@ -19478,7 +19478,7 @@ F0.0
 sg8
 I27
 sg9
-F11.81
+F11.72
 sg10
 I12
 sg11
@@ -19509,7 +19509,7 @@ F0.0
 sg8
 I11
 sg9
-F2.99
+F3.02
 sg10
 I3
 sg11
@@ -19529,7 +19529,7 @@ F0.0
 sg8
 I9
 sg9
-F5.94
+F6.04
 sg10
 I6
 sg11
@@ -19549,9 +19549,9 @@ F0.0
 sg8
 I13
 sg9
-F6.9
+F5.96
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p1977
@@ -19569,7 +19569,7 @@ F0.0
 sg8
 I10
 sg9
-F6.97
+F6.98
 sg10
 I7
 sg11
@@ -19589,7 +19589,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F3.99
 sg10
 I4
 sg11
@@ -19609,7 +19609,7 @@ F0.0
 sg8
 I17
 sg9
-F9.02
+F9.05
 sg10
 I9
 sg11
@@ -19629,7 +19629,7 @@ F0.0
 sg8
 I10
 sg9
-F4.98
+F4.97
 sg10
 I5
 sg11
@@ -19649,9 +19649,9 @@ F0.0
 sg8
 I19
 sg9
-F10.04
+F9.01
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p1987
@@ -19677,7 +19677,7 @@ S'12th & Army Navy Dr'
 p1989
 sa(dp1990
 g3
-F0.09
+F0.13
 sg4
 F-77.051516
 sg5
@@ -19689,7 +19689,7 @@ F0.0
 sg8
 I11
 sg9
-F0.95
+F0.94
 sg10
 I1
 sg11
@@ -19709,7 +19709,7 @@ F0.0
 sg8
 I11
 sg9
-F8.0
+F8.02
 sg10
 I8
 sg11
@@ -19729,7 +19729,7 @@ F0.0
 sg8
 I16
 sg9
-F6.99
+F7.04
 sg10
 I7
 sg11
@@ -19749,7 +19749,7 @@ F0.0
 sg8
 I11
 sg9
-F3.01
+F2.99
 sg10
 I3
 sg11
@@ -19769,7 +19769,7 @@ F0.0
 sg8
 I15
 sg9
-F8.9
+F8.86
 sg10
 I9
 sg11
@@ -19777,7 +19777,7 @@ S'19th St & Pennsylvania Ave NW'
 p1999
 sa(dp2000
 g3
-F0.2
+F0.16
 sg4
 F-77.0321
 sg5
@@ -19789,7 +19789,7 @@ F0.0
 sg8
 I27
 sg9
-F2.28
+F2.3
 sg10
 I2
 sg11
@@ -19797,7 +19797,7 @@ S'14th & V St NW'
 p2001
 sa(dp2002
 g3
-F0.78
+F0.71
 sg4
 F-77.027822
 sg5
@@ -19809,7 +19809,7 @@ F0.0
 sg8
 I27
 sg9
-F0.41
+F0.49
 sg10
 I0
 sg11
@@ -19817,7 +19817,7 @@ S'11th & Kenyon St NW'
 p2003
 sa(dp2004
 g3
-F0.5
+F0.73
 sg4
 F-77.036536
 sg5
@@ -19829,15 +19829,15 @@ F0.0
 sg8
 I33
 sg9
-F1.04
+F0.61
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p2005
 sa(dp2006
 g3
-F0.21
+F0.53
 sg4
 F-77.042581
 sg5
@@ -19849,15 +19849,15 @@ F0.0
 sg8
 I15
 sg9
-F2.2
+F1.2
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p2007
 sa(dp2008
 g3
-F0.45
+F0.78
 sg4
 F-77.0322
 sg5
@@ -19869,15 +19869,15 @@ F0.0
 sg8
 I19
 sg9
-F1.1
+F0.52
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p2009
 sa(dp2010
 g3
-F0.13
+F0.16
 sg4
 F-77.0501
 sg5
@@ -19889,7 +19889,7 @@ F0.0
 sg8
 I23
 sg9
-F1.88
+F1.86
 sg10
 I2
 sg11
@@ -19897,7 +19897,7 @@ S'Calvert St & Woodley Pl NW'
 p2011
 sa(dp2012
 g3
-F0.72
+F0.73
 sg4
 F-77.0388
 sg5
@@ -19909,7 +19909,7 @@ F0.0
 sg8
 I19
 sg9
-F0.56
+F0.52
 sg10
 I0
 sg11
@@ -19917,7 +19917,7 @@ S'Lamont & Mt Pleasant NW'
 p2013
 sa(dp2014
 g3
-F0.38
+F0.39
 sg4
 F-77.0178
 sg5
@@ -19929,7 +19929,7 @@ F0.0
 sg8
 I19
 sg9
-F1.21
+F0.99
 sg10
 I1
 sg11
@@ -19949,15 +19949,15 @@ F0.0
 sg8
 I19
 sg9
-F7.01
+F8.04
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p2017
 sa(dp2018
 g3
-F0.02
+F0.03
 sg4
 F-77.031681
 sg5
@@ -19969,7 +19969,7 @@ F0.0
 sg8
 I15
 sg9
-F3.05
+F3.11
 sg10
 I3
 sg11
@@ -19977,7 +19977,7 @@ S'14th & R St NW'
 p2019
 sa(dp2020
 g3
-F0.02
+F0.49
 sg4
 F-77.0323
 sg5
@@ -19989,9 +19989,9 @@ F0.0
 sg8
 I23
 sg9
-F3.11
+F1.18
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p2021
@@ -20009,9 +20009,9 @@ F0.0
 sg8
 I15
 sg9
-F6.84
+F5.8
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p2023
@@ -20029,9 +20029,9 @@ F0.0
 sg8
 I35
 sg9
-F24.91
+F25.9
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p2025
@@ -20049,7 +20049,7 @@ F0.0
 sg8
 I13
 sg9
-F5.08
+F5.06
 sg10
 I5
 sg11
@@ -20069,7 +20069,7 @@ F0.0
 sg8
 I11
 sg9
-F7.11
+F6.99
 sg10
 I7
 sg11
@@ -20089,7 +20089,7 @@ F0.0
 sg8
 I11
 sg9
-F5.98
+F6.03
 sg10
 I6
 sg11
@@ -20097,7 +20097,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p2031
 sa(dp2032
 g3
-F0.13
+F0.43
 sg4
 F-77.019027
 sg5
@@ -20109,9 +20109,9 @@ F0.0
 sg8
 I19
 sg9
-F2.2
+F1.2
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p2033
@@ -20129,7 +20129,7 @@ F0.0
 sg8
 I15
 sg9
-F7.9
+F7.88
 sg10
 I8
 sg11
@@ -20149,9 +20149,9 @@ F0.0
 sg8
 I19
 sg9
-F7.14
+F9.09
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p2037
@@ -20167,9 +20167,9 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
-F1.01
+F1.0
 sg10
 I1
 sg11
@@ -20189,7 +20189,7 @@ F0.0
 sg8
 I11
 sg9
-F1.98
+F1.93
 sg10
 I2
 sg11
@@ -20229,7 +20229,7 @@ F0.0
 sg8
 I11
 sg9
-F7.0
+F6.99
 sg10
 I7
 sg11
@@ -20252,7 +20252,7 @@ F0.0
 sg8
 I11
 sg9
-F8.0
+F7.99
 sg10
 I8
 sg11
@@ -20280,7 +20280,7 @@ S'Good Hope Rd & MLK Ave SE'
 p2050
 sa(dp2051
 g3
-F0.02
+F0.03
 sg4
 F-77.0436
 sg5
@@ -20292,7 +20292,7 @@ F0.0
 sg8
 I11
 sg9
-F1.94
+F1.89
 sg10
 I2
 sg11
@@ -20312,7 +20312,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F4.01
 sg10
 I4
 sg11
@@ -20320,7 +20320,7 @@ S'4th St & Rhode Island Ave NE'
 p2054
 sa(dp2055
 g3
-F0.13
+F0.09
 sg4
 F-77.0259
 sg5
@@ -20332,7 +20332,7 @@ F0.0
 sg8
 I14
 sg9
-F2.1
+F2.12
 sg10
 I2
 sg11
@@ -20340,7 +20340,7 @@ S'10th & U St NW'
 p2056
 sa(dp2057
 g3
-F0.16
+F0.13
 sg4
 F-77.0222
 sg5
@@ -20360,7 +20360,7 @@ S'Georgia Ave and Fairmont St NW'
 p2058
 sa(dp2059
 g3
-F0.84
+F0.83
 sg4
 F-77.0057
 sg5
@@ -20372,7 +20372,7 @@ F0.0
 sg8
 I23
 sg9
-F0.17
+F0.21
 sg10
 I0
 sg11
@@ -20380,7 +20380,7 @@ S'1st & N St  SE'
 p2060
 sa(dp2061
 g3
-F0.02
+F0.04
 sg4
 F-77.0446
 sg5
@@ -20392,7 +20392,7 @@ F0.0
 sg8
 I15
 sg9
-F3.01
+F3.07
 sg10
 I3
 sg11
@@ -20400,7 +20400,7 @@ S'20th St & Florida Ave NW'
 p2062
 sa(dp2063
 g3
-F0.73
+F0.72
 sg4
 F-77.0222
 sg5
@@ -20412,7 +20412,7 @@ F0.0
 sg8
 I14
 sg9
-F0.45
+F0.47
 sg10
 I0
 sg11
@@ -20452,9 +20452,9 @@ F0.0
 sg8
 I15
 sg9
-F5.95
+F9.92
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p2068
@@ -20472,9 +20472,9 @@ F0.0
 sg8
 I41
 sg9
-F15.09
+F12.96
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p2070
@@ -20492,9 +20492,9 @@ F0.0
 sg8
 I15
 sg9
-F4.75
+F5.82
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p2072
@@ -20512,7 +20512,7 @@ F0.0
 sg8
 I19
 sg9
-F9.78
+F9.67
 sg10
 I10
 sg11
@@ -20532,15 +20532,15 @@ F0.0
 sg8
 I17
 sg9
-F10.97
+F12.02
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p2076
 sa(dp2077
 g3
-F0.1
+F0.01
 sg4
 F-77.016
 sg5
@@ -20552,9 +20552,9 @@ F0.0
 sg8
 I15
 sg9
-F2.0
+F2.98
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p2078
@@ -20572,7 +20572,7 @@ F0.0
 sg8
 I11
 sg9
-F3.93
+F3.94
 sg10
 I4
 sg11
@@ -20580,7 +20580,7 @@ S'3rd & D St SE'
 p2080
 sa(dp2081
 g3
-F0.0
+F0.02
 sg4
 F-76.9862
 sg5
@@ -20592,9 +20592,9 @@ F0.0
 sg8
 I15
 sg9
-F3.83
+F2.96
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p2082
@@ -20612,7 +20612,7 @@ F0.0
 sg8
 I15
 sg9
-F2.84
+F2.87
 sg10
 I3
 sg11
@@ -20620,7 +20620,7 @@ S'14th & D St SE'
 p2084
 sa(dp2085
 g3
-F0.04
+F0.0
 sg4
 F-77.0387
 sg5
@@ -20632,9 +20632,9 @@ F0.0
 sg8
 I19
 sg9
-F4.02
+F5.08
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p2086
@@ -20648,11 +20648,11 @@ I60
 sg6
 F38.944551
 sg7
-F0.02
+F0.01
 sg8
 I15
 sg9
-F12.96
+F12.92
 sg10
 I13
 sg11
@@ -20660,7 +20660,7 @@ S'Van Ness Metro / UDC'
 p2088
 sa(dp2089
 g3
-F0.35
+F0.4
 sg4
 F-77.0135
 sg5
@@ -20672,7 +20672,7 @@ F0.0
 sg8
 I15
 sg9
-F1.14
+F1.01
 sg10
 I1
 sg11
@@ -20692,7 +20692,7 @@ F0.0
 sg8
 I11
 sg9
-F5.91
+F6.03
 sg10
 I6
 sg11
@@ -20712,7 +20712,7 @@ F0.0
 sg8
 I15
 sg9
-F9.95
+F9.98
 sg10
 I10
 sg11
@@ -20720,7 +20720,7 @@ S'Ward Circle / American University'
 p2094
 sa(dp2095
 g3
-F0.16
+F0.19
 sg4
 F-77.074647
 sg5
@@ -20732,7 +20732,7 @@ F0.0
 sg8
 I15
 sg9
-F1.28
+F1.14
 sg10
 I1
 sg11
@@ -20752,7 +20752,7 @@ F0.0
 sg8
 I10
 sg9
-F3.06
+F3.07
 sg10
 I3
 sg11
@@ -20772,7 +20772,7 @@ F0.0
 sg8
 I11
 sg9
-F2.98
+F3.0
 sg10
 I3
 sg11
@@ -20792,7 +20792,7 @@ F0.0
 sg8
 I10
 sg9
-F3.98
+F4.0
 sg10
 I4
 sg11
@@ -20808,13 +20808,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.0
+F0.01
 sg8
 I15
 sg9
-F9.13
+F10.21
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p2104
@@ -20828,13 +20828,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.24
+F0.78
 sg8
 I17
 sg9
-F15.87
+F16.6
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p2106
@@ -20852,7 +20852,7 @@ F0.0
 sg8
 I11
 sg9
-F9.0
+F9.02
 sg10
 I9
 sg11
@@ -20872,7 +20872,7 @@ F0.0
 sg8
 I39
 sg9
-F25.08
+F25.12
 sg10
 I25
 sg11
@@ -20892,9 +20892,9 @@ F0.0
 sg8
 I18
 sg9
-F7.83
+F9.7
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p2112
@@ -20912,7 +20912,7 @@ F0.0
 sg8
 I11
 sg9
-F1.96
+F1.99
 sg10
 I2
 sg11
@@ -20932,7 +20932,7 @@ F0.0
 sg8
 I15
 sg9
-F2.96
+F2.89
 sg10
 I3
 sg11
@@ -20952,7 +20952,7 @@ F0.0
 sg8
 I15
 sg9
-F9.88
+F9.99
 sg10
 I10
 sg11
@@ -20970,11 +20970,11 @@ F38.893028
 sg7
 F0.0
 sg8
-I31
+I30
 sg9
-F22.35
+F24.37
 sg10
-I22
+I24
 sg11
 S'10th St & Constitution Ave NW'
 p2120
@@ -20992,7 +20992,7 @@ F0.0
 sg8
 I11
 sg9
-F4.97
+F5.0
 sg10
 I5
 sg11
@@ -21008,13 +21008,13 @@ I78
 sg6
 F38.884
 sg7
-F0.06
+F0.74
 sg8
 I19
 sg9
-F15.87
+F18.21
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p2124
@@ -21032,7 +21032,7 @@ F0.33
 sg8
 I19
 sg9
-F17.83
+F17.88
 sg10
 I18
 sg11
@@ -21052,7 +21052,7 @@ F0.0
 sg8
 I14
 sg9
-F8.1
+F7.98
 sg10
 I8
 sg11
@@ -21060,7 +21060,7 @@ S'Tenleytown / Wisconsin Ave & Albemarle St NW'
 p2128
 sa(dp2129
 g3
-F0.01
+F0.0
 sg4
 F-76.9882
 sg5
@@ -21072,7 +21072,7 @@ F0.0
 sg8
 I27
 sg9
-F3.88
+F3.97
 sg10
 I4
 sg11
@@ -21092,9 +21092,9 @@ F0.0
 sg8
 I31
 sg9
-F14.05
+F13.08
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p2132
@@ -21112,7 +21112,7 @@ F0.0
 sg8
 I15
 sg9
-F8.88
+F8.82
 sg10
 I9
 sg11
@@ -21120,7 +21120,7 @@ S'New York Ave & 15th St NW'
 p2134
 sa(dp2135
 g3
-F0.35
+F0.68
 sg4
 F-77.022264
 sg5
@@ -21132,9 +21132,9 @@ F0.0
 sg8
 I18
 sg9
-F1.22
+F0.59
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p2136
@@ -21152,9 +21152,9 @@ F0.0
 sg8
 I15
 sg9
-F4.01
+F4.8
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p2138
@@ -21172,9 +21172,9 @@ F0.0
 sg8
 I15
 sg9
-F2.97
+F3.93
 sg10
-I3
+I4
 sg11
 S'19th & L St NW'
 p2140
@@ -21192,9 +21192,9 @@ F0.0
 sg8
 I22
 sg9
-F12.9
+F15.92
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p2142
@@ -21212,7 +21212,7 @@ F0.0
 sg8
 I19
 sg9
-F9.96
+F9.89
 sg10
 I10
 sg11
@@ -21220,7 +21220,7 @@ S'7th & Water St SW / SW Waterfront'
 p2144
 sa(dp2145
 g3
-F0.04
+F0.02
 sg4
 F-76.997114
 sg5
@@ -21232,7 +21232,7 @@ F0.0
 sg8
 I22
 sg9
-F2.88
+F3.04
 sg10
 I3
 sg11
@@ -21240,7 +21240,7 @@ S'D St & Maryland Ave NE'
 p2146
 sa(dp2147
 g3
-F0.83
+F0.82
 sg4
 F-77.0682
 sg5
@@ -21252,7 +21252,7 @@ F0.0
 sg8
 I11
 sg9
-F0.24
+F0.26
 sg10
 I0
 sg11
@@ -21272,7 +21272,7 @@ F0.0
 sg8
 I22
 sg9
-F11.8
+F11.83
 sg10
 I12
 sg11
@@ -21292,7 +21292,7 @@ F0.0
 sg8
 I33
 sg9
-F17.29
+F17.1
 sg10
 I17
 sg11
@@ -21300,7 +21300,7 @@ S'8th & H St NW'
 p2152
 sa(dp2153
 g3
-F0.11
+F0.13
 sg4
 F-76.992889
 sg5
@@ -21312,7 +21312,7 @@ F0.0
 sg8
 I11
 sg9
-F1.05
+F0.98
 sg10
 I1
 sg11
@@ -21332,7 +21332,7 @@ F0.0
 sg8
 I11
 sg9
-F1.94
+F1.89
 sg10
 I2
 sg11
@@ -21340,7 +21340,7 @@ S'Eckington Pl & Q St NE'
 p2156
 sa(dp2157
 g3
-F0.02
+F0.0
 sg4
 F-76.99831
 sg5
@@ -21352,7 +21352,7 @@ F0.0
 sg8
 I23
 sg9
-F2.89
+F2.98
 sg10
 I3
 sg11
@@ -21372,7 +21372,7 @@ F0.0
 sg8
 I19
 sg9
-F13.98
+F13.91
 sg10
 I14
 sg11
@@ -21380,7 +21380,7 @@ S'3rd & H St NE'
 p2160
 sa(dp2161
 g3
-F0.03
+F0.02
 sg4
 F-76.982872
 sg5
@@ -21392,7 +21392,7 @@ F0.0
 sg8
 I15
 sg9
-F1.97
+F1.99
 sg10
 I2
 sg11
@@ -21400,7 +21400,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p2162
 sa(dp2163
 g3
-F0.02
+F0.0
 sg4
 F-77.000349
 sg5
@@ -21412,15 +21412,15 @@ F0.0
 sg8
 I11
 sg9
-F3.03
+F6.88
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p2164
 sa(dp2165
 g3
-F0.04
+F0.03
 sg4
 F-76.988355
 sg5
@@ -21432,7 +21432,7 @@ F0.0
 sg8
 I25
 sg9
-F2.92
+F2.97
 sg10
 I3
 sg11
@@ -21452,7 +21452,7 @@ F0.0
 sg8
 I10
 sg9
-F4.0
+F3.99
 sg10
 I4
 sg11
@@ -21472,7 +21472,7 @@ F0.0
 sg8
 I31
 sg9
-F1.9
+F1.93
 sg10
 I2
 sg11
@@ -21492,7 +21492,7 @@ F0.0
 sg8
 I23
 sg9
-F0.82
+F0.8
 sg10
 I0
 sg11
@@ -21512,9 +21512,9 @@ F0.0
 sg8
 I31
 sg9
-F15.98
+F14.94
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p2174
@@ -21532,9 +21532,9 @@ F0.0
 sg8
 I25
 sg9
-F15.96
+F16.93
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p2176
@@ -21552,9 +21552,9 @@ F0.0
 sg8
 I18
 sg9
-F7.1
+F8.1
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p2178
@@ -21572,9 +21572,9 @@ F0.0
 sg8
 I27
 sg9
-F19.09
+F19.97
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p2180
@@ -21592,9 +21592,9 @@ F0.0
 sg8
 I19
 sg9
-F11.02
+F11.82
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p2182
@@ -21612,7 +21612,7 @@ F0.0
 sg8
 I15
 sg9
-F9.93
+F9.98
 sg10
 I10
 sg11
@@ -21632,9 +21632,9 @@ F0.0
 sg8
 I23
 sg9
-F10.85
+F8.79
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p2186
@@ -21652,7 +21652,7 @@ F0.0
 sg8
 I23
 sg9
-F19.02
+F18.97
 sg10
 I19
 sg11
@@ -21672,9 +21672,9 @@ F0.0
 sg8
 I18
 sg9
-F7.02
+F8.07
 sg10
-I7
+I8
 sg11
 S'11th & H St NE'
 p2190
@@ -21692,9 +21692,9 @@ F0.0
 sg8
 I14
 sg9
-F6.08
+F5.06
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p2192
@@ -21712,9 +21712,9 @@ F0.0
 sg8
 I31
 sg9
-F23.8
+F22.74
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p2194
@@ -21732,7 +21732,7 @@ F0.0
 sg8
 I23
 sg9
-F13.85
+F13.84
 sg10
 I14
 sg11
@@ -21740,7 +21740,7 @@ S'North Capitol St & F St NW'
 p2196
 sa(dp2197
 g3
-F0.42
+F0.12
 sg4
 F-77.027137
 sg5
@@ -21752,9 +21752,9 @@ F0.0
 sg8
 I18
 sg9
-F1.3
+F2.16
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p2198
@@ -21772,7 +21772,7 @@ F0.0
 sg8
 I15
 sg9
-F7.92
+F7.99
 sg10
 I8
 sg11
@@ -21788,11 +21788,11 @@ I117
 sg6
 F38.898069
 sg7
-F0.1
+F0.02
 sg8
-I22
+I23
 sg9
-F19.98
+F19.92
 sg10
 I20
 sg11
@@ -21812,7 +21812,7 @@ F0.0
 sg8
 I23
 sg9
-F9.95
+F9.93
 sg10
 I10
 sg11
@@ -21820,7 +21820,7 @@ S'Potomac Ave & 35th St S'
 p2204
 sa(dp2205
 g3
-F0.76
+F0.8
 sg4
 F-77.04657
 sg5
@@ -21832,7 +21832,7 @@ F0.0
 sg8
 I23
 sg9
-F1.01
+F1.02
 sg10
 I0
 sg11
@@ -21848,7 +21848,7 @@ I125
 sg6
 F38.897857
 sg7
-F0.74
+F0.75
 sg8
 I15
 sg9
@@ -21872,7 +21872,7 @@ F0.0
 sg8
 I19
 sg9
-F11.83
+F11.88
 sg10
 I12
 sg11
@@ -21892,9 +21892,9 @@ F0.0
 sg8
 I18
 sg9
-F3.86
+F4.96
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p2212
@@ -21912,7 +21912,7 @@ F0.0
 sg8
 I15
 sg9
-F6.92
+F6.98
 sg10
 I7
 sg11
@@ -21952,15 +21952,15 @@ F0.0
 sg8
 I15
 sg9
-F9.91
+F8.83
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p2218
 sa(dp2219
 g3
-F0.01
+F0.0
 sg4
 F-77.079375
 sg5
@@ -21972,7 +21972,7 @@ F0.0
 sg8
 I11
 sg9
-F1.94
+F2.02
 sg10
 I2
 sg11
@@ -21992,7 +21992,7 @@ F0.0
 sg8
 I15
 sg9
-F4.01
+F3.99
 sg10
 I4
 sg11
@@ -22000,7 +22000,7 @@ S'Fairfax Village'
 p2222
 sa(dp2223
 g3
-F0.2
+F0.23
 sg4
 F-77.046567
 sg5
@@ -22012,7 +22012,7 @@ F0.0
 sg8
 I15
 sg9
-F1.73
+F1.68
 sg10
 I2
 sg11
@@ -22032,9 +22032,9 @@ F0.0
 sg8
 I15
 sg9
-F4.04
+F5.07
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p2226
@@ -22052,7 +22052,7 @@ F0.0
 sg8
 I19
 sg9
-F5.97
+F6.12
 sg10
 I6
 sg11
@@ -22072,7 +22072,7 @@ F0.0
 sg8
 I23
 sg9
-F5.76
+F5.77
 sg10
 I6
 sg11
@@ -22080,7 +22080,7 @@ S'17th & Rhode Island Ave NW'
 p2230
 sa(dp2231
 g3
-F0.55
+F0.78
 sg4
 F-77.0325
 sg5
@@ -22092,9 +22092,9 @@ F0.0
 sg8
 I33
 sg9
-F1.08
+F0.64
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p2232
@@ -22112,9 +22112,9 @@ F0.0
 sg8
 I11
 sg9
-F6.04
+F7.9
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p2234
@@ -22132,9 +22132,9 @@ F0.0
 sg8
 I14
 sg9
-F10.98
+F9.98
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p2236
@@ -22152,7 +22152,7 @@ F0.0
 sg8
 I17
 sg9
-F6.11
+F6.06
 sg10
 I6
 sg11
@@ -22172,9 +22172,9 @@ F0.0
 sg8
 I15
 sg9
-F5.96
+F4.8
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p2240
@@ -22192,15 +22192,15 @@ F0.0
 sg8
 I39
 sg9
-F16.55
+F17.63
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p2242
 sa(dp2243
 g3
-F0.33
+F0.85
 sg4
 F-77.017445
 sg5
@@ -22212,9 +22212,9 @@ F0.0
 sg8
 I17
 sg9
-F0.92
+F0.27
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p2244
@@ -22232,7 +22232,7 @@ F0.0
 sg8
 I19
 sg9
-F5.06
+F4.98
 sg10
 I5
 sg11
@@ -22240,7 +22240,7 @@ S'3rd & G St SE'
 p2246
 sa(dp2247
 g3
-F0.76
+F0.71
 sg4
 F-77.022155
 sg5
@@ -22252,7 +22252,7 @@ F0.0
 sg8
 I15
 sg9
-F0.44
+F0.46
 sg10
 I0
 sg11
@@ -22272,15 +22272,15 @@ F0.0
 sg8
 I15
 sg9
-F7.04
+F7.98
 sg10
-I7
+I8
 sg11
 S'9th & Upshur St NW'
 p2250
 sa(dp2251
 g3
-F0.78
+F0.12
 sg4
 F-77.012289
 sg5
@@ -22292,15 +22292,15 @@ F0.0
 sg8
 I14
 sg9
-F0.43
+F2.02
 sg10
-I0
+I2
 sg11
 S'1st & Rhode Island Ave NW'
 p2252
 sa(dp2253
 g3
-F0.06
+F0.05
 sg4
 F-77.02344
 sg5
@@ -22312,7 +22312,7 @@ F0.0
 sg8
 I19
 sg9
-F1.97
+F2.04
 sg10
 I2
 sg11
@@ -22332,9 +22332,9 @@ F0.0
 sg8
 I19
 sg9
-F6.01
+F5.08
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p2256
@@ -22372,7 +22372,7 @@ F0.0
 sg8
 I15
 sg9
-F5.21
+F5.04
 sg10
 I5
 sg11
@@ -22392,7 +22392,7 @@ F0.0
 sg8
 I15
 sg9
-F7.0
+F6.96
 sg10
 I7
 sg11
@@ -22408,11 +22408,11 @@ I153
 sg6
 F38.905126
 sg7
-F0.08
+F0.1
 sg8
 I18
 sg9
-F15.18
+F15.35
 sg10
 I15
 sg11
@@ -22420,7 +22420,7 @@ S'M St & Pennsylvania Ave NW'
 p2264
 sa(dp2265
 g3
-F0.83
+F0.8
 sg4
 F-76.983569
 sg5
@@ -22432,7 +22432,7 @@ F0.0
 sg8
 I15
 sg9
-F0.24
+F0.28
 sg10
 I0
 sg11
@@ -22452,7 +22452,7 @@ F0.0
 sg8
 I15
 sg9
-F2.99
+F2.98
 sg10
 I3
 sg11
@@ -22472,7 +22472,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F3.97
 sg10
 I4
 sg11
@@ -22492,7 +22492,7 @@ F0.0
 sg8
 I11
 sg9
-F6.02
+F5.97
 sg10
 I6
 sg11
@@ -22512,7 +22512,7 @@ F0.0
 sg8
 I15
 sg9
-F7.0
+F6.97
 sg10
 I7
 sg11
@@ -22520,7 +22520,7 @@ S'N Veitch  & 20th St N'
 p2274
 sa(dp2275
 g3
-F0.14
+F0.0
 sg4
 F-77.02674
 sg5
@@ -22532,9 +22532,9 @@ F0.0
 sg8
 I18
 sg9
-F1.82
+F3.79
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p2276
@@ -22552,7 +22552,7 @@ F0.0
 sg8
 I11
 sg9
-F6.05
+F6.13
 sg10
 I6
 sg11
@@ -22572,15 +22572,15 @@ F0.0
 sg8
 I11
 sg9
-F7.0
+F7.96
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p2280
 sa(dp2281
 g3
-F0.1
+F0.01
 sg4
 F-77.006004
 sg5
@@ -22592,15 +22592,15 @@ F0.0
 sg8
 I15
 sg9
-F2.04
+F3.03
 sg10
-I2
+I3
 sg11
 S'1st & K St SE'
 p2282
 sa(dp2283
 g3
-F0.02
+F0.22
 sg4
 F-77.077271
 sg5
@@ -22612,9 +22612,9 @@ F0.0
 sg8
 I19
 sg9
-F2.12
+F1.12
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p2284
@@ -22632,7 +22632,7 @@ F0.0
 sg8
 I15
 sg9
-F3.0
+F2.99
 sg10
 I3
 sg11
@@ -22652,7 +22652,7 @@ F0.0
 sg8
 I19
 sg9
-F11.91
+F11.97
 sg10
 I12
 sg11
@@ -22672,7 +22672,7 @@ F0.0
 sg8
 I11
 sg9
-F7.06
+F7.04
 sg10
 I7
 sg11
@@ -22680,7 +22680,7 @@ S'Central Library / N Quincy St & 10th St N'
 p2290
 sa(dp2291
 g3
-F0.16
+F0.14
 sg4
 F-77.093485
 sg5
@@ -22692,7 +22692,7 @@ F0.0
 sg8
 I15
 sg9
-F0.99
+F1.02
 sg10
 I1
 sg11
@@ -22700,7 +22700,7 @@ S'Washington Blvd & 10th St N'
 p2292
 sa(dp2293
 g3
-F0.0
+F0.03
 sg4
 F-77.032429
 sg5
@@ -22712,9 +22712,9 @@ F0.0
 sg8
 I23
 sg9
-F6.97
+F5.12
 sg10
-I7
+I5
 sg11
 S'Jefferson Dr & 14th St SW'
 p2294
@@ -22732,7 +22732,7 @@ F0.0
 sg8
 I23
 sg9
-F13.25
+F13.02
 sg10
 I13
 sg11
@@ -22752,7 +22752,7 @@ F0.0
 sg8
 I15
 sg9
-F7.02
+F7.05
 sg10
 I7
 sg11
@@ -22772,9 +22772,9 @@ F0.0
 sg8
 I18
 sg9
-F11.99
+F12.94
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p2300
@@ -22792,7 +22792,7 @@ F0.0
 sg8
 I11
 sg9
-F5.95
+F6.0
 sg10
 I6
 sg11
@@ -22812,7 +22812,7 @@ F0.0
 sg8
 I15
 sg9
-F2.99
+F3.07
 sg10
 I3
 sg11
@@ -22852,7 +22852,7 @@ F0.0
 sg8
 I11
 sg9
-F4.98
+F5.01
 sg10
 I5
 sg11
@@ -22872,15 +22872,15 @@ F0.0
 sg8
 I19
 sg9
-F6.92
+F5.94
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p2310
 sa(dp2311
 g3
-F0.88
+F0.89
 sg4
 F-77.109366
 sg5
@@ -22892,7 +22892,7 @@ F0.0
 sg8
 I11
 sg9
-F0.16
+F0.12
 sg10
 I0
 sg11
@@ -22912,9 +22912,9 @@ F0.0
 sg8
 I23
 sg9
-F15.12
+F13.11
 sg10
-I15
+I13
 sg11
 S'Jefferson Memorial'
 p2314
@@ -22932,9 +22932,9 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F9.0
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p2316
@@ -22952,7 +22952,7 @@ F0.0
 sg8
 I11
 sg9
-F7.92
+F8.0
 sg10
 I8
 sg11
@@ -22972,7 +22972,7 @@ F0.0
 sg8
 I11
 sg9
-F5.99
+F5.98
 sg10
 I6
 sg11
@@ -22992,9 +22992,9 @@ F0.0
 sg8
 I11
 sg9
-F6.98
+F7.96
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p2322
@@ -23012,9 +23012,9 @@ F0.0
 sg8
 I19
 sg9
-F14.93
+F13.92
 sg10
-I15
+I14
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p2324
@@ -23032,15 +23032,15 @@ F0.0
 sg8
 I19
 sg9
-F14.9
+F13.92
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p2326
 sa(dp2327
 g3
-F0.29
+F0.77
 sg4
 F-77.0284
 sg5
@@ -23052,9 +23052,9 @@ F0.0
 sg8
 I19
 sg9
-F1.05
+F0.37
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p2328
@@ -23072,7 +23072,7 @@ F0.79
 sg8
 I19
 sg9
-F18.7
+F18.67
 sg10
 I19
 sg11
@@ -23092,7 +23092,7 @@ F0.0
 sg8
 I22
 sg9
-F13.95
+F13.93
 sg10
 I14
 sg11
@@ -23112,7 +23112,7 @@ F0.0
 sg8
 I19
 sg9
-F8.25
+F8.14
 sg10
 I8
 sg11
@@ -23132,7 +23132,7 @@ F0.0
 sg8
 I15
 sg9
-F11.08
+F11.1
 sg10
 I11
 sg11
@@ -23152,7 +23152,7 @@ F0.0
 sg8
 I14
 sg9
-F8.01
+F8.0
 sg10
 I8
 sg11
@@ -23192,9 +23192,9 @@ F0.0
 sg8
 I19
 sg9
-F3.86
+F2.85
 sg10
-I4
+I3
 sg11
 S'15th & K St NW'
 p2342
@@ -23212,7 +23212,7 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F10.02
 sg10
 I10
 sg11
@@ -23232,7 +23232,7 @@ F0.0
 sg8
 I17
 sg9
-F8.96
+F9.0
 sg10
 I9
 sg11
@@ -23252,7 +23252,7 @@ F0.0
 sg8
 I19
 sg9
-F7.01
+F6.97
 sg10
 I7
 sg11
@@ -23272,7 +23272,7 @@ F0.0
 sg8
 I19
 sg9
-F4.88
+F4.89
 sg10
 I5
 sg11
@@ -23288,13 +23288,13 @@ I198
 sg6
 F38.9066
 sg7
-F0.22
+F0.71
 sg8
 I15
 sg9
-F13.89
+F14.63
 sg10
-I14
+I15
 sg11
 S'24th & N St NW'
 p2352
@@ -23308,13 +23308,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.73
+F0.41
 sg8
 I15
 sg9
-F14.42
+F13.73
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p2354
@@ -23328,19 +23328,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.44
+F0.08
 sg8
 I14
 sg9
-F12.99
+F11.9
 sg10
-I13
+I12
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p2356
 sa(dp2357
 g3
-F0.0
+F0.01
 sg4
 F-77.113905
 sg5
@@ -23352,7 +23352,7 @@ F0.0
 sg8
 I11
 sg9
-F2.02
+F1.95
 sg10
 I2
 sg11
@@ -23372,15 +23372,15 @@ F0.0
 sg8
 I11
 sg9
-F7.02
+F5.98
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p2360
 sa(dp2361
 g3
-F0.88
+F0.86
 sg4
 F-77.077294
 sg5
@@ -23392,7 +23392,7 @@ F0.0
 sg8
 I11
 sg9
-F0.14
+F0.17
 sg10
 I0
 sg11
@@ -23400,7 +23400,7 @@ S'Arlington Blvd & N Queen St'
 p2362
 sa(dp2363
 g3
-F0.27
+F0.57
 sg4
 F-77.049426
 sg5
@@ -23412,9 +23412,9 @@ F0.0
 sg8
 I25
 sg9
-F3.63
+F2.78
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p2364
@@ -23432,7 +23432,7 @@ F0.0
 sg8
 I15
 sg9
-F7.97
+F7.96
 sg10
 I8
 sg11
@@ -23440,7 +23440,7 @@ S'20th St & Virginia Ave NW'
 p2366
 sa(dp2367
 g3
-F0.43
+F0.37
 sg4
 F-77.018677
 sg5
@@ -23452,7 +23452,7 @@ F0.0
 sg8
 I19
 sg9
-F1.11
+F1.23
 sg10
 I1
 sg11
@@ -23472,7 +23472,7 @@ F0.0
 sg8
 I15
 sg9
-F3.96
+F3.95
 sg10
 I4
 sg11
@@ -23510,9 +23510,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F5.67
+F5.81
 sg10
 I6
 sg11
@@ -23532,7 +23532,7 @@ F0.0
 sg8
 I15
 sg9
-F6.89
+F6.88
 sg10
 I7
 sg11
@@ -23552,7 +23552,7 @@ F0.0
 sg8
 I11
 sg9
-F5.95
+F5.96
 sg10
 I6
 sg11
@@ -23572,7 +23572,7 @@ F0.0
 sg8
 I15
 sg9
-F5.94
+F5.91
 sg10
 I6
 sg11
@@ -23580,7 +23580,7 @@ S'28th St S & S Meade St'
 p2380
 sa(dp2381
 g3
-F0.73
+F0.76
 sg4
 F-77.041571
 sg5
@@ -23592,7 +23592,7 @@ F0.0
 sg8
 I23
 sg9
-F0.55
+F0.56
 sg10
 I0
 sg11
@@ -23612,7 +23612,7 @@ F0.0
 sg8
 I14
 sg9
-F8.98
+F8.97
 sg10
 I9
 sg11
@@ -23632,7 +23632,7 @@ F0.0
 sg8
 I19
 sg9
-F2.94
+F2.96
 sg10
 I3
 sg11
@@ -23652,7 +23652,7 @@ F0.0
 sg8
 I18
 sg9
-F2.91
+F2.85
 sg10
 I3
 sg11
@@ -23672,7 +23672,7 @@ F0.0
 sg8
 I19
 sg9
-F5.84
+F5.88
 sg10
 I6
 sg11
@@ -23692,7 +23692,7 @@ F0.0
 sg8
 I11
 sg9
-F4.97
+F5.01
 sg10
 I5
 sg11
@@ -23712,7 +23712,7 @@ F0.0
 sg8
 I11
 sg9
-F5.96
+F5.97
 sg10
 I6
 sg11
@@ -23752,7 +23752,7 @@ F0.0
 sg8
 I10
 sg9
-F7.0
+F6.98
 sg10
 I7
 sg11
@@ -23772,7 +23772,7 @@ F0.0
 sg8
 I15
 sg9
-F7.96
+F7.97
 sg10
 I8
 sg11
@@ -23800,7 +23800,7 @@ S'S Kenmore & 24th St S'
 p2402
 sa(dp2403
 g3
-F0.9
+F0.91
 sg4
 F-77.065131
 sg5
@@ -23832,9 +23832,9 @@ F0.0
 sg8
 I17
 sg9
-F9.18
+F8.22
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p2406
@@ -23872,7 +23872,7 @@ F0.0
 sg8
 I23
 sg9
-F2.04
+F2.0
 sg10
 I2
 sg11
@@ -23880,7 +23880,7 @@ S'Connecticut & Nebraska Ave NW'
 p2410
 sa(dp2411
 g3
-F0.01
+F0.02
 sg4
 F-77.038359
 sg5
@@ -23892,7 +23892,7 @@ F0.0
 sg8
 I19
 sg9
-F2.96
+F2.91
 sg10
 I3
 sg11
@@ -23912,7 +23912,7 @@ F0.0
 sg8
 I15
 sg9
-F0.49
+F0.47
 sg10
 I0
 sg11
@@ -23932,9 +23932,9 @@ F0.0
 sg8
 I11
 sg9
-F6.16
+F5.16
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p2416
@@ -23952,9 +23952,9 @@ F0.0
 sg8
 I15
 sg9
-F2.82
+F5.88
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p2418
@@ -23972,7 +23972,7 @@ F0.0
 sg8
 I11
 sg9
-F4.97
+F5.06
 sg10
 I5
 sg11
@@ -23992,7 +23992,7 @@ F0.0
 sg8
 I15
 sg9
-F7.09
+F7.16
 sg10
 I7
 sg11
@@ -24032,9 +24032,9 @@ F0.0
 sg8
 I19
 sg9
-F5.91
+F6.98
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p2426
@@ -24072,7 +24072,7 @@ F0.0
 sg8
 I10
 sg9
-F3.99
+F3.98
 sg10
 I4
 sg11
@@ -24092,7 +24092,7 @@ F0.0
 sg8
 I11
 sg9
-F1.03
+F1.02
 sg10
 I1
 sg11
@@ -24112,7 +24112,7 @@ F0.0
 sg8
 I11
 sg9
-F9.0
+F9.02
 sg10
 I9
 sg11
@@ -24140,7 +24140,7 @@ S'Neal St & Trinidad Ave NE'
 p2436
 sa(dp2437
 g3
-F0.34
+F0.64
 sg4
 F-77.029779
 sg5
@@ -24152,9 +24152,9 @@ F0.0
 sg8
 I23
 sg9
-F1.27
+F0.69
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p2438
@@ -24172,7 +24172,7 @@ F0.0
 sg8
 I11
 sg9
-F3.96
+F3.99
 sg10
 I4
 sg11
@@ -24192,7 +24192,7 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F9.99
 sg10
 I10
 sg11
@@ -24212,7 +24212,7 @@ F0.0
 sg8
 I11
 sg9
-F6.08
+F6.05
 sg10
 I6
 sg11
@@ -24252,7 +24252,7 @@ F0.0
 sg8
 I15
 sg9
-F6.93
+F6.96
 sg10
 I7
 sg11
@@ -24260,7 +24260,7 @@ S'3rd St & Pennsylvania Ave SE'
 p2448
 sa(dp2449
 g3
-F0.02
+F0.03
 sg4
 F-77.02324
 sg5
@@ -24272,7 +24272,7 @@ F0.0
 sg8
 I15
 sg9
-F3.45
+F3.42
 sg10
 I3
 sg11
@@ -24292,9 +24292,9 @@ F0.0
 sg8
 I15
 sg9
-F5.96
+F4.95
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p2452
@@ -24312,7 +24312,7 @@ F0.0
 sg8
 I19
 sg9
-F6.93
+F6.9
 sg10
 I7
 sg11
@@ -24332,7 +24332,7 @@ F0.0
 sg8
 I27
 sg9
-F12.52
+F12.35
 sg10
 I12
 sg11
@@ -24351,7 +24351,7 @@ asI120
 (lp2460
 (dp2461
 g3
-F0.01
+F0.02
 sg4
 F-77.0512
 sg5
@@ -24363,7 +24363,7 @@ F0.0
 sg8
 I11
 sg9
-F2.92
+F2.99
 sg10
 I3
 sg11
@@ -24379,7 +24379,7 @@ I2
 sg6
 F38.85725
 sg7
-F0.09
+F0.08
 sg8
 I9
 sg9
@@ -24391,7 +24391,7 @@ S'18th & Eads St.'
 p2464
 sa(dp2465
 g3
-F0.0
+F0.01
 sg4
 F-77.0492
 sg5
@@ -24403,9 +24403,9 @@ F0.0
 sg8
 I13
 sg9
-F6.82
+F5.98
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p2466
@@ -24419,11 +24419,11 @@ I4
 sg6
 F38.860244
 sg7
-F0.08
+F0.1
 sg8
 I10
 sg9
-F6.67
+F6.85
 sg10
 I7
 sg11
@@ -24431,7 +24431,7 @@ S'15th & Crystal Dr'
 p2468
 sa(dp2469
 g3
-F0.0
+F0.01
 sg4
 F-77.0574
 sg5
@@ -24443,7 +24443,7 @@ F0.0
 sg8
 I11
 sg9
-F3.93
+F3.9
 sg10
 I4
 sg11
@@ -24463,7 +24463,7 @@ F0.0
 sg8
 I17
 sg9
-F8.87
+F9.01
 sg10
 I9
 sg11
@@ -24471,7 +24471,7 @@ S'15th & Hayes St'
 p2472
 sa(dp2473
 g3
-F0.01
+F0.02
 sg4
 F-77.0633
 sg5
@@ -24479,11 +24479,11 @@ I7
 sg6
 F38.8637
 sg7
-F0.01
+F0.02
 sg8
 I10
 sg9
-F5.05
+F5.09
 sg10
 I5
 sg11
@@ -24503,9 +24503,9 @@ F0.0
 sg8
 I19
 sg9
-F10.18
+F9.07
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p2476
@@ -24523,7 +24523,7 @@ F0.0
 sg8
 I11
 sg9
-F4.55
+F4.71
 sg10
 I5
 sg11
@@ -24531,7 +24531,7 @@ S'12th & Army Navy Dr'
 p2478
 sa(dp2479
 g3
-F0.6
+F0.55
 sg4
 F-77.051516
 sg5
@@ -24543,7 +24543,7 @@ F0.0
 sg8
 I11
 sg9
-F0.99
+F0.94
 sg10
 I1
 sg11
@@ -24559,11 +24559,11 @@ I11
 sg6
 F38.8426
 sg7
-F0.1
+F0.14
 sg8
 I11
 sg9
-F7.78
+F7.73
 sg10
 I8
 sg11
@@ -24583,7 +24583,7 @@ F0.0
 sg8
 I16
 sg9
-F6.67
+F6.92
 sg10
 I7
 sg11
@@ -24591,7 +24591,7 @@ S'23rd & Crystal Dr'
 p2484
 sa(dp2485
 g3
-F0.02
+F0.01
 sg4
 F-77.0498
 sg5
@@ -24603,7 +24603,7 @@ F0.0
 sg8
 I11
 sg9
-F2.84
+F3.01
 sg10
 I3
 sg11
@@ -24623,7 +24623,7 @@ F0.01
 sg8
 I15
 sg9
-F8.65
+F8.69
 sg10
 I9
 sg11
@@ -24631,7 +24631,7 @@ S'19th St & Pennsylvania Ave NW'
 p2488
 sa(dp2489
 g3
-F0.63
+F0.59
 sg4
 F-77.0321
 sg5
@@ -24643,7 +24643,7 @@ F0.0
 sg8
 I27
 sg9
-F4.11
+F4.28
 sg10
 I2
 sg11
@@ -24651,7 +24651,7 @@ S'14th & V St NW'
 p2490
 sa(dp2491
 g3
-F0.89
+F0.9
 sg4
 F-77.027822
 sg5
@@ -24663,7 +24663,7 @@ F0.0
 sg8
 I27
 sg9
-F1.68
+F1.76
 sg10
 I0
 sg11
@@ -24671,7 +24671,7 @@ S'11th & Kenyon St NW'
 p2492
 sa(dp2493
 g3
-F0.86
+F0.92
 sg4
 F-77.036536
 sg5
@@ -24683,15 +24683,15 @@ F0.0
 sg8
 I33
 sg9
-F2.24
+F2.11
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p2494
 sa(dp2495
 g3
-F0.63
+F0.82
 sg4
 F-77.042581
 sg5
@@ -24703,15 +24703,15 @@ F0.0
 sg8
 I15
 sg9
-F3.52
+F3.14
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p2496
 sa(dp2497
 g3
-F0.78
+F0.9
 sg4
 F-77.0322
 sg5
@@ -24723,15 +24723,15 @@ F0.0
 sg8
 I19
 sg9
-F2.45
+F1.86
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p2498
 sa(dp2499
 g3
-F0.64
+F0.59
 sg4
 F-77.0501
 sg5
@@ -24743,7 +24743,7 @@ F0.0
 sg8
 I23
 sg9
-F2.79
+F2.93
 sg10
 I2
 sg11
@@ -24751,7 +24751,7 @@ S'Calvert St & Woodley Pl NW'
 p2500
 sa(dp2501
 g3
-F0.9
+F0.85
 sg4
 F-77.0388
 sg5
@@ -24763,7 +24763,7 @@ F0.0
 sg8
 I19
 sg9
-F2.15
+F2.28
 sg10
 I0
 sg11
@@ -24771,7 +24771,7 @@ S'Lamont & Mt Pleasant NW'
 p2502
 sa(dp2503
 g3
-F0.74
+F0.73
 sg4
 F-77.0178
 sg5
@@ -24783,7 +24783,7 @@ F0.0
 sg8
 I19
 sg9
-F3.25
+F3.67
 sg10
 I1
 sg11
@@ -24791,7 +24791,7 @@ S'4th & M St SW'
 p2504
 sa(dp2505
 g3
-F0.18
+F0.11
 sg4
 F-77.034438
 sg5
@@ -24799,19 +24799,19 @@ I23
 sg6
 F38.90985
 sg7
-F0.03
+F0.05
 sg8
 I19
 sg9
-F7.69
+F8.45
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p2506
 sa(dp2507
 g3
-F0.41
+F0.47
 sg4
 F-77.031681
 sg5
@@ -24823,7 +24823,7 @@ F0.0
 sg8
 I15
 sg9
-F3.86
+F3.83
 sg10
 I3
 sg11
@@ -24831,7 +24831,7 @@ S'14th & R St NW'
 p2508
 sa(dp2509
 g3
-F0.41
+F0.76
 sg4
 F-77.0323
 sg5
@@ -24843,15 +24843,15 @@ F0.0
 sg8
 I23
 sg9
-F4.22
+F3.19
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p2510
 sa(dp2511
 g3
-F0.02
+F0.04
 sg4
 F-77.045
 sg5
@@ -24863,9 +24863,9 @@ F0.0
 sg8
 I15
 sg9
-F6.28
+F5.43
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p2512
@@ -24883,15 +24883,15 @@ F0.0
 sg8
 I35
 sg9
-F24.52
+F25.24
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p2514
 sa(dp2515
 g3
-F0.07
+F0.06
 sg4
 F-77.024649
 sg5
@@ -24903,7 +24903,7 @@ F0.0
 sg8
 I13
 sg9
-F5.43
+F5.18
 sg10
 I5
 sg11
@@ -24919,11 +24919,11 @@ I29
 sg6
 F38.9375
 sg7
-F0.07
+F0.06
 sg8
 I11
 sg9
-F6.93
+F6.88
 sg10
 I7
 sg11
@@ -24943,7 +24943,7 @@ F0.0
 sg8
 I11
 sg9
-F6.03
+F6.06
 sg10
 I6
 sg11
@@ -24951,7 +24951,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p2520
 sa(dp2521
 g3
-F0.61
+F0.72
 sg4
 F-77.019027
 sg5
@@ -24963,9 +24963,9 @@ F0.0
 sg8
 I19
 sg9
-F3.62
+F3.27
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p2522
@@ -24983,7 +24983,7 @@ F0.0
 sg8
 I15
 sg9
-F7.39
+F7.47
 sg10
 I8
 sg11
@@ -24991,7 +24991,7 @@ S'19th & East Capitol St SE'
 p2524
 sa(dp2525
 g3
-F0.07
+F0.02
 sg4
 F-77.0315
 sg5
@@ -24999,19 +24999,19 @@ I33
 sg6
 F38.9308
 sg7
-F0.0
+F0.02
 sg8
 I19
 sg9
-F6.69
+F8.7
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p2526
 sa(dp2527
 g3
-F0.06
+F0.05
 sg4
 F-76.9672
 sg5
@@ -25021,9 +25021,9 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
-F0.97
+F1.02
 sg10
 I1
 sg11
@@ -25031,7 +25031,7 @@ S'Good Hope & Naylor Rd SE'
 p2528
 sa(dp2529
 g3
-F0.4
+F0.43
 sg4
 F-77.057979
 sg5
@@ -25043,7 +25043,7 @@ F0.0
 sg8
 I11
 sg9
-F2.66
+F2.5
 sg10
 I2
 sg11
@@ -25063,7 +25063,7 @@ F0.0
 sg8
 I11
 sg9
-F6.01
+F5.99
 sg10
 I6
 sg11
@@ -25083,7 +25083,7 @@ F0.0
 sg8
 I11
 sg9
-F7.02
+F7.04
 sg10
 I7
 sg11
@@ -25106,7 +25106,7 @@ F0.0
 sg8
 I11
 sg9
-F8.02
+F7.89
 sg10
 I8
 sg11
@@ -25126,7 +25126,7 @@ F0.01
 sg8
 I11
 sg9
-F8.99
+F9.0
 sg10
 I9
 sg11
@@ -25134,7 +25134,7 @@ S'Good Hope Rd & MLK Ave SE'
 p2539
 sa(dp2540
 g3
-F0.29
+F0.33
 sg4
 F-77.0436
 sg5
@@ -25154,7 +25154,7 @@ S'19th & E Street NW'
 p2541
 sa(dp2542
 g3
-F0.03
+F0.04
 sg4
 F-77.000624
 sg5
@@ -25166,7 +25166,7 @@ F0.0
 sg8
 I11
 sg9
-F3.82
+F3.63
 sg10
 I4
 sg11
@@ -25174,7 +25174,7 @@ S'4th St & Rhode Island Ave NE'
 p2543
 sa(dp2544
 g3
-F0.51
+F0.5
 sg4
 F-77.0259
 sg5
@@ -25182,11 +25182,11 @@ I43
 sg6
 F38.9172
 sg7
-F0.0
+F0.01
 sg8
 I14
 sg9
-F3.28
+F3.84
 sg10
 I2
 sg11
@@ -25194,7 +25194,7 @@ S'10th & U St NW'
 p2545
 sa(dp2546
 g3
-F0.51
+F0.49
 sg4
 F-77.0222
 sg5
@@ -25206,7 +25206,7 @@ F0.0
 sg8
 I11
 sg9
-F1.73
+F1.65
 sg10
 I1
 sg11
@@ -25214,7 +25214,7 @@ S'Georgia Ave and Fairmont St NW'
 p2547
 sa(dp2548
 g3
-F0.68
+F0.72
 sg4
 F-77.0057
 sg5
@@ -25226,7 +25226,7 @@ F0.0
 sg8
 I23
 sg9
-F1.64
+F1.49
 sg10
 I0
 sg11
@@ -25234,7 +25234,7 @@ S'1st & N St  SE'
 p2549
 sa(dp2550
 g3
-F0.46
+F0.39
 sg4
 F-77.0446
 sg5
@@ -25246,7 +25246,7 @@ F0.0
 sg8
 I15
 sg9
-F3.69
+F3.75
 sg10
 I3
 sg11
@@ -25254,7 +25254,7 @@ S'20th St & Florida Ave NW'
 p2551
 sa(dp2552
 g3
-F0.9
+F0.82
 sg4
 F-77.0222
 sg5
@@ -25266,7 +25266,7 @@ F0.0
 sg8
 I14
 sg9
-F1.86
+F2.04
 sg10
 I0
 sg11
@@ -25286,7 +25286,7 @@ F0.0
 sg8
 I11
 sg9
-F5.27
+F5.11
 sg10
 I5
 sg11
@@ -25294,7 +25294,7 @@ S'23rd & Eads St'
 p2555
 sa(dp2556
 g3
-F0.02
+F0.0
 sg4
 F-77.0037
 sg5
@@ -25302,19 +25302,19 @@ I49
 sg6
 F38.8763
 sg7
-F0.0
+F0.07
 sg8
 I15
 sg9
-F6.0
+F10.15
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p2557
 sa(dp2558
 g3
-F0.02
+F0.04
 sg4
 F-77.0444
 sg5
@@ -25326,15 +25326,15 @@ F0.0
 sg8
 I41
 sg9
-F13.99
+F12.08
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p2559
 sa(dp2560
 g3
-F0.19
+F0.07
 sg4
 F-77.0056
 sg5
@@ -25342,19 +25342,19 @@ I52
 sg6
 F38.9057
 sg7
-F0.0
+F0.01
 sg8
 I15
 sg9
-F4.54
+F5.58
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p2561
 sa(dp2562
 g3
-F0.0
+F0.01
 sg4
 F-77.0471
 sg5
@@ -25362,11 +25362,11 @@ I53
 sg6
 F38.9054
 sg7
-F0.01
+F0.0
 sg8
 I19
 sg9
-F9.37
+F9.75
 sg10
 I10
 sg11
@@ -25382,19 +25382,19 @@ I54
 sg6
 F38.90276
 sg7
-F0.03
+F0.07
 sg8
 I17
 sg9
-F10.35
+F11.59
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p2565
 sa(dp2566
 g3
-F0.54
+F0.26
 sg4
 F-77.016
 sg5
@@ -25406,15 +25406,15 @@ F0.0
 sg8
 I15
 sg9
-F2.59
+F3.74
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p2567
 sa(dp2568
 g3
-F0.28
+F0.27
 sg4
 F-77.0023
 sg5
@@ -25426,7 +25426,7 @@ F0.03
 sg8
 I11
 sg9
-F3.82
+F3.76
 sg10
 I4
 sg11
@@ -25434,7 +25434,7 @@ S'3rd & D St SE'
 p2569
 sa(dp2570
 g3
-F0.23
+F0.36
 sg4
 F-76.9862
 sg5
@@ -25446,15 +25446,15 @@ F0.0
 sg8
 I15
 sg9
-F3.8
+F3.18
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p2571
 sa(dp2572
 g3
-F0.31
+F0.33
 sg4
 F-76.9861
 sg5
@@ -25466,7 +25466,7 @@ F0.0
 sg8
 I15
 sg9
-F2.91
+F3.06
 sg10
 I3
 sg11
@@ -25474,7 +25474,7 @@ S'14th & D St SE'
 p2573
 sa(dp2574
 g3
-F0.39
+F0.24
 sg4
 F-77.0387
 sg5
@@ -25486,9 +25486,9 @@ F0.0
 sg8
 I19
 sg9
-F4.89
+F6.12
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p2575
@@ -25502,11 +25502,11 @@ I60
 sg6
 F38.944551
 sg7
-F0.33
+F0.25
 sg8
 I15
 sg9
-F12.48
+F12.47
 sg10
 I13
 sg11
@@ -25514,7 +25514,7 @@ S'Van Ness Metro / UDC'
 p2577
 sa(dp2578
 g3
-F0.73
+F0.72
 sg4
 F-77.0135
 sg5
@@ -25526,7 +25526,7 @@ F0.0
 sg8
 I15
 sg9
-F2.29
+F2.13
 sg10
 I1
 sg11
@@ -25534,7 +25534,7 @@ S'Florida Ave & R St NW'
 p2579
 sa(dp2580
 g3
-F0.01
+F0.0
 sg4
 F-76.9953
 sg5
@@ -25542,11 +25542,11 @@ I62
 sg6
 F38.8792
 sg7
-F0.02
+F0.03
 sg8
 I11
 sg9
-F6.0
+F5.64
 sg10
 I6
 sg11
@@ -25566,7 +25566,7 @@ F0.0
 sg8
 I15
 sg9
-F9.51
+F9.55
 sg10
 I10
 sg11
@@ -25586,7 +25586,7 @@ F0.0
 sg8
 I15
 sg9
-F2.1
+F2.15
 sg10
 I1
 sg11
@@ -25594,7 +25594,7 @@ S'Idaho Ave & Newark St NW [on 2nd District patio]'
 p2585
 sa(dp2586
 g3
-F0.03
+F0.02
 sg4
 F-77.032818
 sg5
@@ -25626,7 +25626,7 @@ F0.0
 sg8
 I11
 sg9
-F2.91
+F2.97
 sg10
 I3
 sg11
@@ -25646,7 +25646,7 @@ F0.0
 sg8
 I10
 sg9
-F3.94
+F3.91
 sg10
 I4
 sg11
@@ -25654,7 +25654,7 @@ S'Pennsylvania & Minnesota Ave SE'
 p2591
 sa(dp2592
 g3
-F0.03
+F0.02
 sg4
 F-76.996806
 sg5
@@ -25662,13 +25662,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.14
+F0.21
 sg8
 I15
 sg9
-F8.53
+F8.96
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p2593
@@ -25682,13 +25682,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.61
+F0.8
 sg8
 I17
 sg9
-F14.83
+F15.27
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p2595
@@ -25706,7 +25706,7 @@ F0.0
 sg8
 I11
 sg9
-F9.01
+F8.98
 sg10
 I9
 sg11
@@ -25722,11 +25722,11 @@ I71
 sg6
 F38.887237
 sg7
-F0.01
+F0.0
 sg8
 I39
 sg9
-F26.59
+F26.04
 sg10
 I25
 sg11
@@ -25734,7 +25734,7 @@ S'USDA / 12th & Independence Ave SW'
 p2599
 sa(dp2600
 g3
-F0.07
+F0.02
 sg4
 F-77.059219
 sg5
@@ -25742,19 +25742,19 @@ I72
 sg6
 F38.9022212
 sg7
-F0.06
+F0.08
 sg8
 I18
 sg9
-F8.74
+F10.45
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p2601
 sa(dp2602
 g3
-F0.1
+F0.08
 sg4
 F-76.991016
 sg5
@@ -25766,7 +25766,7 @@ F0.0
 sg8
 I11
 sg9
-F1.8
+F1.76
 sg10
 I2
 sg11
@@ -25774,7 +25774,7 @@ S'12th & Newton St NE'
 p2603
 sa(dp2604
 g3
-F0.22
+F0.18
 sg4
 F-77.046587
 sg5
@@ -25786,7 +25786,7 @@ F0.0
 sg8
 I15
 sg9
-F2.7
+F2.88
 sg10
 I3
 sg11
@@ -25806,7 +25806,7 @@ F0.11
 sg8
 I15
 sg9
-F10.51
+F10.1
 sg10
 I10
 sg11
@@ -25822,13 +25822,13 @@ I76
 sg6
 F38.893028
 sg7
-F0.14
+F0.48
 sg8
-I31
+I30
 sg9
-F23.71
+F25.98
 sg10
-I22
+I25
 sg11
 S'10th St & Constitution Ave NW'
 p2609
@@ -25842,11 +25842,11 @@ I77
 sg6
 F38.895184
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F5.13
+F5.03
 sg10
 I5
 sg11
@@ -25854,7 +25854,7 @@ S'Kennedy Center'
 p2611
 sa(dp2612
 g3
-F0.01
+F0.0
 sg4
 F-76.995397
 sg5
@@ -25862,13 +25862,13 @@ I78
 sg6
 F38.884
 sg7
-F0.44
+F0.9
 sg8
 I19
 sg9
-F13.65
+F15.34
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p2613
@@ -25882,11 +25882,11 @@ I79
 sg6
 F38.904742
 sg7
-F0.73
+F0.71
 sg8
 I19
 sg9
-F16.38
+F16.71
 sg10
 I18
 sg11
@@ -25902,11 +25902,11 @@ I80
 sg6
 F38.947607
 sg7
-F0.01
+F0.0
 sg8
 I14
 sg9
-F7.94
+F7.74
 sg10
 I8
 sg11
@@ -25914,7 +25914,7 @@ S'Tenleytown / Wisconsin Ave & Albemarle St NW'
 p2617
 sa(dp2618
 g3
-F0.14
+F0.16
 sg4
 F-76.9882
 sg5
@@ -25926,7 +25926,7 @@ F0.0
 sg8
 I27
 sg9
-F4.28
+F4.02
 sg10
 I4
 sg11
@@ -25946,15 +25946,15 @@ F0.0
 sg8
 I31
 sg9
-F14.49
+F13.43
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p2621
 sa(dp2622
 g3
-F0.02
+F0.04
 sg4
 F-77.0337
 sg5
@@ -25962,11 +25962,11 @@ I83
 sg6
 F38.8991
 sg7
-F0.16
+F0.17
 sg8
 I15
 sg9
-F8.88
+F9.14
 sg10
 I9
 sg11
@@ -25974,7 +25974,7 @@ S'New York Ave & 15th St NW'
 p2623
 sa(dp2624
 g3
-F0.69
+F0.85
 sg4
 F-77.022264
 sg5
@@ -25986,15 +25986,15 @@ F0.0
 sg8
 I18
 sg9
-F3.2
+F2.66
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p2625
 sa(dp2626
 g3
-F0.1
+F0.04
 sg4
 F-77.043358
 sg5
@@ -26006,15 +26006,15 @@ F0.0
 sg8
 I15
 sg9
-F3.96
+F4.58
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p2627
 sa(dp2628
 g3
-F0.27
+F0.23
 sg4
 F-77.043648
 sg5
@@ -26026,7 +26026,7 @@ F0.0
 sg8
 I15
 sg9
-F2.77
+F3.0
 sg10
 I3
 sg11
@@ -26042,13 +26042,13 @@ I87
 sg6
 F38.90375
 sg7
-F0.06
+F0.25
 sg8
 I22
 sg9
-F13.45
+F16.09
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p2631
@@ -26066,7 +26066,7 @@ F0.0
 sg8
 I19
 sg9
-F10.24
+F10.16
 sg10
 I10
 sg11
@@ -26074,7 +26074,7 @@ S'7th & Water St SW / SW Waterfront'
 p2633
 sa(dp2634
 g3
-F0.33
+F0.41
 sg4
 F-76.997114
 sg5
@@ -26086,7 +26086,7 @@ F0.0
 sg8
 I22
 sg9
-F3.84
+F3.43
 sg10
 I3
 sg11
@@ -26094,7 +26094,7 @@ S'D St & Maryland Ave NE'
 p2635
 sa(dp2636
 g3
-F0.78
+F0.82
 sg4
 F-77.0682
 sg5
@@ -26106,7 +26106,7 @@ F0.0
 sg8
 I11
 sg9
-F1.24
+F1.15
 sg10
 I0
 sg11
@@ -26126,7 +26126,7 @@ F0.0
 sg8
 I22
 sg9
-F11.01
+F11.27
 sg10
 I12
 sg11
@@ -26146,7 +26146,7 @@ F0.0
 sg8
 I33
 sg9
-F18.63
+F18.22
 sg10
 I17
 sg11
@@ -26154,7 +26154,7 @@ S'8th & H St NW'
 p2641
 sa(dp2642
 g3
-F0.39
+F0.44
 sg4
 F-76.992889
 sg5
@@ -26166,7 +26166,7 @@ F0.0
 sg8
 I11
 sg9
-F1.27
+F1.2
 sg10
 I1
 sg11
@@ -26174,7 +26174,7 @@ S'10th & Monroe St NE'
 p2643
 sa(dp2644
 g3
-F0.29
+F0.33
 sg4
 F-77.00495
 sg5
@@ -26186,7 +26186,7 @@ F0.0
 sg8
 I11
 sg9
-F1.94
+F1.85
 sg10
 I2
 sg11
@@ -26194,7 +26194,7 @@ S'Eckington Pl & Q St NE'
 p2645
 sa(dp2646
 g3
-F0.36
+F0.39
 sg4
 F-76.99831
 sg5
@@ -26206,7 +26206,7 @@ F0.0
 sg8
 I23
 sg9
-F2.78
+F2.81
 sg10
 I3
 sg11
@@ -26226,7 +26226,7 @@ F0.08
 sg8
 I19
 sg9
-F13.62
+F13.82
 sg10
 I14
 sg11
@@ -26234,7 +26234,7 @@ S'3rd & H St NE'
 p2649
 sa(dp2650
 g3
-F0.29
+F0.21
 sg4
 F-76.982872
 sg5
@@ -26246,7 +26246,7 @@ F0.0
 sg8
 I15
 sg9
-F1.93
+F2.23
 sg10
 I2
 sg11
@@ -26254,7 +26254,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p2651
 sa(dp2652
 g3
-F0.39
+F0.04
 sg4
 F-77.000349
 sg5
@@ -26262,19 +26262,19 @@ I98
 sg6
 F38.889955
 sg7
-F0.04
+F0.3
 sg8
 I11
 sg9
-F3.47
+F6.84
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p2653
 sa(dp2654
 g3
-F0.42
+F0.36
 sg4
 F-76.988355
 sg5
@@ -26286,7 +26286,7 @@ F0.0
 sg8
 I25
 sg9
-F3.38
+F3.51
 sg10
 I3
 sg11
@@ -26306,7 +26306,7 @@ F0.0
 sg8
 I10
 sg9
-F3.96
+F3.94
 sg10
 I4
 sg11
@@ -26314,7 +26314,7 @@ S'Branch & Pennsylvania Ave SE'
 p2657
 sa(dp2658
 g3
-F0.49
+F0.44
 sg4
 F-76.987633
 sg5
@@ -26326,7 +26326,7 @@ F0.0
 sg8
 I31
 sg9
-F2.31
+F2.49
 sg10
 I2
 sg11
@@ -26334,7 +26334,7 @@ S'13th & D St NE'
 p2659
 sa(dp2660
 g3
-F0.88
+F0.92
 sg4
 F-77.03818
 sg5
@@ -26346,7 +26346,7 @@ F0.0
 sg8
 I23
 sg9
-F3.29
+F3.16
 sg10
 I0
 sg11
@@ -26366,9 +26366,9 @@ F0.0
 sg8
 I31
 sg9
-F16.2
+F15.41
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p2663
@@ -26382,19 +26382,19 @@ I104
 sg6
 F38.894514
 sg7
-F0.01
+F0.02
 sg8
 I25
 sg9
-F16.12
+F17.05
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p2665
 sa(dp2666
 g3
-F0.12
+F0.07
 sg4
 F-77.022322
 sg5
@@ -26402,13 +26402,13 @@ I105
 sg6
 F38.897324
 sg7
-F0.01
+F0.02
 sg8
 I18
 sg9
-F7.67
+F7.56
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p2667
@@ -26422,19 +26422,19 @@ I106
 sg6
 F38.902061
 sg7
-F0.0
+F0.01
 sg8
 I27
 sg9
-F18.61
+F19.72
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p2669
 sa(dp2670
 g3
-F0.01
+F0.0
 sg4
 F-77.04478
 sg5
@@ -26442,13 +26442,13 @@ I107
 sg6
 F38.908905
 sg7
-F0.02
+F0.01
 sg8
 I19
 sg9
-F10.77
+F11.78
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p2671
@@ -26466,7 +26466,7 @@ F0.02
 sg8
 I15
 sg9
-F9.81
+F9.61
 sg10
 I10
 sg11
@@ -26474,7 +26474,7 @@ S'4th & D St NW / Judiciary Square'
 p2673
 sa(dp2674
 g3
-F0.04
+F0.11
 sg4
 F-77.0436
 sg5
@@ -26482,13 +26482,13 @@ I109
 sg6
 F38.8923
 sg7
-F0.01
+F0.0
 sg8
 I23
 sg9
-F9.49
+F7.64
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p2675
@@ -26502,19 +26502,19 @@ I110
 sg6
 F38.90774
 sg7
-F0.17
+F0.38
 sg8
 I23
 sg9
-F19.0
+F20.07
 sg10
-I19
+I20
 sg11
 S'37th & O St NW / Georgetown University'
 p2677
 sa(dp2678
 g3
-F0.02
+F0.0
 sg4
 F-76.991383
 sg5
@@ -26526,7 +26526,7 @@ F0.0
 sg8
 I18
 sg9
-F7.14
+F7.4
 sg10
 I7
 sg11
@@ -26534,7 +26534,7 @@ S'11th & H St NE'
 p2679
 sa(dp2680
 g3
-F0.1
+F0.2
 sg4
 F-77.053485
 sg5
@@ -26542,13 +26542,13 @@ I112
 sg6
 F38.903827
 sg7
-F0.05
+F0.03
 sg8
 I14
 sg9
-F6.47
+F5.47
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p2681
@@ -26562,13 +26562,13 @@ I113
 sg6
 F38.89696
 sg7
-F0.06
+F0.08
 sg8
 I31
 sg9
-F24.0
+F22.96
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p2683
@@ -26582,11 +26582,11 @@ I114
 sg6
 F38.897446
 sg7
-F0.0
+F0.01
 sg8
 I23
 sg9
-F13.8
+F14.27
 sg10
 I14
 sg11
@@ -26594,7 +26594,7 @@ S'North Capitol St & F St NW'
 p2685
 sa(dp2686
 g3
-F0.71
+F0.45
 sg4
 F-77.027137
 sg5
@@ -26606,9 +26606,9 @@ F0.0
 sg8
 I18
 sg9
-F3.57
+F3.8
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p2687
@@ -26626,7 +26626,7 @@ F0.0
 sg8
 I15
 sg9
-F8.09
+F7.85
 sg10
 I8
 sg11
@@ -26642,11 +26642,11 @@ I117
 sg6
 F38.898069
 sg7
-F0.43
+F0.27
 sg8
-I22
+I23
 sg9
-F18.85
+F19.19
 sg10
 I20
 sg11
@@ -26666,7 +26666,7 @@ F0.0
 sg8
 I23
 sg9
-F9.71
+F9.59
 sg10
 I10
 sg11
@@ -26674,7 +26674,7 @@ S'Potomac Ave & 35th St S'
 p2693
 sa(dp2694
 g3
-F0.94
+F0.76
 sg4
 F-77.04657
 sg5
@@ -26686,9 +26686,9 @@ F0.0
 sg8
 I23
 sg9
-F3.63
+F4.26
 sg10
-I0
+I2
 sg11
 S'Ohio Dr & West Basin Dr SW / MLK & FDR Memorials'
 p2695
@@ -26702,11 +26702,11 @@ I125
 sg6
 F38.897857
 sg7
-F0.87
+F0.89
 sg8
 I15
 sg9
-F12.81
+F12.9
 sg10
 I15
 sg11
@@ -26722,11 +26722,11 @@ I126
 sg6
 F38.896104
 sg7
-F0.0
+F0.01
 sg8
 I19
 sg9
-F11.28
+F11.25
 sg10
 I12
 sg11
@@ -26734,7 +26734,7 @@ S'23rd & E St NW '
 p2699
 sa(dp2700
 g3
-F0.11
+F0.04
 sg4
 F-77.070993
 sg5
@@ -26746,9 +26746,9 @@ F0.0
 sg8
 I18
 sg9
-F4.22
+F5.4
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p2701
@@ -26766,7 +26766,7 @@ F0.0
 sg8
 I15
 sg9
-F7.2
+F6.99
 sg10
 I7
 sg11
@@ -26774,7 +26774,7 @@ S'Rosslyn Metro / Wilson Blvd & Ft Myer Dr'
 p2703
 sa(dp2704
 g3
-F0.06
+F0.07
 sg4
 F-77.076701
 sg5
@@ -26786,7 +26786,7 @@ F0.0
 sg8
 I11
 sg9
-F3.15
+F3.08
 sg10
 I3
 sg11
@@ -26794,7 +26794,7 @@ S'Clarendon Blvd & Pierce St'
 p2705
 sa(dp2706
 g3
-F0.01
+F0.0
 sg4
 F-77.0846
 sg5
@@ -26806,15 +26806,15 @@ F0.0
 sg8
 I15
 sg9
-F8.38
+F7.85
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p2707
 sa(dp2708
 g3
-F0.16
+F0.21
 sg4
 F-77.079375
 sg5
@@ -26826,7 +26826,7 @@ F0.0
 sg8
 I11
 sg9
-F2.03
+F1.86
 sg10
 I2
 sg11
@@ -26846,7 +26846,7 @@ F0.0
 sg8
 I15
 sg9
-F4.01
+F4.02
 sg10
 I4
 sg11
@@ -26854,7 +26854,7 @@ S'Fairfax Village'
 p2711
 sa(dp2712
 g3
-F0.81
+F0.78
 sg4
 F-77.046567
 sg5
@@ -26866,7 +26866,7 @@ F0.0
 sg8
 I15
 sg9
-F2.04
+F1.73
 sg10
 I2
 sg11
@@ -26874,7 +26874,7 @@ S'21st St & Constitution Ave NW'
 p2713
 sa(dp2714
 g3
-F0.04
+F0.01
 sg4
 F-77.0925
 sg5
@@ -26886,15 +26886,15 @@ F0.0
 sg8
 I15
 sg9
-F4.26
+F4.9
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p2715
 sa(dp2716
 g3
-F0.06
+F0.05
 sg4
 F-77.04368
 sg5
@@ -26906,7 +26906,7 @@ F0.0
 sg8
 I19
 sg9
-F5.69
+F5.84
 sg10
 I6
 sg11
@@ -26914,7 +26914,7 @@ S'Columbia Rd & Belmont St NW'
 p2717
 sa(dp2718
 g3
-F0.14
+F0.13
 sg4
 F-77.038785
 sg5
@@ -26926,7 +26926,7 @@ F0.0
 sg8
 I23
 sg9
-F5.63
+F5.53
 sg10
 I6
 sg11
@@ -26934,7 +26934,7 @@ S'17th & Rhode Island Ave NW'
 p2719
 sa(dp2720
 g3
-F0.84
+F0.94
 sg4
 F-77.0325
 sg5
@@ -26946,9 +26946,9 @@ F0.0
 sg8
 I33
 sg9
-F3.05
+F2.98
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p2721
@@ -26962,13 +26962,13 @@ I138
 sg6
 F38.8904
 sg7
-F0.0
+F0.08
 sg8
 I11
 sg9
-F5.67
+F7.59
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p2723
@@ -26982,19 +26982,19 @@ I139
 sg6
 F38.8881
 sg7
-F0.1
+F0.03
 sg8
 I14
 sg9
-F10.8
+F9.67
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p2725
 sa(dp2726
 g3
-F0.0
+F0.02
 sg4
 F-77.094875
 sg5
@@ -27006,7 +27006,7 @@ F0.0
 sg8
 I17
 sg9
-F5.96
+F5.66
 sg10
 I6
 sg11
@@ -27014,7 +27014,7 @@ S'Clarendon Metro / Wilson Blvd & N Highland St'
 p2727
 sa(dp2728
 g3
-F0.08
+F0.12
 sg4
 F-77.041539
 sg5
@@ -27026,9 +27026,9 @@ F0.0
 sg8
 I15
 sg9
-F5.82
+F4.89
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p2729
@@ -27046,15 +27046,15 @@ F0.0
 sg8
 I39
 sg9
-F18.77
+F21.1
 sg10
-I16
+I19
 sg11
 S'Maryland & Independence Ave SW'
 p2731
 sa(dp2732
 g3
-F0.77
+F0.93
 sg4
 F-77.017445
 sg5
@@ -27066,15 +27066,15 @@ F0.0
 sg8
 I17
 sg9
-F1.56
+F1.38
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p2733
 sa(dp2734
 g3
-F0.03
+F0.1
 sg4
 F-77.001828
 sg5
@@ -27086,7 +27086,7 @@ F0.0
 sg8
 I19
 sg9
-F5.05
+F4.73
 sg10
 I5
 sg11
@@ -27094,7 +27094,7 @@ S'3rd & G St SE'
 p2735
 sa(dp2736
 g3
-F0.82
+F0.89
 sg4
 F-77.022155
 sg5
@@ -27106,7 +27106,7 @@ F0.0
 sg8
 I15
 sg9
-F2.04
+F1.84
 sg10
 I0
 sg11
@@ -27126,7 +27126,7 @@ F0.0
 sg8
 I15
 sg9
-F7.1
+F7.19
 sg10
 I7
 sg11
@@ -27134,7 +27134,7 @@ S'9th & Upshur St NW'
 p2739
 sa(dp2740
 g3
-F0.86
+F0.02
 sg4
 F-77.012289
 sg5
@@ -27142,19 +27142,19 @@ I147
 sg6
 F38.915417
 sg7
-F0.0
+F0.01
 sg8
-I14
+I15
 sg9
-F2.05
+F7.04
 sg10
-I0
+I7
 sg11
 S'1st & Rhode Island Ave NW'
 p2741
 sa(dp2742
 g3
-F0.4
+F0.44
 sg4
 F-77.02344
 sg5
@@ -27166,7 +27166,7 @@ F0.0
 sg8
 I19
 sg9
-F2.39
+F2.02
 sg10
 I2
 sg11
@@ -27174,7 +27174,7 @@ S'Columbia Rd & Georgia Ave NW'
 p2743
 sa(dp2744
 g3
-F0.07
+F0.15
 sg4
 F-77.04062
 sg5
@@ -27186,9 +27186,9 @@ F0.0
 sg8
 I19
 sg9
-F6.47
+F5.69
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p2745
@@ -27206,7 +27206,7 @@ F0.0
 sg8
 I19
 sg9
-F5.98
+F5.92
 sg10
 I6
 sg11
@@ -27214,7 +27214,7 @@ S'Benning Rd & East Capitol St NE / Benning Rd Metro'
 p2747
 sa(dp2748
 g3
-F0.06
+F0.08
 sg4
 F-77.055599
 sg5
@@ -27226,7 +27226,7 @@ F0.0
 sg8
 I15
 sg9
-F5.29
+F5.16
 sg10
 I5
 sg11
@@ -27246,7 +27246,7 @@ F0.0
 sg8
 I15
 sg9
-F6.85
+F6.9
 sg10
 I7
 sg11
@@ -27262,11 +27262,11 @@ I153
 sg6
 F38.905126
 sg7
-F0.63
+F0.65
 sg8
 I18
 sg9
-F14.97
+F15.06
 sg10
 I15
 sg11
@@ -27274,7 +27274,7 @@ S'M St & Pennsylvania Ave NW'
 p2753
 sa(dp2754
 g3
-F0.78
+F0.82
 sg4
 F-76.983569
 sg5
@@ -27286,7 +27286,7 @@ F0.0
 sg8
 I15
 sg9
-F1.52
+F1.45
 sg10
 I0
 sg11
@@ -27314,7 +27314,7 @@ S'Congress Heights Metro'
 p2757
 sa(dp2758
 g3
-F0.02
+F0.0
 sg4
 F-77.107735
 sg5
@@ -27326,7 +27326,7 @@ F0.0
 sg8
 I11
 sg9
-F3.81
+F3.63
 sg10
 I4
 sg11
@@ -27346,7 +27346,7 @@ F0.0
 sg8
 I11
 sg9
-F6.08
+F5.78
 sg10
 I6
 sg11
@@ -27366,7 +27366,7 @@ F0.0
 sg8
 I15
 sg9
-F6.8
+F6.83
 sg10
 I7
 sg11
@@ -27374,7 +27374,7 @@ S'N Veitch  & 20th St N'
 p2763
 sa(dp2764
 g3
-F0.65
+F0.26
 sg4
 F-77.02674
 sg5
@@ -27386,15 +27386,15 @@ F0.0
 sg8
 I18
 sg9
-F2.65
+F4.11
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p2765
 sa(dp2766
 g3
-F0.01
+F0.0
 sg4
 F-77.097745
 sg5
@@ -27402,11 +27402,11 @@ I160
 sg6
 F38.885801
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F6.39
+F6.41
 sg10
 I6
 sg11
@@ -27422,13 +27422,13 @@ I161
 sg6
 F38.896015
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F6.97
+F7.86
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p2769
@@ -27446,7 +27446,7 @@ F0.0
 sg8
 I15
 sg9
-F4.57
+F4.42
 sg10
 I3
 sg11
@@ -27454,7 +27454,7 @@ S'1st & K St SE'
 p2771
 sa(dp2772
 g3
-F0.3
+F0.63
 sg4
 F-77.077271
 sg5
@@ -27466,9 +27466,9 @@ F0.0
 sg8
 I19
 sg9
-F2.37
+F1.55
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p2773
@@ -27486,7 +27486,7 @@ F0.0
 sg8
 I15
 sg9
-F2.85
+F2.89
 sg10
 I3
 sg11
@@ -27506,7 +27506,7 @@ F0.0
 sg8
 I19
 sg9
-F11.82
+F11.59
 sg10
 I12
 sg11
@@ -27522,11 +27522,11 @@ I166
 sg6
 F38.88397
 sg7
-F0.01
+F0.04
 sg8
 I11
 sg9
-F7.18
+F7.08
 sg10
 I7
 sg11
@@ -27534,7 +27534,7 @@ S'Central Library / N Quincy St & 10th St N'
 p2779
 sa(dp2780
 g3
-F0.57
+F0.58
 sg4
 F-77.093485
 sg5
@@ -27546,7 +27546,7 @@ F0.0
 sg8
 I15
 sg9
-F1.06
+F1.09
 sg10
 I1
 sg11
@@ -27554,7 +27554,7 @@ S'Washington Blvd & 10th St N'
 p2781
 sa(dp2782
 g3
-F0.24
+F0.42
 sg4
 F-77.032429
 sg5
@@ -27562,13 +27562,13 @@ I168
 sg6
 F38.888553
 sg7
-F0.05
+F0.03
 sg8
 I23
 sg9
-F10.03
+F8.98
 sg10
-I7
+I5
 sg11
 S'Jefferson Dr & 14th St SW'
 p2783
@@ -27582,13 +27582,13 @@ I169
 sg6
 F38.888767
 sg7
-F0.19
+F0.33
 sg8
 I23
 sg9
-F14.98
+F16.37
 sg10
-I13
+I15
 sg11
 S'Smithsonian / Jefferson Dr & 12th St SW'
 p2785
@@ -27606,7 +27606,7 @@ F0.0
 sg8
 I15
 sg9
-F6.94
+F6.96
 sg10
 I7
 sg11
@@ -27614,7 +27614,7 @@ S'George Mason Dr & Wilson Blvd'
 p2787
 sa(dp2788
 g3
-F0.01
+F0.0
 sg4
 F-77.01994
 sg5
@@ -27622,13 +27622,13 @@ I171
 sg6
 F38.894573
 sg7
-F0.21
+F0.27
 sg8
 I18
 sg9
-F12.22
+F12.87
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p2789
@@ -27646,7 +27646,7 @@ F0.0
 sg8
 I11
 sg9
-F5.9
+F5.7
 sg10
 I6
 sg11
@@ -27654,7 +27654,7 @@ S'N Veitch & Key Blvd'
 p2791
 sa(dp2792
 g3
-F0.09
+F0.07
 sg4
 F-77.089006
 sg5
@@ -27666,7 +27666,7 @@ F0.0
 sg8
 I15
 sg9
-F2.92
+F2.95
 sg10
 I3
 sg11
@@ -27686,7 +27686,7 @@ F0.0
 sg8
 I11
 sg9
-F2.49
+F2.57
 sg10
 I3
 sg11
@@ -27706,7 +27706,7 @@ F0.0
 sg8
 I11
 sg9
-F4.92
+F4.9
 sg10
 I5
 sg11
@@ -27726,15 +27726,15 @@ F0.0
 sg8
 I19
 sg9
-F6.49
+F5.96
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p2799
 sa(dp2800
 g3
-F0.83
+F0.82
 sg4
 F-77.109366
 sg5
@@ -27746,7 +27746,7 @@ F0.0
 sg8
 I11
 sg9
-F0.78
+F0.8
 sg10
 I0
 sg11
@@ -27754,7 +27754,7 @@ S'N Randolph St & Fairfax Dr'
 p2801
 sa(dp2802
 g3
-F0.01
+F0.0
 sg4
 F-77.037413
 sg5
@@ -27762,11 +27762,11 @@ I178
 sg6
 F38.879819
 sg7
-F0.13
+F0.18
 sg8
 I23
 sg9
-F14.97
+F15.38
 sg10
 I15
 sg11
@@ -27786,9 +27786,9 @@ F0.0
 sg8
 I15
 sg9
-F9.96
+F8.92
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p2805
@@ -27806,7 +27806,7 @@ F0.0
 sg8
 I11
 sg9
-F7.86
+F7.72
 sg10
 I8
 sg11
@@ -27826,7 +27826,7 @@ F0.0
 sg8
 I11
 sg9
-F5.88
+F5.98
 sg10
 I6
 sg11
@@ -27842,13 +27842,13 @@ I182
 sg6
 F38.884616
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F6.96
+F7.94
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p2811
@@ -27862,13 +27862,13 @@ I183
 sg6
 F38.90509
 sg7
-F0.02
+F0.0
 sg8
 I19
 sg9
-F13.71
+F11.49
 sg10
-I14
+I12
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p2813
@@ -27882,19 +27882,19 @@ I185
 sg6
 F38.903584
 sg7
-F0.03
+F0.01
 sg8
 I19
 sg9
-F14.51
+F13.76
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p2815
 sa(dp2816
 g3
-F0.72
+F0.84
 sg4
 F-77.0284
 sg5
@@ -27906,9 +27906,9 @@ F0.0
 sg8
 I19
 sg9
-F2.05
+F1.8
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p2817
@@ -27922,11 +27922,11 @@ I187
 sg6
 F38.901539
 sg7
-F0.73
+F0.75
 sg8
 I19
 sg9
-F17.61
+F17.69
 sg10
 I19
 sg11
@@ -27946,7 +27946,7 @@ F0.0
 sg8
 I22
 sg9
-F13.79
+F13.81
 sg10
 I14
 sg11
@@ -27966,7 +27966,7 @@ F0.0
 sg8
 I19
 sg9
-F9.3
+F9.69
 sg10
 I8
 sg11
@@ -27986,7 +27986,7 @@ F0.1
 sg8
 I15
 sg9
-F11.39
+F11.33
 sg10
 I11
 sg11
@@ -28006,7 +28006,7 @@ F0.0
 sg8
 I14
 sg9
-F8.05
+F8.11
 sg10
 I8
 sg11
@@ -28026,7 +28026,7 @@ F0.0
 sg8
 I15
 sg9
-F6.22
+F6.0
 sg10
 I6
 sg11
@@ -28034,7 +28034,7 @@ S'King St & Patrick St'
 p2829
 sa(dp2830
 g3
-F0.24
+F0.59
 sg4
 F-77.03353
 sg5
@@ -28046,9 +28046,9 @@ F0.0
 sg8
 I19
 sg9
-F3.45
+F2.1
 sg10
-I4
+I2
 sg11
 S'15th & K St NW'
 p2831
@@ -28066,7 +28066,7 @@ F0.0
 sg8
 I15
 sg9
-F9.93
+F10.01
 sg10
 I10
 sg11
@@ -28086,7 +28086,7 @@ F0.0
 sg8
 I17
 sg9
-F8.8
+F8.9
 sg10
 I9
 sg11
@@ -28106,7 +28106,7 @@ F0.0
 sg8
 I19
 sg9
-F6.89
+F6.67
 sg10
 I7
 sg11
@@ -28114,7 +28114,7 @@ S'Braddock Rd Metro'
 p2837
 sa(dp2838
 g3
-F0.0
+F0.02
 sg4
 F-77.06072
 sg5
@@ -28126,7 +28126,7 @@ F0.0
 sg8
 I19
 sg9
-F4.7
+F4.75
 sg10
 I5
 sg11
@@ -28142,11 +28142,11 @@ I198
 sg6
 F38.9066
 sg7
-F0.71
+F0.81
 sg8
 I15
 sg9
-F13.18
+F13.31
 sg10
 I15
 sg11
@@ -28162,13 +28162,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.9
+F0.82
 sg8
 I15
 sg9
-F12.69
+F12.49
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p2843
@@ -28182,19 +28182,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.78
+F0.45
 sg8
 I14
 sg9
-F11.38
+F10.55
 sg10
-I13
+I11
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p2845
 sa(dp2846
 g3
-F0.15
+F0.18
 sg4
 F-77.113905
 sg5
@@ -28206,7 +28206,7 @@ F0.0
 sg8
 I11
 sg9
-F1.96
+F1.84
 sg10
 I2
 sg11
@@ -28226,15 +28226,15 @@ F0.0
 sg8
 I11
 sg9
-F7.06
+F6.1
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p2849
 sa(dp2850
 g3
-F0.61
+F0.71
 sg4
 F-77.077294
 sg5
@@ -28246,7 +28246,7 @@ F0.0
 sg8
 I11
 sg9
-F0.93
+F0.79
 sg10
 I0
 sg11
@@ -28254,7 +28254,7 @@ S'Arlington Blvd & N Queen St'
 p2851
 sa(dp2852
 g3
-F0.8
+F0.94
 sg4
 F-77.049426
 sg5
@@ -28262,13 +28262,13 @@ I204
 sg6
 F38.888251
 sg7
-F0.02
+F0.0
 sg8
 I25
 sg9
-F6.88
+F6.33
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p2853
@@ -28286,7 +28286,7 @@ F0.0
 sg8
 I15
 sg9
-F7.76
+F7.77
 sg10
 I8
 sg11
@@ -28294,7 +28294,7 @@ S'20th St & Virginia Ave NW'
 p2855
 sa(dp2856
 g3
-F0.73
+F0.76
 sg4
 F-77.018677
 sg5
@@ -28306,7 +28306,7 @@ F0.0
 sg8
 I19
 sg9
-F2.89
+F2.78
 sg10
 I1
 sg11
@@ -28314,7 +28314,7 @@ S'5th St & Massachusetts Ave NW'
 p2857
 sa(dp2858
 g3
-F0.04
+F0.12
 sg4
 F-77.077078
 sg5
@@ -28326,9 +28326,9 @@ F0.0
 sg8
 I15
 sg9
-F3.5
+F2.58
 sg10
-I4
+I3
 sg11
 S'39th & Veazey St NW'
 p2859
@@ -28346,7 +28346,7 @@ F0.0
 sg8
 I15
 sg9
-F7.55
+F7.72
 sg10
 I8
 sg11
@@ -28354,7 +28354,7 @@ S'Fessenden St & Wisconsin Ave NW'
 p2861
 sa(dp2862
 g3
-F0.09
+F0.08
 sg4
 F-77.003041
 sg5
@@ -28364,9 +28364,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F5.03
+F5.05
 sg10
 I6
 sg11
@@ -28386,7 +28386,7 @@ F0.0
 sg8
 I15
 sg9
-F5.98
+F6.16
 sg10
 I7
 sg11
@@ -28406,7 +28406,7 @@ F0.0
 sg8
 I11
 sg9
-F5.69
+F5.65
 sg10
 I6
 sg11
@@ -28426,7 +28426,7 @@ F0.0
 sg8
 I15
 sg9
-F5.58
+F5.51
 sg10
 I6
 sg11
@@ -28446,7 +28446,7 @@ F0.0
 sg8
 I23
 sg9
-F1.65
+F1.6
 sg10
 I0
 sg11
@@ -28466,7 +28466,7 @@ F0.0
 sg8
 I14
 sg9
-F8.63
+F8.67
 sg10
 I9
 sg11
@@ -28486,7 +28486,7 @@ F0.0
 sg8
 I19
 sg9
-F2.54
+F2.61
 sg10
 I3
 sg11
@@ -28494,7 +28494,7 @@ S'Georgia Ave & Emerson St NW'
 p2875
 sa(dp2876
 g3
-F0.13
+F0.15
 sg4
 F-77.032652
 sg5
@@ -28506,7 +28506,7 @@ F0.0
 sg8
 I18
 sg9
-F2.25
+F2.43
 sg10
 I3
 sg11
@@ -28526,7 +28526,7 @@ F0.0
 sg8
 I19
 sg9
-F5.03
+F5.04
 sg10
 I6
 sg11
@@ -28546,7 +28546,7 @@ F0.0
 sg8
 I11
 sg9
-F4.91
+F4.86
 sg10
 I5
 sg11
@@ -28566,7 +28566,7 @@ F0.0
 sg8
 I11
 sg9
-F5.8
+F5.83
 sg10
 I6
 sg11
@@ -28586,7 +28586,7 @@ F0.0
 sg8
 I11
 sg9
-F4.94
+F4.92
 sg10
 I5
 sg11
@@ -28606,7 +28606,7 @@ F0.0
 sg8
 I10
 sg9
-F6.84
+F6.83
 sg10
 I7
 sg11
@@ -28622,11 +28622,11 @@ I223
 sg6
 F38.84232
 sg7
-F0.02
+F0.01
 sg8
 I15
 sg9
-F8.96
+F8.8
 sg10
 I8
 sg11
@@ -28646,7 +28646,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F3.96
 sg10
 I4
 sg11
@@ -28654,7 +28654,7 @@ S'S Kenmore & 24th St S'
 p2891
 sa(dp2892
 g3
-F0.85
+F0.83
 sg4
 F-77.065131
 sg5
@@ -28666,7 +28666,7 @@ F0.0
 sg8
 I19
 sg9
-F0.74
+F0.8
 sg10
 I0
 sg11
@@ -28674,7 +28674,7 @@ S'Connecticut Ave & Yuma St NW'
 p2893
 sa(dp2894
 g3
-F0.0
+F0.01
 sg4
 F-77.063586
 sg5
@@ -28682,13 +28682,13 @@ I226
 sg6
 F38.90849
 sg7
-F0.12
+F0.06
 sg8
 I17
 sg9
-F11.22
+F10.01
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p2895
@@ -28706,7 +28706,7 @@ F0.0
 sg8
 I11
 sg9
-F7.1
+F7.08
 sg10
 I7
 sg11
@@ -28714,7 +28714,7 @@ S'S George Mason Dr & 13th St S'
 p2897
 sa(dp2898
 g3
-F0.24
+F0.26
 sg4
 F-77.069956
 sg5
@@ -28726,7 +28726,7 @@ F0.0
 sg8
 I23
 sg9
-F2.22
+F2.05
 sg10
 I2
 sg11
@@ -28734,7 +28734,7 @@ S'Connecticut & Nebraska Ave NW'
 p2899
 sa(dp2900
 g3
-F0.31
+F0.32
 sg4
 F-77.038359
 sg5
@@ -28746,7 +28746,7 @@ F0.0
 sg8
 I19
 sg9
-F3.23
+F3.06
 sg10
 I3
 sg11
@@ -28754,7 +28754,7 @@ S'17th St & Massachusetts Ave NW'
 p2901
 sa(dp2902
 g3
-F0.92
+F0.95
 sg4
 F-77.0352
 sg5
@@ -28766,7 +28766,7 @@ F0.0
 sg8
 I15
 sg9
-F1.81
+F1.65
 sg10
 I0
 sg11
@@ -28774,7 +28774,7 @@ S'15th & Euclid St  NW'
 p2903
 sa(dp2904
 g3
-F0.02
+F0.07
 sg4
 F-76.995193
 sg5
@@ -28782,19 +28782,19 @@ I231
 sg6
 F38.889988
 sg7
-F0.09
+F0.07
 sg8
 I11
 sg9
-F6.18
+F5.25
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p2905
 sa(dp2906
 g3
-F0.31
+F0.03
 sg4
 F-77.017669
 sg5
@@ -28806,9 +28806,9 @@ F0.0
 sg8
 I15
 sg9
-F2.65
+F5.53
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p2907
@@ -28822,11 +28822,11 @@ I233
 sg6
 F38.889908
 sg7
-F0.0
+F0.02
 sg8
 I11
 sg9
-F4.91
+F4.92
 sg10
 I5
 sg11
@@ -28834,7 +28834,7 @@ S'15th & East Capitol St NE'
 p2909
 sa(dp2910
 g3
-F0.02
+F0.01
 sg4
 F-76.994749
 sg5
@@ -28846,7 +28846,7 @@ F0.01
 sg8
 I15
 sg9
-F7.35
+F7.45
 sg10
 I7
 sg11
@@ -28866,7 +28866,7 @@ F0.0
 sg8
 I15
 sg9
-F7.79
+F7.81
 sg10
 I8
 sg11
@@ -28886,9 +28886,9 @@ F0.0
 sg8
 I19
 sg9
-F5.28
+F6.67
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p2915
@@ -28906,7 +28906,7 @@ F0.0
 sg8
 I15
 sg9
-F4.65
+F4.64
 sg10
 I5
 sg11
@@ -28926,7 +28926,7 @@ F0.0
 sg8
 I10
 sg9
-F4.01
+F4.09
 sg10
 I4
 sg11
@@ -28934,7 +28934,7 @@ S'34th St & Minnesota Ave SE'
 p2919
 sa(dp2920
 g3
-F0.05
+F0.03
 sg4
 F-76.999388
 sg5
@@ -28946,7 +28946,7 @@ F0.0
 sg8
 I11
 sg9
-F1.1
+F1.13
 sg10
 I1
 sg11
@@ -28962,11 +28962,11 @@ I240
 sg6
 F38.863897
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F9.03
+F9.05
 sg10
 I9
 sg11
@@ -28986,7 +28986,7 @@ F0.0
 sg8
 I15
 sg9
-F4.95
+F5.13
 sg10
 I5
 sg11
@@ -28994,7 +28994,7 @@ S'Neal St & Trinidad Ave NE'
 p2925
 sa(dp2926
 g3
-F0.74
+F0.85
 sg4
 F-77.029779
 sg5
@@ -29006,15 +29006,15 @@ F0.0
 sg8
 I23
 sg9
-F2.72
+F2.14
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p2927
 sa(dp2928
 g3
-F0.0
+F0.01
 sg4
 F-77.105022
 sg5
@@ -29026,7 +29026,7 @@ F0.0
 sg8
 I11
 sg9
-F3.88
+F3.97
 sg10
 I4
 sg11
@@ -29046,7 +29046,7 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F9.99
 sg10
 I10
 sg11
@@ -29066,7 +29066,7 @@ F0.0
 sg8
 I11
 sg9
-F6.05
+F6.08
 sg10
 I6
 sg11
@@ -29094,7 +29094,7 @@ S'Columbia Pike & S Orme St'
 p2935
 sa(dp2936
 g3
-F0.04
+F0.02
 sg4
 F-77.001955
 sg5
@@ -29102,19 +29102,19 @@ I247
 sg6
 F38.887378
 sg7
-F0.04
+F0.12
 sg8
 I15
 sg9
-F6.56
+F8.02
 sg10
-I7
+I9
 sg11
 S'3rd St & Pennsylvania Ave SE'
 p2937
 sa(dp2938
 g3
-F0.25
+F0.31
 sg4
 F-77.02324
 sg5
@@ -29122,11 +29122,11 @@ I248
 sg6
 F38.894851
 sg7
-F0.01
+F0.0
 sg8
 I15
 sg9
-F4.44
+F4.13
 sg10
 I3
 sg11
@@ -29134,7 +29134,7 @@ S'8th & D St NW'
 p2939
 sa(dp2940
 g3
-F0.01
+F0.02
 sg4
 F-77.01597
 sg5
@@ -29146,9 +29146,9 @@ F0.0
 sg8
 I15
 sg9
-F5.82
+F4.45
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p2941
@@ -29166,7 +29166,7 @@ F0.0
 sg8
 I19
 sg9
-F6.63
+F6.39
 sg10
 I7
 sg11
@@ -29174,7 +29174,7 @@ S'Rhode Island Ave & V St NE'
 p2943
 sa(dp2944
 g3
-F0.03
+F0.06
 sg4
 F-77.013917
 sg5
@@ -29186,7 +29186,7 @@ F0.0
 sg8
 I27
 sg9
-F10.9
+F10.19
 sg10
 I12
 sg11
@@ -29205,7 +29205,7 @@ asI90
 (lp2949
 (dp2950
 g3
-F0.01
+F0.0
 sg4
 F-77.0512
 sg5
@@ -29217,7 +29217,7 @@ F0.0
 sg8
 I11
 sg9
-F2.91
+F2.9
 sg10
 I3
 sg11
@@ -29233,11 +29233,11 @@ I2
 sg6
 F38.85725
 sg7
-F0.06
+F0.03
 sg8
 I9
 sg9
-F6.21
+F5.9
 sg10
 I6
 sg11
@@ -29257,9 +29257,9 @@ F0.0
 sg8
 I13
 sg9
-F6.92
+F5.87
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p2955
@@ -29273,11 +29273,11 @@ I4
 sg6
 F38.860244
 sg7
-F0.03
+F0.05
 sg8
 I10
 sg9
-F6.82
+F6.98
 sg10
 I7
 sg11
@@ -29297,7 +29297,7 @@ F0.0
 sg8
 I11
 sg9
-F3.86
+F3.8
 sg10
 I4
 sg11
@@ -29317,7 +29317,7 @@ F0.0
 sg8
 I17
 sg9
-F9.12
+F9.08
 sg10
 I9
 sg11
@@ -29337,7 +29337,7 @@ F0.0
 sg8
 I10
 sg9
-F5.0
+F5.1
 sg10
 I5
 sg11
@@ -29357,9 +29357,9 @@ F0.0
 sg8
 I19
 sg9
-F10.08
+F9.22
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p2965
@@ -29377,7 +29377,7 @@ F0.0
 sg8
 I11
 sg9
-F4.69
+F4.66
 sg10
 I5
 sg11
@@ -29397,7 +29397,7 @@ F0.0
 sg8
 I11
 sg9
-F0.91
+F0.96
 sg10
 I1
 sg11
@@ -29413,11 +29413,11 @@ I11
 sg6
 F38.8426
 sg7
-F0.08
+F0.06
 sg8
 I11
 sg9
-F7.85
+F8.03
 sg10
 I8
 sg11
@@ -29437,7 +29437,7 @@ F0.0
 sg8
 I16
 sg9
-F6.74
+F6.92
 sg10
 I7
 sg11
@@ -29457,7 +29457,7 @@ F0.0
 sg8
 I11
 sg9
-F2.96
+F2.98
 sg10
 I3
 sg11
@@ -29477,7 +29477,7 @@ F0.0
 sg8
 I15
 sg9
-F8.43
+F8.66
 sg10
 I9
 sg11
@@ -29485,7 +29485,7 @@ S'19th St & Pennsylvania Ave NW'
 p2977
 sa(dp2978
 g3
-F0.58
+F0.55
 sg4
 F-77.0321
 sg5
@@ -29497,7 +29497,7 @@ F0.0
 sg8
 I27
 sg9
-F3.49
+F3.73
 sg10
 I2
 sg11
@@ -29505,7 +29505,7 @@ S'14th & V St NW'
 p2979
 sa(dp2980
 g3
-F0.81
+F0.79
 sg4
 F-77.027822
 sg5
@@ -29517,7 +29517,7 @@ F0.0
 sg8
 I27
 sg9
-F1.71
+F1.85
 sg10
 I0
 sg11
@@ -29525,7 +29525,7 @@ S'11th & Kenyon St NW'
 p2981
 sa(dp2982
 g3
-F0.81
+F0.91
 sg4
 F-77.036536
 sg5
@@ -29537,15 +29537,15 @@ F0.0
 sg8
 I33
 sg9
-F2.02
+F1.76
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p2983
 sa(dp2984
 g3
-F0.61
+F0.81
 sg4
 F-77.042581
 sg5
@@ -29557,15 +29557,15 @@ F0.0
 sg8
 I15
 sg9
-F2.99
+F2.59
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p2985
 sa(dp2986
 g3
-F0.76
+F0.9
 sg4
 F-77.0322
 sg5
@@ -29577,15 +29577,15 @@ F0.0
 sg8
 I19
 sg9
-F2.04
+F1.65
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p2987
 sa(dp2988
 g3
-F0.58
+F0.54
 sg4
 F-77.0501
 sg5
@@ -29605,7 +29605,7 @@ S'Calvert St & Woodley Pl NW'
 p2989
 sa(dp2990
 g3
-F0.92
+F0.88
 sg4
 F-77.0388
 sg5
@@ -29617,7 +29617,7 @@ F0.0
 sg8
 I19
 sg9
-F1.86
+F1.89
 sg10
 I0
 sg11
@@ -29625,7 +29625,7 @@ S'Lamont & Mt Pleasant NW'
 p2991
 sa(dp2992
 g3
-F0.73
+F0.7
 sg4
 F-77.0178
 sg5
@@ -29637,7 +29637,7 @@ F0.0
 sg8
 I19
 sg9
-F2.63
+F2.93
 sg10
 I1
 sg11
@@ -29645,7 +29645,7 @@ S'4th & M St SW'
 p2993
 sa(dp2994
 g3
-F0.11
+F0.1
 sg4
 F-77.034438
 sg5
@@ -29653,19 +29653,19 @@ I23
 sg6
 F38.90985
 sg7
-F0.02
+F0.01
 sg8
 I19
 sg9
-F7.43
+F8.34
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p2995
 sa(dp2996
 g3
-F0.29
+F0.4
 sg4
 F-77.031681
 sg5
@@ -29677,7 +29677,7 @@ F0.0
 sg8
 I15
 sg9
-F3.6
+F3.37
 sg10
 I3
 sg11
@@ -29685,7 +29685,7 @@ S'14th & R St NW'
 p2997
 sa(dp2998
 g3
-F0.36
+F0.78
 sg4
 F-77.0323
 sg5
@@ -29697,9 +29697,9 @@ F0.0
 sg8
 I23
 sg9
-F3.66
+F2.94
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p2999
@@ -29717,9 +29717,9 @@ F0.0
 sg8
 I15
 sg9
-F6.47
+F5.64
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p3001
@@ -29737,15 +29737,15 @@ F0.0
 sg8
 I35
 sg9
-F24.55
+F25.47
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p3003
 sa(dp3004
 g3
-F0.03
+F0.04
 sg4
 F-77.024649
 sg5
@@ -29757,7 +29757,7 @@ F0.0
 sg8
 I13
 sg9
-F5.14
+F4.95
 sg10
 I5
 sg11
@@ -29773,11 +29773,11 @@ I29
 sg6
 F38.9375
 sg7
-F0.06
+F0.05
 sg8
 I11
 sg9
-F7.18
+F7.08
 sg10
 I7
 sg11
@@ -29797,7 +29797,7 @@ F0.0
 sg8
 I11
 sg9
-F6.02
+F6.0
 sg10
 I6
 sg11
@@ -29805,7 +29805,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p3009
 sa(dp3010
 g3
-F0.55
+F0.73
 sg4
 F-77.019027
 sg5
@@ -29817,9 +29817,9 @@ F0.0
 sg8
 I19
 sg9
-F2.9
+F3.0
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p3011
@@ -29837,7 +29837,7 @@ F0.0
 sg8
 I15
 sg9
-F7.55
+F7.71
 sg10
 I8
 sg11
@@ -29845,7 +29845,7 @@ S'19th & East Capitol St SE'
 p3013
 sa(dp3014
 g3
-F0.0
+F0.01
 sg4
 F-77.0315
 sg5
@@ -29857,15 +29857,15 @@ F0.0
 sg8
 I19
 sg9
-F7.07
+F8.71
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p3015
 sa(dp3016
 g3
-F0.04
+F0.06
 sg4
 F-76.9672
 sg5
@@ -29875,9 +29875,9 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
-F1.01
+F0.98
 sg10
 I1
 sg11
@@ -29885,7 +29885,7 @@ S'Good Hope & Naylor Rd SE'
 p3017
 sa(dp3018
 g3
-F0.37
+F0.39
 sg4
 F-77.057979
 sg5
@@ -29897,7 +29897,7 @@ F0.0
 sg8
 I11
 sg9
-F2.37
+F2.42
 sg10
 I2
 sg11
@@ -29917,7 +29917,7 @@ F0.0
 sg8
 I11
 sg9
-F5.99
+F5.96
 sg10
 I6
 sg11
@@ -29937,7 +29937,7 @@ F0.0
 sg8
 I11
 sg9
-F6.98
+F6.96
 sg10
 I7
 sg11
@@ -29960,7 +29960,7 @@ F0.0
 sg8
 I11
 sg9
-F7.95
+F7.98
 sg10
 I8
 sg11
@@ -29980,7 +29980,7 @@ F0.0
 sg8
 I11
 sg9
-F9.01
+F8.97
 sg10
 I9
 sg11
@@ -29988,7 +29988,7 @@ S'Good Hope Rd & MLK Ave SE'
 p3028
 sa(dp3029
 g3
-F0.26
+F0.23
 sg4
 F-77.0436
 sg5
@@ -30000,7 +30000,7 @@ F0.0
 sg8
 I11
 sg9
-F1.74
+F1.77
 sg10
 I2
 sg11
@@ -30020,7 +30020,7 @@ F0.0
 sg8
 I11
 sg9
-F4.05
+F3.96
 sg10
 I4
 sg11
@@ -30028,7 +30028,7 @@ S'4th St & Rhode Island Ave NE'
 p3032
 sa(dp3033
 g3
-F0.5
+F0.44
 sg4
 F-77.0259
 sg5
@@ -30040,7 +30040,7 @@ F0.0
 sg8
 I14
 sg9
-F2.9
+F3.35
 sg10
 I2
 sg11
@@ -30048,7 +30048,7 @@ S'10th & U St NW'
 p3034
 sa(dp3035
 g3
-F0.39
+F0.43
 sg4
 F-77.0222
 sg5
@@ -30060,7 +30060,7 @@ F0.0
 sg8
 I11
 sg9
-F1.69
+F1.64
 sg10
 I1
 sg11
@@ -30068,7 +30068,7 @@ S'Georgia Ave and Fairmont St NW'
 p3036
 sa(dp3037
 g3
-F0.69
+F0.63
 sg4
 F-77.0057
 sg5
@@ -30080,7 +30080,7 @@ F0.0
 sg8
 I23
 sg9
-F1.18
+F1.58
 sg10
 I0
 sg11
@@ -30088,7 +30088,7 @@ S'1st & N St  SE'
 p3038
 sa(dp3039
 g3
-F0.38
+F0.37
 sg4
 F-77.0446
 sg5
@@ -30108,7 +30108,7 @@ S'20th St & Florida Ave NW'
 p3040
 sa(dp3041
 g3
-F0.78
+F0.8
 sg4
 F-77.0222
 sg5
@@ -30120,7 +30120,7 @@ F0.0
 sg8
 I14
 sg9
-F1.63
+F1.71
 sg10
 I0
 sg11
@@ -30140,7 +30140,7 @@ F0.0
 sg8
 I11
 sg9
-F5.26
+F5.14
 sg10
 I5
 sg11
@@ -30148,7 +30148,7 @@ S'23rd & Eads St'
 p3044
 sa(dp3045
 g3
-F0.02
+F0.0
 sg4
 F-77.0037
 sg5
@@ -30156,19 +30156,19 @@ I49
 sg6
 F38.8763
 sg7
-F0.0
+F0.02
 sg8
 I15
 sg9
-F6.01
+F10.03
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p3046
 sa(dp3047
 g3
-F0.0
+F0.04
 sg4
 F-77.0444
 sg5
@@ -30180,15 +30180,15 @@ F0.0
 sg8
 I41
 sg9
-F14.98
+F12.37
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p3048
 sa(dp3049
 g3
-F0.13
+F0.06
 sg4
 F-77.0056
 sg5
@@ -30200,15 +30200,15 @@ F0.0
 sg8
 I15
 sg9
-F4.19
+F5.48
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p3050
 sa(dp3051
 g3
-F0.0
+F0.01
 sg4
 F-77.0471
 sg5
@@ -30216,11 +30216,11 @@ I53
 sg6
 F38.9054
 sg7
-F0.01
+F0.0
 sg8
 I19
 sg9
-F9.41
+F9.35
 sg10
 I10
 sg11
@@ -30236,19 +30236,19 @@ I54
 sg6
 F38.90276
 sg7
-F0.02
+F0.06
 sg8
 I17
 sg9
-F10.78
+F11.98
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p3054
 sa(dp3055
 g3
-F0.39
+F0.25
 sg4
 F-77.016
 sg5
@@ -30260,15 +30260,15 @@ F0.0
 sg8
 I15
 sg9
-F2.81
+F3.42
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p3056
 sa(dp3057
 g3
-F0.22
+F0.21
 sg4
 F-77.0023
 sg5
@@ -30280,7 +30280,7 @@ F0.01
 sg8
 I11
 sg9
-F3.99
+F3.55
 sg10
 I4
 sg11
@@ -30288,7 +30288,7 @@ S'3rd & D St SE'
 p3058
 sa(dp3059
 g3
-F0.15
+F0.35
 sg4
 F-76.9862
 sg5
@@ -30300,15 +30300,15 @@ F0.0
 sg8
 I15
 sg9
-F3.68
+F2.65
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p3060
 sa(dp3061
 g3
-F0.23
+F0.24
 sg4
 F-76.9861
 sg5
@@ -30320,7 +30320,7 @@ F0.0
 sg8
 I15
 sg9
-F2.91
+F2.79
 sg10
 I3
 sg11
@@ -30328,7 +30328,7 @@ S'14th & D St SE'
 p3062
 sa(dp3063
 g3
-F0.27
+F0.23
 sg4
 F-77.0387
 sg5
@@ -30340,9 +30340,9 @@ F0.0
 sg8
 I19
 sg9
-F5.01
+F4.95
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p3064
@@ -30356,11 +30356,11 @@ I60
 sg6
 F38.944551
 sg7
-F0.22
+F0.28
 sg8
 I15
 sg9
-F12.4
+F12.61
 sg10
 I13
 sg11
@@ -30368,7 +30368,7 @@ S'Van Ness Metro / UDC'
 p3066
 sa(dp3067
 g3
-F0.73
+F0.71
 sg4
 F-77.0135
 sg5
@@ -30380,7 +30380,7 @@ F0.0
 sg8
 I15
 sg9
-F1.92
+F1.84
 sg10
 I1
 sg11
@@ -30388,7 +30388,7 @@ S'Florida Ave & R St NW'
 p3068
 sa(dp3069
 g3
-F0.01
+F0.0
 sg4
 F-76.9953
 sg5
@@ -30400,7 +30400,7 @@ F0.01
 sg8
 I11
 sg9
-F5.95
+F5.97
 sg10
 I6
 sg11
@@ -30420,7 +30420,7 @@ F0.0
 sg8
 I15
 sg9
-F9.71
+F9.53
 sg10
 I10
 sg11
@@ -30428,7 +30428,7 @@ S'Ward Circle / American University'
 p3072
 sa(dp3073
 g3
-F0.55
+F0.54
 sg4
 F-77.074647
 sg5
@@ -30440,7 +30440,7 @@ F0.0
 sg8
 I15
 sg9
-F1.82
+F1.91
 sg10
 I1
 sg11
@@ -30460,7 +30460,7 @@ F0.0
 sg8
 I10
 sg9
-F3.11
+F2.93
 sg10
 I3
 sg11
@@ -30500,7 +30500,7 @@ F0.0
 sg8
 I10
 sg9
-F3.95
+F3.98
 sg10
 I4
 sg11
@@ -30508,7 +30508,7 @@ S'Pennsylvania & Minnesota Ave SE'
 p3080
 sa(dp3081
 g3
-F0.02
+F0.0
 sg4
 F-76.996806
 sg5
@@ -30516,13 +30516,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.11
+F0.18
 sg8
 I15
 sg9
-F8.81
+F9.15
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p3082
@@ -30536,13 +30536,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.59
+F0.77
 sg8
 I17
 sg9
-F15.1
+F15.49
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p3084
@@ -30560,7 +30560,7 @@ F0.0
 sg8
 I11
 sg9
-F9.03
+F8.98
 sg10
 I9
 sg11
@@ -30580,7 +30580,7 @@ F0.0
 sg8
 I39
 sg9
-F25.42
+F25.91
 sg10
 I25
 sg11
@@ -30588,7 +30588,7 @@ S'USDA / 12th & Independence Ave SW'
 p3088
 sa(dp3089
 g3
-F0.05
+F0.01
 sg4
 F-77.059219
 sg5
@@ -30596,19 +30596,19 @@ I72
 sg6
 F38.9022212
 sg7
-F0.02
+F0.05
 sg8
 I18
 sg9
-F8.12
+F10.31
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p3090
 sa(dp3091
 g3
-F0.04
+F0.07
 sg4
 F-76.991016
 sg5
@@ -30620,7 +30620,7 @@ F0.0
 sg8
 I11
 sg9
-F1.92
+F1.71
 sg10
 I2
 sg11
@@ -30628,7 +30628,7 @@ S'12th & Newton St NE'
 p3092
 sa(dp3093
 g3
-F0.13
+F0.17
 sg4
 F-77.046587
 sg5
@@ -30640,7 +30640,7 @@ F0.0
 sg8
 I15
 sg9
-F2.71
+F2.65
 sg10
 I3
 sg11
@@ -30660,7 +30660,7 @@ F0.06
 sg8
 I15
 sg9
-F10.23
+F10.22
 sg10
 I10
 sg11
@@ -30676,13 +30676,13 @@ I76
 sg6
 F38.893028
 sg7
-F0.04
+F0.38
 sg8
-I31
+I30
 sg9
-F23.16
+F26.18
 sg10
-I22
+I25
 sg11
 S'10th St & Constitution Ave NW'
 p3098
@@ -30700,7 +30700,7 @@ F0.0
 sg8
 I11
 sg9
-F5.1
+F5.16
 sg10
 I5
 sg11
@@ -30716,13 +30716,13 @@ I78
 sg6
 F38.884
 sg7
-F0.41
+F0.9
 sg8
 I19
 sg9
-F14.73
+F16.02
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p3102
@@ -30736,11 +30736,11 @@ I79
 sg6
 F38.904742
 sg7
-F0.68
+F0.65
 sg8
 I19
 sg9
-F16.79
+F16.73
 sg10
 I18
 sg11
@@ -30760,7 +30760,7 @@ F0.0
 sg8
 I14
 sg9
-F7.98
+F7.77
 sg10
 I8
 sg11
@@ -30768,7 +30768,7 @@ S'Tenleytown / Wisconsin Ave & Albemarle St NW'
 p3106
 sa(dp3107
 g3
-F0.12
+F0.11
 sg4
 F-76.9882
 sg5
@@ -30800,15 +30800,15 @@ F0.0
 sg8
 I31
 sg9
-F14.09
+F13.41
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p3110
 sa(dp3111
 g3
-F0.02
+F0.01
 sg4
 F-77.0337
 sg5
@@ -30816,11 +30816,11 @@ I83
 sg6
 F38.8991
 sg7
-F0.08
+F0.12
 sg8
 I15
 sg9
-F8.78
+F9.24
 sg10
 I9
 sg11
@@ -30828,7 +30828,7 @@ S'New York Ave & 15th St NW'
 p3112
 sa(dp3113
 g3
-F0.65
+F0.88
 sg4
 F-77.022264
 sg5
@@ -30840,15 +30840,15 @@ F0.0
 sg8
 I18
 sg9
-F2.52
+F1.93
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p3114
 sa(dp3115
 g3
-F0.09
+F0.03
 sg4
 F-77.043358
 sg5
@@ -30860,15 +30860,15 @@ F0.0
 sg8
 I15
 sg9
-F3.62
+F4.78
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p3116
 sa(dp3117
 g3
-F0.17
+F0.16
 sg4
 F-77.043648
 sg5
@@ -30880,7 +30880,7 @@ F0.0
 sg8
 I15
 sg9
-F2.88
+F2.94
 sg10
 I3
 sg11
@@ -30896,13 +30896,13 @@ I87
 sg6
 F38.90375
 sg7
-F0.03
+F0.18
 sg8
 I22
 sg9
-F13.25
+F16.13
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p3120
@@ -30920,7 +30920,7 @@ F0.0
 sg8
 I19
 sg9
-F10.24
+F10.09
 sg10
 I10
 sg11
@@ -30928,7 +30928,7 @@ S'7th & Water St SW / SW Waterfront'
 p3122
 sa(dp3123
 g3
-F0.29
+F0.25
 sg4
 F-76.997114
 sg5
@@ -30940,7 +30940,7 @@ F0.0
 sg8
 I22
 sg9
-F3.2
+F3.49
 sg10
 I3
 sg11
@@ -30948,7 +30948,7 @@ S'D St & Maryland Ave NE'
 p3124
 sa(dp3125
 g3
-F0.71
+F0.73
 sg4
 F-77.0682
 sg5
@@ -30960,7 +30960,7 @@ F0.0
 sg8
 I11
 sg9
-F1.08
+F1.11
 sg10
 I0
 sg11
@@ -30980,7 +30980,7 @@ F0.0
 sg8
 I22
 sg9
-F11.4
+F11.34
 sg10
 I12
 sg11
@@ -31000,7 +31000,7 @@ F0.0
 sg8
 I33
 sg9
-F18.43
+F18.47
 sg10
 I17
 sg11
@@ -31008,7 +31008,7 @@ S'8th & H St NW'
 p3130
 sa(dp3131
 g3
-F0.35
+F0.31
 sg4
 F-76.992889
 sg5
@@ -31020,7 +31020,7 @@ F0.0
 sg8
 I11
 sg9
-F1.17
+F1.24
 sg10
 I1
 sg11
@@ -31028,7 +31028,7 @@ S'10th & Monroe St NE'
 p3132
 sa(dp3133
 g3
-F0.21
+F0.18
 sg4
 F-77.00495
 sg5
@@ -31040,7 +31040,7 @@ F0.0
 sg8
 I11
 sg9
-F1.88
+F2.08
 sg10
 I2
 sg11
@@ -31048,7 +31048,7 @@ S'Eckington Pl & Q St NE'
 p3134
 sa(dp3135
 g3
-F0.26
+F0.31
 sg4
 F-76.99831
 sg5
@@ -31060,7 +31060,7 @@ F0.0
 sg8
 I23
 sg9
-F3.09
+F2.88
 sg10
 I3
 sg11
@@ -31080,7 +31080,7 @@ F0.06
 sg8
 I19
 sg9
-F13.68
+F13.71
 sg10
 I14
 sg11
@@ -31100,7 +31100,7 @@ F0.0
 sg8
 I15
 sg9
-F1.91
+F1.89
 sg10
 I2
 sg11
@@ -31108,7 +31108,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p3140
 sa(dp3141
 g3
-F0.32
+F0.03
 sg4
 F-77.000349
 sg5
@@ -31116,19 +31116,19 @@ I98
 sg6
 F38.889955
 sg7
-F0.01
+F0.2
 sg8
 I11
 sg9
-F3.33
+F6.8
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p3142
 sa(dp3143
 g3
-F0.28
+F0.27
 sg4
 F-76.988355
 sg5
@@ -31140,7 +31140,7 @@ F0.0
 sg8
 I25
 sg9
-F3.27
+F3.67
 sg10
 I3
 sg11
@@ -31160,7 +31160,7 @@ F0.0
 sg8
 I10
 sg9
-F3.96
+F3.98
 sg10
 I4
 sg11
@@ -31168,7 +31168,7 @@ S'Branch & Pennsylvania Ave SE'
 p3146
 sa(dp3147
 g3
-F0.44
+F0.43
 sg4
 F-76.987633
 sg5
@@ -31180,7 +31180,7 @@ F0.0
 sg8
 I31
 sg9
-F2.24
+F2.2
 sg10
 I2
 sg11
@@ -31200,7 +31200,7 @@ F0.0
 sg8
 I23
 sg9
-F2.57
+F2.49
 sg10
 I0
 sg11
@@ -31220,9 +31220,9 @@ F0.0
 sg8
 I31
 sg9
-F16.17
+F15.19
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p3152
@@ -31240,15 +31240,15 @@ F0.0
 sg8
 I25
 sg9
-F15.98
+F16.84
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p3154
 sa(dp3155
 g3
-F0.04
+F0.02
 sg4
 F-77.022322
 sg5
@@ -31256,13 +31256,13 @@ I105
 sg6
 F38.897324
 sg7
-F0.01
+F0.02
 sg8
 I18
 sg9
-F7.6
+F8.76
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p3156
@@ -31280,9 +31280,9 @@ F0.0
 sg8
 I27
 sg9
-F18.96
+F20.06
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p3158
@@ -31296,13 +31296,13 @@ I107
 sg6
 F38.908905
 sg7
-F0.01
+F0.02
 sg8
 I19
 sg9
-F11.03
+F11.92
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p3160
@@ -31316,11 +31316,11 @@ I108
 sg6
 F38.895344
 sg7
-F0.0
+F0.02
 sg8
 I15
 sg9
-F9.61
+F9.89
 sg10
 I10
 sg11
@@ -31328,7 +31328,7 @@ S'4th & D St NW / Judiciary Square'
 p3162
 sa(dp3163
 g3
-F0.01
+F0.07
 sg4
 F-77.0436
 sg5
@@ -31340,9 +31340,9 @@ F0.0
 sg8
 I23
 sg9
-F9.94
+F7.96
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p3164
@@ -31356,19 +31356,19 @@ I110
 sg6
 F38.90774
 sg7
-F0.16
+F0.31
 sg8
 I23
 sg9
-F19.17
+F20.08
 sg10
-I19
+I20
 sg11
 S'37th & O St NW / Georgetown University'
 p3166
 sa(dp3167
 g3
-F0.01
+F0.0
 sg4
 F-76.991383
 sg5
@@ -31400,9 +31400,9 @@ F0.01
 sg8
 I14
 sg9
-F5.75
+F5.63
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p3170
@@ -31416,13 +31416,13 @@ I113
 sg6
 F38.89696
 sg7
-F0.04
+F0.01
 sg8
 I31
 sg9
-F23.61
+F22.76
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p3172
@@ -31440,7 +31440,7 @@ F0.0
 sg8
 I23
 sg9
-F13.83
+F13.73
 sg10
 I14
 sg11
@@ -31448,7 +31448,7 @@ S'North Capitol St & F St NW'
 p3174
 sa(dp3175
 g3
-F0.73
+F0.41
 sg4
 F-77.027137
 sg5
@@ -31460,9 +31460,9 @@ F0.0
 sg8
 I18
 sg9
-F2.8
+F3.2
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p3176
@@ -31480,7 +31480,7 @@ F0.0
 sg8
 I15
 sg9
-F7.85
+F8.06
 sg10
 I8
 sg11
@@ -31496,11 +31496,11 @@ I117
 sg6
 F38.898069
 sg7
-F0.42
+F0.29
 sg8
-I22
+I23
 sg9
-F19.28
+F19.88
 sg10
 I20
 sg11
@@ -31520,7 +31520,7 @@ F0.0
 sg8
 I23
 sg9
-F9.75
+F9.63
 sg10
 I10
 sg11
@@ -31528,7 +31528,7 @@ S'Potomac Ave & 35th St S'
 p3182
 sa(dp3183
 g3
-F0.95
+F0.69
 sg4
 F-77.04657
 sg5
@@ -31540,9 +31540,9 @@ F0.0
 sg8
 I23
 sg9
-F3.34
+F3.82
 sg10
-I0
+I2
 sg11
 S'Ohio Dr & West Basin Dr SW / MLK & FDR Memorials'
 p3184
@@ -31556,11 +31556,11 @@ I125
 sg6
 F38.897857
 sg7
-F0.87
+F0.82
 sg8
 I15
 sg9
-F13.27
+F13.21
 sg10
 I15
 sg11
@@ -31580,7 +31580,7 @@ F0.0
 sg8
 I19
 sg9
-F11.15
+F11.35
 sg10
 I12
 sg11
@@ -31588,7 +31588,7 @@ S'23rd & E St NW '
 p3188
 sa(dp3189
 g3
-F0.14
+F0.06
 sg4
 F-77.070993
 sg5
@@ -31600,9 +31600,9 @@ F0.0
 sg8
 I18
 sg9
-F3.78
+F5.14
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p3190
@@ -31620,7 +31620,7 @@ F0.0
 sg8
 I15
 sg9
-F7.12
+F6.71
 sg10
 I7
 sg11
@@ -31628,7 +31628,7 @@ S'Rosslyn Metro / Wilson Blvd & Ft Myer Dr'
 p3192
 sa(dp3193
 g3
-F0.05
+F0.03
 sg4
 F-77.076701
 sg5
@@ -31640,7 +31640,7 @@ F0.0
 sg8
 I11
 sg9
-F3.04
+F2.91
 sg10
 I3
 sg11
@@ -31656,19 +31656,19 @@ I130
 sg6
 F38.891696
 sg7
-F0.01
+F0.0
 sg8
 I15
 sg9
-F8.84
+F7.65
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p3196
 sa(dp3197
 g3
-F0.14
+F0.13
 sg4
 F-77.079375
 sg5
@@ -31680,7 +31680,7 @@ F0.0
 sg8
 I11
 sg9
-F1.92
+F1.99
 sg10
 I2
 sg11
@@ -31700,7 +31700,7 @@ F0.0
 sg8
 I15
 sg9
-F4.01
+F4.04
 sg10
 I4
 sg11
@@ -31708,7 +31708,7 @@ S'Fairfax Village'
 p3200
 sa(dp3201
 g3
-F0.73
+F0.7
 sg4
 F-77.046567
 sg5
@@ -31720,7 +31720,7 @@ F0.0
 sg8
 I15
 sg9
-F1.73
+F1.91
 sg10
 I2
 sg11
@@ -31728,7 +31728,7 @@ S'21st St & Constitution Ave NW'
 p3202
 sa(dp3203
 g3
-F0.0
+F0.01
 sg4
 F-77.0925
 sg5
@@ -31740,15 +31740,15 @@ F0.0
 sg8
 I15
 sg9
-F4.29
+F5.07
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p3204
 sa(dp3205
 g3
-F0.03
+F0.06
 sg4
 F-77.04368
 sg5
@@ -31760,7 +31760,7 @@ F0.0
 sg8
 I19
 sg9
-F5.91
+F5.56
 sg10
 I6
 sg11
@@ -31768,7 +31768,7 @@ S'Columbia Rd & Belmont St NW'
 p3206
 sa(dp3207
 g3
-F0.07
+F0.09
 sg4
 F-77.038785
 sg5
@@ -31780,7 +31780,7 @@ F0.0
 sg8
 I23
 sg9
-F5.59
+F5.15
 sg10
 I6
 sg11
@@ -31788,7 +31788,7 @@ S'17th & Rhode Island Ave NW'
 p3208
 sa(dp3209
 g3
-F0.84
+F0.9
 sg4
 F-77.0325
 sg5
@@ -31802,7 +31802,7 @@ I33
 sg9
 F2.47
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p3210
@@ -31816,13 +31816,13 @@ I138
 sg6
 F38.8904
 sg7
-F0.0
+F0.02
 sg8
 I11
 sg9
-F5.66
+F7.58
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p3212
@@ -31836,13 +31836,13 @@ I139
 sg6
 F38.8881
 sg7
-F0.07
+F0.03
 sg8
 I14
 sg9
-F10.96
+F10.06
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p3214
@@ -31860,7 +31860,7 @@ F0.0
 sg8
 I17
 sg9
-F5.95
+F5.87
 sg10
 I6
 sg11
@@ -31868,7 +31868,7 @@ S'Clarendon Metro / Wilson Blvd & N Highland St'
 p3216
 sa(dp3217
 g3
-F0.04
+F0.1
 sg4
 F-77.041539
 sg5
@@ -31880,9 +31880,9 @@ F0.0
 sg8
 I15
 sg9
-F5.93
+F4.97
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p3218
@@ -31900,15 +31900,15 @@ F0.0
 sg8
 I39
 sg9
-F19.27
+F19.89
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p3220
 sa(dp3221
 g3
-F0.78
+F0.9
 sg4
 F-77.017445
 sg5
@@ -31920,15 +31920,15 @@ F0.0
 sg8
 I17
 sg9
-F1.29
+F1.12
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p3222
 sa(dp3223
 g3
-F0.02
+F0.01
 sg4
 F-77.001828
 sg5
@@ -31940,7 +31940,7 @@ F0.0
 sg8
 I19
 sg9
-F5.29
+F4.97
 sg10
 I5
 sg11
@@ -31948,7 +31948,7 @@ S'3rd & G St SE'
 p3224
 sa(dp3225
 g3
-F0.82
+F0.77
 sg4
 F-77.022155
 sg5
@@ -31960,7 +31960,7 @@ F0.0
 sg8
 I15
 sg9
-F1.85
+F1.84
 sg10
 I0
 sg11
@@ -31980,7 +31980,7 @@ F0.0
 sg8
 I15
 sg9
-F7.3
+F7.32
 sg10
 I7
 sg11
@@ -31988,7 +31988,7 @@ S'9th & Upshur St NW'
 p3228
 sa(dp3229
 g3
-F0.88
+F0.12
 sg4
 F-77.012289
 sg5
@@ -32000,15 +32000,15 @@ F0.0
 sg8
 I14
 sg9
-F1.77
+F4.3
 sg10
-I0
+I4
 sg11
 S'1st & Rhode Island Ave NW'
 p3230
 sa(dp3231
 g3
-F0.34
+F0.37
 sg4
 F-77.02344
 sg5
@@ -32020,7 +32020,7 @@ F0.0
 sg8
 I19
 sg9
-F2.24
+F2.14
 sg10
 I2
 sg11
@@ -32028,7 +32028,7 @@ S'Columbia Rd & Georgia Ave NW'
 p3232
 sa(dp3233
 g3
-F0.08
+F0.13
 sg4
 F-77.04062
 sg5
@@ -32040,9 +32040,9 @@ F0.0
 sg8
 I19
 sg9
-F6.12
+F5.4
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p3234
@@ -32060,7 +32060,7 @@ F0.0
 sg8
 I19
 sg9
-F5.97
+F5.98
 sg10
 I6
 sg11
@@ -32068,7 +32068,7 @@ S'Benning Rd & East Capitol St NE / Benning Rd Metro'
 p3236
 sa(dp3237
 g3
-F0.03
+F0.05
 sg4
 F-77.055599
 sg5
@@ -32080,7 +32080,7 @@ F0.0
 sg8
 I15
 sg9
-F5.35
+F5.04
 sg10
 I5
 sg11
@@ -32100,7 +32100,7 @@ F0.0
 sg8
 I15
 sg9
-F6.94
+F7.0
 sg10
 I7
 sg11
@@ -32116,11 +32116,11 @@ I153
 sg6
 F38.905126
 sg7
-F0.6
+F0.58
 sg8
 I18
 sg9
-F15.09
+F15.12
 sg10
 I15
 sg11
@@ -32128,7 +32128,7 @@ S'M St & Pennsylvania Ave NW'
 p3242
 sa(dp3243
 g3
-F0.8
+F0.79
 sg4
 F-76.983569
 sg5
@@ -32140,7 +32140,7 @@ F0.0
 sg8
 I15
 sg9
-F1.12
+F1.21
 sg10
 I0
 sg11
@@ -32160,7 +32160,7 @@ F0.0
 sg8
 I15
 sg9
-F2.95
+F2.94
 sg10
 I3
 sg11
@@ -32200,7 +32200,7 @@ F0.0
 sg8
 I11
 sg9
-F6.02
+F5.9
 sg10
 I6
 sg11
@@ -32220,7 +32220,7 @@ F0.0
 sg8
 I15
 sg9
-F6.92
+F7.03
 sg10
 I7
 sg11
@@ -32228,7 +32228,7 @@ S'N Veitch  & 20th St N'
 p3252
 sa(dp3253
 g3
-F0.54
+F0.17
 sg4
 F-77.02674
 sg5
@@ -32240,9 +32240,9 @@ F0.0
 sg8
 I18
 sg9
-F2.37
+F3.63
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p3254
@@ -32256,11 +32256,11 @@ I160
 sg6
 F38.885801
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F6.25
+F6.32
 sg10
 I6
 sg11
@@ -32280,15 +32280,15 @@ F0.0
 sg8
 I11
 sg9
-F6.85
+F7.95
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p3258
 sa(dp3259
 g3
-F0.18
+F0.17
 sg4
 F-77.006004
 sg5
@@ -32300,7 +32300,7 @@ F0.0
 sg8
 I15
 sg9
-F3.92
+F4.21
 sg10
 I3
 sg11
@@ -32308,7 +32308,7 @@ S'1st & K St SE'
 p3260
 sa(dp3261
 g3
-F0.28
+F0.59
 sg4
 F-77.077271
 sg5
@@ -32320,9 +32320,9 @@ F0.0
 sg8
 I19
 sg9
-F2.48
+F1.55
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p3262
@@ -32340,7 +32340,7 @@ F0.0
 sg8
 I15
 sg9
-F2.93
+F2.96
 sg10
 I3
 sg11
@@ -32360,7 +32360,7 @@ F0.0
 sg8
 I19
 sg9
-F11.58
+F12.01
 sg10
 I12
 sg11
@@ -32380,7 +32380,7 @@ F0.02
 sg8
 I11
 sg9
-F7.3
+F7.11
 sg10
 I7
 sg11
@@ -32388,7 +32388,7 @@ S'Central Library / N Quincy St & 10th St N'
 p3268
 sa(dp3269
 g3
-F0.49
+F0.46
 sg4
 F-77.093485
 sg5
@@ -32400,7 +32400,7 @@ F0.0
 sg8
 I15
 sg9
-F1.08
+F1.15
 sg10
 I1
 sg11
@@ -32408,7 +32408,7 @@ S'Washington Blvd & 10th St N'
 p3270
 sa(dp3271
 g3
-F0.22
+F0.24
 sg4
 F-77.032429
 sg5
@@ -32416,13 +32416,13 @@ I168
 sg6
 F38.888553
 sg7
-F0.03
+F0.02
 sg8
 I23
 sg9
-F8.92
+F8.3
 sg10
-I7
+I6
 sg11
 S'Jefferson Dr & 14th St SW'
 p3272
@@ -32436,13 +32436,13 @@ I169
 sg6
 F38.888767
 sg7
-F0.14
+F0.17
 sg8
 I23
 sg9
-F15.15
+F15.61
 sg10
-I13
+I14
 sg11
 S'Smithsonian / Jefferson Dr & 12th St SW'
 p3274
@@ -32460,7 +32460,7 @@ F0.0
 sg8
 I15
 sg9
-F6.9
+F7.02
 sg10
 I7
 sg11
@@ -32476,13 +32476,13 @@ I171
 sg6
 F38.894573
 sg7
-F0.11
+F0.23
 sg8
 I18
 sg9
-F11.96
+F13.04
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p3278
@@ -32500,7 +32500,7 @@ F0.0
 sg8
 I11
 sg9
-F5.71
+F5.84
 sg10
 I6
 sg11
@@ -32508,7 +32508,7 @@ S'N Veitch & Key Blvd'
 p3280
 sa(dp3281
 g3
-F0.04
+F0.03
 sg4
 F-77.089006
 sg5
@@ -32520,7 +32520,7 @@ F0.0
 sg8
 I15
 sg9
-F2.83
+F3.08
 sg10
 I3
 sg11
@@ -32528,7 +32528,7 @@ S'N Adams St & Lee Hwy'
 p3282
 sa(dp3283
 g3
-F0.07
+F0.08
 sg4
 F-77.08095
 sg5
@@ -32540,7 +32540,7 @@ F0.0
 sg8
 I11
 sg9
-F2.55
+F2.62
 sg10
 I3
 sg11
@@ -32560,7 +32560,7 @@ F0.0
 sg8
 I11
 sg9
-F4.91
+F4.95
 sg10
 I5
 sg11
@@ -32568,7 +32568,7 @@ S'Washington Blvd & 7th St N'
 p3286
 sa(dp3287
 g3
-F0.0
+F0.01
 sg4
 F-77.111768
 sg5
@@ -32580,15 +32580,15 @@ F0.0
 sg8
 I19
 sg9
-F6.7
+F5.75
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p3288
 sa(dp3289
 g3
-F0.83
+F0.81
 sg4
 F-77.109366
 sg5
@@ -32600,7 +32600,7 @@ F0.0
 sg8
 I11
 sg9
-F0.67
+F0.59
 sg10
 I0
 sg11
@@ -32616,11 +32616,11 @@ I178
 sg6
 F38.879819
 sg7
-F0.1
+F0.12
 sg8
 I23
 sg9
-F15.6
+F15.09
 sg10
 I15
 sg11
@@ -32640,9 +32640,9 @@ F0.0
 sg8
 I15
 sg9
-F9.92
+F8.95
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p3294
@@ -32660,7 +32660,7 @@ F0.0
 sg8
 I11
 sg9
-F7.8
+F7.82
 sg10
 I8
 sg11
@@ -32696,13 +32696,13 @@ I182
 sg6
 F38.884616
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F7.0
+F7.88
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p3300
@@ -32720,9 +32720,9 @@ F0.0
 sg8
 I19
 sg9
-F13.51
+F11.99
 sg10
-I14
+I12
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p3302
@@ -32736,19 +32736,19 @@ I185
 sg6
 F38.903584
 sg7
-F0.01
+F0.0
 sg8
 I19
 sg9
-F14.51
+F13.84
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p3304
 sa(dp3305
 g3
-F0.7
+F0.82
 sg4
 F-77.0284
 sg5
@@ -32760,9 +32760,9 @@ F0.0
 sg8
 I19
 sg9
-F1.63
+F1.33
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p3306
@@ -32776,11 +32776,11 @@ I187
 sg6
 F38.901539
 sg7
-F0.71
+F0.65
 sg8
 I19
 sg9
-F17.85
+F17.86
 sg10
 I19
 sg11
@@ -32800,7 +32800,7 @@ F0.0
 sg8
 I22
 sg9
-F13.74
+F13.83
 sg10
 I14
 sg11
@@ -32820,7 +32820,7 @@ F0.0
 sg8
 I19
 sg9
-F8.94
+F9.04
 sg10
 I8
 sg11
@@ -32840,7 +32840,7 @@ F0.05
 sg8
 I15
 sg9
-F11.32
+F11.09
 sg10
 I11
 sg11
@@ -32860,7 +32860,7 @@ F0.0
 sg8
 I14
 sg9
-F8.03
+F8.08
 sg10
 I8
 sg11
@@ -32880,7 +32880,7 @@ F0.0
 sg8
 I15
 sg9
-F6.11
+F6.18
 sg10
 I6
 sg11
@@ -32888,7 +32888,7 @@ S'King St & Patrick St'
 p3318
 sa(dp3319
 g3
-F0.2
+F0.47
 sg4
 F-77.03353
 sg5
@@ -32900,9 +32900,9 @@ F0.0
 sg8
 I19
 sg9
-F3.39
+F1.97
 sg10
-I4
+I2
 sg11
 S'15th & K St NW'
 p3320
@@ -32920,7 +32920,7 @@ F0.0
 sg8
 I15
 sg9
-F10.02
+F10.08
 sg10
 I10
 sg11
@@ -32940,7 +32940,7 @@ F0.0
 sg8
 I17
 sg9
-F8.96
+F8.97
 sg10
 I9
 sg11
@@ -32960,7 +32960,7 @@ F0.0
 sg8
 I19
 sg9
-F6.81
+F6.77
 sg10
 I7
 sg11
@@ -32980,7 +32980,7 @@ F0.0
 sg8
 I19
 sg9
-F4.85
+F4.88
 sg10
 I5
 sg11
@@ -32996,11 +32996,11 @@ I198
 sg6
 F38.9066
 sg7
-F0.65
+F0.74
 sg8
 I15
 sg9
-F13.37
+F13.51
 sg10
 I15
 sg11
@@ -33016,13 +33016,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.9
+F0.78
 sg8
 I15
 sg9
-F12.98
+F12.67
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p3332
@@ -33036,19 +33036,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.71
+F0.33
 sg8
 I14
 sg9
-F11.64
+F10.57
 sg10
-I13
+I11
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p3334
 sa(dp3335
 g3
-F0.13
+F0.11
 sg4
 F-77.113905
 sg5
@@ -33060,7 +33060,7 @@ F0.0
 sg8
 I11
 sg9
-F1.87
+F1.94
 sg10
 I2
 sg11
@@ -33080,15 +33080,15 @@ F0.0
 sg8
 I11
 sg9
-F7.09
+F6.07
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p3338
 sa(dp3339
 g3
-F0.65
+F0.67
 sg4
 F-77.077294
 sg5
@@ -33100,7 +33100,7 @@ F0.0
 sg8
 I11
 sg9
-F0.76
+F0.69
 sg10
 I0
 sg11
@@ -33108,7 +33108,7 @@ S'Arlington Blvd & N Queen St'
 p3340
 sa(dp3341
 g3
-F0.73
+F0.91
 sg4
 F-77.049426
 sg5
@@ -33120,9 +33120,9 @@ F0.0
 sg8
 I25
 sg9
-F5.97
+F5.33
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p3342
@@ -33140,7 +33140,7 @@ F0.0
 sg8
 I15
 sg9
-F7.74
+F7.69
 sg10
 I8
 sg11
@@ -33148,7 +33148,7 @@ S'20th St & Virginia Ave NW'
 p3344
 sa(dp3345
 g3
-F0.71
+F0.75
 sg4
 F-77.018677
 sg5
@@ -33160,7 +33160,7 @@ F0.0
 sg8
 I19
 sg9
-F2.31
+F2.57
 sg10
 I1
 sg11
@@ -33168,7 +33168,7 @@ S'5th St & Massachusetts Ave NW'
 p3346
 sa(dp3347
 g3
-F0.02
+F0.06
 sg4
 F-77.077078
 sg5
@@ -33180,9 +33180,9 @@ F0.0
 sg8
 I15
 sg9
-F3.5
+F2.65
 sg10
-I4
+I3
 sg11
 S'39th & Veazey St NW'
 p3348
@@ -33200,7 +33200,7 @@ F0.0
 sg8
 I15
 sg9
-F7.69
+F7.55
 sg10
 I8
 sg11
@@ -33208,7 +33208,7 @@ S'Fessenden St & Wisconsin Ave NW'
 p3350
 sa(dp3351
 g3
-F0.04
+F0.03
 sg4
 F-77.003041
 sg5
@@ -33218,9 +33218,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F4.93
+F5.33
 sg10
 I6
 sg11
@@ -33240,7 +33240,7 @@ F0.0
 sg8
 I15
 sg9
-F6.38
+F6.11
 sg10
 I7
 sg11
@@ -33260,7 +33260,7 @@ F0.0
 sg8
 I11
 sg9
-F5.66
+F5.73
 sg10
 I6
 sg11
@@ -33280,7 +33280,7 @@ F0.0
 sg8
 I15
 sg9
-F5.65
+F5.59
 sg10
 I6
 sg11
@@ -33288,7 +33288,7 @@ S'28th St S & S Meade St'
 p3358
 sa(dp3359
 g3
-F0.88
+F0.9
 sg4
 F-77.041571
 sg5
@@ -33300,7 +33300,7 @@ F0.0
 sg8
 I23
 sg9
-F1.73
+F1.74
 sg10
 I0
 sg11
@@ -33320,7 +33320,7 @@ F0.0
 sg8
 I14
 sg9
-F8.63
+F8.84
 sg10
 I9
 sg11
@@ -33328,7 +33328,7 @@ S'5th & Kennedy St NW'
 p3362
 sa(dp3363
 g3
-F0.01
+F0.0
 sg4
 F-77.027333
 sg5
@@ -33340,7 +33340,7 @@ F0.0
 sg8
 I19
 sg9
-F2.66
+F2.67
 sg10
 I3
 sg11
@@ -33348,7 +33348,7 @@ S'Georgia Ave & Emerson St NW'
 p3364
 sa(dp3365
 g3
-F0.04
+F0.08
 sg4
 F-77.032652
 sg5
@@ -33360,7 +33360,7 @@ F0.0
 sg8
 I18
 sg9
-F2.53
+F2.52
 sg10
 I3
 sg11
@@ -33380,7 +33380,7 @@ F0.0
 sg8
 I19
 sg9
-F5.15
+F5.33
 sg10
 I6
 sg11
@@ -33400,7 +33400,7 @@ F0.0
 sg8
 I11
 sg9
-F4.85
+F4.93
 sg10
 I5
 sg11
@@ -33420,7 +33420,7 @@ F0.0
 sg8
 I11
 sg9
-F5.92
+F5.86
 sg10
 I6
 sg11
@@ -33460,7 +33460,7 @@ F0.0
 sg8
 I10
 sg9
-F6.95
+F6.88
 sg10
 I7
 sg11
@@ -33480,7 +33480,7 @@ F0.01
 sg8
 I15
 sg9
-F8.57
+F8.6
 sg10
 I8
 sg11
@@ -33500,7 +33500,7 @@ F0.0
 sg8
 I11
 sg9
-F4.0
+F3.96
 sg10
 I4
 sg11
@@ -33508,7 +33508,7 @@ S'S Kenmore & 24th St S'
 p3380
 sa(dp3381
 g3
-F0.8
+F0.82
 sg4
 F-77.065131
 sg5
@@ -33520,7 +33520,7 @@ F0.0
 sg8
 I19
 sg9
-F0.62
+F0.6
 sg10
 I0
 sg11
@@ -33528,7 +33528,7 @@ S'Connecticut Ave & Yuma St NW'
 p3382
 sa(dp3383
 g3
-F0.0
+F0.01
 sg4
 F-77.063586
 sg5
@@ -33536,13 +33536,13 @@ I226
 sg6
 F38.90849
 sg7
-F0.07
+F0.04
 sg8
 I17
 sg9
-F10.9
+F9.74
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p3384
@@ -33560,7 +33560,7 @@ F0.0
 sg8
 I11
 sg9
-F7.06
+F7.1
 sg10
 I7
 sg11
@@ -33568,7 +33568,7 @@ S'S George Mason Dr & 13th St S'
 p3386
 sa(dp3387
 g3
-F0.21
+F0.2
 sg4
 F-77.069956
 sg5
@@ -33580,7 +33580,7 @@ F0.0
 sg8
 I23
 sg9
-F1.93
+F2.06
 sg10
 I2
 sg11
@@ -33600,7 +33600,7 @@ F0.0
 sg8
 I19
 sg9
-F2.9
+F2.97
 sg10
 I3
 sg11
@@ -33608,7 +33608,7 @@ S'17th St & Massachusetts Ave NW'
 p3390
 sa(dp3391
 g3
-F0.88
+F0.89
 sg4
 F-77.0352
 sg5
@@ -33620,7 +33620,7 @@ F0.0
 sg8
 I15
 sg9
-F1.37
+F1.22
 sg10
 I0
 sg11
@@ -33628,7 +33628,7 @@ S'15th & Euclid St  NW'
 p3392
 sa(dp3393
 g3
-F0.0
+F0.04
 sg4
 F-76.995193
 sg5
@@ -33636,19 +33636,19 @@ I231
 sg6
 F38.889988
 sg7
-F0.02
+F0.01
 sg8
 I11
 sg9
-F5.74
+F5.09
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p3394
 sa(dp3395
 g3
-F0.25
+F0.04
 sg4
 F-77.017669
 sg5
@@ -33660,15 +33660,15 @@ F0.0
 sg8
 I15
 sg9
-F2.65
+F5.29
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p3396
 sa(dp3397
 g3
-F0.02
+F0.01
 sg4
 F-76.983326
 sg5
@@ -33680,7 +33680,7 @@ F0.0
 sg8
 I11
 sg9
-F5.04
+F4.95
 sg10
 I5
 sg11
@@ -33700,7 +33700,7 @@ F0.0
 sg8
 I15
 sg9
-F7.66
+F7.16
 sg10
 I7
 sg11
@@ -33728,7 +33728,7 @@ S'18th St & Rhode Island Ave NE'
 p3402
 sa(dp3403
 g3
-F0.01
+F0.0
 sg4
 F-76.983575
 sg5
@@ -33740,9 +33740,9 @@ F0.0
 sg8
 I19
 sg9
-F5.31
+F6.71
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p3404
@@ -33760,7 +33760,7 @@ F0.0
 sg8
 I15
 sg9
-F4.75
+F4.66
 sg10
 I5
 sg11
@@ -33780,7 +33780,7 @@ F0.0
 sg8
 I10
 sg9
-F4.09
+F4.05
 sg10
 I4
 sg11
@@ -33788,7 +33788,7 @@ S'34th St & Minnesota Ave SE'
 p3408
 sa(dp3409
 g3
-F0.05
+F0.03
 sg4
 F-76.999388
 sg5
@@ -33816,11 +33816,11 @@ I240
 sg6
 F38.863897
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F9.02
+F9.14
 sg10
 I9
 sg11
@@ -33840,7 +33840,7 @@ F0.0
 sg8
 I15
 sg9
-F4.98
+F5.04
 sg10
 I5
 sg11
@@ -33848,7 +33848,7 @@ S'Neal St & Trinidad Ave NE'
 p3414
 sa(dp3415
 g3
-F0.66
+F0.8
 sg4
 F-77.029779
 sg5
@@ -33860,9 +33860,9 @@ F0.0
 sg8
 I23
 sg9
-F2.54
+F2.3
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p3416
@@ -33880,7 +33880,7 @@ F0.0
 sg8
 I11
 sg9
-F3.8
+F4.0
 sg10
 I4
 sg11
@@ -33900,7 +33900,7 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F10.01
 sg10
 I10
 sg11
@@ -33920,7 +33920,7 @@ F0.0
 sg8
 I11
 sg9
-F6.04
+F6.12
 sg10
 I6
 sg11
@@ -33940,7 +33940,7 @@ F0.0
 sg8
 I11
 sg9
-F4.9
+F4.85
 sg10
 I5
 sg11
@@ -33948,7 +33948,7 @@ S'Columbia Pike & S Orme St'
 p3424
 sa(dp3425
 g3
-F0.02
+F0.0
 sg4
 F-77.001955
 sg5
@@ -33956,19 +33956,19 @@ I247
 sg6
 F38.887378
 sg7
-F0.01
+F0.12
 sg8
 I15
 sg9
-F7.63
+F9.31
 sg10
-I7
+I9
 sg11
 S'3rd St & Pennsylvania Ave SE'
 p3426
 sa(dp3427
 g3
-F0.24
+F0.27
 sg4
 F-77.02324
 sg5
@@ -33980,7 +33980,7 @@ F0.0
 sg8
 I15
 sg9
-F3.94
+F3.92
 sg10
 I3
 sg11
@@ -33988,7 +33988,7 @@ S'8th & D St NW'
 p3428
 sa(dp3429
 g3
-F0.0
+F0.01
 sg4
 F-77.01597
 sg5
@@ -34000,9 +34000,9 @@ F0.0
 sg8
 I15
 sg9
-F5.79
+F4.79
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p3430
@@ -34020,7 +34020,7 @@ F0.0
 sg8
 I19
 sg9
-F6.62
+F6.55
 sg10
 I7
 sg11
@@ -34028,7 +34028,7 @@ S'Rhode Island Ave & V St NE'
 p3432
 sa(dp3433
 g3
-F0.01
+F0.02
 sg4
 F-77.013917
 sg5
@@ -34040,7 +34040,7 @@ F0.0
 sg8
 I27
 sg9
-F11.24
+F10.87
 sg10
 I12
 sg11
@@ -34059,7 +34059,7 @@ asI60
 (lp3438
 (dp3439
 g3
-F0.0
+F0.01
 sg4
 F-77.0512
 sg5
@@ -34071,7 +34071,7 @@ F0.0
 sg8
 I11
 sg9
-F2.93
+F2.98
 sg10
 I3
 sg11
@@ -34091,7 +34091,7 @@ F0.02
 sg8
 I9
 sg9
-F6.05
+F5.99
 sg10
 I6
 sg11
@@ -34111,9 +34111,9 @@ F0.0
 sg8
 I13
 sg9
-F6.91
+F5.91
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p3444
@@ -34127,11 +34127,11 @@ I4
 sg6
 F38.860244
 sg7
-F0.03
+F0.01
 sg8
 I10
 sg9
-F6.89
+F6.96
 sg10
 I7
 sg11
@@ -34151,7 +34151,7 @@ F0.0
 sg8
 I11
 sg9
-F3.92
+F3.91
 sg10
 I4
 sg11
@@ -34171,7 +34171,7 @@ F0.0
 sg8
 I17
 sg9
-F9.1
+F9.04
 sg10
 I9
 sg11
@@ -34187,11 +34187,11 @@ I7
 sg6
 F38.8637
 sg7
-F0.0
+F0.01
 sg8
 I10
 sg9
-F5.0
+F5.05
 sg10
 I5
 sg11
@@ -34211,9 +34211,9 @@ F0.0
 sg8
 I19
 sg9
-F10.16
+F9.21
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p3454
@@ -34231,7 +34231,7 @@ F0.0
 sg8
 I11
 sg9
-F4.81
+F4.69
 sg10
 I5
 sg11
@@ -34239,7 +34239,7 @@ S'12th & Army Navy Dr'
 p3456
 sa(dp3457
 g3
-F0.37
+F0.43
 sg4
 F-77.051516
 sg5
@@ -34251,7 +34251,7 @@ F0.0
 sg8
 I11
 sg9
-F0.94
+F0.84
 sg10
 I1
 sg11
@@ -34267,11 +34267,11 @@ I11
 sg6
 F38.8426
 sg7
-F0.03
+F0.05
 sg8
 I11
 sg9
-F7.87
+F8.06
 sg10
 I8
 sg11
@@ -34291,7 +34291,7 @@ F0.0
 sg8
 I16
 sg9
-F6.79
+F6.92
 sg10
 I7
 sg11
@@ -34311,7 +34311,7 @@ F0.0
 sg8
 I11
 sg9
-F3.04
+F2.93
 sg10
 I3
 sg11
@@ -34331,7 +34331,7 @@ F0.0
 sg8
 I15
 sg9
-F8.68
+F8.5
 sg10
 I9
 sg11
@@ -34339,7 +34339,7 @@ S'19th St & Pennsylvania Ave NW'
 p3466
 sa(dp3467
 g3
-F0.49
+F0.52
 sg4
 F-77.0321
 sg5
@@ -34351,7 +34351,7 @@ F0.0
 sg8
 I27
 sg9
-F2.99
+F2.83
 sg10
 I2
 sg11
@@ -34359,7 +34359,7 @@ S'14th & V St NW'
 p3468
 sa(dp3469
 g3
-F0.79
+F0.74
 sg4
 F-77.027822
 sg5
@@ -34371,7 +34371,7 @@ F0.0
 sg8
 I27
 sg9
-F1.3
+F1.42
 sg10
 I0
 sg11
@@ -34379,7 +34379,7 @@ S'11th & Kenyon St NW'
 p3470
 sa(dp3471
 g3
-F0.75
+F0.86
 sg4
 F-77.036536
 sg5
@@ -34391,15 +34391,15 @@ F0.0
 sg8
 I33
 sg9
-F1.82
+F1.38
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p3472
 sa(dp3473
 g3
-F0.51
+F0.72
 sg4
 F-77.042581
 sg5
@@ -34411,15 +34411,15 @@ F0.0
 sg8
 I15
 sg9
-F2.67
+F2.28
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p3474
 sa(dp3475
 g3
-F0.71
+F0.89
 sg4
 F-77.0322
 sg5
@@ -34431,15 +34431,15 @@ F0.0
 sg8
 I19
 sg9
-F1.67
+F1.35
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p3476
 sa(dp3477
 g3
-F0.48
+F0.53
 sg4
 F-77.0501
 sg5
@@ -34451,7 +34451,7 @@ F0.0
 sg8
 I23
 sg9
-F2.24
+F2.17
 sg10
 I2
 sg11
@@ -34459,7 +34459,7 @@ S'Calvert St & Woodley Pl NW'
 p3478
 sa(dp3479
 g3
-F0.85
+F0.84
 sg4
 F-77.0388
 sg5
@@ -34471,7 +34471,7 @@ F0.0
 sg8
 I19
 sg9
-F1.16
+F1.54
 sg10
 I0
 sg11
@@ -34491,7 +34491,7 @@ F0.0
 sg8
 I19
 sg9
-F1.99
+F2.11
 sg10
 I1
 sg11
@@ -34499,7 +34499,7 @@ S'4th & M St SW'
 p3482
 sa(dp3483
 g3
-F0.05
+F0.04
 sg4
 F-77.034438
 sg5
@@ -34507,19 +34507,19 @@ I23
 sg6
 F38.90985
 sg7
-F0.0
+F0.01
 sg8
 I19
 sg9
-F7.37
+F8.06
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p3484
 sa(dp3485
 g3
-F0.2
+F0.22
 sg4
 F-77.031681
 sg5
@@ -34531,7 +34531,7 @@ F0.0
 sg8
 I15
 sg9
-F3.57
+F3.64
 sg10
 I3
 sg11
@@ -34539,7 +34539,7 @@ S'14th & R St NW'
 p3486
 sa(dp3487
 g3
-F0.31
+F0.77
 sg4
 F-77.0323
 sg5
@@ -34551,9 +34551,9 @@ F0.0
 sg8
 I23
 sg9
-F3.39
+F2.23
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p3488
@@ -34571,9 +34571,9 @@ F0.0
 sg8
 I15
 sg9
-F6.44
+F5.54
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p3490
@@ -34591,9 +34591,9 @@ F0.0
 sg8
 I35
 sg9
-F24.63
+F25.61
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p3492
@@ -34611,7 +34611,7 @@ F0.0
 sg8
 I13
 sg9
-F5.14
+F5.22
 sg10
 I5
 sg11
@@ -34627,11 +34627,11 @@ I29
 sg6
 F38.9375
 sg7
-F0.02
+F0.0
 sg8
 I11
 sg9
-F7.24
+F7.15
 sg10
 I7
 sg11
@@ -34651,7 +34651,7 @@ F0.0
 sg8
 I11
 sg9
-F6.02
+F6.01
 sg10
 I6
 sg11
@@ -34659,7 +34659,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p3498
 sa(dp3499
 g3
-F0.46
+F0.72
 sg4
 F-77.019027
 sg5
@@ -34671,9 +34671,9 @@ F0.0
 sg8
 I19
 sg9
-F2.78
+F2.22
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p3500
@@ -34691,7 +34691,7 @@ F0.0
 sg8
 I15
 sg9
-F7.6
+F7.59
 sg10
 I8
 sg11
@@ -34699,7 +34699,7 @@ S'19th & East Capitol St SE'
 p3502
 sa(dp3503
 g3
-F0.01
+F0.0
 sg4
 F-77.0315
 sg5
@@ -34711,15 +34711,15 @@ F0.0
 sg8
 I19
 sg9
-F6.85
+F8.88
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p3504
 sa(dp3505
 g3
-F0.01
+F0.03
 sg4
 F-76.9672
 sg5
@@ -34729,7 +34729,7 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
 F1.02
 sg10
@@ -34739,7 +34739,7 @@ S'Good Hope & Naylor Rd SE'
 p3506
 sa(dp3507
 g3
-F0.25
+F0.27
 sg4
 F-77.057979
 sg5
@@ -34751,7 +34751,7 @@ F0.0
 sg8
 I11
 sg9
-F2.14
+F2.16
 sg10
 I2
 sg11
@@ -34771,7 +34771,7 @@ F0.0
 sg8
 I11
 sg9
-F6.0
+F6.01
 sg10
 I6
 sg11
@@ -34791,7 +34791,7 @@ F0.0
 sg8
 I11
 sg9
-F7.02
+F7.0
 sg10
 I7
 sg11
@@ -34834,7 +34834,7 @@ F0.0
 sg8
 I11
 sg9
-F8.97
+F9.0
 sg10
 I9
 sg11
@@ -34842,7 +34842,7 @@ S'Good Hope Rd & MLK Ave SE'
 p3517
 sa(dp3518
 g3
-F0.15
+F0.11
 sg4
 F-77.0436
 sg5
@@ -34854,7 +34854,7 @@ F0.0
 sg8
 I11
 sg9
-F1.66
+F1.86
 sg10
 I2
 sg11
@@ -34874,7 +34874,7 @@ F0.0
 sg8
 I11
 sg9
-F3.88
+F3.92
 sg10
 I4
 sg11
@@ -34894,7 +34894,7 @@ F0.0
 sg8
 I14
 sg9
-F2.78
+F2.59
 sg10
 I2
 sg11
@@ -34902,7 +34902,7 @@ S'10th & U St NW'
 p3523
 sa(dp3524
 g3
-F0.41
+F0.38
 sg4
 F-77.0222
 sg5
@@ -34914,7 +34914,7 @@ F0.0
 sg8
 I11
 sg9
-F1.39
+F1.38
 sg10
 I1
 sg11
@@ -34922,7 +34922,7 @@ S'Georgia Ave and Fairmont St NW'
 p3525
 sa(dp3526
 g3
-F0.73
+F0.69
 sg4
 F-77.0057
 sg5
@@ -34934,7 +34934,7 @@ F0.0
 sg8
 I23
 sg9
-F0.69
+F0.96
 sg10
 I0
 sg11
@@ -34942,7 +34942,7 @@ S'1st & N St  SE'
 p3527
 sa(dp3528
 g3
-F0.25
+F0.28
 sg4
 F-77.0446
 sg5
@@ -34954,7 +34954,7 @@ F0.0
 sg8
 I15
 sg9
-F3.18
+F3.36
 sg10
 I3
 sg11
@@ -34962,7 +34962,7 @@ S'20th St & Florida Ave NW'
 p3529
 sa(dp3530
 g3
-F0.8
+F0.79
 sg4
 F-77.0222
 sg5
@@ -34974,7 +34974,7 @@ F0.0
 sg8
 I14
 sg9
-F1.12
+F1.2
 sg10
 I0
 sg11
@@ -34994,7 +34994,7 @@ F0.0
 sg8
 I11
 sg9
-F5.02
+F4.99
 sg10
 I5
 sg11
@@ -35010,19 +35010,19 @@ I49
 sg6
 F38.8763
 sg7
-F0.0
+F0.01
 sg8
 I15
 sg9
-F5.76
+F9.84
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p3535
 sa(dp3536
 g3
-F0.0
+F0.01
 sg4
 F-77.0444
 sg5
@@ -35034,15 +35034,15 @@ F0.0
 sg8
 I41
 sg9
-F14.71
+F12.68
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p3537
 sa(dp3538
 g3
-F0.04
+F0.02
 sg4
 F-77.0056
 sg5
@@ -35054,9 +35054,9 @@ F0.0
 sg8
 I15
 sg9
-F4.51
+F5.57
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p3539
@@ -35074,7 +35074,7 @@ F0.0
 sg8
 I19
 sg9
-F9.43
+F9.59
 sg10
 I10
 sg11
@@ -35094,15 +35094,15 @@ F0.01
 sg8
 I17
 sg9
-F10.96
+F11.9
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p3543
 sa(dp3544
 g3
-F0.33
+F0.15
 sg4
 F-77.016
 sg5
@@ -35114,15 +35114,15 @@ F0.0
 sg8
 I15
 sg9
-F2.43
+F3.24
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p3545
 sa(dp3546
 g3
-F0.1
+F0.09
 sg4
 F-77.0023
 sg5
@@ -35134,7 +35134,7 @@ F0.0
 sg8
 I11
 sg9
-F3.63
+F3.93
 sg10
 I4
 sg11
@@ -35142,7 +35142,7 @@ S'3rd & D St SE'
 p3547
 sa(dp3548
 g3
-F0.09
+F0.16
 sg4
 F-76.9862
 sg5
@@ -35154,15 +35154,15 @@ F0.0
 sg8
 I15
 sg9
-F3.51
+F2.94
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p3549
 sa(dp3550
 g3
-F0.12
+F0.16
 sg4
 F-76.9861
 sg5
@@ -35174,7 +35174,7 @@ F0.0
 sg8
 I15
 sg9
-F2.95
+F2.73
 sg10
 I3
 sg11
@@ -35194,9 +35194,9 @@ F0.0
 sg8
 I19
 sg9
-F4.73
+F5.23
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p3553
@@ -35210,7 +35210,7 @@ I60
 sg6
 F38.944551
 sg7
-F0.13
+F0.2
 sg8
 I15
 sg9
@@ -35222,7 +35222,7 @@ S'Van Ness Metro / UDC'
 p3555
 sa(dp3556
 g3
-F0.65
+F0.66
 sg4
 F-77.0135
 sg5
@@ -35234,7 +35234,7 @@ F0.0
 sg8
 I15
 sg9
-F1.62
+F1.53
 sg10
 I1
 sg11
@@ -35250,11 +35250,11 @@ I62
 sg6
 F38.8792
 sg7
-F0.01
+F0.0
 sg8
 I11
 sg9
-F6.06
+F5.85
 sg10
 I6
 sg11
@@ -35274,7 +35274,7 @@ F0.0
 sg8
 I15
 sg9
-F9.76
+F9.77
 sg10
 I10
 sg11
@@ -35282,7 +35282,7 @@ S'Ward Circle / American University'
 p3561
 sa(dp3562
 g3
-F0.45
+F0.51
 sg4
 F-77.074647
 sg5
@@ -35294,7 +35294,7 @@ F0.0
 sg8
 I15
 sg9
-F1.63
+F1.49
 sg10
 I1
 sg11
@@ -35302,7 +35302,7 @@ S'Idaho Ave & Newark St NW [on 2nd District patio]'
 p3563
 sa(dp3564
 g3
-F0.01
+F0.0
 sg4
 F-77.032818
 sg5
@@ -35314,7 +35314,7 @@ F0.0
 sg8
 I10
 sg9
-F2.98
+F3.02
 sg10
 I3
 sg11
@@ -35354,7 +35354,7 @@ F0.0
 sg8
 I10
 sg9
-F3.94
+F3.97
 sg10
 I4
 sg11
@@ -35370,13 +35370,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.07
+F0.1
 sg8
 I15
 sg9
-F9.33
+F9.89
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p3571
@@ -35390,13 +35390,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.55
+F0.67
 sg8
 I17
 sg9
-F15.52
+F15.79
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p3573
@@ -35414,7 +35414,7 @@ F0.0
 sg8
 I11
 sg9
-F8.97
+F9.0
 sg10
 I9
 sg11
@@ -35434,7 +35434,7 @@ F0.0
 sg8
 I39
 sg9
-F25.49
+F25.63
 sg10
 I25
 sg11
@@ -35442,7 +35442,7 @@ S'USDA / 12th & Independence Ave SW'
 p3577
 sa(dp3578
 g3
-F0.02
+F0.0
 sg4
 F-77.059219
 sg5
@@ -35450,19 +35450,19 @@ I72
 sg6
 F38.9022212
 sg7
-F0.0
+F0.01
 sg8
 I18
 sg9
-F7.87
+F9.73
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p3579
 sa(dp3580
 g3
-F0.04
+F0.06
 sg4
 F-76.991016
 sg5
@@ -35474,7 +35474,7 @@ F0.0
 sg8
 I11
 sg9
-F1.92
+F1.84
 sg10
 I2
 sg11
@@ -35482,7 +35482,7 @@ S'12th & Newton St NE'
 p3581
 sa(dp3582
 g3
-F0.05
+F0.09
 sg4
 F-77.046587
 sg5
@@ -35494,7 +35494,7 @@ F0.0
 sg8
 I15
 sg9
-F2.87
+F2.68
 sg10
 I3
 sg11
@@ -35510,11 +35510,11 @@ I75
 sg6
 F38.886266
 sg7
-F0.01
+F0.04
 sg8
 I15
 sg9
-F10.08
+F10.15
 sg10
 I10
 sg11
@@ -35530,13 +35530,13 @@ I76
 sg6
 F38.893028
 sg7
-F0.03
+F0.16
 sg8
-I31
+I30
 sg9
-F23.57
+F25.26
 sg10
-I22
+I24
 sg11
 S'10th St & Constitution Ave NW'
 p3587
@@ -35570,13 +35570,13 @@ I78
 sg6
 F38.884
 sg7
-F0.23
+F0.86
 sg8
 I19
 sg9
-F14.83
+F16.69
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p3591
@@ -35590,11 +35590,11 @@ I79
 sg6
 F38.904742
 sg7
-F0.56
+F0.62
 sg8
 I19
 sg9
-F17.01
+F17.14
 sg10
 I18
 sg11
@@ -35610,11 +35610,11 @@ I80
 sg6
 F38.947607
 sg7
-F0.01
+F0.0
 sg8
 I14
 sg9
-F8.14
+F7.8
 sg10
 I8
 sg11
@@ -35654,9 +35654,9 @@ F0.0
 sg8
 I31
 sg9
-F14.28
+F13.39
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p3599
@@ -35670,11 +35670,11 @@ I83
 sg6
 F38.8991
 sg7
-F0.04
+F0.05
 sg8
 I15
 sg9
-F9.0
+F9.21
 sg10
 I9
 sg11
@@ -35682,7 +35682,7 @@ S'New York Ave & 15th St NW'
 p3601
 sa(dp3602
 g3
-F0.66
+F0.81
 sg4
 F-77.022264
 sg5
@@ -35694,15 +35694,15 @@ F0.0
 sg8
 I18
 sg9
-F1.96
+F1.52
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p3603
 sa(dp3604
 g3
-F0.03
+F0.02
 sg4
 F-77.043358
 sg5
@@ -35714,15 +35714,15 @@ F0.0
 sg8
 I15
 sg9
-F3.66
+F4.64
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p3605
 sa(dp3606
 g3
-F0.07
+F0.04
 sg4
 F-77.043648
 sg5
@@ -35734,9 +35734,9 @@ F0.0
 sg8
 I15
 sg9
-F2.88
+F3.81
 sg10
-I3
+I4
 sg11
 S'19th & L St NW'
 p3607
@@ -35750,13 +35750,13 @@ I87
 sg6
 F38.90375
 sg7
-F0.01
+F0.08
 sg8
 I22
 sg9
-F12.9
+F16.13
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p3609
@@ -35774,7 +35774,7 @@ F0.0
 sg8
 I19
 sg9
-F9.79
+F9.94
 sg10
 I10
 sg11
@@ -35782,7 +35782,7 @@ S'7th & Water St SW / SW Waterfront'
 p3611
 sa(dp3612
 g3
-F0.17
+F0.19
 sg4
 F-76.997114
 sg5
@@ -35794,7 +35794,7 @@ F0.0
 sg8
 I22
 sg9
-F3.2
+F3.32
 sg10
 I3
 sg11
@@ -35802,7 +35802,7 @@ S'D St & Maryland Ave NE'
 p3613
 sa(dp3614
 g3
-F0.65
+F0.64
 sg4
 F-77.0682
 sg5
@@ -35814,7 +35814,7 @@ F0.0
 sg8
 I11
 sg9
-F0.9
+F0.98
 sg10
 I0
 sg11
@@ -35834,7 +35834,7 @@ F0.0
 sg8
 I22
 sg9
-F11.47
+F11.52
 sg10
 I12
 sg11
@@ -35854,7 +35854,7 @@ F0.0
 sg8
 I33
 sg9
-F18.22
+F18.19
 sg10
 I17
 sg11
@@ -35874,7 +35874,7 @@ F0.0
 sg8
 I11
 sg9
-F1.15
+F1.14
 sg10
 I1
 sg11
@@ -35882,7 +35882,7 @@ S'10th & Monroe St NE'
 p3621
 sa(dp3622
 g3
-F0.12
+F0.17
 sg4
 F-77.00495
 sg5
@@ -35894,7 +35894,7 @@ F0.0
 sg8
 I11
 sg9
-F1.85
+F1.86
 sg10
 I2
 sg11
@@ -35902,7 +35902,7 @@ S'Eckington Pl & Q St NE'
 p3623
 sa(dp3624
 g3
-F0.14
+F0.19
 sg4
 F-76.99831
 sg5
@@ -35914,7 +35914,7 @@ F0.0
 sg8
 I23
 sg9
-F3.11
+F3.01
 sg10
 I3
 sg11
@@ -35930,11 +35930,11 @@ I96
 sg6
 F38.90002
 sg7
-F0.03
+F0.02
 sg8
 I19
 sg9
-F13.84
+F13.88
 sg10
 I14
 sg11
@@ -35942,7 +35942,7 @@ S'3rd & H St NE'
 p3627
 sa(dp3628
 g3
-F0.1
+F0.18
 sg4
 F-76.982872
 sg5
@@ -35954,7 +35954,7 @@ F0.0
 sg8
 I15
 sg9
-F2.0
+F1.84
 sg10
 I2
 sg11
@@ -35962,7 +35962,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p3629
 sa(dp3630
 g3
-F0.19
+F0.0
 sg4
 F-77.000349
 sg5
@@ -35970,19 +35970,19 @@ I98
 sg6
 F38.889955
 sg7
-F0.0
+F0.1
 sg8
 I11
 sg9
-F3.24
+F7.01
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p3631
 sa(dp3632
 g3
-F0.19
+F0.22
 sg4
 F-76.988355
 sg5
@@ -35994,7 +35994,7 @@ F0.0
 sg8
 I25
 sg9
-F3.09
+F3.08
 sg10
 I3
 sg11
@@ -36014,7 +36014,7 @@ F0.0
 sg8
 I10
 sg9
-F3.96
+F3.97
 sg10
 I4
 sg11
@@ -36022,7 +36022,7 @@ S'Branch & Pennsylvania Ave SE'
 p3635
 sa(dp3636
 g3
-F0.32
+F0.35
 sg4
 F-76.987633
 sg5
@@ -36034,7 +36034,7 @@ F0.0
 sg8
 I31
 sg9
-F1.93
+F1.95
 sg10
 I2
 sg11
@@ -36054,7 +36054,7 @@ F0.0
 sg8
 I23
 sg9
-F1.94
+F2.16
 sg10
 I0
 sg11
@@ -36074,9 +36074,9 @@ F0.0
 sg8
 I31
 sg9
-F16.18
+F15.2
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p3641
@@ -36094,15 +36094,15 @@ F0.0
 sg8
 I25
 sg9
-F15.8
+F16.82
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p3643
 sa(dp3644
 g3
-F0.04
+F0.02
 sg4
 F-77.022322
 sg5
@@ -36114,9 +36114,9 @@ F0.0
 sg8
 I18
 sg9
-F7.17
+F8.37
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p3645
@@ -36134,9 +36134,9 @@ F0.0
 sg8
 I27
 sg9
-F18.96
+F19.92
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p3647
@@ -36150,13 +36150,13 @@ I107
 sg6
 F38.908905
 sg7
-F0.0
+F0.01
 sg8
 I19
 sg9
-F11.1
+F12.21
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p3649
@@ -36174,7 +36174,7 @@ F0.0
 sg8
 I15
 sg9
-F9.52
+F9.84
 sg10
 I10
 sg11
@@ -36182,7 +36182,7 @@ S'4th & D St NW / Judiciary Square'
 p3651
 sa(dp3652
 g3
-F0.0
+F0.02
 sg4
 F-77.0436
 sg5
@@ -36194,9 +36194,9 @@ F0.0
 sg8
 I23
 sg9
-F10.15
+F8.2
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p3653
@@ -36210,13 +36210,13 @@ I110
 sg6
 F38.90774
 sg7
-F0.07
+F0.14
 sg8
 I23
 sg9
-F19.16
+F20.04
 sg10
-I19
+I20
 sg11
 S'37th & O St NW / Georgetown University'
 p3655
@@ -36234,7 +36234,7 @@ F0.0
 sg8
 I18
 sg9
-F7.34
+F7.1
 sg10
 I7
 sg11
@@ -36242,7 +36242,7 @@ S'11th & H St NE'
 p3657
 sa(dp3658
 g3
-F0.02
+F0.07
 sg4
 F-77.053485
 sg5
@@ -36250,13 +36250,13 @@ I112
 sg6
 F38.903827
 sg7
-F0.01
+F0.0
 sg8
 I14
 sg9
-F6.21
+F5.23
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p3659
@@ -36270,13 +36270,13 @@ I113
 sg6
 F38.89696
 sg7
-F0.02
+F0.0
 sg8
 I31
 sg9
-F23.51
+F22.52
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p3661
@@ -36294,7 +36294,7 @@ F0.0
 sg8
 I23
 sg9
-F13.76
+F13.78
 sg10
 I14
 sg11
@@ -36302,7 +36302,7 @@ S'North Capitol St & F St NW'
 p3663
 sa(dp3664
 g3
-F0.69
+F0.38
 sg4
 F-77.027137
 sg5
@@ -36314,9 +36314,9 @@ F0.0
 sg8
 I18
 sg9
-F2.33
+F2.94
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p3665
@@ -36334,7 +36334,7 @@ F0.0
 sg8
 I15
 sg9
-F8.06
+F7.82
 sg10
 I8
 sg11
@@ -36350,11 +36350,11 @@ I117
 sg6
 F38.898069
 sg7
-F0.37
+F0.16
 sg8
-I22
+I23
 sg9
-F19.73
+F19.78
 sg10
 I20
 sg11
@@ -36374,7 +36374,7 @@ F0.0
 sg8
 I23
 sg9
-F9.88
+F9.8
 sg10
 I10
 sg11
@@ -36382,7 +36382,7 @@ S'Potomac Ave & 35th St S'
 p3671
 sa(dp3672
 g3
-F0.9
+F0.65
 sg4
 F-77.04657
 sg5
@@ -36394,9 +36394,9 @@ F0.0
 sg8
 I23
 sg9
-F2.56
+F3.38
 sg10
-I0
+I2
 sg11
 S'Ohio Dr & West Basin Dr SW / MLK & FDR Memorials'
 p3673
@@ -36410,11 +36410,11 @@ I125
 sg6
 F38.897857
 sg7
-F0.76
+F0.84
 sg8
 I15
 sg9
-F13.57
+F13.62
 sg10
 I15
 sg11
@@ -36434,7 +36434,7 @@ F0.0
 sg8
 I19
 sg9
-F11.33
+F11.42
 sg10
 I12
 sg11
@@ -36442,7 +36442,7 @@ S'23rd & E St NW '
 p3677
 sa(dp3678
 g3
-F0.03
+F0.01
 sg4
 F-77.070993
 sg5
@@ -36454,9 +36454,9 @@ F0.0
 sg8
 I18
 sg9
-F4.1
+F4.96
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p3679
@@ -36474,7 +36474,7 @@ F0.0
 sg8
 I15
 sg9
-F6.82
+F6.96
 sg10
 I7
 sg11
@@ -36494,7 +36494,7 @@ F0.0
 sg8
 I11
 sg9
-F2.96
+F2.98
 sg10
 I3
 sg11
@@ -36514,15 +36514,15 @@ F0.0
 sg8
 I15
 sg9
-F9.34
+F8.47
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p3685
 sa(dp3686
 g3
-F0.08
+F0.07
 sg4
 F-77.079375
 sg5
@@ -36534,7 +36534,7 @@ F0.0
 sg8
 I11
 sg9
-F1.9
+F1.97
 sg10
 I2
 sg11
@@ -36554,7 +36554,7 @@ F0.0
 sg8
 I15
 sg9
-F4.0
+F3.98
 sg10
 I4
 sg11
@@ -36562,7 +36562,7 @@ S'Fairfax Village'
 p3689
 sa(dp3690
 g3
-F0.67
+F0.66
 sg4
 F-77.046567
 sg5
@@ -36574,7 +36574,7 @@ F0.0
 sg8
 I15
 sg9
-F1.59
+F1.49
 sg10
 I2
 sg11
@@ -36594,15 +36594,15 @@ F0.0
 sg8
 I15
 sg9
-F4.18
+F5.18
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p3693
 sa(dp3694
 g3
-F0.02
+F0.01
 sg4
 F-77.04368
 sg5
@@ -36614,7 +36614,7 @@ F0.0
 sg8
 I19
 sg9
-F6.05
+F6.0
 sg10
 I6
 sg11
@@ -36634,7 +36634,7 @@ F0.0
 sg8
 I23
 sg9
-F5.44
+F5.65
 sg10
 I6
 sg11
@@ -36642,7 +36642,7 @@ S'17th & Rhode Island Ave NW'
 p3697
 sa(dp3698
 g3
-F0.77
+F0.91
 sg4
 F-77.0325
 sg5
@@ -36654,9 +36654,9 @@ F0.0
 sg8
 I33
 sg9
-F1.95
+F1.69
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p3699
@@ -36670,13 +36670,13 @@ I138
 sg6
 F38.8904
 sg7
-F0.0
+F0.02
 sg8
 I11
 sg9
-F5.71
+F7.71
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p3701
@@ -36690,13 +36690,13 @@ I139
 sg6
 F38.8881
 sg7
-F0.05
+F0.0
 sg8
 I14
 sg9
-F11.0
+F10.04
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p3703
@@ -36714,7 +36714,7 @@ F0.0
 sg8
 I17
 sg9
-F5.82
+F6.06
 sg10
 I6
 sg11
@@ -36722,7 +36722,7 @@ S'Clarendon Metro / Wilson Blvd & N Highland St'
 p3705
 sa(dp3706
 g3
-F0.01
+F0.05
 sg4
 F-77.041539
 sg5
@@ -36734,9 +36734,9 @@ F0.0
 sg8
 I15
 sg9
-F5.79
+F4.57
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p3707
@@ -36754,15 +36754,15 @@ F0.0
 sg8
 I39
 sg9
-F18.07
+F18.93
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p3709
 sa(dp3710
 g3
-F0.67
+F0.86
 sg4
 F-77.017445
 sg5
@@ -36774,9 +36774,9 @@ F0.0
 sg8
 I17
 sg9
-F1.04
+F0.69
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p3711
@@ -36794,7 +36794,7 @@ F0.0
 sg8
 I19
 sg9
-F4.95
+F5.32
 sg10
 I5
 sg11
@@ -36814,7 +36814,7 @@ F0.0
 sg8
 I15
 sg9
-F1.35
+F1.45
 sg10
 I0
 sg11
@@ -36834,7 +36834,7 @@ F0.0
 sg8
 I15
 sg9
-F7.12
+F7.13
 sg10
 I7
 sg11
@@ -36842,7 +36842,7 @@ S'9th & Upshur St NW'
 p3717
 sa(dp3718
 g3
-F0.83
+F0.04
 sg4
 F-77.012289
 sg5
@@ -36854,15 +36854,15 @@ F0.0
 sg8
 I14
 sg9
-F1.32
+F4.46
 sg10
-I0
+I4
 sg11
 S'1st & Rhode Island Ave NW'
 p3719
 sa(dp3720
 g3
-F0.24
+F0.18
 sg4
 F-77.02344
 sg5
@@ -36874,7 +36874,7 @@ F0.0
 sg8
 I19
 sg9
-F2.16
+F2.24
 sg10
 I2
 sg11
@@ -36882,7 +36882,7 @@ S'Columbia Rd & Georgia Ave NW'
 p3721
 sa(dp3722
 g3
-F0.02
+F0.04
 sg4
 F-77.04062
 sg5
@@ -36894,9 +36894,9 @@ F0.0
 sg8
 I19
 sg9
-F6.15
+F4.96
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p3723
@@ -36914,7 +36914,7 @@ F0.0
 sg8
 I19
 sg9
-F5.97
+F5.96
 sg10
 I6
 sg11
@@ -36922,7 +36922,7 @@ S'Benning Rd & East Capitol St NE / Benning Rd Metro'
 p3725
 sa(dp3726
 g3
-F0.0
+F0.02
 sg4
 F-77.055599
 sg5
@@ -36934,7 +36934,7 @@ F0.0
 sg8
 I15
 sg9
-F5.25
+F5.06
 sg10
 I5
 sg11
@@ -36954,7 +36954,7 @@ F0.0
 sg8
 I15
 sg9
-F6.98
+F6.94
 sg10
 I7
 sg11
@@ -36970,11 +36970,11 @@ I153
 sg6
 F38.905126
 sg7
-F0.45
+F0.44
 sg8
 I18
 sg9
-F15.2
+F15.01
 sg10
 I15
 sg11
@@ -36982,7 +36982,7 @@ S'M St & Pennsylvania Ave NW'
 p3731
 sa(dp3732
 g3
-F0.76
+F0.71
 sg4
 F-76.983569
 sg5
@@ -36994,7 +36994,7 @@ F0.0
 sg8
 I15
 sg9
-F0.93
+F1.04
 sg10
 I0
 sg11
@@ -37014,7 +37014,7 @@ F0.0
 sg8
 I15
 sg9
-F2.96
+F2.94
 sg10
 I3
 sg11
@@ -37034,7 +37034,7 @@ F0.0
 sg8
 I11
 sg9
-F3.88
+F3.96
 sg10
 I4
 sg11
@@ -37054,7 +37054,7 @@ F0.0
 sg8
 I11
 sg9
-F5.95
+F6.05
 sg10
 I6
 sg11
@@ -37074,7 +37074,7 @@ F0.0
 sg8
 I15
 sg9
-F6.97
+F6.87
 sg10
 I7
 sg11
@@ -37082,7 +37082,7 @@ S'N Veitch  & 20th St N'
 p3741
 sa(dp3742
 g3
-F0.55
+F0.12
 sg4
 F-77.02674
 sg5
@@ -37094,9 +37094,9 @@ F0.0
 sg8
 I18
 sg9
-F1.71
+F3.58
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p3743
@@ -37114,7 +37114,7 @@ F0.0
 sg8
 I11
 sg9
-F6.09
+F6.25
 sg10
 I6
 sg11
@@ -37130,19 +37130,19 @@ I161
 sg6
 F38.896015
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F6.93
+F7.92
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p3747
 sa(dp3748
 g3
-F0.13
+F0.11
 sg4
 F-77.006004
 sg5
@@ -37154,7 +37154,7 @@ F0.0
 sg8
 I15
 sg9
-F3.34
+F3.74
 sg10
 I3
 sg11
@@ -37162,7 +37162,7 @@ S'1st & K St SE'
 p3749
 sa(dp3750
 g3
-F0.19
+F0.52
 sg4
 F-77.077271
 sg5
@@ -37174,9 +37174,9 @@ F0.0
 sg8
 I19
 sg9
-F2.33
+F1.38
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p3751
@@ -37194,7 +37194,7 @@ F0.0
 sg8
 I15
 sg9
-F2.97
+F2.89
 sg10
 I3
 sg11
@@ -37214,7 +37214,7 @@ F0.0
 sg8
 I19
 sg9
-F11.98
+F11.96
 sg10
 I12
 sg11
@@ -37230,11 +37230,11 @@ I166
 sg6
 F38.88397
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
-F6.99
+F7.11
 sg10
 I7
 sg11
@@ -37242,7 +37242,7 @@ S'Central Library / N Quincy St & 10th St N'
 p3757
 sa(dp3758
 g3
-F0.4
+F0.43
 sg4
 F-77.093485
 sg5
@@ -37254,7 +37254,7 @@ F0.0
 sg8
 I15
 sg9
-F1.06
+F0.96
 sg10
 I1
 sg11
@@ -37262,7 +37262,7 @@ S'Washington Blvd & 10th St N'
 p3759
 sa(dp3760
 g3
-F0.12
+F0.17
 sg4
 F-77.032429
 sg5
@@ -37274,9 +37274,9 @@ F0.0
 sg8
 I23
 sg9
-F8.31
+F7.31
 sg10
-I7
+I6
 sg11
 S'Jefferson Dr & 14th St SW'
 p3761
@@ -37290,13 +37290,13 @@ I169
 sg6
 F38.888767
 sg7
-F0.05
+F0.04
 sg8
 I23
 sg9
-F14.58
+F14.96
 sg10
-I13
+I14
 sg11
 S'Smithsonian / Jefferson Dr & 12th St SW'
 p3763
@@ -37314,7 +37314,7 @@ F0.0
 sg8
 I15
 sg9
-F7.02
+F7.05
 sg10
 I7
 sg11
@@ -37330,13 +37330,13 @@ I171
 sg6
 F38.894573
 sg7
-F0.06
+F0.1
 sg8
 I18
 sg9
-F12.32
+F12.87
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p3767
@@ -37354,7 +37354,7 @@ F0.0
 sg8
 I11
 sg9
-F5.91
+F5.86
 sg10
 I6
 sg11
@@ -37374,7 +37374,7 @@ F0.0
 sg8
 I15
 sg9
-F3.12
+F2.98
 sg10
 I3
 sg11
@@ -37382,7 +37382,7 @@ S'N Adams St & Lee Hwy'
 p3771
 sa(dp3772
 g3
-F0.04
+F0.03
 sg4
 F-77.08095
 sg5
@@ -37394,7 +37394,7 @@ F0.0
 sg8
 I11
 sg9
-F2.67
+F2.66
 sg10
 I3
 sg11
@@ -37414,7 +37414,7 @@ F0.0
 sg8
 I11
 sg9
-F5.02
+F5.08
 sg10
 I5
 sg11
@@ -37434,15 +37434,15 @@ F0.0
 sg8
 I19
 sg9
-F6.66
+F5.77
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p3777
 sa(dp3778
 g3
-F0.74
+F0.84
 sg4
 F-77.109366
 sg5
@@ -37454,7 +37454,7 @@ F0.0
 sg8
 I11
 sg9
-F0.55
+F0.38
 sg10
 I0
 sg11
@@ -37470,11 +37470,11 @@ I178
 sg6
 F38.879819
 sg7
-F0.05
+F0.04
 sg8
 I23
 sg9
-F15.5
+F15.13
 sg10
 I15
 sg11
@@ -37494,9 +37494,9 @@ F0.0
 sg8
 I15
 sg9
-F9.95
+F8.96
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p3783
@@ -37514,7 +37514,7 @@ F0.0
 sg8
 I11
 sg9
-F7.92
+F7.86
 sg10
 I8
 sg11
@@ -37534,7 +37534,7 @@ F0.0
 sg8
 I11
 sg9
-F5.92
+F6.09
 sg10
 I6
 sg11
@@ -37554,9 +37554,9 @@ F0.0
 sg8
 I11
 sg9
-F7.0
+F7.95
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p3789
@@ -37574,9 +37574,9 @@ F0.0
 sg8
 I19
 sg9
-F13.6
+F11.76
 sg10
-I14
+I12
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p3791
@@ -37594,15 +37594,15 @@ F0.0
 sg8
 I19
 sg9
-F14.86
+F13.76
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p3793
 sa(dp3794
 g3
-F0.6
+F0.76
 sg4
 F-77.0284
 sg5
@@ -37614,9 +37614,9 @@ F0.0
 sg8
 I19
 sg9
-F1.53
+F1.02
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p3795
@@ -37630,11 +37630,11 @@ I187
 sg6
 F38.901539
 sg7
-F0.66
+F0.71
 sg8
 I19
 sg9
-F18.09
+F18.08
 sg10
 I19
 sg11
@@ -37674,7 +37674,7 @@ F0.0
 sg8
 I19
 sg9
-F8.66
+F8.47
 sg10
 I8
 sg11
@@ -37694,7 +37694,7 @@ F0.03
 sg8
 I15
 sg9
-F11.33
+F11.11
 sg10
 I11
 sg11
@@ -37714,7 +37714,7 @@ F0.0
 sg8
 I14
 sg9
-F7.91
+F7.98
 sg10
 I8
 sg11
@@ -37734,7 +37734,7 @@ F0.0
 sg8
 I15
 sg9
-F6.22
+F6.06
 sg10
 I6
 sg11
@@ -37742,7 +37742,7 @@ S'King St & Patrick St'
 p3807
 sa(dp3808
 g3
-F0.06
+F0.19
 sg4
 F-77.03353
 sg5
@@ -37754,9 +37754,9 @@ F0.0
 sg8
 I19
 sg9
-F3.42
+F2.53
 sg10
-I4
+I3
 sg11
 S'15th & K St NW'
 p3809
@@ -37774,7 +37774,7 @@ F0.0
 sg8
 I15
 sg9
-F10.02
+F10.01
 sg10
 I10
 sg11
@@ -37814,7 +37814,7 @@ F0.0
 sg8
 I19
 sg9
-F7.04
+F6.93
 sg10
 I7
 sg11
@@ -37834,7 +37834,7 @@ F0.0
 sg8
 I19
 sg9
-F4.74
+F4.89
 sg10
 I5
 sg11
@@ -37850,11 +37850,11 @@ I198
 sg6
 F38.9066
 sg7
-F0.67
+F0.63
 sg8
 I15
 sg9
-F13.92
+F13.8
 sg10
 I15
 sg11
@@ -37870,13 +37870,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.84
+F0.67
 sg8
 I15
 sg9
-F13.34
+F12.9
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p3821
@@ -37890,19 +37890,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.69
+F0.46
 sg8
 I14
 sg9
-F12.11
+F11.49
 sg10
-I13
+I12
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p3823
 sa(dp3824
 g3
-F0.06
+F0.05
 sg4
 F-77.113905
 sg5
@@ -37914,7 +37914,7 @@ F0.0
 sg8
 I11
 sg9
-F1.93
+F2.0
 sg10
 I2
 sg11
@@ -37934,15 +37934,15 @@ F0.0
 sg8
 I11
 sg9
-F7.08
+F6.05
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p3827
 sa(dp3828
 g3
-F0.71
+F0.65
 sg4
 F-77.077294
 sg5
@@ -37954,7 +37954,7 @@ F0.0
 sg8
 I11
 sg9
-F0.52
+F0.55
 sg10
 I0
 sg11
@@ -37962,7 +37962,7 @@ S'Arlington Blvd & N Queen St'
 p3829
 sa(dp3830
 g3
-F0.64
+F0.88
 sg4
 F-77.049426
 sg5
@@ -37974,9 +37974,9 @@ F0.0
 sg8
 I25
 sg9
-F5.29
+F4.28
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p3831
@@ -37994,7 +37994,7 @@ F0.0
 sg8
 I15
 sg9
-F7.86
+F7.87
 sg10
 I8
 sg11
@@ -38002,7 +38002,7 @@ S'20th St & Virginia Ave NW'
 p3833
 sa(dp3834
 g3
-F0.67
+F0.65
 sg4
 F-77.018677
 sg5
@@ -38014,7 +38014,7 @@ F0.0
 sg8
 I19
 sg9
-F1.92
+F2.02
 sg10
 I1
 sg11
@@ -38034,7 +38034,7 @@ F0.0
 sg8
 I15
 sg9
-F3.72
+F3.76
 sg10
 I4
 sg11
@@ -38054,7 +38054,7 @@ F0.0
 sg8
 I15
 sg9
-F7.84
+F7.78
 sg10
 I8
 sg11
@@ -38072,9 +38072,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F5.02
+F5.28
 sg10
 I6
 sg11
@@ -38094,7 +38094,7 @@ F0.0
 sg8
 I15
 sg9
-F6.51
+F6.54
 sg10
 I7
 sg11
@@ -38114,7 +38114,7 @@ F0.0
 sg8
 I11
 sg9
-F5.85
+F5.78
 sg10
 I6
 sg11
@@ -38134,7 +38134,7 @@ F0.0
 sg8
 I15
 sg9
-F5.75
+F5.8
 sg10
 I6
 sg11
@@ -38142,7 +38142,7 @@ S'28th St S & S Meade St'
 p3847
 sa(dp3848
 g3
-F0.89
+F0.82
 sg4
 F-77.041571
 sg5
@@ -38154,7 +38154,7 @@ F0.0
 sg8
 I23
 sg9
-F1.07
+F1.35
 sg10
 I0
 sg11
@@ -38174,7 +38174,7 @@ F0.0
 sg8
 I14
 sg9
-F8.78
+F8.82
 sg10
 I9
 sg11
@@ -38194,7 +38194,7 @@ F0.0
 sg8
 I19
 sg9
-F2.82
+F2.77
 sg10
 I3
 sg11
@@ -38202,7 +38202,7 @@ S'Georgia Ave & Emerson St NW'
 p3853
 sa(dp3854
 g3
-F0.03
+F0.04
 sg4
 F-77.032652
 sg5
@@ -38214,7 +38214,7 @@ F0.0
 sg8
 I18
 sg9
-F2.64
+F2.53
 sg10
 I3
 sg11
@@ -38234,7 +38234,7 @@ F0.0
 sg8
 I19
 sg9
-F5.41
+F5.43
 sg10
 I6
 sg11
@@ -38254,7 +38254,7 @@ F0.0
 sg8
 I11
 sg9
-F4.86
+F4.91
 sg10
 I5
 sg11
@@ -38274,7 +38274,7 @@ F0.0
 sg8
 I11
 sg9
-F5.98
+F5.92
 sg10
 I6
 sg11
@@ -38294,7 +38294,7 @@ F0.0
 sg8
 I11
 sg9
-F4.99
+F4.92
 sg10
 I5
 sg11
@@ -38314,7 +38314,7 @@ F0.0
 sg8
 I10
 sg9
-F6.92
+F6.95
 sg10
 I7
 sg11
@@ -38334,7 +38334,7 @@ F0.0
 sg8
 I15
 sg9
-F8.16
+F8.25
 sg10
 I8
 sg11
@@ -38354,7 +38354,7 @@ F0.0
 sg8
 I11
 sg9
-F3.99
+F4.02
 sg10
 I4
 sg11
@@ -38362,7 +38362,7 @@ S'S Kenmore & 24th St S'
 p3869
 sa(dp3870
 g3
-F0.81
+F0.82
 sg4
 F-77.065131
 sg5
@@ -38374,7 +38374,7 @@ F0.0
 sg8
 I19
 sg9
-F0.45
+F0.46
 sg10
 I0
 sg11
@@ -38390,13 +38390,13 @@ I226
 sg6
 F38.90849
 sg7
-F0.01
+F0.0
 sg8
 I17
 sg9
-F10.16
+F9.02
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p3873
@@ -38414,7 +38414,7 @@ F0.0
 sg8
 I11
 sg9
-F7.04
+F7.02
 sg10
 I7
 sg11
@@ -38422,7 +38422,7 @@ S'S George Mason Dr & 13th St S'
 p3875
 sa(dp3876
 g3
-F0.14
+F0.12
 sg4
 F-77.069956
 sg5
@@ -38434,7 +38434,7 @@ F0.0
 sg8
 I23
 sg9
-F1.9
+F1.98
 sg10
 I2
 sg11
@@ -38442,7 +38442,7 @@ S'Connecticut & Nebraska Ave NW'
 p3877
 sa(dp3878
 g3
-F0.16
+F0.19
 sg4
 F-77.038359
 sg5
@@ -38454,7 +38454,7 @@ F0.0
 sg8
 I19
 sg9
-F2.92
+F2.85
 sg10
 I3
 sg11
@@ -38474,7 +38474,7 @@ F0.0
 sg8
 I15
 sg9
-F1.06
+F1.0
 sg10
 I0
 sg11
@@ -38490,19 +38490,19 @@ I231
 sg6
 F38.889988
 sg7
-F0.03
+F0.0
 sg8
 I11
 sg9
-F6.29
+F5.18
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p3883
 sa(dp3884
 g3
-F0.13
+F0.0
 sg4
 F-77.017669
 sg5
@@ -38514,9 +38514,9 @@ F0.0
 sg8
 I15
 sg9
-F2.78
+F5.57
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p3885
@@ -38534,7 +38534,7 @@ F0.0
 sg8
 I11
 sg9
-F5.0
+F5.06
 sg10
 I5
 sg11
@@ -38554,7 +38554,7 @@ F0.0
 sg8
 I15
 sg9
-F7.41
+F7.28
 sg10
 I7
 sg11
@@ -38574,7 +38574,7 @@ F0.0
 sg8
 I15
 sg9
-F7.76
+F7.84
 sg10
 I8
 sg11
@@ -38594,9 +38594,9 @@ F0.0
 sg8
 I19
 sg9
-F5.68
+F6.65
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p3893
@@ -38614,7 +38614,7 @@ F0.0
 sg8
 I15
 sg9
-F4.77
+F4.81
 sg10
 I5
 sg11
@@ -38634,7 +38634,7 @@ F0.0
 sg8
 I10
 sg9
-F4.02
+F3.94
 sg10
 I4
 sg11
@@ -38654,7 +38654,7 @@ F0.0
 sg8
 I11
 sg9
-F1.03
+F1.05
 sg10
 I1
 sg11
@@ -38674,7 +38674,7 @@ F0.0
 sg8
 I11
 sg9
-F9.02
+F9.05
 sg10
 I9
 sg11
@@ -38694,7 +38694,7 @@ F0.0
 sg8
 I15
 sg9
-F5.12
+F5.05
 sg10
 I5
 sg11
@@ -38702,7 +38702,7 @@ S'Neal St & Trinidad Ave NE'
 p3903
 sa(dp3904
 g3
-F0.65
+F0.78
 sg4
 F-77.029779
 sg5
@@ -38714,9 +38714,9 @@ F0.0
 sg8
 I23
 sg9
-F2.03
+F1.65
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p3905
@@ -38734,7 +38734,7 @@ F0.0
 sg8
 I11
 sg9
-F3.96
+F3.93
 sg10
 I4
 sg11
@@ -38754,7 +38754,7 @@ F0.0
 sg8
 I15
 sg9
-F9.99
+F10.0
 sg10
 I10
 sg11
@@ -38774,7 +38774,7 @@ F0.0
 sg8
 I11
 sg9
-F6.11
+F6.08
 sg10
 I6
 sg11
@@ -38794,7 +38794,7 @@ F0.0
 sg8
 I11
 sg9
-F4.8
+F4.89
 sg10
 I5
 sg11
@@ -38814,7 +38814,7 @@ F0.01
 sg8
 I15
 sg9
-F7.43
+F7.85
 sg10
 I7
 sg11
@@ -38834,7 +38834,7 @@ F0.0
 sg8
 I15
 sg9
-F3.63
+F3.59
 sg10
 I3
 sg11
@@ -38842,7 +38842,7 @@ S'8th & D St NW'
 p3917
 sa(dp3918
 g3
-F0.0
+F0.01
 sg4
 F-77.01597
 sg5
@@ -38854,9 +38854,9 @@ F0.0
 sg8
 I15
 sg9
-F5.97
+F4.65
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p3919
@@ -38874,7 +38874,7 @@ F0.0
 sg8
 I19
 sg9
-F6.72
+F6.73
 sg10
 I7
 sg11
@@ -38894,7 +38894,7 @@ F0.0
 sg8
 I27
 sg9
-F12.06
+F11.71
 sg10
 I12
 sg11
@@ -38925,7 +38925,7 @@ F0.0
 sg8
 I11
 sg9
-F2.96
+F3.01
 sg10
 I3
 sg11
@@ -38945,7 +38945,7 @@ F0.0
 sg8
 I9
 sg9
-F6.07
+F6.01
 sg10
 I6
 sg11
@@ -38965,9 +38965,9 @@ F0.0
 sg8
 I13
 sg9
-F6.97
+F6.0
 sg10
-I7
+I6
 sg11
 S'20th & Crystal Dr'
 p3933
@@ -38985,7 +38985,7 @@ F0.0
 sg8
 I10
 sg9
-F6.9
+F6.86
 sg10
 I7
 sg11
@@ -39005,7 +39005,7 @@ F0.0
 sg8
 I11
 sg9
-F4.0
+F3.97
 sg10
 I4
 sg11
@@ -39025,7 +39025,7 @@ F0.0
 sg8
 I17
 sg9
-F9.03
+F9.0
 sg10
 I9
 sg11
@@ -39045,7 +39045,7 @@ F0.0
 sg8
 I10
 sg9
-F5.07
+F5.01
 sg10
 I5
 sg11
@@ -39065,9 +39065,9 @@ F0.0
 sg8
 I19
 sg9
-F10.02
+F9.0
 sg10
-I10
+I9
 sg11
 S'Crystal City Metro / 18th & Bell St'
 p3943
@@ -39085,7 +39085,7 @@ F0.0
 sg8
 I11
 sg9
-F4.92
+F4.8
 sg10
 I5
 sg11
@@ -39093,7 +39093,7 @@ S'12th & Army Navy Dr'
 p3945
 sa(dp3946
 g3
-F0.2
+F0.25
 sg4
 F-77.051516
 sg5
@@ -39105,7 +39105,7 @@ F0.0
 sg8
 I11
 sg9
-F0.97
+F0.91
 sg10
 I1
 sg11
@@ -39125,7 +39125,7 @@ F0.01
 sg8
 I11
 sg9
-F8.07
+F8.01
 sg10
 I8
 sg11
@@ -39145,7 +39145,7 @@ F0.0
 sg8
 I16
 sg9
-F6.91
+F6.9
 sg10
 I7
 sg11
@@ -39165,7 +39165,7 @@ F0.0
 sg8
 I11
 sg9
-F3.0
+F2.96
 sg10
 I3
 sg11
@@ -39185,7 +39185,7 @@ F0.0
 sg8
 I15
 sg9
-F8.78
+F8.86
 sg10
 I9
 sg11
@@ -39193,7 +39193,7 @@ S'19th St & Pennsylvania Ave NW'
 p3955
 sa(dp3956
 g3
-F0.31
+F0.38
 sg4
 F-77.0321
 sg5
@@ -39205,7 +39205,7 @@ F0.0
 sg8
 I27
 sg9
-F2.34
+F2.26
 sg10
 I2
 sg11
@@ -39213,7 +39213,7 @@ S'14th & V St NW'
 p3957
 sa(dp3958
 g3
-F0.73
+F0.72
 sg4
 F-77.027822
 sg5
@@ -39225,7 +39225,7 @@ F0.0
 sg8
 I27
 sg9
-F0.8
+F0.87
 sg10
 I0
 sg11
@@ -39233,7 +39233,7 @@ S'11th & Kenyon St NW'
 p3959
 sa(dp3960
 g3
-F0.62
+F0.84
 sg4
 F-77.036536
 sg5
@@ -39245,15 +39245,15 @@ F0.0
 sg8
 I33
 sg9
-F1.39
+F0.96
 sg10
-I1
+I0
 sg11
 S'16th & Harvard St NW'
 p3961
 sa(dp3962
 g3
-F0.37
+F0.68
 sg4
 F-77.042581
 sg5
@@ -39265,15 +39265,15 @@ F0.0
 sg8
 I15
 sg9
-F2.24
+F1.55
 sg10
-I2
+I1
 sg11
 S'Adams Mill & Columbia Rd NW'
 p3963
 sa(dp3964
 g3
-F0.64
+F0.8
 sg4
 F-77.0322
 sg5
@@ -39285,15 +39285,15 @@ F0.0
 sg8
 I19
 sg9
-F1.32
+F0.8
 sg10
-I1
+I0
 sg11
 S'14th & Harvard St NW'
 p3965
 sa(dp3966
 g3
-F0.29
+F0.33
 sg4
 F-77.0501
 sg5
@@ -39305,7 +39305,7 @@ F0.0
 sg8
 I23
 sg9
-F2.1
+F1.88
 sg10
 I2
 sg11
@@ -39313,7 +39313,7 @@ S'Calvert St & Woodley Pl NW'
 p3967
 sa(dp3968
 g3
-F0.78
+F0.72
 sg4
 F-77.0388
 sg5
@@ -39325,7 +39325,7 @@ F0.0
 sg8
 I19
 sg9
-F0.86
+F0.93
 sg10
 I0
 sg11
@@ -39365,15 +39365,15 @@ F0.0
 sg8
 I19
 sg9
-F6.87
+F8.08
 sg10
-I7
+I8
 sg11
 S'15th & P St NW'
 p3973
 sa(dp3974
 g3
-F0.08
+F0.11
 sg4
 F-77.031681
 sg5
@@ -39385,7 +39385,7 @@ F0.0
 sg8
 I15
 sg9
-F3.29
+F3.12
 sg10
 I3
 sg11
@@ -39393,7 +39393,7 @@ S'14th & R St NW'
 p3975
 sa(dp3976
 g3
-F0.12
+F0.59
 sg4
 F-77.0323
 sg5
@@ -39405,9 +39405,9 @@ F0.0
 sg8
 I23
 sg9
-F3.14
+F1.43
 sg10
-I3
+I1
 sg11
 S'14th & Rhode Island Ave NW'
 p3977
@@ -39425,9 +39425,9 @@ F0.0
 sg8
 I15
 sg9
-F6.55
+F5.76
 sg10
-I7
+I6
 sg11
 S'20th & E St NW'
 p3979
@@ -39445,9 +39445,9 @@ F0.0
 sg8
 I35
 sg9
-F24.79
+F25.79
 sg10
-I25
+I26
 sg11
 S'21st & I St NW'
 p3981
@@ -39465,7 +39465,7 @@ F0.0
 sg8
 I13
 sg9
-F5.13
+F4.97
 sg10
 I5
 sg11
@@ -39505,7 +39505,7 @@ F0.0
 sg8
 I11
 sg9
-F6.01
+F6.02
 sg10
 I6
 sg11
@@ -39513,7 +39513,7 @@ S'John McCormack Dr & Michigan Ave NE'
 p3987
 sa(dp3988
 g3
-F0.28
+F0.58
 sg4
 F-77.019027
 sg5
@@ -39525,9 +39525,9 @@ F0.0
 sg8
 I19
 sg9
-F2.21
+F1.71
 sg10
-I2
+I1
 sg11
 S'5th & K St NW'
 p3989
@@ -39545,7 +39545,7 @@ F0.0
 sg8
 I15
 sg9
-F7.8
+F7.84
 sg10
 I8
 sg11
@@ -39565,9 +39565,9 @@ F0.0
 sg8
 I19
 sg9
-F7.08
+F9.09
 sg10
-I7
+I9
 sg11
 S'Park Rd & Holmead Pl NW'
 p3993
@@ -39583,9 +39583,9 @@ F38.8601
 sg7
 F0.0
 sg8
-I10
+I11
 sg9
-F1.0
+F1.01
 sg10
 I1
 sg11
@@ -39605,7 +39605,7 @@ F0.0
 sg8
 I11
 sg9
-F2.08
+F2.01
 sg10
 I2
 sg11
@@ -39625,7 +39625,7 @@ F0.0
 sg8
 I11
 sg9
-F5.97
+F5.99
 sg10
 I6
 sg11
@@ -39645,7 +39645,7 @@ F0.0
 sg8
 I11
 sg9
-F7.01
+F7.0
 sg10
 I7
 sg11
@@ -39668,7 +39668,7 @@ F0.0
 sg8
 I11
 sg9
-F8.0
+F8.02
 sg10
 I8
 sg11
@@ -39688,7 +39688,7 @@ F0.0
 sg8
 I11
 sg9
-F9.02
+F8.99
 sg10
 I9
 sg11
@@ -39708,7 +39708,7 @@ F0.0
 sg8
 I11
 sg9
-F1.8
+F1.82
 sg10
 I2
 sg11
@@ -39728,7 +39728,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F3.99
 sg10
 I4
 sg11
@@ -39736,7 +39736,7 @@ S'4th St & Rhode Island Ave NE'
 p4010
 sa(dp4011
 g3
-F0.28
+F0.22
 sg4
 F-77.0259
 sg5
@@ -39748,7 +39748,7 @@ F0.0
 sg8
 I14
 sg9
-F2.2
+F2.35
 sg10
 I2
 sg11
@@ -39756,7 +39756,7 @@ S'10th & U St NW'
 p4012
 sa(dp4013
 g3
-F0.27
+F0.21
 sg4
 F-77.0222
 sg5
@@ -39768,7 +39768,7 @@ F0.0
 sg8
 I11
 sg9
-F1.22
+F1.27
 sg10
 I1
 sg11
@@ -39776,7 +39776,7 @@ S'Georgia Ave and Fairmont St NW'
 p4014
 sa(dp4015
 g3
-F0.75
+F0.77
 sg4
 F-77.0057
 sg5
@@ -39788,7 +39788,7 @@ F0.0
 sg8
 I23
 sg9
-F0.36
+F0.37
 sg10
 I0
 sg11
@@ -39796,7 +39796,7 @@ S'1st & N St  SE'
 p4016
 sa(dp4017
 g3
-F0.13
+F0.15
 sg4
 F-77.0446
 sg5
@@ -39808,7 +39808,7 @@ F0.0
 sg8
 I15
 sg9
-F2.98
+F2.92
 sg10
 I3
 sg11
@@ -39828,7 +39828,7 @@ F0.0
 sg8
 I14
 sg9
-F0.68
+F0.74
 sg10
 I0
 sg11
@@ -39848,7 +39848,7 @@ F0.0
 sg8
 I11
 sg9
-F5.0
+F5.06
 sg10
 I5
 sg11
@@ -39868,9 +39868,9 @@ F0.0
 sg8
 I15
 sg9
-F5.82
+F9.95
 sg10
-I6
+I10
 sg11
 S'M St & New Jersey Ave SE'
 p4024
@@ -39888,15 +39888,15 @@ F0.0
 sg8
 I41
 sg9
-F14.51
+F12.93
 sg10
-I15
+I13
 sg11
 S'Massachusetts Ave & Dupont Circle NW'
 p4026
 sa(dp4027
 g3
-F0.01
+F0.0
 sg4
 F-77.0056
 sg5
@@ -39908,9 +39908,9 @@ F0.0
 sg8
 I15
 sg9
-F4.54
+F5.82
 sg10
-I5
+I6
 sg11
 S'1st & M St NE'
 p4028
@@ -39948,15 +39948,15 @@ F0.0
 sg8
 I17
 sg9
-F10.89
+F11.74
 sg10
-I11
+I12
 sg11
 S'17th & K St NW'
 p4032
 sa(dp4033
 g3
-F0.2
+F0.04
 sg4
 F-77.016
 sg5
@@ -39968,9 +39968,9 @@ F0.0
 sg8
 I15
 sg9
-F1.91
+F3.04
 sg10
-I2
+I3
 sg11
 S'4th St & Massachusetts Ave NW'
 p4034
@@ -39988,7 +39988,7 @@ F0.0
 sg8
 I11
 sg9
-F3.95
+F4.0
 sg10
 I4
 sg11
@@ -39996,7 +39996,7 @@ S'3rd & D St SE'
 p4036
 sa(dp4037
 g3
-F0.02
+F0.07
 sg4
 F-76.9862
 sg5
@@ -40008,15 +40008,15 @@ F0.0
 sg8
 I15
 sg9
-F3.7
+F2.79
 sg10
-I4
+I3
 sg11
 S'Potomac & Pennsylvania Ave SE'
 p4038
 sa(dp4039
 g3
-F0.05
+F0.04
 sg4
 F-76.9861
 sg5
@@ -40028,7 +40028,7 @@ F0.0
 sg8
 I15
 sg9
-F2.81
+F2.9
 sg10
 I3
 sg11
@@ -40036,7 +40036,7 @@ S'14th & D St SE'
 p4040
 sa(dp4041
 g3
-F0.07
+F0.02
 sg4
 F-77.0387
 sg5
@@ -40048,9 +40048,9 @@ F0.0
 sg8
 I19
 sg9
-F4.04
+F5.29
 sg10
-I4
+I5
 sg11
 S'17th & Corcoran St NW'
 p4042
@@ -40064,11 +40064,11 @@ I60
 sg6
 F38.944551
 sg7
-F0.07
+F0.08
 sg8
 I15
 sg9
-F12.8
+F12.87
 sg10
 I13
 sg11
@@ -40088,7 +40088,7 @@ F0.0
 sg8
 I15
 sg9
-F1.18
+F1.34
 sg10
 I1
 sg11
@@ -40108,7 +40108,7 @@ F0.0
 sg8
 I11
 sg9
-F6.07
+F5.97
 sg10
 I6
 sg11
@@ -40128,7 +40128,7 @@ F0.0
 sg8
 I15
 sg9
-F9.93
+F9.92
 sg10
 I10
 sg11
@@ -40136,7 +40136,7 @@ S'Ward Circle / American University'
 p4050
 sa(dp4051
 g3
-F0.35
+F0.34
 sg4
 F-77.074647
 sg5
@@ -40148,7 +40148,7 @@ F0.0
 sg8
 I15
 sg9
-F1.38
+F1.35
 sg10
 I1
 sg11
@@ -40168,7 +40168,7 @@ F0.0
 sg8
 I10
 sg9
-F3.03
+F3.04
 sg10
 I3
 sg11
@@ -40188,7 +40188,7 @@ F0.0
 sg8
 I11
 sg9
-F2.98
+F3.0
 sg10
 I3
 sg11
@@ -40208,7 +40208,7 @@ F0.0
 sg8
 I10
 sg9
-F3.96
+F3.98
 sg10
 I4
 sg11
@@ -40224,13 +40224,13 @@ I68
 sg6
 F38.886952
 sg7
-F0.0
+F0.03
 sg8
 I15
 sg9
-F9.05
+F10.1
 sg10
-I9
+I10
 sg11
 S'Eastern Market / 7th & North Carolina Ave SE'
 p4060
@@ -40244,13 +40244,13 @@ I69
 sg6
 F38.899641
 sg7
-F0.33
+F0.67
 sg8
 I17
 sg9
-F15.52
+F16.29
 sg10
-I16
+I17
 sg11
 S'McPherson Square / 14th & H St NW'
 p4062
@@ -40264,7 +40264,7 @@ I70
 sg6
 F38.894
 sg7
-F0.0
+F0.01
 sg8
 I11
 sg9
@@ -40288,7 +40288,7 @@ F0.0
 sg8
 I39
 sg9
-F24.97
+F24.98
 sg10
 I25
 sg11
@@ -40308,15 +40308,15 @@ F0.0
 sg8
 I18
 sg9
-F7.68
+F9.91
 sg10
-I8
+I10
 sg11
 S'Georgetown Harbor / 30th St NW'
 p4068
 sa(dp4069
 g3
-F0.0
+F0.01
 sg4
 F-76.991016
 sg5
@@ -40328,7 +40328,7 @@ F0.0
 sg8
 I11
 sg9
-F1.98
+F1.94
 sg10
 I2
 sg11
@@ -40348,7 +40348,7 @@ F0.0
 sg8
 I15
 sg9
-F2.89
+F2.82
 sg10
 I3
 sg11
@@ -40368,7 +40368,7 @@ F0.0
 sg8
 I15
 sg9
-F9.86
+F9.94
 sg10
 I10
 sg11
@@ -40384,13 +40384,13 @@ I76
 sg6
 F38.893028
 sg7
-F0.0
+F0.01
 sg8
-I31
+I30
 sg9
-F23.22
+F24.46
 sg10
-I22
+I24
 sg11
 S'10th St & Constitution Ave NW'
 p4076
@@ -40408,7 +40408,7 @@ F0.0
 sg8
 I11
 sg9
-F5.07
+F5.02
 sg10
 I5
 sg11
@@ -40424,13 +40424,13 @@ I78
 sg6
 F38.884
 sg7
-F0.17
+F0.84
 sg8
 I19
 sg9
-F15.74
+F17.46
 sg10
-I16
+I19
 sg11
 S'Eastern Market Metro / Pennsylvania Ave & 7th St SE'
 p4080
@@ -40444,11 +40444,11 @@ I79
 sg6
 F38.904742
 sg7
-F0.48
+F0.51
 sg8
 I19
 sg9
-F17.73
+F17.7
 sg10
 I18
 sg11
@@ -40468,7 +40468,7 @@ F0.0
 sg8
 I14
 sg9
-F8.14
+F7.97
 sg10
 I8
 sg11
@@ -40476,7 +40476,7 @@ S'Tenleytown / Wisconsin Ave & Albemarle St NW'
 p4084
 sa(dp4085
 g3
-F0.02
+F0.01
 sg4
 F-76.9882
 sg5
@@ -40488,7 +40488,7 @@ F0.0
 sg8
 I27
 sg9
-F3.9
+F3.94
 sg10
 I4
 sg11
@@ -40508,9 +40508,9 @@ F0.0
 sg8
 I31
 sg9
-F14.03
+F13.06
 sg10
-I14
+I13
 sg11
 S'5th & F St NW'
 p4088
@@ -40524,11 +40524,11 @@ I83
 sg6
 F38.8991
 sg7
-F0.01
+F0.0
 sg8
 I15
 sg9
-F8.89
+F8.96
 sg10
 I9
 sg11
@@ -40536,7 +40536,7 @@ S'New York Ave & 15th St NW'
 p4090
 sa(dp4091
 g3
-F0.45
+F0.68
 sg4
 F-77.022264
 sg5
@@ -40548,15 +40548,15 @@ F0.0
 sg8
 I18
 sg9
-F1.55
+F0.93
 sg10
-I1
+I0
 sg11
 S'Convention Center / 7th & M St NW'
 p4092
 sa(dp4093
 g3
-F0.01
+F0.0
 sg4
 F-77.043358
 sg5
@@ -40568,15 +40568,15 @@ F0.0
 sg8
 I15
 sg9
-F3.72
+F4.71
 sg10
-I4
+I5
 sg11
 S'Harvard St & Adams Mill Rd NW'
 p4094
 sa(dp4095
 g3
-F0.02
+F0.0
 sg4
 F-77.043648
 sg5
@@ -40588,9 +40588,9 @@ F0.0
 sg8
 I15
 sg9
-F2.89
+F3.84
 sg10
-I3
+I4
 sg11
 S'19th & L St NW'
 p4096
@@ -40604,13 +40604,13 @@ I87
 sg6
 F38.90375
 sg7
-F0.0
+F0.03
 sg8
 I22
 sg9
-F12.96
+F16.1
 sg10
-I13
+I16
 sg11
 S'C & O Canal & Wisconsin Ave NW'
 p4098
@@ -40628,7 +40628,7 @@ F0.0
 sg8
 I19
 sg9
-F9.8
+F9.84
 sg10
 I10
 sg11
@@ -40636,7 +40636,7 @@ S'7th & Water St SW / SW Waterfront'
 p4100
 sa(dp4101
 g3
-F0.11
+F0.06
 sg4
 F-76.997114
 sg5
@@ -40648,7 +40648,7 @@ F0.0
 sg8
 I22
 sg9
-F2.94
+F3.04
 sg10
 I3
 sg11
@@ -40656,7 +40656,7 @@ S'D St & Maryland Ave NE'
 p4102
 sa(dp4103
 g3
-F0.73
+F0.71
 sg4
 F-77.0682
 sg5
@@ -40668,7 +40668,7 @@ F0.0
 sg8
 I11
 sg9
-F0.55
+F0.48
 sg10
 I0
 sg11
@@ -40688,7 +40688,7 @@ F0.0
 sg8
 I22
 sg9
-F11.63
+F11.8
 sg10
 I12
 sg11
@@ -40708,7 +40708,7 @@ F0.0
 sg8
 I33
 sg9
-F17.78
+F17.8
 sg10
 I17
 sg11
@@ -40716,7 +40716,7 @@ S'8th & H St NW'
 p4108
 sa(dp4109
 g3
-F0.2
+F0.19
 sg4
 F-76.992889
 sg5
@@ -40728,7 +40728,7 @@ F0.0
 sg8
 I11
 sg9
-F1.02
+F1.07
 sg10
 I1
 sg11
@@ -40736,7 +40736,7 @@ S'10th & Monroe St NE'
 p4110
 sa(dp4111
 g3
-F0.06
+F0.04
 sg4
 F-77.00495
 sg5
@@ -40748,7 +40748,7 @@ F0.0
 sg8
 I11
 sg9
-F1.9
+F1.96
 sg10
 I2
 sg11
@@ -40756,7 +40756,7 @@ S'Eckington Pl & Q St NE'
 p4112
 sa(dp4113
 g3
-F0.08
+F0.04
 sg4
 F-76.99831
 sg5
@@ -40768,7 +40768,7 @@ F0.0
 sg8
 I23
 sg9
-F2.89
+F3.06
 sg10
 I3
 sg11
@@ -40788,7 +40788,7 @@ F0.0
 sg8
 I19
 sg9
-F13.9
+F14.04
 sg10
 I14
 sg11
@@ -40808,7 +40808,7 @@ F0.0
 sg8
 I15
 sg9
-F2.0
+F1.96
 sg10
 I2
 sg11
@@ -40816,7 +40816,7 @@ S'Bladensburg Rd & Benning Rd NE'
 p4118
 sa(dp4119
 g3
-F0.07
+F0.0
 sg4
 F-77.000349
 sg5
@@ -40824,19 +40824,19 @@ I98
 sg6
 F38.889955
 sg7
-F0.0
+F0.03
 sg8
 I11
 sg9
-F3.22
+F7.04
 sg10
-I3
+I7
 sg11
 S'4th & East Capitol St NE'
 p4120
 sa(dp4121
 g3
-F0.07
+F0.06
 sg4
 F-76.988355
 sg5
@@ -40848,7 +40848,7 @@ F0.0
 sg8
 I25
 sg9
-F3.14
+F3.08
 sg10
 I3
 sg11
@@ -40868,7 +40868,7 @@ F0.0
 sg8
 I10
 sg9
-F3.97
+F3.98
 sg10
 I4
 sg11
@@ -40876,7 +40876,7 @@ S'Branch & Pennsylvania Ave SE'
 p4124
 sa(dp4125
 g3
-F0.2
+F0.16
 sg4
 F-76.987633
 sg5
@@ -40888,7 +40888,7 @@ F0.0
 sg8
 I31
 sg9
-F1.83
+F1.96
 sg10
 I2
 sg11
@@ -40908,7 +40908,7 @@ F0.0
 sg8
 I23
 sg9
-F1.24
+F1.29
 sg10
 I0
 sg11
@@ -40928,9 +40928,9 @@ F0.0
 sg8
 I31
 sg9
-F16.08
+F15.31
 sg10
-I16
+I15
 sg11
 S'Metro Center / 12th & G St NW'
 p4130
@@ -40948,9 +40948,9 @@ F0.0
 sg8
 I25
 sg9
-F15.78
+F16.81
 sg10
-I16
+I17
 sg11
 S'14th & D St NW / Ronald Reagan Building'
 p4132
@@ -40968,9 +40968,9 @@ F0.0
 sg8
 I18
 sg9
-F6.89
+F8.17
 sg10
-I7
+I8
 sg11
 S'7th & F St NW / National Portrait Gallery'
 p4134
@@ -40988,9 +40988,9 @@ F0.0
 sg8
 I27
 sg9
-F19.01
+F19.9
 sg10
-I19
+I20
 sg11
 S'17th & K St NW / Farragut Square'
 p4136
@@ -41008,9 +41008,9 @@ F0.0
 sg8
 I19
 sg9
-F11.04
+F12.03
 sg10
-I11
+I12
 sg11
 S'20th & O St NW / Dupont South'
 p4138
@@ -41028,7 +41028,7 @@ F0.0
 sg8
 I15
 sg9
-F9.7
+F9.84
 sg10
 I10
 sg11
@@ -41048,9 +41048,9 @@ F0.0
 sg8
 I23
 sg9
-F10.93
+F8.64
 sg10
-I11
+I9
 sg11
 S'19th St & Constitution Ave NW'
 p4142
@@ -41068,7 +41068,7 @@ F0.01
 sg8
 I23
 sg9
-F19.15
+F19.03
 sg10
 I19
 sg11
@@ -41088,15 +41088,15 @@ F0.0
 sg8
 I18
 sg9
-F7.04
+F8.22
 sg10
-I7
+I8
 sg11
 S'11th & H St NE'
 p4146
 sa(dp4147
 g3
-F0.0
+F0.01
 sg4
 F-77.053485
 sg5
@@ -41108,9 +41108,9 @@ F0.0
 sg8
 I14
 sg9
-F6.21
+F5.03
 sg10
-I6
+I5
 sg11
 S'25th St & Pennsylvania Ave NW'
 p4148
@@ -41128,9 +41128,9 @@ F0.0
 sg8
 I31
 sg9
-F23.72
+F22.77
 sg10
-I24
+I23
 sg11
 S'Columbus Circle / Union Station'
 p4150
@@ -41148,7 +41148,7 @@ F0.0
 sg8
 I23
 sg9
-F13.88
+F14.01
 sg10
 I14
 sg11
@@ -41156,7 +41156,7 @@ S'North Capitol St & F St NW'
 p4152
 sa(dp4153
 g3
-F0.6
+F0.24
 sg4
 F-77.027137
 sg5
@@ -41168,9 +41168,9 @@ F0.0
 sg8
 I18
 sg9
-F1.39
+F2.22
 sg10
-I1
+I2
 sg11
 S'11th & M St NW'
 p4154
@@ -41188,7 +41188,7 @@ F0.0
 sg8
 I15
 sg9
-F7.91
+F7.93
 sg10
 I8
 sg11
@@ -41204,11 +41204,11 @@ I117
 sg6
 F38.898069
 sg7
-F0.23
+F0.07
 sg8
-I22
+I23
 sg9
-F19.96
+F19.85
 sg10
 I20
 sg11
@@ -41228,7 +41228,7 @@ F0.0
 sg8
 I23
 sg9
-F9.89
+F9.92
 sg10
 I10
 sg11
@@ -41236,7 +41236,7 @@ S'Potomac Ave & 35th St S'
 p4160
 sa(dp4161
 g3
-F0.87
+F0.84
 sg4
 F-77.04657
 sg5
@@ -41248,7 +41248,7 @@ F0.0
 sg8
 I23
 sg9
-F1.58
+F1.65
 sg10
 I0
 sg11
@@ -41264,11 +41264,11 @@ I125
 sg6
 F38.897857
 sg7
-F0.71
+F0.73
 sg8
 I15
 sg9
-F14.19
+F14.18
 sg10
 I15
 sg11
@@ -41288,7 +41288,7 @@ F0.0
 sg8
 I19
 sg9
-F11.74
+F11.69
 sg10
 I12
 sg11
@@ -41308,9 +41308,9 @@ F0.0
 sg8
 I18
 sg9
-F3.87
+F4.92
 sg10
-I4
+I5
 sg11
 S'Lynn & 19th St North'
 p4168
@@ -41328,7 +41328,7 @@ F0.0
 sg8
 I15
 sg9
-F6.9
+F6.85
 sg10
 I7
 sg11
@@ -41348,7 +41348,7 @@ F0.0
 sg8
 I11
 sg9
-F2.93
+F2.96
 sg10
 I3
 sg11
@@ -41368,9 +41368,9 @@ F0.0
 sg8
 I15
 sg9
-F9.46
+F8.65
 sg10
-I10
+I9
 sg11
 S'Court House Metro / Wilson Blvd & N Uhle St'
 p4174
@@ -41388,7 +41388,7 @@ F0.0
 sg8
 I11
 sg9
-F1.98
+F1.94
 sg10
 I2
 sg11
@@ -41416,7 +41416,7 @@ S'Fairfax Village'
 p4178
 sa(dp4179
 g3
-F0.38
+F0.45
 sg4
 F-77.046567
 sg5
@@ -41428,7 +41428,7 @@ F0.0
 sg8
 I15
 sg9
-F1.63
+F1.49
 sg10
 I2
 sg11
@@ -41448,9 +41448,9 @@ F0.0
 sg8
 I15
 sg9
-F4.03
+F5.14
 sg10
-I4
+I5
 sg11
 S'Wilson Blvd & N Edgewood St'
 p4182
@@ -41468,7 +41468,7 @@ F0.0
 sg8
 I19
 sg9
-F5.98
+F6.0
 sg10
 I6
 sg11
@@ -41476,7 +41476,7 @@ S'Columbia Rd & Belmont St NW'
 p4184
 sa(dp4185
 g3
-F0.01
+F0.0
 sg4
 F-77.038785
 sg5
@@ -41488,7 +41488,7 @@ F0.0
 sg8
 I23
 sg9
-F5.63
+F5.82
 sg10
 I6
 sg11
@@ -41496,7 +41496,7 @@ S'17th & Rhode Island Ave NW'
 p4186
 sa(dp4187
 g3
-F0.73
+F0.87
 sg4
 F-77.0325
 sg5
@@ -41508,9 +41508,9 @@ F0.0
 sg8
 I33
 sg9
-F1.12
+F1.19
 sg10
-I1
+I0
 sg11
 S'Thomas Circle'
 p4188
@@ -41528,9 +41528,9 @@ F0.0
 sg8
 I11
 sg9
-F6.0
+F7.85
 sg10
-I6
+I8
 sg11
 S'Wilson Blvd & Franklin Rd'
 p4190
@@ -41544,13 +41544,13 @@ I139
 sg6
 F38.8881
 sg7
-F0.01
+F0.0
 sg8
 I14
 sg9
-F11.05
+F10.06
 sg10
-I11
+I10
 sg11
 S'Clarendon Blvd & N Fillmore St'
 p4192
@@ -41568,7 +41568,7 @@ F0.0
 sg8
 I17
 sg9
-F6.06
+F6.04
 sg10
 I6
 sg11
@@ -41588,9 +41588,9 @@ F0.0
 sg8
 I15
 sg9
-F5.93
+F4.92
 sg10
-I6
+I5
 sg11
 S'18th St & Pennsylvania Ave NW'
 p4196
@@ -41608,15 +41608,15 @@ F0.0
 sg8
 I39
 sg9
-F17.15
+F18.01
 sg10
-I16
+I17
 sg11
 S'Maryland & Independence Ave SW'
 p4198
 sa(dp4199
 g3
-F0.53
+F0.78
 sg4
 F-77.017445
 sg5
@@ -41628,9 +41628,9 @@ F0.0
 sg8
 I17
 sg9
-F0.92
+F0.48
 sg10
-I1
+I0
 sg11
 S'4th & E St SW'
 p4200
@@ -41648,7 +41648,7 @@ F0.0
 sg8
 I19
 sg9
-F5.05
+F5.06
 sg10
 I5
 sg11
@@ -41656,7 +41656,7 @@ S'3rd & G St SE'
 p4202
 sa(dp4203
 g3
-F0.71
+F0.75
 sg4
 F-77.022155
 sg5
@@ -41668,7 +41668,7 @@ F0.0
 sg8
 I15
 sg9
-F0.72
+F0.71
 sg10
 I0
 sg11
@@ -41688,7 +41688,7 @@ F0.0
 sg8
 I15
 sg9
-F7.13
+F7.1
 sg10
 I7
 sg11
@@ -41696,7 +41696,7 @@ S'9th & Upshur St NW'
 p4206
 sa(dp4207
 g3
-F0.78
+F0.01
 sg4
 F-77.012289
 sg5
@@ -41708,15 +41708,15 @@ F0.0
 sg8
 I14
 sg9
-F0.75
+F4.14
 sg10
-I0
+I4
 sg11
 S'1st & Rhode Island Ave NW'
 p4208
 sa(dp4209
 g3
-F0.12
+F0.14
 sg4
 F-77.02344
 sg5
@@ -41728,7 +41728,7 @@ F0.0
 sg8
 I19
 sg9
-F2.24
+F1.97
 sg10
 I2
 sg11
@@ -41748,9 +41748,9 @@ F0.0
 sg8
 I19
 sg9
-F5.98
+F5.02
 sg10
-I6
+I5
 sg11
 S'California St & Florida Ave NW'
 p4212
@@ -41788,7 +41788,7 @@ F0.0
 sg8
 I15
 sg9
-F5.24
+F5.2
 sg10
 I5
 sg11
@@ -41808,7 +41808,7 @@ F0.0
 sg8
 I15
 sg9
-F7.0
+F6.96
 sg10
 I7
 sg11
@@ -41824,11 +41824,11 @@ I153
 sg6
 F38.905126
 sg7
-F0.22
+F0.27
 sg8
 I18
 sg9
-F15.39
+F15.54
 sg10
 I15
 sg11
@@ -41848,7 +41848,7 @@ F0.0
 sg8
 I15
 sg9
-F0.53
+F0.49
 sg10
 I0
 sg11
@@ -41888,7 +41888,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F3.97
 sg10
 I4
 sg11
@@ -41908,7 +41908,7 @@ F0.0
 sg8
 I11
 sg9
-F6.11
+F6.1
 sg10
 I6
 sg11
@@ -41928,7 +41928,7 @@ F0.0
 sg8
 I15
 sg9
-F6.96
+F6.98
 sg10
 I7
 sg11
@@ -41936,7 +41936,7 @@ S'N Veitch  & 20th St N'
 p4230
 sa(dp4231
 g3
-F0.28
+F0.02
 sg4
 F-77.02674
 sg5
@@ -41948,9 +41948,9 @@ F0.0
 sg8
 I18
 sg9
-F1.69
+F3.61
 sg10
-I2
+I4
 sg11
 S'11th & K St NW'
 p4232
@@ -41968,7 +41968,7 @@ F0.0
 sg8
 I11
 sg9
-F6.2
+F6.05
 sg10
 I6
 sg11
@@ -41988,9 +41988,9 @@ F0.0
 sg8
 I11
 sg9
-F6.96
+F7.96
 sg10
-I7
+I8
 sg11
 S'Key Blvd & N Quinn St'
 p4236
@@ -42008,7 +42008,7 @@ F0.0
 sg8
 I15
 sg9
-F3.18
+F3.1
 sg10
 I3
 sg11
@@ -42016,7 +42016,7 @@ S'1st & K St SE'
 p4238
 sa(dp4239
 g3
-F0.11
+F0.32
 sg4
 F-77.077271
 sg5
@@ -42028,9 +42028,9 @@ F0.0
 sg8
 I19
 sg9
-F2.04
+F1.24
 sg10
-I2
+I1
 sg11
 S'39th & Calvert St NW / Stoddert'
 p4240
@@ -42048,7 +42048,7 @@ F0.0
 sg8
 I15
 sg9
-F2.97
+F2.95
 sg10
 I3
 sg11
@@ -42068,7 +42068,7 @@ F0.0
 sg8
 I19
 sg9
-F11.84
+F11.86
 sg10
 I12
 sg11
@@ -42088,7 +42088,7 @@ F0.0
 sg8
 I11
 sg9
-F6.94
+F6.98
 sg10
 I7
 sg11
@@ -42096,7 +42096,7 @@ S'Central Library / N Quincy St & 10th St N'
 p4246
 sa(dp4247
 g3
-F0.24
+F0.26
 sg4
 F-77.093485
 sg5
@@ -42108,7 +42108,7 @@ F0.0
 sg8
 I15
 sg9
-F1.02
+F1.01
 sg10
 I1
 sg11
@@ -42116,7 +42116,7 @@ S'Washington Blvd & 10th St N'
 p4248
 sa(dp4249
 g3
-F0.04
+F0.09
 sg4
 F-77.032429
 sg5
@@ -42128,9 +42128,9 @@ F0.0
 sg8
 I23
 sg9
-F7.01
+F6.07
 sg10
-I7
+I6
 sg11
 S'Jefferson Dr & 14th St SW'
 p4250
@@ -42148,9 +42148,9 @@ F0.0
 sg8
 I23
 sg9
-F13.29
+F14.67
 sg10
-I13
+I14
 sg11
 S'Smithsonian / Jefferson Dr & 12th St SW'
 p4252
@@ -42184,13 +42184,13 @@ I171
 sg6
 F38.894573
 sg7
-F0.0
+F0.03
 sg8
 I18
 sg9
-F11.99
+F12.98
 sg10
-I12
+I13
 sg11
 S'6th St & Indiana Ave NW'
 p4256
@@ -42208,7 +42208,7 @@ F0.0
 sg8
 I11
 sg9
-F5.81
+F5.96
 sg10
 I6
 sg11
@@ -42228,7 +42228,7 @@ F0.0
 sg8
 I15
 sg9
-F3.06
+F3.04
 sg10
 I3
 sg11
@@ -42236,7 +42236,7 @@ S'N Adams St & Lee Hwy'
 p4260
 sa(dp4261
 g3
-F0.01
+F0.0
 sg4
 F-77.08095
 sg5
@@ -42248,7 +42248,7 @@ F0.0
 sg8
 I11
 sg9
-F2.81
+F2.87
 sg10
 I3
 sg11
@@ -42288,15 +42288,15 @@ F0.0
 sg8
 I19
 sg9
-F6.89
+F5.91
 sg10
-I7
+I6
 sg11
 S'Ballston Metro / N Stuart & 9th St N'
 p4266
 sa(dp4267
 g3
-F0.83
+F0.79
 sg4
 F-77.109366
 sg5
@@ -42308,7 +42308,7 @@ F0.0
 sg8
 I11
 sg9
-F0.28
+F0.31
 sg10
 I0
 sg11
@@ -42328,7 +42328,7 @@ F0.0
 sg8
 I23
 sg9
-F15.26
+F15.22
 sg10
 I15
 sg11
@@ -42348,9 +42348,9 @@ F0.0
 sg8
 I15
 sg9
-F10.0
+F8.98
 sg10
-I10
+I9
 sg11
 S'Good Hope Rd & 14th St SE'
 p4272
@@ -42368,7 +42368,7 @@ F0.0
 sg8
 I11
 sg9
-F7.89
+F7.92
 sg10
 I8
 sg11
@@ -42388,7 +42388,7 @@ F0.0
 sg8
 I11
 sg9
-F5.98
+F6.0
 sg10
 I6
 sg11
@@ -42408,9 +42408,9 @@ F0.0
 sg8
 I11
 sg9
-F7.04
+F8.03
 sg10
-I7
+I8
 sg11
 S'Fairfax Dr & Kenmore St'
 p4278
@@ -42428,9 +42428,9 @@ F0.0
 sg8
 I19
 sg9
-F13.95
+F11.77
 sg10
-I14
+I12
 sg11
 S'Gallaudet / 8th St & Florida Ave NE'
 p4280
@@ -42448,15 +42448,15 @@ F0.0
 sg8
 I19
 sg9
-F14.9
+F13.9
 sg10
-I15
+I14
 sg11
 S'20th & L St NW'
 p4282
 sa(dp4283
 g3
-F0.49
+F0.74
 sg4
 F-77.0284
 sg5
@@ -42468,9 +42468,9 @@ F0.0
 sg8
 I19
 sg9
-F1.14
+F0.59
 sg10
-I1
+I0
 sg11
 S'12th & L St NW'
 p4284
@@ -42484,11 +42484,11 @@ I187
 sg6
 F38.901539
 sg7
-F0.65
+F0.67
 sg8
 I19
 sg9
-F18.4
+F18.43
 sg10
 I19
 sg11
@@ -42508,7 +42508,7 @@ F0.0
 sg8
 I22
 sg9
-F13.99
+F13.89
 sg10
 I14
 sg11
@@ -42528,7 +42528,7 @@ F0.0
 sg8
 I19
 sg9
-F8.19
+F8.43
 sg10
 I8
 sg11
@@ -42544,11 +42544,11 @@ I190
 sg6
 F38.804718
 sg7
-F0.01
+F0.0
 sg8
 I15
 sg9
-F11.12
+F11.19
 sg10
 I11
 sg11
@@ -42588,7 +42588,7 @@ F0.0
 sg8
 I15
 sg9
-F6.11
+F6.09
 sg10
 I6
 sg11
@@ -42596,7 +42596,7 @@ S'King St & Patrick St'
 p4296
 sa(dp4297
 g3
-F0.0
+F0.05
 sg4
 F-77.03353
 sg5
@@ -42608,9 +42608,9 @@ F0.0
 sg8
 I19
 sg9
-F3.73
+F2.75
 sg10
-I4
+I3
 sg11
 S'15th & K St NW'
 p4298
@@ -42628,7 +42628,7 @@ F0.0
 sg8
 I15
 sg9
-F10.04
+F10.01
 sg10
 I10
 sg11
@@ -42648,7 +42648,7 @@ F0.0
 sg8
 I17
 sg9
-F8.98
+F8.97
 sg10
 I9
 sg11
@@ -42668,7 +42668,7 @@ F0.0
 sg8
 I19
 sg9
-F6.98
+F6.92
 sg10
 I7
 sg11
@@ -42688,7 +42688,7 @@ F0.0
 sg8
 I19
 sg9
-F4.86
+F4.88
 sg10
 I5
 sg11
@@ -42704,11 +42704,11 @@ I198
 sg6
 F38.9066
 sg7
-F0.7
+F0.67
 sg8
 I15
 sg9
-F14.39
+F14.27
 sg10
 I15
 sg11
@@ -42724,13 +42724,13 @@ I199
 sg6
 F38.895914
 sg7
-F0.75
+F0.53
 sg8
 I15
 sg9
-F14.01
+F13.34
 sg10
-I15
+I14
 sg11
 S'10th & E St NW'
 p4310
@@ -42744,19 +42744,19 @@ I200
 sg6
 F38.90088
 sg7
-F0.56
+F0.28
 sg8
 I14
 sg9
-F12.64
+F11.82
 sg10
-I13
+I12
 sg11
 S'22nd & I St NW / Foggy Bottom'
 p4312
 sa(dp4313
 g3
-F0.0
+F0.02
 sg4
 F-77.113905
 sg5
@@ -42768,7 +42768,7 @@ F0.0
 sg8
 I11
 sg9
-F2.05
+F1.92
 sg10
 I2
 sg11
@@ -42788,15 +42788,15 @@ F0.0
 sg8
 I11
 sg9
-F7.05
+F6.05
 sg10
-I7
+I6
 sg11
 S'Barton St & 10th St N'
 p4316
 sa(dp4317
 g3
-F0.8
+F0.78
 sg4
 F-77.077294
 sg5
@@ -42808,7 +42808,7 @@ F0.0
 sg8
 I11
 sg9
-F0.26
+F0.29
 sg10
 I0
 sg11
@@ -42816,7 +42816,7 @@ S'Arlington Blvd & N Queen St'
 p4318
 sa(dp4319
 g3
-F0.45
+F0.75
 sg4
 F-77.049426
 sg5
@@ -42828,9 +42828,9 @@ F0.0
 sg8
 I25
 sg9
-F4.45
+F3.36
 sg10
-I4
+I2
 sg11
 S'Lincoln Memorial'
 p4320
@@ -42848,7 +42848,7 @@ F0.0
 sg8
 I15
 sg9
-F7.86
+F7.92
 sg10
 I8
 sg11
@@ -42856,7 +42856,7 @@ S'20th St & Virginia Ave NW'
 p4322
 sa(dp4323
 g3
-F0.59
+F0.51
 sg4
 F-77.018677
 sg5
@@ -42868,7 +42868,7 @@ F0.0
 sg8
 I19
 sg9
-F1.46
+F1.43
 sg10
 I1
 sg11
@@ -42888,7 +42888,7 @@ F0.0
 sg8
 I15
 sg9
-F3.91
+F3.85
 sg10
 I4
 sg11
@@ -42908,7 +42908,7 @@ F0.0
 sg8
 I15
 sg9
-F7.89
+F7.84
 sg10
 I8
 sg11
@@ -42926,9 +42926,9 @@ F38.905707
 sg7
 F0.0
 sg8
-I22
+I23
 sg9
-F5.58
+F5.67
 sg10
 I6
 sg11
@@ -42948,7 +42948,7 @@ F0.0
 sg8
 I15
 sg9
-F6.82
+F6.79
 sg10
 I7
 sg11
@@ -42968,7 +42968,7 @@ F0.0
 sg8
 I11
 sg9
-F5.85
+F5.88
 sg10
 I6
 sg11
@@ -42988,7 +42988,7 @@ F0.0
 sg8
 I15
 sg9
-F5.84
+F5.88
 sg10
 I6
 sg11
@@ -42996,7 +42996,7 @@ S'28th St S & S Meade St'
 p4336
 sa(dp4337
 g3
-F0.77
+F0.79
 sg4
 F-77.041571
 sg5
@@ -43008,7 +43008,7 @@ F0.0
 sg8
 I23
 sg9
-F0.87
+F0.86
 sg10
 I0
 sg11
@@ -43028,7 +43028,7 @@ F0.0
 sg8
 I14
 sg9
-F8.87
+F8.86
 sg10
 I9
 sg11
@@ -43048,7 +43048,7 @@ F0.0
 sg8
 I19
 sg9
-F2.94
+F2.93
 sg10
 I3
 sg11
@@ -43056,7 +43056,7 @@ S'Georgia Ave & Emerson St NW'
 p4342
 sa(dp4343
 g3
-F0.0
+F0.01
 sg4
 F-77.032652
 sg5
@@ -43068,7 +43068,7 @@ F0.0
 sg8
 I18
 sg9
-F2.89
+F2.84
 sg10
 I3
 sg11
@@ -43108,7 +43108,7 @@ F0.0
 sg8
 I11
 sg9
-F4.94
+F4.96
 sg10
 I5
 sg11
@@ -43128,7 +43128,7 @@ F0.0
 sg8
 I11
 sg9
-F6.02
+F6.01
 sg10
 I6
 sg11
@@ -43148,7 +43148,7 @@ F0.0
 sg8
 I11
 sg9
-F4.96
+F4.97
 sg10
 I5
 sg11
@@ -43168,7 +43168,7 @@ F0.0
 sg8
 I10
 sg9
-F6.97
+F6.91
 sg10
 I7
 sg11
@@ -43188,7 +43188,7 @@ F0.0
 sg8
 I15
 sg9
-F7.96
+F8.04
 sg10
 I8
 sg11
@@ -43208,7 +43208,7 @@ F0.0
 sg8
 I11
 sg9
-F3.98
+F4.0
 sg10
 I4
 sg11
@@ -43216,7 +43216,7 @@ S'S Kenmore & 24th St S'
 p4358
 sa(dp4359
 g3
-F0.82
+F0.86
 sg4
 F-77.065131
 sg5
@@ -43228,7 +43228,7 @@ F0.0
 sg8
 I19
 sg9
-F0.24
+F0.21
 sg10
 I0
 sg11
@@ -43248,9 +43248,9 @@ F0.0
 sg8
 I17
 sg9
-F9.51
+F8.59
 sg10
-I9
+I8
 sg11
 S'Wisconsin Ave & O St NW'
 p4362
@@ -43268,7 +43268,7 @@ F0.0
 sg8
 I11
 sg9
-F7.02
+F7.03
 sg10
 I7
 sg11
@@ -43296,7 +43296,7 @@ S'Connecticut & Nebraska Ave NW'
 p4366
 sa(dp4367
 g3
-F0.03
+F0.06
 sg4
 F-77.038359
 sg5
@@ -43308,7 +43308,7 @@ F0.0
 sg8
 I19
 sg9
-F3.08
+F2.95
 sg10
 I3
 sg11
@@ -43316,7 +43316,7 @@ S'17th St & Massachusetts Ave NW'
 p4368
 sa(dp4369
 g3
-F0.75
+F0.71
 sg4
 F-77.0352
 sg5
@@ -43328,7 +43328,7 @@ F0.0
 sg8
 I15
 sg9
-F0.79
+F0.74
 sg10
 I0
 sg11
@@ -43348,15 +43348,15 @@ F0.0
 sg8
 I11
 sg9
-F6.27
+F5.2
 sg10
-I6
+I5
 sg11
 S'8th & East Capitol St NE'
 p4372
 sa(dp4373
 g3
-F0.04
+F0.0
 sg4
 F-77.017669
 sg5
@@ -43368,9 +43368,9 @@ F0.0
 sg8
 I15
 sg9
-F2.91
+F5.94
 sg10
-I3
+I6
 sg11
 S'New Jersey Ave & R St NW'
 p4374
@@ -43388,7 +43388,7 @@ F0.0
 sg8
 I11
 sg9
-F5.04
+F4.94
 sg10
 I5
 sg11
@@ -43408,7 +43408,7 @@ F0.0
 sg8
 I15
 sg9
-F7.32
+F7.19
 sg10
 I7
 sg11
@@ -43428,7 +43428,7 @@ F0.0
 sg8
 I15
 sg9
-F7.93
+F7.95
 sg10
 I8
 sg11
@@ -43448,9 +43448,9 @@ F0.0
 sg8
 I19
 sg9
-F5.86
+F6.86
 sg10
-I6
+I7
 sg11
 S'15th & F St NE'
 p4382
@@ -43468,7 +43468,7 @@ F0.0
 sg8
 I15
 sg9
-F4.88
+F4.84
 sg10
 I5
 sg11
@@ -43488,7 +43488,7 @@ F0.0
 sg8
 I10
 sg9
-F4.01
+F4.04
 sg10
 I4
 sg11
@@ -43496,7 +43496,7 @@ S'34th St & Minnesota Ave SE'
 p4386
 sa(dp4387
 g3
-F0.0
+F0.01
 sg4
 F-76.999388
 sg5
@@ -43528,7 +43528,7 @@ F0.0
 sg8
 I11
 sg9
-F9.0
+F9.03
 sg10
 I9
 sg11
@@ -43548,7 +43548,7 @@ F0.0
 sg8
 I15
 sg9
-F5.02
+F5.07
 sg10
 I5
 sg11
@@ -43556,7 +43556,7 @@ S'Neal St & Trinidad Ave NE'
 p4392
 sa(dp4393
 g3
-F0.5
+F0.69
 sg4
 F-77.029779
 sg5
@@ -43568,9 +43568,9 @@ F0.0
 sg8
 I23
 sg9
-F1.79
+F1.08
 sg10
-I1
+I0
 sg11
 S'13th & U St NW'
 p4394
@@ -43588,7 +43588,7 @@ F0.0
 sg8
 I11
 sg9
-F3.99
+F3.92
 sg10
 I4
 sg11
@@ -43608,7 +43608,7 @@ F0.0
 sg8
 I15
 sg9
-F10.02
+F10.01
 sg10
 I10
 sg11
@@ -43628,7 +43628,7 @@ F0.0
 sg8
 I11
 sg9
-F6.07
+F6.03
 sg10
 I6
 sg11
@@ -43648,7 +43648,7 @@ F0.0
 sg8
 I11
 sg9
-F4.93
+F4.94
 sg10
 I5
 sg11
@@ -43668,7 +43668,7 @@ F0.0
 sg8
 I15
 sg9
-F6.92
+F7.48
 sg10
 I7
 sg11
@@ -43676,7 +43676,7 @@ S'3rd St & Pennsylvania Ave SE'
 p4404
 sa(dp4405
 g3
-F0.08
+F0.04
 sg4
 F-77.02324
 sg5
@@ -43688,7 +43688,7 @@ F0.0
 sg8
 I15
 sg9
-F3.51
+F3.36
 sg10
 I3
 sg11
@@ -43708,9 +43708,9 @@ F0.0
 sg8
 I15
 sg9
-F5.94
+F4.94
 sg10
-I6
+I5
 sg11
 S'3rd & Elm St NW'
 p4408
@@ -43728,7 +43728,7 @@ F0.0
 sg8
 I19
 sg9
-F6.88
+F6.86
 sg10
 I7
 sg11
@@ -43748,7 +43748,7 @@ F0.0
 sg8
 I27
 sg9
-F12.2
+F11.75
 sg10
 I12
 sg11
