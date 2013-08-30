@@ -1,4 +1,5 @@
 #cache
+web/cache.p
 #ignore virtual environment
 venv
 #log files
