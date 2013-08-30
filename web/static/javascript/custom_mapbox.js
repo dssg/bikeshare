@@ -8,6 +8,7 @@ $(document).ready(function () {
     min: 0,
     max: 120, // hours * mins
     step: 15, // 15 min intervals, can change with model
+    disabled: true // enables after data has been loaded
   }).on('slide', function (event, ui) {
     MYAPP.prediction_time = ui.value + "";
     $("#time").text("Mins From Now: " + ui.value);
@@ -22,6 +23,9 @@ $(document).ready(function () {
     $.getJSON("../predict_all/  ", function (json) {
       MYAPP.vanilla_json = json;
       updateMarkers();
+      // once the prediction data has arrived, enable the slider
+      $( "#slider" ).slider( "option", "disabled", false );
+
     });
   });
 
