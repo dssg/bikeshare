@@ -46,6 +46,8 @@ The model lives in `model`. There are scripts in there that crunch the historica
 
 ### **A simple webapp that displays the model's predictions**
 
+The webapp is currently live at [bikeshare.dssg.io](http://bikeshare.dssg.io/).
+
 The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
 
 To install either needed python dependencies, clone the project and run `pip install -r requirements.txt`
