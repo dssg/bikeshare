@@ -1,0 +1,529 @@
+2013-08-30 01:28:58 [10525] [INFO] Starting gunicorn 17.5
+2013-08-30 01:28:58 [10525] [DEBUG] Arbiter booted
+2013-08-30 01:28:58 [10525] [INFO] Listening at: http://127.0.0.1:7777 (10525)
+2013-08-30 01:28:58 [10525] [INFO] Using worker: sync
+2013-08-30 01:28:58 [10532] [INFO] Booting worker with pid: 10532
+2013-08-30 01:28:58 [10532] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 353, in import_app
+    __import__(module)
+  File "/home/ubuntu/bikeshare/web/app.py", line 33
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 353, in import_app
+    __import__(module)
+  File "/home/ubuntu/bikeshare/web/app.py", line 33
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+2013-08-30 01:28:58 [10532] [INFO] Worker exiting (pid: 10532)
+2013-08-30 01:28:58 [10533] [INFO] Booting worker with pid: 10533
+2013-08-30 01:28:58 [10533] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 353, in import_app
+    __import__(module)
+  File "/home/ubuntu/bikeshare/web/app.py", line 33
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 353, in import_app
+    __import__(module)
+  File "/home/ubuntu/bikeshare/web/app.py", line 33
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+2013-08-30 01:28:58 [10533] [INFO] Worker exiting (pid: 10533)
+2013-08-30 01:28:58 [10534] [INFO] Booting worker with pid: 10534
+2013-08-30 01:28:58 [10534] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 353, in import_app
+    __import__(module)
+  File "/home/ubuntu/bikeshare/web/app.py", line 33
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 353, in import_app
+    __import__(module)
+  File "/home/ubuntu/bikeshare/web/app.py", line 33
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+2013-08-30 01:28:58 [10534] [INFO] Worker exiting (pid: 10534)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==17.5', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 42, in run
+    WSGIApplication("%(prog)s [OPTIONS] APP_MODULE").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 144, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 291, in halt
+    self.stop()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 334, in stop
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 430, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+2013-08-30 01:30:14 [10590] [INFO] Starting gunicorn 17.5
+2013-08-30 01:30:14 [10590] [DEBUG] Arbiter booted
+2013-08-30 01:30:14 [10590] [INFO] Listening at: http://127.0.0.1:7777 (10590)
+2013-08-30 01:30:14 [10590] [INFO] Using worker: sync
+2013-08-30 01:30:14 [10596] [INFO] Booting worker with pid: 10596
+2013-08-30 01:30:14 [10597] [INFO] Booting worker with pid: 10597
+2013-08-30 01:30:14 [10601] [INFO] Booting worker with pid: 10601
+2013-08-30 01:42:25 [10597] [DEBUG] GET /
+2013-08-30 14:40:46 [10601] [DEBUG] GET /
+2013-08-30 14:40:46 [10597] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 14:40:46 [10596] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 14:40:46 [10601] [DEBUG] GET /static/css/custom.css
+2013-08-30 14:40:46 [10597] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 14:40:46 [10596] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 14:40:46 [10597] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 14:40:46 [10596] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 14:40:48 [10601] [DEBUG] GET /
+2013-08-30 14:40:48 [10601] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 14:40:48 [10597] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 14:40:48 [10596] [DEBUG] GET /static/css/custom.css
+2013-08-30 14:40:48 [10601] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 14:40:48 [10597] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 14:40:48 [10601] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 14:40:48 [10596] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 14:40:50 [10596] [DEBUG] GET /map
+2013-08-30 14:40:50 [10596] [DEBUG] GET /map/
+2013-08-30 14:50:00 [10596] [DEBUG] GET /map/
+2013-08-30 14:50:01 [10601] [DEBUG] GET /map/
+2013-08-30 14:56:57 [10596] [DEBUG] GET /
+2013-08-30 15:19:05 [10596] [DEBUG] GET /predict_all/
+2013-08-30 15:19:05 [10596] [DEBUG] GET /favicon.ico
+2013-08-30 15:19:19 [10596] [DEBUG] GET /predict_all/
+2013-08-30 15:19:20 [10596] [DEBUG] GET /predict_all/
+2013-08-30 15:19:25 [10596] [DEBUG] GET /predict/17
+2013-08-30 15:19:29 [10596] [DEBUG] GET /predict/17/60
+2013-08-30 15:24:00 [10596] [DEBUG] GET /predict_all
+2013-08-30 15:24:00 [10596] [DEBUG] GET /predict_all/
+2013-08-30 15:56:26 [10597] [DEBUG] GET /
+2013-08-30 15:56:26 [10601] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 15:56:26 [10596] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 15:56:26 [10597] [DEBUG] GET /static/css/custom.css
+2013-08-30 15:56:26 [10601] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 15:56:26 [10596] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 15:56:26 [10597] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 15:56:27 [10596] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 15:56:40 [10601] [DEBUG] GET /
+2013-08-30 15:56:41 [10596] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 15:56:41 [10597] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 15:56:41 [10596] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 15:56:41 [10601] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 15:56:41 [10597] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 15:56:41 [10596] [DEBUG] GET /static/css/custom.css
+2013-08-30 15:56:41 [10601] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 15:56:41 [10601] [DEBUG] GET /assets/ico/favicon.png
+2013-08-30 15:56:53 [10601] [DEBUG] GET /
+2013-08-30 15:56:53 [10596] [DEBUG] GET /static/css/custom.css
+2013-08-30 15:56:53 [10601] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 15:56:53 [10596] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 15:56:53 [10601] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 15:56:53 [10596] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 15:56:53 [10601] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 15:56:53 [10601] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:25:33 [10597] [INFO] Worker exiting (pid: 10597)
+2013-08-30 16:25:33 [10601] [INFO] Worker exiting (pid: 10601)
+2013-08-30 16:25:33 [10596] [INFO] Worker exiting (pid: 10596)
+60, 18
+2013-08-30 16:25:33 [10590] [INFO] Handling signal: int
+2013-08-30 16:25:33 [10590] [INFO] Shutting down: Master
+2013-08-30 16:25:38 [16391] [INFO] Starting gunicorn 17.5
+2013-08-30 16:25:38 [16391] [DEBUG] Arbiter booted
+2013-08-30 16:25:38 [16391] [INFO] Listening at: http://127.0.0.1:7777 (16391)
+2013-08-30 16:25:38 [16391] [INFO] Using worker: sync
+2013-08-30 16:25:38 [16397] [INFO] Booting worker with pid: 16397
+2013-08-30 16:25:38 [16398] [INFO] Booting worker with pid: 16398
+2013-08-30 16:25:38 [16403] [INFO] Booting worker with pid: 16403
+2013-08-30 16:25:43 [16397] [DEBUG] GET /predict_all/
+2013-08-30 16:27:47 [16403] [INFO] Worker exiting (pid: 16403)
+2013-08-30 16:27:47 [16398] [INFO] Worker exiting (pid: 16398)
+2013-08-30 16:27:47 [16397] [INFO] Worker exiting (pid: 16397)
+2013-08-30 16:27:47 [16391] [INFO] Handling signal: int
+2013-08-30 16:27:47 [16391] [INFO] Shutting down: Master
+2013-08-30 16:28:01 [16484] [INFO] Starting gunicorn 17.5
+2013-08-30 16:28:01 [16484] [DEBUG] Arbiter booted
+2013-08-30 16:28:01 [16484] [INFO] Listening at: http://127.0.0.1:7777 (16484)
+2013-08-30 16:28:01 [16484] [INFO] Using worker: sync
+2013-08-30 16:28:01 [16490] [INFO] Booting worker with pid: 16490
+2013-08-30 16:28:02 [16491] [INFO] Booting worker with pid: 16491
+2013-08-30 16:28:02 [16496] [INFO] Booting worker with pid: 16496
+2013-08-30 16:28:07 [16490] [DEBUG] GET /
+2013-08-30 16:28:07 [16496] [DEBUG] GET /
+2013-08-30 16:28:09 [16490] [DEBUG] GET /
+2013-08-30 16:28:09 [16490] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:28:09 [16491] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:28:09 [16496] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:28:09 [16491] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:28:09 [16490] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:28:09 [16491] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:28:09 [16496] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:28:36 [16490] [INFO] Worker exiting (pid: 16490)
+2013-08-30 16:28:36 [16484] [INFO] Handling signal: int
+2013-08-30 16:28:36 [16496] [INFO] Worker exiting (pid: 16496)
+2013-08-30 16:28:36 [16491] [INFO] Worker exiting (pid: 16491)
+2013-08-30 16:28:36 [16484] [INFO] Shutting down: Master
+2013-08-30 16:34:25 [16641] [INFO] Starting gunicorn 17.5
+2013-08-30 16:34:25 [16641] [DEBUG] Arbiter booted
+2013-08-30 16:34:25 [16641] [INFO] Listening at: http://127.0.0.1:7777 (16641)
+2013-08-30 16:34:25 [16641] [INFO] Using worker: sync
+2013-08-30 16:34:25 [16647] [INFO] Booting worker with pid: 16647
+2013-08-30 16:34:25 [16648] [INFO] Booting worker with pid: 16648
+2013-08-30 16:34:25 [16651] [INFO] Booting worker with pid: 16651
+2013-08-30 16:34:29 [16651] [DEBUG] GET /
+2013-08-30 16:34:30 [16651] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:34:30 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:34:30 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:34:30 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:34:30 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:34:30 [16651] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:34:30 [16651] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:34:30 [16651] [DEBUG] GET /predict_all/
+2013-08-30 16:40:34 [16651] [DEBUG] GET /
+2013-08-30 16:40:35 [16651] [DEBUG] GET /
+2013-08-30 16:40:35 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:40:36 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:40:48 [16648] [DEBUG] GET /
+2013-08-30 16:40:49 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:40:49 [16651] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:40:49 [16651] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:40:49 [16647] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:40:49 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:40:49 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:40:49 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:40:50 [16651] [DEBUG] GET /predict_all/
+2013-08-30 16:42:49 [16651] [DEBUG] GET /
+2013-08-30 16:42:49 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:42:49 [16647] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:42:49 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:42:49 [16648] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:42:49 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:42:49 [16647] [DEBUG] GET /predict_all/
+2013-08-30 16:42:51 [16647] [DEBUG] GET /
+2013-08-30 16:42:51 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:42:51 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:42:51 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:42:51 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:42:51 [16648] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:42:51 [16647] [DEBUG] GET /predict_all/
+2013-08-30 16:43:17 [16647] [DEBUG] GET /
+2013-08-30 16:43:17 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:43:17 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:43:17 [16651] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:43:17 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:43:17 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:43:17 [16647] [DEBUG] GET /predict_all/
+2013-08-30 16:43:21 [16647] [DEBUG] GET /
+2013-08-30 16:43:21 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:43:21 [16647] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:43:21 [16648] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:43:21 [16647] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:43:21 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:43:21 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:43:21 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:43:22 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:44:05 [16647] [DEBUG] GET /
+2013-08-30 16:44:06 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:44:22 [16648] [DEBUG] GET /
+2013-08-30 16:44:22 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:45:29 [16647] [DEBUG] GET /
+2013-08-30 16:45:30 [16647] [DEBUG] GET /predict_all/
+2013-08-30 16:48:40 [16647] [DEBUG] GET /
+2013-08-30 16:48:41 [16647] [DEBUG] GET /predict_all/
+2013-08-30 16:50:18 [16648] [DEBUG] GET /
+2013-08-30 16:50:18 [16648] [DEBUG] GET /
+2013-08-30 16:50:19 [16651] [DEBUG] GET /predict_all/
+2013-08-30 16:50:20 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:50:21 [16647] [DEBUG] GET /
+2013-08-30 16:50:21 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:50:21 [16651] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:50:21 [16647] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:50:21 [16648] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:50:21 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:50:21 [16648] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:50:21 [16651] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:50:21 [16651] [DEBUG] GET /predict_all/
+2013-08-30 16:50:46 [16651] [DEBUG] GET /
+2013-08-30 16:50:46 [16651] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:50:46 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:50:46 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:50:46 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:50:46 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:50:46 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:50:47 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:50:47 [16651] [DEBUG] GET /predict_all/
+2013-08-30 16:51:16 [16651] [DEBUG] GET /
+2013-08-30 16:51:16 [16651] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:51:16 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:51:16 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:51:16 [16651] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:51:16 [16648] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:51:16 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:51:21 [16648] [DEBUG] GET /
+2013-08-30 16:51:22 [16647] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:51:22 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:51:22 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:51:22 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:51:22 [16651] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:51:22 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:51:22 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:51:23 [16648] [DEBUG] GET /predict_all/
+2013-08-30 16:53:06 [16651] [DEBUG] GET /
+2013-08-30 16:53:06 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:53:06 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:53:06 [16647] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:53:06 [16651] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:53:06 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:53:06 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:53:06 [16651] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:53:07 [16651] [DEBUG] GET /predict_all/
+2013-08-30 16:57:45 [16651] [DEBUG] GET /
+2013-08-30 16:57:45 [16651] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:57:45 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:57:45 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:57:45 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:57:45 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:57:45 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:57:45 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:57:46 [16647] [DEBUG] GET /predict_all/
+2013-08-30 16:59:50 [16648] [DEBUG] GET /
+2013-08-30 16:59:50 [16648] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:59:50 [16647] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:59:50 [16648] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:59:50 [16648] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:59:50 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:59:50 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:59:50 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:59:51 [16651] [DEBUG] GET /predict_all/
+2013-08-30 16:59:57 [16647] [DEBUG] GET /
+2013-08-30 16:59:57 [16651] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 16:59:57 [16648] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 16:59:57 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 16:59:57 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 16:59:57 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 16:59:57 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 16:59:57 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 16:59:58 [16648] [DEBUG] GET /predict_all/
+2013-08-30 17:00:25 [16647] [DEBUG] GET /
+2013-08-30 17:00:25 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:00:25 [16651] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:00:25 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:00:25 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:00:25 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:00:25 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:00:25 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:00:26 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:01:02 [16647] [DEBUG] GET /
+2013-08-30 17:01:03 [16651] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:01:03 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:01:03 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:01:03 [16651] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:01:03 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:01:03 [16648] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:01:03 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:01:04 [16648] [DEBUG] GET /assets/ico/favicon.png
+2013-08-30 17:01:04 [16648] [DEBUG] GET /predict_all/
+2013-08-30 17:01:13 [16648] [DEBUG] GET /
+2013-08-30 17:01:13 [16648] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:01:13 [16648] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:01:13 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:01:13 [16648] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:01:13 [16651] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:01:13 [16648] [DEBUG] GET /predict_all/
+2013-08-30 17:02:18 [16647] [DEBUG] GET /
+2013-08-30 17:02:19 [16647] [DEBUG] GET /
+2013-08-30 17:02:19 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:02:20 [16651] [DEBUG] GET /predict_all/
+2013-08-30 17:03:28 [16651] [DEBUG] GET /
+2013-08-30 17:03:28 [16651] [DEBUG] GET /predict_all/
+2013-08-30 17:03:28 [16648] [DEBUG] GET /favicon.ico
+2013-08-30 17:03:28 [16647] [DEBUG] GET /favicon.ico
+2013-08-30 17:03:46 [16647] [DEBUG] GET /
+2013-08-30 17:03:46 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:03:46 [16648] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:03:46 [16648] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:03:46 [16648] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:03:46 [16647] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:03:46 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:03:47 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:03:47 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:04:33 [16647] [DEBUG] GET /
+2013-08-30 17:04:33 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:04:33 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:04:33 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:04:33 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:04:33 [16647] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:04:33 [16651] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:04:33 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:04:35 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:04:55 [16647] [DEBUG] GET /
+2013-08-30 17:04:55 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:04:55 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:04:55 [16651] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:04:55 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:04:55 [16651] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:04:55 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:04:55 [16648] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:04:55 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:16:34 [16647] [DEBUG] GET /
+2013-08-30 17:16:34 [16647] [DEBUG] GET /
+2013-08-30 17:16:35 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:16:35 [16651] [DEBUG] GET /predict_all/
+2013-08-30 17:16:44 [16651] [DEBUG] GET /
+2013-08-30 17:16:44 [16648] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:16:44 [16647] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:16:44 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:16:44 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:16:44 [16648] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:16:44 [16651] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:16:44 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:16:44 [16648] [DEBUG] GET /predict_all/
+2013-08-30 17:19:15 [16651] [DEBUG] GET /
+2013-08-30 17:19:16 [16651] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:19:16 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:19:16 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:19:16 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:19:16 [16651] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:19:16 [16648] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:19:16 [16648] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:19:16 [16648] [DEBUG] GET /predict_all/
+2013-08-30 17:19:35 [16648] [DEBUG] GET /
+2013-08-30 17:19:35 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:19:35 [16647] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:19:35 [16648] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:19:35 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:19:35 [16647] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:19:35 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:20:00 [16647] [DEBUG] GET /
+2013-08-30 17:20:01 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:21:52 [16651] [DEBUG] GET /
+2013-08-30 17:21:52 [16651] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:21:52 [16648] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:21:52 [16651] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:21:52 [16648] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:21:52 [16651] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:21:53 [16647] [DEBUG] GET /predict_all/
+2013-08-30 17:23:13 [16647] [DEBUG] GET /
+2013-08-30 17:23:13 [16647] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:23:13 [16647] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:23:13 [16647] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:23:13 [16648] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:23:13 [16648] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:23:13 [16651] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:23:13 [16651] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:23:14 [16651] [DEBUG] GET /assets/ico/favicon.png
+2013-08-30 17:23:14 [16651] [DEBUG] GET /predict_all/
+2013-08-30 17:23:26 [16647] [INFO] Worker exiting (pid: 16647)
+2013-08-30 17:23:26 [16641] [INFO] Handling signal: int
+2013-08-30 17:23:26 [16648] [INFO] Worker exiting (pid: 16648)
+2013-08-30 17:23:26 [16651] [INFO] Worker exiting (pid: 16651)
+2013-08-30 17:23:26 [16641] [INFO] Shutting down: Master
+2013-08-30 17:23:27 [30392] [INFO] Starting gunicorn 17.5
+2013-08-30 17:23:27 [30392] [DEBUG] Arbiter booted
+2013-08-30 17:23:27 [30392] [INFO] Listening at: http://127.0.0.1:7777 (30392)
+2013-08-30 17:23:27 [30392] [INFO] Using worker: sync
+2013-08-30 17:23:27 [30398] [INFO] Booting worker with pid: 30398
+2013-08-30 17:23:27 [30399] [INFO] Booting worker with pid: 30399
+2013-08-30 17:23:28 [30408] [INFO] Booting worker with pid: 30408
+2013-08-30 17:23:34 [30399] [DEBUG] GET /
+2013-08-30 17:23:34 [30399] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:23:34 [30398] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:23:34 [30399] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:23:34 [30399] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:23:34 [30399] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:23:34 [30408] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:23:35 [30408] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:23:35 [30399] [DEBUG] GET /predict_all/
+2013-08-30 17:23:39 [30399] [DEBUG] GET /
+2013-08-30 17:23:39 [30399] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:23:39 [30408] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:23:39 [30399] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:23:39 [30398] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:23:39 [30399] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:23:39 [30398] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:23:39 [30398] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:23:40 [30398] [DEBUG] GET /predict_all/
+2013-08-30 17:23:40 [30399] [DEBUG] GET /favicon.ico
+2013-08-30 17:23:40 [30408] [DEBUG] GET /favicon.ico
+2013-08-30 17:27:02 [30408] [DEBUG] GET /
+2013-08-30 17:27:02 [30408] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:27:03 [30399] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:27:03 [30398] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:27:03 [30398] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:27:03 [30398] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:27:03 [30398] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:27:03 [30399] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:27:03 [30399] [DEBUG] GET /predict_all/
+2013-08-30 17:27:04 [30398] [DEBUG] GET /
+2013-08-30 17:27:04 [30398] [DEBUG] GET /static/css/bootstrap.css
+2013-08-30 17:27:04 [30408] [DEBUG] GET /static/javascript/mapbox.js
+2013-08-30 17:27:04 [30398] [DEBUG] GET /static/javascript/helpers.js
+2013-08-30 17:27:04 [30408] [DEBUG] GET /static/css/custom.css
+2013-08-30 17:27:04 [30408] [DEBUG] GET /static/javascript/Semicircle.js
+2013-08-30 17:27:04 [30399] [DEBUG] GET /static/javascript/custom_mapbox.js
+2013-08-30 17:27:04 [30399] [DEBUG] GET /static/javascript/Pie.js
+2013-08-30 17:27:04 [30399] [DEBUG] GET /predict_all/
+2013-08-30 17:31:53 [30399] [DEBUG] GET /
+2013-08-30 17:31:53 [30408] [DEBUG] GET /predict_all/
+2013-08-30 17:39:20 [30399] [INFO] Worker exiting (pid: 30399)
+2013-08-30 17:39:20 [30408] [INFO] Worker exiting (pid: 30408)
+2013-08-30 17:39:20 [30398] [INFO] Worker exiting (pid: 30398)
+2013-08-30 17:39:20 [30392] [INFO] Handling signal: int
+2013-08-30 17:39:20 [30392] [INFO] Shutting down: Master
