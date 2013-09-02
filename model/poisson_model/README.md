@@ -13,17 +13,20 @@
          * hours -> an indicator of the hour in which the observation occurred
          * weekday_dummy -> an indicator of whether the observation occurred during a weekday or weekend
 
-2. [poisson_fit.py](./poisson_fit.py) : Python Script which contains all the fit and prediction subscripts <br>
+2. [poisson_fit.py](./poisson_fit.py) : Python Script which contains all the fit and prediction subscripts
+
   * __Estimation Functions__ : Currently all functions are specific to Washington DC
-     * <code> fit\_poisson() </code>:  Takes station\_id, start time, and end time and fits the poisson model for both departures and arrivals using data from that station during that time interval.  
+     * <code> fit\_poisson() </code>:  Takes station\_id, start time, and end time and fits the poisson model for both departures and arrivals using data from that station during that time interval. (Check the [methodology section](https://github.com/dssg/bikeshare/wiki/methodology#poisson-point-process) of the wiki to read about how we're modeling bike station arrivals and departures as poisson point processes.)
          * Option included allows to user to indicate whether rebalancing should be included or not
      * <code> save\_poisson\_results() </code> : Runs the poisson fit code for a particular station and saves the results to a pickled file (ex _poisson\_results\_16\_rebalanced.p_)
      * <code> load\_poisson\_results() </code> : Loads the pickled poisson_results for a particular station
+   
   * __Prediction Functions__ 
-     * <code> lambda_calc </code> : Uses the fitted poisson models to calculate the appropriate rate parameter given month, time of day, and weekday indicators
-     * <code> predict\_net\_lambda </code> : Takes a current time, a prediction interval, and the results from <code> fit\_poisson() </code> to produce the expected value of change in bikes at some point in the future
-     * <code> simulate\_bikes </code> : Simulates a version of the bike counts from an initial to a final time for a particular station with a certain number of slots and starting number of bikes
-     * <code> simulation </code> : Uses the <code> simulate\_bikes </code> function an simulates the bike count trajectory forward a certain number of trials.  Provides three lists (1) the number of bikes at the station at the final time for each trial (2) an indicator if the station every went empty (3) an indicator if the station ever went full.
+     * <code> predict\_net\_lambda </code> : Takes a current time, a prediction interval, and the results from <code> fit\_poisson() </code> to produce the expected value of change in bikes at some point in the future. Uses `lambda_calc` to caculate rate lambda of arrivals and departures over the interval, then finds the difference - the "net lambda" - to find expected value of change in bikes at the end of the interval. This is the core prediction function.
+     * <code> lambda_calc </code> : Uses the fitted poisson models to calculate the appropriate rate parameter - of arrivals or departure, can be used for both - given month, time of day, and weekday indicators.
+     * <code> simulation </code> : Uses the <code> simulate\_bikes </code> function to simulate the bike count trajectory over a given time interval, and repeats this a bunch of times (called trials). The function outputs three lists: (1) the number of bikes at the station at the final time for each trial (2) an indicator if the station ever went empty during the trail, and (3) an indicator if the station ever went full.
+     * <code> simulate\_bikes </code> : Simulates bike counts from an initial to a final time for a particular station with a set number of docks and starting number of bikes. Call this function every time you want to simulate a dual poisson point process of simultaneous arrivals and departures. (Check the [methodology section](https://github.com/dssg/bikeshare/wiki/methodology#poisson-point-process) of the wiki to read about how we're simulating poisson point processes.)
+ 
 3. [poisson_validation.py](./poisson_validation.py) : Python script that contains all functions related to validation of our current model
   * __Functions__ : Currently all functions are specific to Washington DC
      * <code>  fit\_poisson\_simulation </code> :  Produces the same estimation results as <code> fit\_poisson </code>, but it takes in the arrival and departure data directly.
