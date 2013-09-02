@@ -1,6 +1,9 @@
 #ignore virtual environment
 venv
 
+#run direcotry
+run
+
 *.py[cod]
 
 # C extensions
