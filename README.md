@@ -1,33 +1,35 @@
 # Realtime Bikeshare Prediction Project 
+
+![Divvy bike share](http://dssg.io/img/partners/divvy.jpg)
+![Chicago Department of Transportation](http://dssg.io/img/partners/cdot.jpg)
+
+<img src="http://dssg.io/img/partners/divvy.jpg" align="right">
+<img src="http://dssg.io/img/partners/cdot.jpg" align="right">
+
 This is a [Data Science for Social Good](http://www.dssg.io) project to predict when bikeshare stations will be empty or full in major American cities.
 
 ## The problem: bikeshare rebalancing
 
-The City of Chicago just launched Divvy, a new bike share system designed to connect people to transit, and to make short one-way trips across town easy. Bike share is citywide bike rental - you can take a bike out at a station on one street corner and drop it off at another.
+The City of Chicago just launched [Divvy](http://divvybikes.com/), a new bike sharing system designed to connect people to transit, and to make short one-way trips across town easy. [Bike sharing](http://en.wikipedia.org/wiki/Bicycle_sharing_system) is citywide bike rental - you can take a bike out at a station on one street corner and drop it off at another.
 
-![Divvy bike share](http://dssg.io/img/partners/divvy.jpg)
-
-Popular in Europe and Asia, bike share has landed in the United States: Boston, DC, and New York launched systems in the past few years, San Francisco and Seattle are next.
-
-These systems share a central flaw, however: because of commuting patterns, bikes tend to pile up downtown in morning and on the outskirts in the afternoon. This imbalance can make using bikeshare difficult, because people can’t take out bikes from empty stations, or finish their rides at full stations.
+Bike sharing systems share a central flaw: because of commuting patterns, bikes tend to pile up downtown in morning and on the outskirts in the afternoon. This imbalance can make using bikeshare difficult, because people can’t take out bikes from empty stations, or finish their rides at full stations.
 
 To prevent this problem, bikeshare operators drive trucks around to reallocate bikes from full stations to empty ones. In bikeshare parlance, this is called **rebalancing**.
 
-Right now, operators do rebalancing by [looking at how long](http://www.cabitracker.com/status.php) stations have been empty or full and dispatching the nearest available rebalancing truck. So they can only see the **current number of bikes** at each station - not how many will be there in an hour or two.
+Right now, they do this by looking at the **current number of bikes** at each station - not how many will be there in an hour or two.
 
-![Chicago Department of Transportation](http://dssg.io/img/partners/cdot.jpg)
+We’re working with the City of Chicago’s [Department of Transportation](http://www.cityofchicago.org/city/en/depts/cdot.html) to make bikeshare rebalancing more proactive: by analyzing weather and bikeshare station trends, we can predict how many bikes are likely to be at each Divvy station in the future.
 
-We’re working with the City of Chicago’s [Department of Transportation](http://www.cityofchicago.org/city/en/depts/cdot.html) to change this: by analyzing weather and bikeshare station trends, we’ll predict how many bikes are likely to be at each Divvy station in the future.
+However, since there's not much bike sharing data for Chicago yet, we're starting by developing predictive models for Capital Bikeshare, Washington DC's bike sharing system.
 
-There's a catch, however: to predict things in the future, you need lots of data about the past. And since Divvy just launched, there's not much data about Chicago bikeshare yet. 
+**[Read more about bikeshare rebalancing in our wiki](wiki/problem)**
 
-But it turns out that [Alta Bike Share](http://www.altabicycleshare.com/), the company operating Divvy, also runs the older bikeshare systems of Boston and DC, for which we have several years of station data. So we're creating predictive statistical models for those cities first, and we'll apply them to Chicago once there's enough data. 
+## The solution: Poisson regression
+To predict the number of bikes at bike share stations in DC, we're going to use [Poisson regression](http://www.umass.edu/wsp/statistics/lessons/poisson/), a statistical technique useful for modeling counts. 
 
-## The solution: time series regression
-To predict the number of bikes at bike share stations in DC and Boston, we're going to use time series statistical techniques. Specifically, we're going to try to predict how many bikes will be at every station in each city's bikeshare system 60 minutes from now.
+Specifically, we take the current time of day, day of week, month, and weather as inputs into our model, and try to predict the number of bike arrivals and departures we expect to see at a given bike share station over the next 60 minutes. We subtract departures from arrivals to find the net change in bikes over the hour, and add this change to the current number of bikes to get our prediction of bikes at the station in 60 minutes. We do this for every station in DC's bikeshare system, and display the resulting predictions in a [human-friendly web app](http://bikeshare.dssg.io).
 
-To make this prediction, we're using a [Auto Regressive Moving Average (ARMA)](http://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model) regression model. This model will take in the current number of bikes at a station, the current time, day of week, month, and eventually weather conditions, and spit out the estimated number of bikes that will be at that station in 60 minutes.
-
+**[Read more about our statistical model in our wiki](wiki/methodology)**
 
 ## The project
 There are three components to the project:
@@ -54,63 +56,45 @@ To install either needed python dependencies, clone the project and run `pip ins
 
 ## The data: real-time bikeshare station availability and weather
 
-Alta bikeshare runs the bikeshare systems in [Boston](thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [Minneapolis](https://www.niceridemn.org/), [New York](http://citibikenyc.com/) and [Chicago](http://divvybikes.com/). Each system exposes either an XML ("Version 1") or JSON ("Version 2") API. 
+[Alta bikeshare](http://www.altabicycleshare.com/) - the company that runs the bikeshare systems in [Boston](thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [New York](http://citibikenyc.com/), [Chicago](http://divvybikes.com/), and others - publishes real-time bike availability data for these cities through an API.
 
-Every few minutes, these APIs provide the location of each station, and the number of avaliable bikes and free spaces at the station.  
+Every minute or two, the API reports the number of bikes and docks available at each bikeshare station in the city's system:
 
-An example of Alta's XML API is [Boston](http://www.thehubway.com/data/stations/bikeStations.xml). [Chicago](http://divvybikes.com/stations/json) uses the JSON API. Each version of the API has a different data schema, explained below.
+```{"id":17,
+		"stationName":"Wood St & Division St",
+		"location":"1802 W. Divison St"
+		"availableBikes":6,
+		"availableDocks":9,
+		"totalDocks":15,
+		"latitude":41.90332,
+		"longitude":-87.67273,
+		"statusValue":"In Service",
+}
+```
 
-Researcher Oliver O'Brien has been crawling these APIs since each system launched, getting data from them every 2 minutes. He gave us this historical data, which we imported into a PostgreSQL database. To add to this historical data, we've written scrapers (`scrapers`) that update our database every minute. Unfortunately, we can't open O'Brien's historical data at this time, but you're welcome to use our scrapers to gather your own data.
+We're using historical bike availability data for DC - courtesy of urban researcher [Oliver O'Brien](oliverobrien.co.uk) - and historical weather data from [Forecast.io](forecast.io) to fit our Poisson model.
 
-We also use historical weather data to aid our predictive model. We've written scripts to get it from Forecast.io (details below).
+To make predictions, we get real-time bike availability and weather data from Alta's DC API and Procure.io, and plug these inputs into our model. 
 
-### Schema of XML API (Version 1)
-* XML API cities are Boston, Washington DC and Minneapolis. They use the following schema:
-
-* Indiv (The Tablenames are `bike_ind_cityname`, ie `bike_ind_boston`)
-
-|tfl_id | bikes | spaces |timestamp|
-|------|:-----:|:-------:|:-----------------------|
-| 5	| 7 | 10	| 2011-07-28 11:58:12 |
-| 8 	| 5 | 6 	| 2011-07-28 11:58:12 |
-
-
-###Schema, BIXIV2
-* JSON API cities are Chicago and New York. They use a slightly different schema:
-
-* Indiv
-
-tfl_id | bikes | spaces | total_docks | timestamp
----------|:---------:|:--------:|:---------:|:----------
-  72 | 0 | 39 | 39 | 2013-05-24 19:32:02  
-  79 | 15 | 15 | 32 | 2013-05-24 19:32:02  
-
-
-### Notes on our PostgreSQL configuration
-We maintain cityname naming conventions: (These are way city names are represented in the database) of 
-`newyork`,`washingtondc`,`boston`,`minneapolis`,`chicago`
-
-A series of metadata tables also exist in our PostgreSQL to tie a station's id (the `tfl_id` field) to its lat/long and other info. The tablenames follow the `metadata_cityname` convention, i.e. `metadata_boston`.
-
-You can learn more more about the dataset and scrapers in the [wiki](https://github.com/dssg/bikeshare/wiki/data).
+**[Read more about how we're getting data in our wiki](wiki/data)**
 
 ## Installation 
 
-First you will need to clone the repo. 
+To get the project running locally, first to clone the repo. 
 ````
 git clone https://github.com/dssg/bikeshare
 cd bikeshare/
 ````
 
 ### Database Configuration 
-You will need a working postgresql 9.x series install. Run `data/create_db.sql` to create all the appropriate tables. 
+You will need a working [PostgreSQL](http://www.postgresql.org) 9.x series install. Once you have that, run `data/create_db.sql` to create all the appropriate tables. 
 
 ### Scraper Configuration 
-We use several scrapers to populate the data. Inside `scrapers` there is more detailed install instructions and example crontabs. You will need a [forecast.io](http://forecast.io/developer) API key. Historical data will be made avalible shortly. 
+We use several scrapers to populate the data in the database. Inside `scrapers` there is more detailed install instructions and example crontabs. You will need a [forecast.io](http://forecast.io/developer) API key. Historical data will be made avalible shortly. 
 
 ### Webapp Installation
 
-*How To Run The Flask Web App*
+To the run the flash web app, you'll need to create a new python [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/), install needed python modules using [pip](http://dubroy.com/blog/so-you-want-to-install-a-python-package/), and run the flask server:
 
 ````
 cd bikeshare/web
@@ -120,7 +104,7 @@ pip install -r requirements.text
 python web/app.py
 ````
 
-To deploy the webapp, use [Gunicorn](http://gunicorn.org/) & [nginx](http://nginx.org/).
+To deploy the webapp in a production environment, use [Gunicorn](http://gunicorn.org/) & [nginx](http://nginx.org/) web servers.
 
 
 ## Contributing to the project
