@@ -1,9 +1,11 @@
-# Realtime Bikeshare Prediction Project 
+# Predictive bikeshare rebalancing
 
-<img src="http://dssg.io/img/partners/divvy.jpg" align="left">
-<img src="http://dssg.io/img/partners/cdot.jpg" align="left">
+<a href="http://bikeshare.dssg.io"><img src="http://divvybikes.com/" align="left"></a>
+<a href="http://bikeshare.dssg.io"><img src="http://www.cityofchicago.org/city/en/depts/cdot.html" align="left"></a>
+<br>
+Statistical models and app for predicting when bikeshare stations will be empty or full in Washington DC and someday Chicago.
 
-This is a [Data Science for Social Good](http://www.dssg.io) project to predict when bikeshare stations will be empty or full in major American cities.
+This is project is a part of the 2013 [Data Science for Social Good](http://www.dssg.io) fellowship, in Partnership with [Divvy](http://divvybikes.com/) and the [Chicago Department of Transportation](www.cityofchicago.org/city/en/depts/cdot.html).
 
 ## The problem: bikeshare rebalancing
 
@@ -19,22 +21,22 @@ We’re working with the City of Chicago’s [Department of Transportation](http
 
 However, since there's not much bike sharing data for Chicago yet, we're first developing predictive models for Capital Bikeshare, Washington DC's bike sharing system.
 
-**[Read more about bikeshare rebalancing in our wiki](../../wiki/problem)**
+**[Read more about bikeshare rebalancing in the wiki](../../wiki/problem)**
 
 ## The solution: Poisson regression
 To predict the number of bikes at bike share stations in DC, we're using [Poisson regression](http://www.umass.edu/wsp/statistics/lessons/poisson/), a statistical technique useful for modeling counts. 
 
 Specifically, we take the current time of day, day of week, month, and weather as inputs into our model, and try to predict the number of bike arrivals and departures we expect to see at a given bike share station over the next 60 minutes. We subtract departures from arrivals to find the net change in bikes over the hour, and add this change to the current number of bikes to get our predicted bikes at the station in 60 minutes. 
 
-<img src="https://raw.github.com/dssg/bikeshare/master/for_wiki/webapp_screenshot.png">
+<a href="http://bikeshare.dssg.io"><img src="https://raw.github.com/dssg/bikeshare/master/for_wiki/webapp_screenshot.png" align="center"></a>
 
 We do this for every station in DC's bikeshare system, and display the resulting predictions in a [human-friendly web app](http://bikeshare.dssg.io).
 
-**[Read more about our statistical model in our wiki](../../wiki/methodology)**
+**[Read more about our statistical model in the wiki](../../wiki/methodology)**
 
 ## The data: real-time bikeshare station availability and weather
 
-[Alta bikeshare](http://www.altabicycleshare.com/) - the company that runs the bikeshare systems in [Boston](thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [New York](http://citibikenyc.com/), [Chicago](http://divvybikes.com/), and others - publishes real-time bike availability data for these cities through an API.
+[Alta bikeshare](http://www.altabicycleshare.com/) - the company that runs the bikeshare systems in [Boston](http://www.thehubway.com/), [Washington DC](http://www.capitalbikeshare.com/), [New York](http://citibikenyc.com/), [Chicago](http://divvybikes.com/), and others - publishes real-time bike availability data for these cities through an API.
 
 Every minute or two, the API reports the number of bikes and docks available at each bikeshare station in the city's system:
 
@@ -52,11 +54,11 @@ Every minute or two, the API reports the number of bikes and docks available at 
 }
 ````
 
-We're using historical bike availability data for DC - courtesy of urban researcher [Oliver O'Brien](oliverobrien.co.uk) - and historical weather data from [Forecast.io](forecast.io) to fit our Poisson model.
+We're using historical bike availability data for DC - courtesy of urban researcher [Oliver O'Brien](http://www.oliverobrien.co.uk) - and historical weather data from [Forecast.io](http://www.forecast.io) to fit our Poisson model.
 
 To make predictions, we get real-time bike availability and weather data from Alta's DC API and Procure.io, and plug these inputs into our model. 
 
-**[Read more about how we're getting data in our wiki](../../wiki/data)**
+**[Read more about how we're getting data in the wiki](../../wiki/data)**
 
 ## Project layout
 There are three components to the project:
@@ -75,13 +77,13 @@ The Poisson model lives in `model`. There's also a binomial logistic model that 
 
 The webapp is currently live at [bikeshare.dssg.io](http://bikeshare.dssg.io/).
 
-The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
+The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://www.mapbox.com/mapbox.js/api/v1.3.1/) for mapping. Simply run `python app.py` to deploy the application on localhost. 
 
 To install either needed python dependencies, clone the project and run `pip install -r requirements.txt`
 
 ## Installation 
 
-To get the project running locally, first to clone the repo. 
+To get the project running locally, first to clone the repo:
 ````
 git clone https://github.com/dssg/bikeshare
 cd bikeshare/
