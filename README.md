@@ -1,7 +1,7 @@
 # Realtime Bikeshare Prediction Project 
 
-<img src="http://dssg.io/img/partners/divvy.jpg" align="right">
-<img src="http://dssg.io/img/partners/cdot.jpg" align="right">
+<img src="http://dssg.io/img/partners/divvy.jpg" align="left">
+<img src="http://dssg.io/img/partners/cdot.jpg" align="left">
 
 This is a [Data Science for Social Good](http://www.dssg.io) project to predict when bikeshare stations will be empty or full in major American cities.
 
@@ -19,39 +19,18 @@ We’re working with the City of Chicago’s [Department of Transportation](http
 
 However, since there's not much bike sharing data for Chicago yet, we're first developing predictive models for Capital Bikeshare, Washington DC's bike sharing system.
 
-**[Read more about bikeshare rebalancing in our wiki](/wiki/problem)**
+**[Read more about bikeshare rebalancing in our wiki](../../wiki/problem)**
 
 ## The solution: Poisson regression
 To predict the number of bikes at bike share stations in DC, we're using [Poisson regression](http://www.umass.edu/wsp/statistics/lessons/poisson/), a statistical technique useful for modeling counts. 
 
 Specifically, we take the current time of day, day of week, month, and weather as inputs into our model, and try to predict the number of bike arrivals and departures we expect to see at a given bike share station over the next 60 minutes. We subtract departures from arrivals to find the net change in bikes over the hour, and add this change to the current number of bikes to get our predicted bikes at the station in 60 minutes. 
 
+<img src="https://raw.github.com/dssg/bikeshare/master/for_wiki/webapp_screenshot.png">
+
 We do this for every station in DC's bikeshare system, and display the resulting predictions in a [human-friendly web app](http://bikeshare.dssg.io).
 
 **[Read more about our statistical model in our wiki](../../wiki/methodology)**
-
-## The project
-There are three components to the project:
-
-### **A database storing historical bikeshare and weather data**
-
-Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every bikeshare station in DC and Boston since their systems launched. We're storing this data in postgreSQL database, and updating it constantly by hitting Atla's real-time bikeshare APIs. The data is discussed in further detail below.
-
-Scripts to build the database, load historical data into it, and add real-time data to it are in the `data` and `scrapers` folders. The database updates every minute using a cron job that you need schedule on your own machine.
-
-### **A model that uses this data to predict future number of bikes**
-
-The model lives in `model`. There are scripts in there that crunch the historical data in the database to estimate the model's parameters, and other that actually implement the model by consuming these parameters, fetching model inputs from the database, and spitting out predictions.
-
-*This directory is undergoing heavy development*
-
-### **A simple webapp that displays the model's predictions**
-
-The webapp is currently live at [bikeshare.dssg.io](http://bikeshare.dssg.io/).
-
-The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
-
-To install either needed python dependencies, clone the project and run `pip install -r requirements.txt`
 
 ## The data: real-time bikeshare station availability and weather
 
@@ -60,15 +39,16 @@ To install either needed python dependencies, clone the project and run `pip ins
 Every minute or two, the API reports the number of bikes and docks available at each bikeshare station in the city's system:
 
 ````
-{"id":17,
-		"stationName":"Wood St & Division St",
-		"location":"1802 W. Divison St"
-		"availableBikes":6,
-		"availableDocks":9,
-		"totalDocks":15,
-		"latitude":41.90332,
-		"longitude":-87.67273,
-		"statusValue":"In Service",
+{
+	"id":17,
+	"stationName": "Wood St & Division St",
+	"location": "1802 W. Divison St"
+	"availableBikes": 6,
+	"availableDocks": 9,
+	"totalDocks": 15,
+	"latitude": 41.90332,
+	"longitude": -87.67273,		
+	"statusValue": "In Service",
 }
 ````
 
@@ -76,7 +56,28 @@ We're using historical bike availability data for DC - courtesy of urban researc
 
 To make predictions, we get real-time bike availability and weather data from Alta's DC API and Procure.io, and plug these inputs into our model. 
 
-**[Read more about how we're getting data in our wiki](wiki/data)**
+**[Read more about how we're getting data in our wiki](../../wiki/data)**
+
+## Project layout
+There are three components to the project:
+
+### **A database storing historical bikeshare and weather data**
+
+Thanks to [Oliver O'Brien](http://oliverobrien.co.uk/bikesharemap/), we've got historical data on the number of bikes and docks available at every bikeshare station in DC and Boston since their systems launched. We're storing this data in postgreSQL database, and updating it constantly by hitting Atla's real-time bikeshare APIs. [Read our wiki](../../wiki/data) for more detail on these data sources.
+
+Scripts to build the database, load historical data into it, and add real-time data to it are in the `data` and `scrapers` folders. The database updates every minute using a cron job that you need schedule on your own machine.
+
+### **A model that uses this data to predict future number of bikes**
+
+The Poisson model lives in `model`. There's also a binomial logistic model that we implemented. There are scripts in there that crunch the historical data in the database to estimate the model's parameters, and others that use the model to predict by consuming these parameters, fetching real-time model inputs from the database, and spitting out predictions. We also have model validation scripts that measure our model's predictive accuracy.
+
+### **A simple webapp that displays the model's predictions**
+
+The webapp is currently live at [bikeshare.dssg.io](http://bikeshare.dssg.io/).
+
+The app, which uses flask and bootstrap, lives in `web`. We use [MapBox.js](http://mapboxjs.org) for mapping. Simply run `python app.py` to deploy the application on localhost. 
+
+To install either needed python dependencies, clone the project and run `pip install -r requirements.txt`
 
 ## Installation 
 
