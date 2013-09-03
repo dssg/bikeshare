@@ -1,8 +1,9 @@
 # Predictive bikeshare rebalancing
 
-<a href="http://bikeshare.dssg.io"><img src="http://divvybikes.com/" align="left"></a>
-<a href="http://bikeshare.dssg.io"><img src="http://www.cityofchicago.org/city/en/depts/cdot.html" align="left"></a>
-<br>
+<a href="http://divvybikes.com/"><img src="http://dssg.io/img/partners/divvy.jpg" align="left"></a>
+<a href="http://www.cityofchicago.org/city/en/depts/cdot.html"><img src="http://dssg.io/img/partners/cdot.jpg" align="left"></a>
+
+
 Statistical models and app for predicting when bikeshare stations will be empty or full in Washington DC and someday Chicago.
 
 This is project is a part of the 2013 [Data Science for Social Good](http://www.dssg.io) fellowship, in Partnership with [Divvy](http://divvybikes.com/) and the [Chicago Department of Transportation](www.cityofchicago.org/city/en/depts/cdot.html).
