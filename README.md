@@ -1,8 +1,5 @@
 # Realtime Bikeshare Prediction Project 
 
-![Divvy bike share](http://dssg.io/img/partners/divvy.jpg)
-![Chicago Department of Transportation](http://dssg.io/img/partners/cdot.jpg)
-
 <img src="http://dssg.io/img/partners/divvy.jpg" align="right">
 <img src="http://dssg.io/img/partners/cdot.jpg" align="right">
 
@@ -18,18 +15,20 @@ To prevent this problem, bikeshare operators drive trucks around to reallocate b
 
 Right now, they do this by looking at the **current number of bikes** at each station - not how many will be there in an hour or two.
 
-We’re working with the City of Chicago’s [Department of Transportation](http://www.cityofchicago.org/city/en/depts/cdot.html) to make bikeshare rebalancing more proactive: by analyzing weather and bikeshare station trends, we can predict how many bikes are likely to be at each Divvy station in the future.
+We’re working with the City of Chicago’s [Department of Transportation](http://www.cityofchicago.org/city/en/depts/cdot.html) to make bikeshare rebalancing more proactive: by analyzing weather and bikeshare station trends, we can **predict how many bikes** are likely to be at each Divvy station in the future.
 
-However, since there's not much bike sharing data for Chicago yet, we're starting by developing predictive models for Capital Bikeshare, Washington DC's bike sharing system.
+However, since there's not much bike sharing data for Chicago yet, we're first developing predictive models for Capital Bikeshare, Washington DC's bike sharing system.
 
-**[Read more about bikeshare rebalancing in our wiki](wiki/problem)**
+**[Read more about bikeshare rebalancing in our wiki](/wiki/problem)**
 
 ## The solution: Poisson regression
-To predict the number of bikes at bike share stations in DC, we're going to use [Poisson regression](http://www.umass.edu/wsp/statistics/lessons/poisson/), a statistical technique useful for modeling counts. 
+To predict the number of bikes at bike share stations in DC, we're using [Poisson regression](http://www.umass.edu/wsp/statistics/lessons/poisson/), a statistical technique useful for modeling counts. 
 
-Specifically, we take the current time of day, day of week, month, and weather as inputs into our model, and try to predict the number of bike arrivals and departures we expect to see at a given bike share station over the next 60 minutes. We subtract departures from arrivals to find the net change in bikes over the hour, and add this change to the current number of bikes to get our prediction of bikes at the station in 60 minutes. We do this for every station in DC's bikeshare system, and display the resulting predictions in a [human-friendly web app](http://bikeshare.dssg.io).
+Specifically, we take the current time of day, day of week, month, and weather as inputs into our model, and try to predict the number of bike arrivals and departures we expect to see at a given bike share station over the next 60 minutes. We subtract departures from arrivals to find the net change in bikes over the hour, and add this change to the current number of bikes to get our predicted bikes at the station in 60 minutes. 
 
-**[Read more about our statistical model in our wiki](wiki/methodology)**
+We do this for every station in DC's bikeshare system, and display the resulting predictions in a [human-friendly web app](http://bikeshare.dssg.io).
+
+**[Read more about our statistical model in our wiki](../../wiki/methodology)**
 
 ## The project
 There are three components to the project:
@@ -60,7 +59,8 @@ To install either needed python dependencies, clone the project and run `pip ins
 
 Every minute or two, the API reports the number of bikes and docks available at each bikeshare station in the city's system:
 
-```{"id":17,
+````
+{"id":17,
 		"stationName":"Wood St & Division St",
 		"location":"1802 W. Divison St"
 		"availableBikes":6,
@@ -70,7 +70,7 @@ Every minute or two, the API reports the number of bikes and docks available at 
 		"longitude":-87.67273,
 		"statusValue":"In Service",
 }
-```
+````
 
 We're using historical bike availability data for DC - courtesy of urban researcher [Oliver O'Brien](oliverobrien.co.uk) - and historical weather data from [Forecast.io](forecast.io) to fit our Poisson model.
 
