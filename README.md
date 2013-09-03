@@ -72,7 +72,9 @@ Scripts to build the database, load historical data into it, and add real-time d
 
 ### **A model that uses this data to predict future number of bikes**
 
-The Poisson model lives in `model`. There's also a binomial logistic model that we implemented. There are scripts in there that crunch the historical data in the database to estimate the model's parameters, and others that use the model to predict by consuming these parameters, fetching real-time model inputs from the database, and spitting out predictions. We also have model validation scripts that measure our model's predictive accuracy.
+The Poisson model lives in `model`. There's also a binomial logistic model we implemented in there. Exploratory data analysis that informed the model choice lives in `analysis`.
+
+There are scripts in `model/possion` that crunch the historical data in the database to estimate the model's parameters, and others that use the model to predict by consuming these parameters, fetching real-time model inputs from the database, and spitting out predictions. We also have model validation scripts that measure our model's predictive accuracy.
 
 ### **A simple webapp that displays the model's predictions**
 
