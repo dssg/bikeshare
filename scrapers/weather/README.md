@@ -1,7 +1,7 @@
 ## Forecast.io weather scrapers
 ======================
 
-In order to add weather data to our models, we use the [Forecast.io API](http://forecast.io). 
+In order to add weather data to our models, we use the [Forecast.io API](https://developer.forecast.io/docs/v2). 
 
 - `forecastio` is python wrapper to the forecast.io API that makes it easier to use. we use it in all other scripts.
 - `historical_boston.py` and `historical_washingtondc.py` get historical weather data for those two cities and inserts it to a postgreSQL database. The tables we're insering this data to are created in `data/createdb.sql`. 
