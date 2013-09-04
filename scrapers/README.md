@@ -7,3 +7,5 @@ This directory contains the scrapers we use for each API we use.
 `Weather` is for forecast.io
 
 crontab.example is an example version of the crontab we use to keep all of this up to date.
+
+More info can be found in the [data section of the Wiki](https://github.com/dssg/bikeshare/wiki/data).
