@@ -41,7 +41,7 @@ We do this for every station in DC's bikeshare system, and display the resulting
 
 Every minute or two, the API reports the number of bikes and docks available at each bikeshare station in the city's system:
 
-````
+```json
 {
 	"id":17,
 	"stationName": "Wood St & Division St",
@@ -53,7 +53,7 @@ Every minute or two, the API reports the number of bikes and docks available at 
 	"longitude": -87.67273,		
 	"statusValue": "In Service",
 }
-````
+```
 
 We're using historical bike availability data for DC - courtesy of urban researcher [Oliver O'Brien](http://www.oliverobrien.co.uk) - and historical weather data from [Forecast.io](http://www.forecast.io) to fit our Poisson model.
 
@@ -102,13 +102,13 @@ We use several scrapers to populate the data in the database. Inside `scrapers` 
 
 To the run the flash web app, you'll need to create a new python [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/), install needed python modules using [pip](http://dubroy.com/blog/so-you-want-to-install-a-python-package/), and run the flask server:
 
-````
+```bash
 cd bikeshare/web
 virtualenv ./
 . bin/activate
 pip install -r requirements.text
 python web/app.py
-````
+```
 
 To deploy the webapp in a production environment, use [Gunicorn](http://gunicorn.org/) & [nginx](http://nginx.org/) web servers.
 
