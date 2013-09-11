@@ -1,4 +1,0 @@
-Mean Squared Error at 15 minutes out 14.886775
-Mean Squared Error at 30 minutes out 16.446659
-Mean Squared Error at 45 minutes out 19.511076
-Mean Squared Error at 60 minutes out 15.558551

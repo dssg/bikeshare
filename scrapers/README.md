@@ -1,11 +1,11 @@
-This directory contains the scrapers we use for each API we use. 
+This directory contains scrapers for each of the APIs we use to get data. 
 
-`V1` is XML BIXI data (Boston, Washington DC, Minneapolis)
+- `V1` contains scripts that fetch real-time bike availability data from cities that use Alta's version 1 XML API (Boston, Washington DC, Minneapolis)
 
-`V2` is JSON BIXI data (Chicago and New York)
+- `V2` contains scripts that fetch real-time bike availability data from cities that use Alta's version 2 JSON API (Chicago and New York)
 
-`Weather` is for forecast.io
+- `Weather` contains scripts that fetch real-time and historical weather data from forecast.io
 
-crontab.example is an example version of the crontab we use to keep all of this up to date.
+- `crontab.example` is an example version of the crontab we use to run these scrapers continously and keep our database up to date.
 
-More info can be found in the [data section of the Wiki](https://github.com/dssg/bikeshare/wiki/data).
+More info can be found in the [data section of the wiki](https://github.com/dssg/bikeshare/wiki/data).
