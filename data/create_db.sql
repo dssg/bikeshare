@@ -86,6 +86,21 @@ CREATE TABLE IF NOT EXISTS bike_ind_washingtondc (
   KEY timestamp
 );
 
+#SF/BAY Area: Added Later
+
+CREATE TABLE IF NOT EXISTS bike_ind_bayarea (
+  tfl_id integer NOT NULL,
+  bikes integer NOT NULL,
+  spaces integer NOT NULL,
+  total_docks integer NOT NULL,
+  timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (tfl_id,timestamp)
+);
+
+ALTER TABLE bike_ind_bayarea DROP COLUMN key;
+
+
+
 #METADATA V1
 
 CREATE TABLE IF NOT EXISTS metadata_boston (
