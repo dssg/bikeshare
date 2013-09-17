@@ -13,7 +13,7 @@ from dateutil.relativedelta import *
 from dateutil.parser import parse
 import calendar
 
-conn = psycopg2.connect(dbname="bikeshare", user="postgres", host="ec2-54-218-252-167.us-west-2.compute.amazonaws.com")
+conn = psycopg2.connect(dbname=os.environ.get('dbname'), user=os.environ.get('dbuser'), host=os.environ.get('dburl'))
 
 def get_station_data(station_id, initial_time = datetime(2001,1,1), final_time = datetime(2020,1,1)):
     # Pulls Data for Given Station_id and Converts to Pandas Dataframe
