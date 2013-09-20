@@ -16,13 +16,17 @@ def validator(city,year,month,day):
 @app.route("/<city>/<int:year>/<int:month>/<int:day>")
 def find_day(city,year,month,day):
 	cur = conn.cursor()
+	
 	if (city=='bayarea'):
 		cur.execute("SELECT * from bike_ind_bayarea WHERE timestamp::date='%s-%s-%s';", (year,month,day))
 		results = cur.fetchall()
 	else:
 		return "bad query"
+
 	for result in results:
-		out[result[0]] = {}
+		out[] = {}
+		for k,v in zip(['tfl_id','bikes','spaces','total_docks','timestamp'],result):
+			out[result[0]][k] = v
 	resp = make_response(jsonify(out))
 	resp.headers['Content-Type'] = 'application/json'
 	return resp
