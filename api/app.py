@@ -16,6 +16,7 @@ def validator(city,year,month,day):
 @app.route("/<city>/<int:year>/<int:month>/<int:day>")
 def find_day(city,year,month,day):
 	cur = conn.cursor()
+	
 	if (city=='bayarea'):
 		cur.execute("SELECT * from bike_ind_bayarea WHERE timestamp::date='%s-%s-%s';", (year,month,day))
 		results = cur.fetchall()
@@ -36,4 +37,3 @@ def find_day(city,year,month,day):
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000, host='0.0.0.0')
-
