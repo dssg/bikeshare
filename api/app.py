@@ -19,10 +19,17 @@ def find_day(city,year,month,day):
 	if (city=='bayarea'):
 		cur.execute("SELECT * from bike_ind_bayarea WHERE timestamp::date='%s-%s-%s';", (year,month,day))
 		results = cur.fetchall()
+	elif (city=='chicago'):
+		cur.execute("SELECT * from bike_ind_chicago WHERE timestamp::date='%s-%s-%s';", (year,month,day))
+		results = cur.fetchall()
 	else:
 		return "bad query"
+	print results
+	out = {}
 	for result in results:
-		out[result[0]] = {}
+		out[result[0]] = {}	
+                for k,v in zip(['tfl_id','bikes','spaces','total_docks','timestamp'],result):
+                	out[result[0]][k] = v
 	resp = make_response(jsonify(out))
 	resp.headers['Content-Type'] = 'application/json'
 	return resp
