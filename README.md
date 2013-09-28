@@ -22,7 +22,7 @@ We’re working with the City of Chicago’s [Department of Transportation](http
 
 However, since there's not much bike sharing data for Chicago yet, we're first developing predictive models for Capital Bikeshare, Washington DC's bike sharing system.
 
-**[Read more about bikeshare rebalancing in the wiki](../../wiki/problem)**
+**[Read more about bikeshare rebalancing on our blog](http://dssg.io/2013/08/09/divvy-helping-chicagos-new-bike-share.html)**
 
 ## The solution: Poisson regression
 To predict the number of bikes at bike share stations in DC, we're using [Poisson regression](http://www.umass.edu/wsp/statistics/lessons/poisson/), a statistical technique useful for modeling counts. 
