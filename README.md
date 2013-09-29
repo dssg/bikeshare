@@ -6,7 +6,7 @@
 
 Statistical models and app for predicting when bikeshare stations will be empty or full in Washington DC and someday Chicago.
 
-This is project is a part of the 2013 [Data Science for Social Good](http://www.dssg.io) fellowship, in Partnership with [Divvy](http://divvybikes.com/) and the [Chicago Department of Transportation](www.cityofchicago.org/city/en/depts/cdot.html).
+This is project is a part of the 2013 [Data Science for Social Good](http://www.dssg.io) fellowship, in partnership with [Divvy](http://divvybikes.com/) and the [Chicago Department of Transportation](www.cityofchicago.org/city/en/depts/cdot.html).
 
 ## The problem: bikeshare rebalancing
 
