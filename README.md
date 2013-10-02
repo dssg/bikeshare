@@ -4,7 +4,7 @@
 <a href="http://www.cityofchicago.org/city/en/depts/cdot.html"><img src="http://dssg.io/img/partners/cdot.jpg" align="left"></a>
 
 
-Statistical models and app for predicting when bikeshare stations will be empty or full in Washington DC and someday Chicago.
+Statistical models and app for predicting when bikeshare stations will be empty or full in Washington DC and someday Chicago.  **The app is live at [bikeshare.dssg.io](http://bikeshare.dssg.io).**
 
 This is project is a part of the 2013 [Data Science for Social Good](http://www.dssg.io) fellowship, in partnership with [Divvy](http://divvybikes.com/) and the [Chicago Department of Transportation](www.cityofchicago.org/city/en/depts/cdot.html).
 
