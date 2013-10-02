@@ -45,7 +45,7 @@ Every minute or two, the API reports the number of bikes and docks available at 
 {
 	"id":17,
 	"stationName": "Wood St & Division St",
-	"location": "1802 W. Divison St"
+	"location": "1802 W. Divison St",
 	"availableBikes": 6,
 	"availableDocks": 9,
 	"totalDocks": 15,
