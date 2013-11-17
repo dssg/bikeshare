@@ -114,6 +114,8 @@ python web/app.py
 
 To deploy the webapp in a production environment, use [Gunicorn](http://gunicorn.org/) & [nginx](http://nginx.org/) web servers.
 
+## Team
+![Team](https://raw.github.com/dssg/dssg.github.io/761993c24ea2991170ef64048115cb805f5f13fb/img/people/teams/divvy.png)
 
 ## Contributing to the project
 To get involved, please check the [issue tracker](https://github.com/dssg/bikeshare/issues).
