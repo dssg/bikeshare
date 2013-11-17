@@ -8,6 +8,8 @@ Statistical models and app for predicting when bikeshare stations will be empty 
 
 This project is a part of the 2013 [Data Science for Social Good](http://www.dssg.io) fellowship, in partnership with [Divvy](http://divvybikes.com/) and the [Chicago Department of Transportation](www.cityofchicago.org/city/en/depts/cdot.html).
 
+*For a quick and gentle overview of the project, check out our [blog post](http://dssg.io/2013/08/09/divvy-helping-chicagos-new-bike-share.html).*
+
 ## The problem: bikeshare rebalancing
 
 The City of Chicago just launched [Divvy](http://divvybikes.com/), a new bike sharing system designed to connect people to transit, and to make short one-way trips across town easy. [Bike sharing](http://en.wikipedia.org/wiki/Bicycle_sharing_system) is citywide bike rental - you can take a bike out at a station on one street corner and drop it off at another.
