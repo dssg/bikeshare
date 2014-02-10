@@ -15,7 +15,7 @@ def extract_str(element):
 ##This function connects to the data base (through enviornment varibles), gets the data from a provided url
 def main(url,city):
     try:
-        conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
+        conn = psycopg2.connect(dbname=+os.environ.get('dbname'),user=+os.environ.get('dbuser'), host=+os.environ.get('dburl'),database=bikeshare)
     except:
         print "I am unable to connect to the database"
     cur = conn.cursor()

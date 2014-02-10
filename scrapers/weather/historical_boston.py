@@ -11,7 +11,7 @@ city_lat  = 42.3587
 city_long = -71.0567
 
 try:
-  conn = psycopg2.connect("dbname="+os.environ.get('dbname')+" user="+os.environ.get('dbuser')+ " host="+os.environ.get('dburl'))
+  conn = psycopg2.connect(dbname=+os.environ.get('dbname'),user=+os.environ.get('dbuser'), host=+os.environ.get('dburl'),database=bikeshare)
 except:
   print "I am unable to connect to the database"
   exit()
