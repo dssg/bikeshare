@@ -21,10 +21,7 @@ data = json.loads(as_data)
 J2 = data["stationBeanList"]
 
 #psycopg2 
-try:
-    conn = psycopg2.connect(dbname=+os.environ.get('dbname'),user=+os.environ.get('dbuser'), host=+os.environ.get('dburl'),database=bikeshare)
-except:
-    print "I am unable to connect to the database"
+conn = psycopg2.connect(database=os.environ.get('dbname'),user=os.environ.get('dbuser'), host=os.environ.get('dburl'),password=os.environ.get("dbpw"))
 cur = conn.cursor()
 
 #loop and insert   
