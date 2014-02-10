@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source /etc/bashrc
+source /home/ubuntu/.bashrc
 
-python /home/ec2-user/bikeshare/scrapers/weather/weather_updater.py
+python /home/ubuntu/bikeshare/scrapers/weather/weather_updater.py
